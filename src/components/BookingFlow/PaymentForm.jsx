@@ -88,14 +88,17 @@ function Payment() {
 							Security code{" "}
 							<span className="text-accentPink">*</span>
 						</label>
-						<input
-							type="text"
-							className="mt-1 block w-[100px] h-[30px] rounded-md border-lightGrey shadow-sm placeholder:text-[14px] pl-4"
-							placeholder="000"
-						/>
-
-						{/*Komponenet för att visa information om var säkerhetskoden kan hittas*/}
-						<SecurityCodeQuestionMark />
+						<div className="flex">
+							<input
+								type="text"
+								className="mt-1 block w-[100px] h-[30px] rounded-md border-lightGrey shadow-sm placeholder:text-[14px] pl-4"
+								placeholder="000"
+							/>
+							{/*Komponenet för att visa information om var säkerhetskoden kan hittas*/}
+							<div className="mx-3">
+								<SecurityCodeQuestionMark />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

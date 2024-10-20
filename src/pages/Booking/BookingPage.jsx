@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ScrollCheck from "../../components/BookingFlow/ScrollCheck";
 import SelectionOverview from "../../components/BookingFlow/SelectionOverview";
 import PaymentForm from "../../components/BookingFlow/PaymentForm";
@@ -33,7 +35,9 @@ function BookingPage() {
 
 				{/* Knapp */}
 				<div className="flex items-center justify-center">
-					<Button size="large" buttonText="Book" />
+					<Link to="/confirmation">
+						<Button size="large" buttonText="Book" />
+					</Link>
 				</div>
 			</div>
 		</div>

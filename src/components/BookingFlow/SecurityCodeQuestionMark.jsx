@@ -7,13 +7,13 @@ function SecurityCodeQuestionMark() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="relative">
+    <div className="relative text-[20px]">
       <button
         onClick={() => setIsOpen(true)}
-        className="text-gray-600 hover:text-gray-800 transition-colors"
+        className="text-black/50 hover:text-black/80 transition-colors"
         aria-label="Open help"
       >
-        <FontAwesomeIcon icon={faQuestionCircle} size="2x" />
+        <FontAwesomeIcon icon={faQuestionCircle}  />
       </button>
 
       {isOpen && (

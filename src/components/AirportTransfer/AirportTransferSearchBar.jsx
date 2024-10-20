@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import LocationInput from "./LocationInput";
+import LocationInput from "../LocationInput";
 import DateSelection from "./DateSelection";
 import TimeSelection from "./TimeSelection";
 import PassengerSelection from "./PassengerSelection";

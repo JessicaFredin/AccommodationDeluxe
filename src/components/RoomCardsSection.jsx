@@ -182,11 +182,11 @@ function RoomCardsSection() {
   const totalNights =
     startDate && endDate ? dayjs(endDate).diff(dayjs(startDate), "day") : 0;
 
-  console.log("Start Date:", startDate);
-  console.log("End Date:", endDate);
-  console.log("Adults:", adults);
-  console.log("Children:", children);
-  console.log("Total Nights:", totalNights);
+  // console.log("Start Date:", startDate);
+  // console.log("End Date:", endDate);
+  // console.log("Adults:", adults);
+  // console.log("Children:", children);
+  // console.log("Total Nights:", totalNights);
 
   // Handle error and loading states
   if (error) {

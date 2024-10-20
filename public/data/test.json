@@ -1,0 +1,480 @@
+ {
+      "id": 3,
+      "name": "Cityscape",
+      "location": {
+        "country": "Greece",
+        "city": "Crete"
+      },
+      "typeOfHotel": "family_friendly",
+      "highlights": ["Two pools", "Exclusive infinity pool and spa", "500m from the beach"],
+      "pricePerNight": 152,
+      "startingFromPrice": "Starting from: €39",
+"rating": 3.2,
+
+      "description": "Modern design hotel with easy access to the vibrant nightlife of Crete.",
+      "descriptionParagraphs": [
+    "Cityscape is a contemporary hotel located in the heart of Crete, offering guests stylish accommodations with a focus on modern comfort.",
+    "With two pools, including an exclusive infinity pool and spa, guests can relax in style after a day exploring the vibrant nightlife of Crete.",
+    "The hotel is just 300 meters from the beach, providing easy access to both the stunning coastlines and the buzzing city atmosphere.",
+    "Whether you're relaxing by the pool, enjoying the hotel’s free WiFi, or savoring a meal at the on-site restaurant, Cityscape combines luxury with convenience to offer an unforgettable stay."
+  ],
+
+      "checkInTime": "13:00",
+      "checkOutTime": "12:00",
+      "cancellationPolicy": "No refund on cancellation",
+      "imgUrl": "https://img.freepik.com/free-photo/traditional-house-interior-design_23-2151050952.jpg?t=st=1729166942~exp=1729170542~hmac=f2eb26a2a3bfc084fbac5a595ba363df2bc70e97445bf5d6f2105166f6079366&w=1800",
+      
+      "images": [
+        "https://img.freepik.com/free-photo/pillow-travel-nobody-pillows-luxury_1203-4932.jpg?t=st=1729156759~exp=1729160359~hmac=414bce105b33d05e86ddd081712d6868a3fa37dd5a0747a823a2d4c095089b9b&w=1800",
+        "https://img.freepik.com/free-photo/hotel-interior-bed-pillow-home_1203-4105.jpg?t=st=1729157185~exp=1729160785~hmac=5d30a2bad4cbbe26f72b1263a6cf5f8656513f6679517487106bea7b18b34942&w=1480",
+        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150695002.jpg?t=st=1729156970~exp=1729160570~hmac=ca082a93d4829e49e099d022e615bd4fbbcd96b27c98f4c42ab9600460704db0&w=1060",
+        "https://img.freepik.com/free-photo/empty-restaurants-with-terrace-street-afytos-greece_1268-15716.jpg?t=st=1729157159~exp=1729160759~hmac=3f0038e826c95753c84b47460db931c6629c4895eeacc49cbbde17b545d49627&w=826",
+        "https://img.freepik.com/free-photo/3d-rendering-mediteranean-door_23-2151280853.jpg?t=st=1729157491~exp=1729161091~hmac=576ff64e778ca8043db003d38ca56229e551c135b541cf7c7ecd0bad770ea730&w=826"
+      ],
+
+         "infoBox": {
+      "title": "Additional Information",
+"infoBoxAdditionalInformation": ["Free Parking", "Spa", "Free WiFi", "Swimming Pool", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
+      
+      "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
+
+      "roomDescription": "At Cityscape, we offer a diverse range of elegantly designed rooms that perfectly capture the essence of Crete. Each space is tailored to provide guests with comfort and tranquility, allowing you to relax after a day of adventure. With convenient access to our exclusive infinity pool and spa, and a vibrant atmosphere just steps away, our accommodations serve as a perfect base for exploring the beautiful surroundings.",
+      "rooms": [
+    {
+      "roomType": "Cozy Family Room",
+      "availableRooms": 4,
+      "sqm": "50 square meters",
+      "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
+      "imgUrl": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
+  
+      "amenities": [
+        "Central air conditioning",
+        "Queen-size bed and two twin beds",
+        "Smart TV with streaming services",
+        "Mini-fridge with complimentary water",
+        "In-room safe",
+        "Coffee and tea-making facilities",
+        "Balcony with seating area",
+        "Daily housekeeping",
+        "Slippers and bathrobes"
+      ],
+          "iconDescription": [
+            "Square Meters",
+            "Sea/garden view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 double bed"
+          ],
+       "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": false
+          },
+               "pricePerNight": 148
+    },
+    {
+      "roomType": "Garden View Double Room",
+      "availableRooms": 5,
+      "sqm": "40 square meters",
+      "description": "Breathe in the fresh air from your 40-square-meter Garden View Double Room, complete with a serene balcony overlooking the lush gardens. Featuring two cozy double beds and tasteful decor, this room provides a restful escape for friends or family, complete with modern amenities to ensure a delightful stay.",
+      "imgUrl": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
+      "amenities": [
+        "Air conditioning",
+        "Two double beds",
+        "Complimentary breakfast",
+        "Free high-speed Wi-Fi",
+        "Flat-screen TV",
+        "Mini-bar",
+        "Coffee maker",
+        "Work desk",
+        "Bathroom amenities",
+        "Housekeeping: daily service"
+      ],
+      "iconDescription": [
+            "Square Meters",
+            "Sea/garden view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 double bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": false,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+           "pricePerNight": 168
+    },
+    {
+      "roomType": "Luxury Swim-Up Room",
+      "availableRooms": 2,
+      "sqm": "60 square meters",
+      "description": "Dive into luxury in our 60-square-meter Luxury Swim-Up Room, where the pool is just a step away from your terrace. With a plush king-size bed and contemporary decor, this room combines style and comfort, making it an ideal sanctuary for guests seeking a unique and relaxing experience.",
+      "imgUrl": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
+      "amenities": [
+        "Direct pool access",
+        "King-size bed",
+        "Complimentary breakfast",
+        "Free Wi-Fi",
+        "Smart TV with streaming options",
+        "In-room safe",
+        "Minibar",
+        "Coffee maker",
+        "Luxurious bathroom with rain shower",
+        "Slippers and bathrobes"
+      ],
+      "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+               "pricePerNight": 188
+    },
+    {
+      "roomType": "Contemporary Loft",
+      "availableRooms": 1,
+      "sqm": "75 square meters",
+      "description": "Stay in style in our 75-square-meter Contemporary Loft. Featuring an open-plan layout with a king-size bed, living area, and kitchenette, this room is designed for those who appreciate a modern lifestyle. The loft also boasts stunning views of the city and the sea, creating a perfect backdrop for your stay.",
+      "imgUrl": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
+      "amenities": [
+        "Open-plan living space",
+        "King-size bed",
+        "Kitchenette with dining area",
+        "Complimentary breakfast",
+        "Free Wi-Fi",
+        "Flat-screen TV with premium channels",
+        "In-room safe",
+        "Minibar",
+        "Coffee and tea-making facilities",
+        "Luxurious bathroom with tub and shower"
+    ],
+      "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+                "pricePerNight": 68
+        }
+
+        ],
+
+
+     "aboutTheRooms": {
+    "headingText": "At Cityscape, we offer thoughtfully designed accommodations that cater to families and travelers alike. Each room is a sanctuary, blending modern comforts with the stunning landscape of Crete. Whether you're lounging by the pool or exploring the nearby beaches, our rooms provide a perfect retreat.",
+    "cards": [
+      {
+        "title": "Cozy Family Room",
+        "text": "Perfect for families, our Cozy Family Room features ample space, modern decor, and amenities to ensure a comfortable stay. Enjoy direct access to the lush gardens and the hotel's family-friendly atmosphere.",
+        "images": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      },
+      {
+        "title": "Garden View Double Room",
+        "text": "Our Garden View Double Room offers a serene environment with beautiful views and a spacious layout. Equipped with modern amenities, this room is ideal for guests looking to relax and rejuvenate.",
+        "images": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      },
+      {
+        "title": "Luxury Swim-Up Room",
+        "text": "Experience the ultimate luxury in our Swim-Up Room, where you can dive into the pool directly from your private terrace. It's the perfect blend of relaxation and sophistication, ensuring an unforgettable stay.",
+        "images": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      },
+      {
+        "title": "Contemporary Loft",
+        "text": "Our spacious Contemporary Loft features an elegant design and ample living space. Perfect for long stays or family getaways, enjoy a home-away-from-home experience with breathtaking views.",
+        "images": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      }
+    ],
+    "infoBoxTitle": "In all rooms",
+    "infoBoxItems": [
+      "Central air conditioning",
+      "Queen or king-size bed options",
+      "Flat-screen TV with local and international channels",
+      "Room service available",
+      "In-room safe",
+      "Mini-fridge stocked with complimentary water",
+      "Coffee maker and kettle",
+      "Daily housekeeping service",
+      "Luxurious bathroom amenities",
+      "Complimentary Wi-Fi"
+        ]
+      },
+
+
+    "restaurant": {
+    "headingText": "Cityscape offers a variety of dining options that celebrate the flavors of Crete, with a modern twist. Our restaurants and bars cater to all tastes, from casual snacks to fine dining experiences.",
+    "introParagraph": "At Cityscape, we invite you to indulge in a culinary journey that showcases the vibrant spirit of Crete. Whether you’re in the mood for a sophisticated dining experience or a casual meal by the pool, our diverse dining options provide something for everyone.",
+    "images": [
+      "https://example.com/cityscape-restaurant1.jpg",
+      "https://example.com/cityscape-restaurant2.jpg",
+      "https://example.com/cityscape-restaurant3.jpg"
+    ],
+    "sections": [
+      {
+        "title": "The Infinity Pool Bar",
+        "description": "Unwind at the Infinity Pool Bar, where you can enjoy refreshing cocktails and light snacks with stunning views of the Cretan landscape. It's the perfect place to relax and soak up the sun during the day or enjoy a sunset drink."
+      },
+      {
+        "title": "The Cretan Bistro",
+        "description": "Sample the authentic flavors of Crete at The Cretan Bistro. Our chefs craft dishes using locally sourced ingredients to bring you a true taste of the region, blending traditional recipes with modern flair. Ideal for a cozy dinner with friends or family."
+      },
+      {
+        "title": "The Beachfront Café",
+        "description": "Located just steps from the beach, our Beachfront Café offers a variety of light bites and refreshing drinks, perfect for a quick break during your day of exploring Crete's beautiful coastline."
+      },
+      {
+        "title": "Table Reservations",
+        "description": "We recommend reserving a table for dinner at our à la carte restaurants. Smart casual dress code applies. Please let us know if you have any dietary requirements so that we can prepare a delightful meal tailored to your needs."
+      }
+    ],
+    "infoBox": {
+      "title": "Dietary Options",
+      "description": "Our restaurants accommodate a variety of dietary needs, including options for allergies and special dietary preferences. Please inform our staff in advance, and we will ensure that your meal is prepared to your satisfaction.",
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Vegetarian options",
+        "Vegan options",
+        "Lactose-free options",
+        "Gluten-free options"
+      ]
+    }
+  }, 
+
+  "poolAndBeach": {
+  "headingText": "Pool and Beach",
+  "introParagraph": "Cityscape offers two stylish pools and is located just 500 meters from the beach. Relax by the exclusive infinity pool or take a short stroll to the coast to enjoy Crete's beautiful beaches. With modern facilities and convenient access to the shoreline, Cityscape provides the perfect mix of relaxation and adventure.",
+  "images": [
+    "https://example.com/cityscape-pool1.jpg",
+    "https://example.com/cityscape-pool2.jpg",
+    "https://example.com/cityscape-beach1.jpg",
+    "https://example.com/cityscape-beach2.jpg"
+  ],
+  "beaches": [
+    {
+      "title": "Elounda Beach",
+      "description": "Elounda Beach is a popular destination offering soft sands and calm, turquoise waters. With nearby restaurants and cafes, it’s the perfect spot to relax and soak up the Mediterranean sun. This beach is suitable for families and offers amenities such as sun loungers and umbrellas."
+    },
+    {
+      "title": "Vai Beach",
+      "description": "Famous for its natural palm forest, Vai Beach provides a tropical escape right in Crete. Enjoy a scenic beach surrounded by lush greenery, where you can swim in crystal-clear waters and explore the area’s unique flora. Vai Beach is ideal for nature lovers and those looking to explore the beauty of Crete’s coast."
+    },
+    {
+      "title": "Balos Lagoon",
+      "description": "Known for its white sands and shallow, turquoise waters, Balos Lagoon is a must-visit. This picturesque beach offers breathtaking views and is perfect for a day of swimming and sunbathing. The shallow waters make it suitable for families with young children."
+    },
+    {
+      "title": "Matala Beach",
+      "description": "Matala Beach is famous for its unique sandstone caves and vibrant atmosphere. This beach is perfect for those looking to explore or enjoy a lively day by the sea. With a rich history and beautiful waters, Matala Beach is a favorite for both locals and tourists."
+    }
+  ],
+  "pools": {
+    "poolList": [
+      "Main Pool with sun loungers and poolside service",
+      "Infinity Pool with breathtaking views of Crete",
+      "Private Cabanas available for rent",
+      "Poolside Bar offering cocktails and light snacks",
+      "Complimentary pool towels available"
+    ]
+  }
+},
+
+
+"activities": {
+    "headingText": "Activities",
+    "introParagraph": "Cityscape offers a variety of activities designed to enhance your stay, whether you're looking to relax, stay active, or explore the vibrant surroundings of Crete. From on-site fitness facilities to beachside excursions, there's something for everyone.",
+    "categories": [
+      {
+        "title": "Spa",
+        "description": "Unwind in our exclusive spa, offering a range of treatments including massages, facials, and body wraps. Our relaxing environment and expert therapists will ensure you leave feeling refreshed and rejuvenated.",
+        "imgUrl": "https://example.com/cityscape-spa.jpg"
+      },
+      {
+        "title": "Gym",
+        "description": "Stay fit during your stay with our fully equipped gym, featuring state-of-the-art machines and free weights. Whether you're lifting, running, or stretching, we have everything you need for an energizing workout.",
+        "imgUrl": "https://example.com/cityscape-gym.jpg"
+      },
+      {
+        "title": "Infinity Pool",
+        "description": "Take a dip in our stunning infinity pool, offering breathtaking views of Crete. Lounge by the pool with a cocktail or enjoy a relaxing swim in this exclusive area reserved for our guests.",
+        "imgUrl": "https://example.com/cityscape-pool.jpg"
+      },
+      {
+        "title": "Beach Activities",
+        "description": "Explore the nearby beaches with a range of exciting activities such as snorkeling, jet skiing, and paddleboarding. Whether you're an adventure seeker or just looking to unwind by the sea, the beach is just a short walk away.",
+        "imgUrl": "https://example.com/cityscape-beach.jpg"
+      }
+    ],
+    "activityCenter": {
+      "title": "Activity Center",
+      "options": [
+        "Gym",
+        "Spa",
+        "Infinity Pool",
+        "Snorkeling (additional fee)",
+        "Jet Skiing (additional fee)",
+        "Paddleboarding (additional fee)"
+      ]
+    }
+  },
+  
+  
+"destination": {
+    "title": "Cityscape",
+    "location": {
+      "address": "Cityscape, Crete, Greece",
+      "latitude": 35.2401,
+      "longitude": 24.8093
+    },
+    "zoomLevel": 14,
+    "marker": {
+      "title": "Cityscape",
+      "iconUrl": "https://example.com/marker-icon3.png"
+    }
+  },
+  
+    "weather": [
+      {
+        "month": "January",
+        "dayTemp": "15°C",
+        "nightTemp": "8°C",
+        "sunHours": "5",
+        "waterTemp": "15°C",
+        "rainFreeDays": "19"
+      },
+      {
+        "month": "February",
+        "dayTemp": "16°C",
+        "nightTemp": "9°C",
+        "sunHours": "6",
+        "waterTemp": "15°C",
+        "rainFreeDays": "18"
+      },
+      {
+        "month": "March",
+        "dayTemp": "18°C",
+        "nightTemp": "10°C",
+        "sunHours": "7",
+        "waterTemp": "16°C",
+        "rainFreeDays": "22"
+      },
+      {
+        "month": "April",
+        "dayTemp": "20°C",
+        "nightTemp": "12°C",
+        "sunHours": "8",
+        "waterTemp": "17°C",
+        "rainFreeDays": "24"
+      },
+      {
+        "month": "May",
+        "dayTemp": "24°C",
+        "nightTemp": "15°C",
+        "sunHours": "9",
+        "waterTemp": "19°C",
+        "rainFreeDays": "26"
+      },
+      {
+        "month": "June",
+        "dayTemp": "27°C",
+        "nightTemp": "19°C",
+        "sunHours": "10",
+        "waterTemp": "22°C",
+        "rainFreeDays": "28"
+      },
+      {
+        "month": "July",
+        "dayTemp": "30°C",
+        "nightTemp": "22°C",
+        "sunHours": "11",
+        "waterTemp": "24°C",
+        "rainFreeDays": "30"
+      },
+      {
+        "month": "August",
+        "dayTemp": "31°C",
+        "nightTemp": "23°C",
+        "sunHours": "11",
+        "waterTemp": "25°C",
+        "rainFreeDays": "30"
+      },
+      {
+        "month": "September",
+        "dayTemp": "28°C",
+        "nightTemp": "21°C",
+        "sunHours": "9",
+        "waterTemp": "24°C",
+        "rainFreeDays": "27"
+      },
+      {
+        "month": "October",
+        "dayTemp": "24°C",
+        "nightTemp": "17°C",
+        "sunHours": "7",
+        "waterTemp": "22°C",
+        "rainFreeDays": "24"
+      },
+      {
+        "month": "November",
+        "dayTemp": "20°C",
+        "nightTemp": "13°C",
+        "sunHours": "6",
+        "waterTemp": "20°C",
+        "rainFreeDays": "22"
+      },
+      {
+        "month": "December",
+        "dayTemp": "17°C",
+        "nightTemp": "10°C",
+        "sunHours": "5",
+        "waterTemp": "17°C",
+        "rainFreeDays": "20"
+      }
+    ],
+
+  
+  
+    "ratings": [
+      { "label": "Overall Experience", "rating": 4.6 },
+      { "label": "Hotel Cleanliness", "rating": 4.5 },
+      { "label": "Atmosphere & Comfort", "rating": 4.6 },
+      { "label": "Staff Friendliness", "rating": 4.9 },
+      { "label": "Wi-Fi", "rating": 4.3 }
+    ],
+    "reviews": {
+      "overallRating": 4.5,
+      "totalSurveyResponses": 6625,
+      "recommendationPercentage": 90
+    }
+  
+    }
+

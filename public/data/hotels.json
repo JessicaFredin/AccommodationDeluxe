@@ -10,9 +10,8 @@
       "typeOfHotel": "family_friendly",
       "highlights": ["Luxury suites with ocean view", "Exclusive infinity pool and spa", "Close to golf courses and the beach walk"],
       "pricePerNight": 102,
-      "startingFromPrice": "Starting from: €52",
-"rating": 4.8,
-
+      "startingFromPrice": 52,
+      "rating": 4.8,
       "description": "A beachfront resort offering unparalleled luxury and stunning ocean views.",
       "descriptionParagraphs": [
         "Riviera Resort is a luxurious all-inclusive beachfront hotel, perfectly located for a serene and relaxinadults-only vacation. Situated just north of the island&apos;s main town, the resort is an ideal escape where you can unwind and indulge in the stunning surroundings with your companion.",
@@ -20,12 +19,10 @@
         "In the evening, enjoy expertly prepared meals at the resort&apos;s diverse restaurants, offering both buffet and à la carte options, including Italian cuisine. As the sun sets, our talented mixologists are ready to craft the perfect cocktail to enhance your evening.",
         "The resort is exclusively for adults aged 18 and over, making it the ideal destination for a peaceful and rejuvenating retreat."
       ],
-
       "checkInTime": "14:00",
       "checkOutTime": "12:00",
       "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg",
-
       "images": [
       "https://img.freepik.com/free-photo/small-hotel-room-interior-with-double-bed-bathroom_1262-12489.jpg?t=st=1729155435~exp=1729159035~hmac=93611c193aabb3dc3c45f19fbd234a53fe3821f974756412079e594d6b14cd61&w=1800", 
       "https://img.freepik.com/free-photo/two-individual-beds_1203-18.jpg?t=st=1729155800~exp=1729159400~hmac=3b47dcc7d5102e9cb701dcdcce4f976128a93554f30e1aa3df51aa0540b42982&w=1800",
@@ -34,11 +31,18 @@
       "https://img.freepik.com/free-photo/luxury-bathtub-towel-inside-bedroom-hotel_1150-10838.jpg?t=st=1729167301~exp=1729170901~hmac=0543edca48d572676525753f854f265154dc5725e146497534d49ba861f6f087&w=1800",  
       "https://img.freepik.com/free-photo/empty-beach-with-umbrellas-morning_1268-14349.jpg?t=st=1729156047~exp=1729159647~hmac=979abe78ff9c33ac2999f9a797512a69add671f6d788eb899ac3dc77333e529f&w=1800", 
       "https://img.freepik.com/free-photo/wide-angle-shot-travel-accommodation-hotel-lounge-with-check-reception-desk-stylish-empty-modern-resort-foyer-interior-with-cozy-furniture-warm-fireplace-ready-welcome-tourists_482257-67830.jpg?t=st=1729155853~exp=1729159453~hmac=e0db542ac7fcc39e6f438af6b03b3c9e6542c621ac2d8b5742f9fe95b3066e50&w=1800"],
-
-      "infoBoxAmenities": ["Free WiFi", "Air Conditioning", "Spa", "Fitness Center", "Restaurant", "Bar"],
+      "infoBox": {
+      "title": "Additional Information",
+      "infoBoxAdditionalInformation": ["On-site parking included, subject to availability", "Built in 2018", "5 buildings", "3 floors", "250 rooms/suites", "Partial elevator access (main building)", "24-hour reception", "Laundry service available (additional fee)", "ATM available on-site" ],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Riviera Resort, we offer a variety of luxurious and comfortable rooms designed to suit your needs and enhance your stay. Whether you’re seeking a tranquil retreat or a touch of indulgence, our rooms are thoughtfully designed to provide the perfect balance of style and relaxation.",
-        "rooms": [
+      "rooms": [
           {
             "roomType": "Double Room",
             "availableRooms": 5, 
@@ -220,8 +224,6 @@
           }
 
         ],
-
-
       "aboutTheRooms": {
         "headingText": "At Riviera Resort, we offer a variety of luxurious and comfortable rooms designed to suit your needs and enhance your stay. Whether you’re seeking a tranquil retreat or a touch of indulgence, our rooms are thoughtfully designed to provide the perfect balance of style and relaxation.",
         "cards": [
@@ -246,21 +248,27 @@
             "images": "https://img.freepik.com/free-photo/two-individual-beds_1203-18.jpg?t=st=1729155800~exp=1729159400~hmac=3b47dcc7d5102e9cb701dcdcce4f976128a93554f30e1aa3df51aa0540b42982&w=1800"
           }
         ],
-
-        "infoBoxTitle": "In all rooms/suites",
-        "infoBoxItems": [
-      "Centrally controlled air conditioning",
-      "Queen-size double bed",
-      "TV with local channels",
-      "Room service",
-      "In-room safe",
-      "Minibar with complimentary soft drinks and water (alcoholic beverages available upon request for an additional fee)",
-      "Kettle with coffee and tea",
-      "Slippers",
-      "Bathrobe",
-      "Bathtub or shower",
-      "Housekeeping: 7 days a week"
-    ]
+      "infoBox": {
+          "title": "In all rooms/suites",
+          "infoBoxAdditionalInformation": [
+          "Centrally controlled air conditioning",
+          "Queen-size double bed",
+          "TV with local channels",
+          "Room service",
+          "In-room safe",
+          "Minibar with complimentary soft drinks and water (alcoholic beverages available upon request for an additional fee)",
+          "Kettle with coffee and tea",
+          "Slippers",
+          "Bathrobe",
+          "Bathtub or shower",
+          "Housekeeping: 7 days a week"
+        ],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    }
   },
   "restaurant": {
     "headingText": "Food and drinks",
@@ -296,7 +304,7 @@
       "title": "Bar and restaurants",
       "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
       "optionsTitle": "We also offer:",
-      "dietaryOptions": [
+      "extraInformation": [
         "Vegetarian options",
         "Vegan options",
         "Lactose-free options",
@@ -331,8 +339,9 @@
         "description": "For those seeking luxury, Nikki Beach combines beachside relaxation with a vibrant atmosphere. Known for its beach club, live music, and cocktails, it’s an ideal destination for guests looking to experience a more upscale beach day."
       }
     ],
-    "pools": {
-      "poolList": [
+    "infoBox": {
+      "title": "Pools",
+      "infoBoxAdditionalInformation": [
         "Main Pool: 425 m²",
         "Secondary Pool: 220 m²",
         "Private Pool for Prestige Club guests only",
@@ -344,8 +353,8 @@
   },
   
   "activities": {
-    "title": "Activities",
-    "description": "The hotel features a spa offering a range of relaxing treatments, a hot tub, and a sauna. For those looking to stay active during their vacation, guests can use the tennis courts at the neighboring Melia Dunas Beach Resort & Spa (200 meters away). Reservations can be made at the reception of Melia Llana.",
+    "headingText": "Activities",
+    "introParagraph": "The hotel features a spa offering a range of relaxing treatments, a hot tub, and a sauna. For those looking to stay active during their vacation, guests can use the tennis courts at the neighboring Melia Dunas Beach Resort & Spa (200 meters away). Reservations can be made at the reception of Melia Llana.",
     "categories": [
       {
         "name": "Spa",
@@ -368,8 +377,9 @@
         "img": "https://example.com/yoga-image.jpg"
       }
     ],
-    "activityCenter": {
-      "facilities": [
+    "infoBox": {
+      "title": "Activity center",
+      "infoBoxAdditionalInformation": [
         "Gym",
         "Spa",
         "Spa treatments (additional fee)",
@@ -382,7 +392,7 @@
     }
   },
   
-  "destination": {
+  "map": {
     "title": "Hotel Riviera Resort",
     "location": {
       "address": "Sunset Boulevard 25, Playa de la Mar, 29600 Marbella, Spain",
@@ -494,9 +504,6 @@
         "rainFreeDays": "30"
       }
     ],
-  
-
-  
     "ratings": [
       { "label": "Overall Experience", "rating": 4.7 },
       { "label": "Hotel Cleanliness", "rating": 4.6 },
@@ -509,8 +516,6 @@
       "totalSurveyResponses": 6325,
       "recommendationPercentage": 91
     }
-  
-  
 },
 
 
@@ -530,483 +535,517 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   {
       "id": 2,
       "name": "Sunny Lodge",
       "location": {
         "country": "Spain",
         "city": "Mallorca"
       },
-      "typeOfHotel": "family_friendly", 
+      "typeOfHotel": "family_friendly",
       "highlights": ["Luxury rooms with pool view", "Rooftop bar with panoramic view", "Center within 900m"],
       "pricePerNight": 170,
-      "startingFromPrice": "Starting from: €48",
-
-"rating": 4.3,
+      "startingFromPrice": 48,
+      "rating": 4.3,
       "description": "A sunny escape in the heart of Mallorca with stunning poolside views.",
       "descriptionParagraphs": [
-    "Sunny Lodge is an idyllic hotel located in the picturesque town of Mallorca, known for its panoramic views and relaxing atmosphere.",
-    "Guests can unwind in luxury rooms with private balconies overlooking the pool, or enjoy a drink at the rooftop bar while taking in the beautiful sunset.",
-    "Located just 900 meters from the city center, Sunny Lodge offers a perfect balance between peace and accessibility, ideal for those looking to explore the area without sacrificing relaxation.",
-    "With modern amenities like free WiFi, airport shuttle, and a rooftop bar, Sunny Lodge ensures a comfortable stay for all its guests."
-  ],
-  "sqm": "42 square meters",
-
+        "Sunny Lodge is an idyllic hotel located in the picturesque town of Mallorca, known for its panoramic views and relaxing atmosphere.",
+        "Guests can unwind in luxury rooms with private balconies overlooking the pool, or enjoy a drink at the rooftop bar while taking in the beautiful sunset.",
+        "Located just 900 meters from the city center, Sunny Lodge offers a perfect balance between peace and accessibility, ideal for those looking to explore the area without sacrificing relaxation.",
+        "With modern amenities like free WiFi, airport shuttle, and a rooftop bar, Sunny Lodge ensures a comfortable stay for all its guests."
+      ],
       "checkInTime": "15:00",
       "checkOutTime": "11:00",
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2015/09/07/19/12/hotel-928937_1280.jpg",
-      
-      
       "images": [
-      "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1729156176~exp=1729159776~hmac=0514631a8625a2ce0b74a182335fe0917bbcf07e3ed522d1926d82928a404c54&w=1800", 
-      "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?t=st=1729156248~exp=1729159848~hmac=7c5582684414ee9bf369c272aee145a97884ef7b75fc230824ec5db0dd339929&w=1800", 
-      "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?t=st=1729164675~exp=1729168275~hmac=66a987db076fb4d9b437d281d88cad3dbac074f60db194fb9713751ec7c5623d&w=1800",
-      "https://img.freepik.com/free-photo/double-bed-with-cushions_1203-19.jpg?t=st=1729166194~exp=1729169794~hmac=5c564e3163b4c8225df296935064f6f5f3a9f6cc62e31c1006432810d1f13785&w=1800",
-      "https://img.freepik.com/free-photo/view-small-bathroom-with-modern-style-decor-furniture_23-2150864774.jpg?t=st=1729156524~exp=1729160124~hmac=f85a210bc2354c8a9e5a39036d58352d5073ad5a18176c6fbf418663e48200f6&w=900",
-      "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
-      "https://img.freepik.com/free-photo/lonely-coconut-tree-by-seaside_23-2148249012.jpg?t=st=1729156487~exp=1729160087~hmac=fd1033e4e3f73552b501fae0af0f62bd2db8ac339d736e7ca053d7d9dcfff71d&w=1800"],
-
-
-      "infoBoxAmenities": ["Free WiFi", "Airport Shuttle", "Rooftop Bar", "Poolside Service", "Gym"],
+        "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?w=1800",
+        "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?w=1800",
+        "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?w=1800",
+        "https://img.freepik.com/free-photo/double-bed-with-cushions_1203-19.jpg?w=1800",
+        "https://img.freepik.com/free-photo/view-small-bathroom-with-modern-style-decor-furniture_23-2150864774.jpg?w=900",
+        "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?w=1260&h=750&dpr=2",
+        "https://img.freepik.com/free-photo/lonely-coconut-tree-by-seaside_23-2148249012.jpg?w=1800"
+      ],
+      "infoBox": {
+        "title": "Additional Information",
+        "infoBoxAdditionalInformation": ["Free WiFi", "Airport Shuttle", "Rooftop Bar", "Poolside Service", "Gym"],
+        "optionsTitle": "We also offer:",
+        "extraInformation": [
+          "Free WiFi throughout the hotel",
+          "Free WiFi in rooms and suites"
+        ]
+      },
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
-
       "roomDescription": "Welcome to Sunny Lodge, where every room is a vibrant escape filled with warmth and comfort. Embrace the stunning views of Mallorca's turquoise waters while relaxing in modern accommodations designed with family-friendly touches. Our rooms blend contemporary style with cozy atmospheres, making them perfect for families and travelers alike.",
-
-
-
       "rooms": [
-    {
-      "roomType": "Cozy Single Room",
-      
-      "availableRooms": 8,
-      "sqm": "28 square meters",
-      "description": "Retreat to our Cozy Single Room, a perfect haven for solo adventurers. This compact yet comfortable space features a plush queen-size bed, a dedicated workspace, and modern amenities. Enjoy tranquil views of the surrounding gardens and recharge with complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
-      "imgUrl": "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?t=st=1729164675~exp=1729168275~hmac=66a987db076fb4d9b437d281d88cad3dbac074f60db194fb9713751ec7c5623d&w=1800",
-      "amenities": [
-        "Central air conditioning",
-        "Queen-size bed",
-        "Smart TV with streaming options",
-        "Room service available",
-        "In-room safe",
-        "Mini fridge stocked with soft drinks",
-        "Coffee and tea making facilities",
-        "Cozy slippers",
-        "Rain shower",
-        "Daily housekeeping"
+        {
+          "roomType": "Cozy Single Room",
+          "availableRooms": 8,
+          "sqm": "28 square meters",
+          "description": "Retreat to our Cozy Single Room, a perfect haven for solo adventurers. This compact yet comfortable space features a plush queen-size bed, a dedicated workspace, and modern amenities. Enjoy tranquil views of the surrounding gardens and recharge with complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
+          "imgUrl": "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?w=1800",
+          "amenities": [
+            "Central air conditioning",
+            "Queen-size bed",
+            "Smart TV with streaming options",
+            "Room service available",
+            "In-room safe",
+            "Mini fridge stocked with soft drinks",
+            "Coffee and tea making facilities",
+            "Cozy slippers",
+            "Rain shower",
+            "Daily housekeeping"
+          ],
+          "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+          "pricePerNight": 68
+        },
+        {
+          "roomType": "Spacious Twin Room",
+          "availableRooms": 5,
+          "sqm": "65 square meters",
+          "description": "Enjoy our Spacious Twin Room, thoughtfully designed for friends or families. This inviting room features two comfortable double beds and a balcony that opens up to breathtaking views of the island. With modern decor and all essential amenities, your stay will be both comfortable and convenient, complemented by free Wi-Fi and a delicious breakfast.",
+          "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?w=1800",
+          "amenities": [
+            "Private terrace",
+            "Two double beds",
+            "Complimentary breakfast",
+            "Free high-speed Wi-Fi",
+            "In-room dining options",
+            "Flat-screen TV",
+            "Safe for valuables",
+            "Mini fridge",
+            "Tea and coffee making facilities",
+            "Luxurious bathrobe and slippers",
+            "Bathtub and shower combination"
+          ],
+          "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+          "pricePerNight": 68
+        },
+        {
+          "roomType": "Family Double Room",
+          "availableRooms": 4,
+          "sqm": "50 square meters",
+          "description": "Our Family Double Room is perfect for families seeking comfort and style. Featuring a king-size bed and a cozy pull-out sofa, this spacious room ensures everyone has a good night's sleep. Relax on the private balcony with pool views and enjoy a range of amenities, including a complimentary breakfast to start your day off right.",
+          "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?w=1800",
+          "amenities": [
+            "Private balcony with pool view",
+            "King-size bed and sofa bed",
+            "Free breakfast",
+            "Complimentary Wi-Fi",
+            "In-room dining services",
+            "Smart TV",
+            "In-room safe",
+            "Mini fridge stocked with drinks",
+            "Coffee and tea setup",
+            "Bathrobe and slippers",
+            "Walk-in shower"
+          ],
+          "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+          "pricePerNight": 68
+        },
+        {
+          "roomType": "Deluxe Pool View Room",
+          "availableRooms": 3,
+          "sqm": "55 square meters",
+          "description": "Indulge in our Deluxe Pool View Room, where luxury meets relaxation. With a king-size bed, chic furnishings, and expansive views of the sparkling pool, this room offers the perfect setting for unwinding. Enjoy complimentary breakfast, high-speed Wi-Fi, and access to all the hotel's fantastic amenities for an unforgettable stay.",
+          "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel_105762-2156.jpg?w=1800",
+          "amenities": [
+            "Private balcony",
+            "King-size bed",
+            "Complimentary breakfast",
+            "Free Wi-Fi",
+            "In-room dining",
+            "Flat-screen TV",
+            "In-room safe",
+            "Mini fridge",
+            "Coffee maker",
+            "Bathrobe and slippers",
+            "Outdoor seating area"
+          ],
+          "iconDescription": [
+            "Square Meters",
+            "Sea view",
+            "Breakfast included",
+            "Free WiFi",
+            "Shared pool with others",
+            "1 king-size bed",
+            "Balcony or Terrace"
+          ],
+          "iconAmenities": {
+            "hasShower": true,
+            "hasTv": true,
+            "hasAC": true,
+            "hasHairdryer": true
+          },
+          "pricePerNight": 68
+        }
       ],
-      "iconDescription": [
-            "Square Meters",
-            "Sea view",
-            "Breakfast included",
-            "Free WiFi",
-            "Shared pool with others",
-            "1 king-size bed",
-            "Balcony or Terrace"
-          ],
-          "iconAmenities": {
-            "hasShower": true,
-            "hasTv": true,
-            "hasAC": true,
-            "hasHairdryer": true
+      "aboutTheRooms": {
+        "headingText": "At Sunny Lodge, we embrace the sun-drenched charm of Mallorca. Each room is designed to reflect the island's vibrant spirit, offering modern amenities and a cozy environment for an unforgettable stay.",
+        "cards": [
+          {
+            "title": "Cozy Single Room",
+            "text": "Our Cozy Single Room is a perfect little retreat, offering a queen-size bed and a peaceful ambiance to help you recharge after exploring Mallorca. With a serene view of the gardens, this room is equipped with complimentary breakfast and Wi-Fi to ensure you feel right at home.",
+            "images": "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?w=1800"
           },
-                "pricePerNight": 68
-    },
-    {
-      "roomType": "Spacious Twin Room",
-      "availableRooms": 5,
-      "sqm": "65 square meters",
-      "description": "Enjoy our Spacious Twin Room, thoughtfully designed for friends or families. This inviting room features two comfortable double beds and a balcony that opens up to breathtaking views of the island. With modern decor and all essential amenities, your stay will be both comfortable and convenient, complemented by free Wi-Fi and a delicious breakfast.",
-      "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1729156176~exp=1729159776~hmac=0514631a8625a2ce0b74a182335fe0917bbcf07e3ed522d1926d82928a404c54&w=1800",
-      "amenities": [
-        "Private terrace",
-        "Two double beds",
-        "Complimentary breakfast",
-        "Free high-speed Wi-Fi",
-        "In-room dining options",
-        "Flat-screen TV",
-        "Safe for valuables",
-        "Mini fridge",
-        "Tea and coffee making facilities",
-        "Luxurious bathrobe and slippers",
-        "Bathtub and shower combination"
-      ],
-      "iconDescription": [
-            "Square Meters",
-            "Sea view",
-            "Breakfast included",
-            "Free WiFi",
-            "Shared pool with others",
-            "1 king-size bed",
-            "Balcony or Terrace"
-          ],
-          "iconAmenities": {
-            "hasShower": true,
-            "hasTv": true,
-            "hasAC": true,
-            "hasHairdryer": true
+          {
+            "title": "Spacious Twin Room",
+            "text": "Perfect for family or friends, our Spacious Twin Room features two comfortable double beds and a private balcony overlooking the stunning landscapes of Mallorca. Enjoy complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
+            "images": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?w=1800"
           },
-                "pricePerNight": 68
-    },
-    {
-      "roomType": "Family Double Room",
-      "availableRooms": 4,
-      "sqm": "50 square meters",
-      "description": "Our Family Double Room is perfect for families seeking comfort and style. Featuring a king-size bed and a cozy pull-out sofa, this spacious room ensures everyone has a good night's sleep. Relax on the private balcony with pool views and enjoy a range of amenities, including a complimentary breakfast to start your day off right.",
-      "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?t=st=1729156248~exp=1729159848~hmac=7c5582684414ee9bf369c272aee145a97884ef7b75fc230824ec5db0dd339929&w=1800",
-      "amenities": [
-        "Private balcony with pool view",
-        "King-size bed and sofa bed",
-        "Free breakfast",
-        "Complimentary Wi-Fi",
-        "In-room dining services",
-        "Smart TV",
-        "In-room safe",
-        "Mini fridge stocked with drinks",
-        "Coffee and tea setup",
-        "Bathrobe and slippers",
-        "Walk-in shower"
-      ],
-      "iconDescription": [
-            "Square Meters",
-            "Sea view",
-            "Breakfast included",
-            "Free WiFi",
-            "Shared pool with others",
-            "1 king-size bed",
-            "Balcony or Terrace"
-          ],
-          "iconAmenities": {
-            "hasShower": true,
-            "hasTv": true,
-            "hasAC": true,
-            "hasHairdryer": true
+          {
+            "title": "Family Double Room",
+            "text": "Our Family Double Room offers ample space and comfort for everyone. With a king-size bed and a cozy pull-out sofa, it's ideal for family vacations. Enjoy a beautiful pool view from your balcony while starting your day with a complimentary breakfast.",
+            "images": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?w=1800"
           },
-                "pricePerNight": 68
-    },
-    {
-      "roomType": "Deluxe Pool View Room",
-      "availableRooms": 3,
-      "sqm": "55 square meters",
-      "description": "Indulge in our Deluxe Pool View Room, where luxury meets relaxation. With a king-size bed, chic furnishings, and expansive views of the sparkling pool, this room offers the perfect setting for unwinding. Enjoy complimentary breakfast, high-speed Wi-Fi, and access to all the hotel's fantastic amenities for an unforgettable stay.",
-      "imgUrl": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel_105762-2156.jpg?t=st=1729156248~exp=1729159848~hmac=7c5582684414ee9bf369c272aee145a97884ef7b75fc230824ec5db0dd339929&w=1800",
-      "amenities": [
-        "Private balcony",
-        "King-size bed",
-        "Complimentary breakfast",
-        "Free Wi-Fi",
-        "In-room dining",
-        "Flat-screen TV",
-        "In-room safe",
-        "Mini fridge",
-        "Coffee maker",
-        "Bathrobe and slippers",
-        "Outdoor seating area"
-    ],
-  "iconDescription": [
-            "Square Meters",
-            "Sea view",
-            "Breakfast included",
-            "Free WiFi",
-            "Shared pool with others",
-            "1 king-size bed",
-            "Balcony or Terrace"
-          ],
-          "iconAmenities": {
-            "hasShower": true,
-            "hasTv": true,
-            "hasAC": true,
-            "hasHairdryer": true
-          },
-                "pricePerNight": 68
-              }
-
+          {
+            "title": "Deluxe Pool View Room",
+            "text": "Experience luxury in our Deluxe Pool View Room, featuring modern decor and breathtaking views. With a king-size bed and all the amenities needed for relaxation, this room is your private oasis in sunny Mallorca.",
+            "images": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel_105762-2156.jpg?w=1800"
+          }
         ],
-
-
-    "aboutTheRooms": {
-    "headingText": "At Sunny Lodge, we embrace the sun-drenched charm of Mallorca. Each room is designed to reflect the island's vibrant spirit, offering modern amenities and a cozy environment for an unforgettable stay.",
-    "cards": [
-      {
-        "title": "Cozy Single Room",
-        "text": "Our Cozy Single Room is a perfect little retreat, offering a queen-size bed and a peaceful ambiance to help you recharge after exploring Mallorca. With a serene view of the gardens, this room is equipped with complimentary breakfast and Wi-Fi to ensure you feel right at home.",
-        "images": "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?t=st=1729164675~exp=1729168275~hmac=66a987db076fb4d9b437d281d88cad3dbac074f60db194fb9713751ec7c5623d&w=1800"
+        "infoBox": {
+          "title": "In all rooms",
+          "infoBoxAdditionalInformation": [
+            "Central air conditioning",
+            "Queen or king-size bed options",
+            "Smart TV with streaming services",
+            "Room service available",
+            "In-room safe",
+            "Mini fridge stocked with beverages",
+            "Coffee maker and kettle",
+            "Bathrobe and slippers",
+            "Walk-in shower or soaking tub",
+            "Daily housekeeping"
+          ],
+          "optionsTitle": "We also offer:",
+          "extraInformation": [
+            "Free WiFi throughout the hotel",
+            "Free WiFi in rooms and suites"
+          ]
+        }
       },
-      {
-        "title": "Spacious Twin Room",
-        "text": "Perfect for family or friends, our Spacious Twin Room features two comfortable double beds and a private balcony overlooking the stunning landscapes of Mallorca. Enjoy complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
-        "images": "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1729156176~exp=1729159776~hmac=0514631a8625a2ce0b74a182335fe0917bbcf07e3ed522d1926d82928a404c54&w=1800"
+      "restaurant": {
+        "headingText": "Sunny Lodge offers a diverse culinary experience with on-site dining options that bring the flavors of Mallorca to your table. Enjoy scenic views and local specialties as you dine in style.",
+        "introParagraph": "At Sunny Lodge, we are proud to offer a selection of dining options that cater to all tastes. From casual poolside snacks to exquisite dining under the stars, our restaurants and bars ensure a delightful gastronomic journey during your stay.",
+        "images": [
+          "https://example.com/sunny-lodge-restaurant1.jpg",
+          "https://example.com/sunny-lodge-restaurant2.jpg",
+          "https://example.com/sunny-lodge-restaurant3.jpg"
+        ],
+        "sections": [
+          {
+            "title": "The Poolside Restaurant",
+            "description": "Our Poolside Restaurant offers an array of local and international dishes, perfect for a relaxed lunch or dinner by the water. With fresh ingredients sourced daily, our chefs create vibrant flavors that capture the essence of Mallorca."
+          },
+          {
+            "title": "The Rooftop Bar",
+            "description": "For a spectacular evening, visit our Rooftop Bar and enjoy cocktails crafted by our expert mixologists. With panoramic views of the Mallorcan skyline, it's the ideal spot for a sunset drink or a nightcap under the stars."
+          },
+          {
+            "title": "The Garden Café",
+            "description": "Set in our lush tropical garden, The Garden Café is a serene escape where you can enjoy light bites and refreshing drinks throughout the day. Our menu includes freshly made smoothies, salads, and a selection of pastries."
+          },
+          {
+            "title": "Dining Reservations",
+            "description": "To ensure a memorable dining experience, we recommend making reservations for dinner at our a la carte restaurants. Dress code is smart casual, and we look forward to welcoming you for an unforgettable meal."
+          }
+        ],
+        "infoBox": {
+          "title": "Dietary Options",
+          "description": "We cater to a variety of dietary needs. Please inform our staff of any allergies or special requests so that we can prepare your meal accordingly.",
+          "optionsTitle": "We also offer:",
+          "extraInformation": [
+            "Vegetarian options",
+            "Vegan options",
+            "Lactose-free options",
+            "Gluten-free options"
+          ]
+        }
       },
-      {
-        "title": "Family Double Room",
-        "text": "Our Family Double Room offers ample space and comfort for everyone. With a king-size bed and a cozy pull-out sofa, it's ideal for family vacations. Enjoy a beautiful pool view from your balcony while starting your day with a complimentary breakfast.",
-        "images": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?t=st=1729156248~exp=1729159848~hmac=7c5582684414ee9bf369c272aee145a97884ef7b75fc230824ec5db0dd339929&w=1800"
+      "poolAndBeach": {
+        "headingText": "Pool and Beach",
+        "introParagraph": "At Sunny Lodge, you can unwind by the pools or explore the nearby beautiful beaches. Located just a short walk from the city center, our pools and nearby beaches offer the perfect blend of relaxation and adventure.",
+        "images": [
+          "https://example.com/sunny-lodge-pool1.jpg",
+          "https://example.com/sunny-lodge-pool2.jpg",
+          "https://example.com/sunny-lodge-beach1.jpg",
+          "https://example.com/sunny-lodge-beach2.jpg"
+        ],
+        "beaches": [
+          {
+            "title": "Cala Major Beach",
+            "description": "Just a stone's throw from the lodge, Cala Major Beach is a popular spot known for its golden sands and clear waters. Perfect for sunbathing and a refreshing swim, this beach also offers various water sports and activities for thrill-seekers."
+          },
+          {
+            "title": "Palma Nova Beach",
+            "description": "Ideal for families, Palma Nova Beach features a long stretch of fine sand and calm, shallow waters. With plenty of sun loungers, beach bars, and restaurants, it’s a great spot for a leisurely day by the sea."
+          },
+          {
+            "title": "Magaluf Beach",
+            "description": "A vibrant beach known for its lively atmosphere, Magaluf Beach is perfect for those who enjoy a bit of excitement. Enjoy water sports, beach volleyball, or relax at one of the many beach bars and restaurants along the promenade."
+          },
+          {
+            "title": "Illetas Beach",
+            "description": "For a more secluded experience, head to Illetas Beach. Nestled in a cove, this beach offers crystal-clear waters and a quieter atmosphere, perfect for those seeking tranquility and stunning views."
+          }
+        ],
+        "infoBox": {
+          "title": "Pools",
+          "infoBoxAdditionalInformation": [
+            "Main Pool with sun loungers and poolside service",
+            "Rooftop Pool with panoramic views of Mallorca",
+            "Private Cabanas available for rent",
+            "Poolside Bar offering cocktails and light snacks",
+            "Complimentary pool towels provided"
+          ]
+        }
       },
-      {
-        "title": "Deluxe Pool View Room",
-        "text": "Experience luxury in our Deluxe Pool View Room, featuring modern decor and breathtaking views. With a king-size bed and all the amenities needed for relaxation, this room is your private oasis in sunny Mallorca.",
-        "images": "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel_105762-2156.jpg?t=st=1729156248~exp=1729159848~hmac=7c5582684414ee9bf369c272aee145a97884ef7b75fc230824ec5db0dd339929&w=1800"
+      "activities": {
+        "headingText": "Activities",
+        "introParagraph": "The hotel features a spa offering a range of relaxing treatments, a hot tub, and a sauna. For those looking to stay active during their vacation, guests can use the tennis courts at the neighboring Melia Dunas Beach Resort & Spa (200 meters away). Reservations can be made at the reception of Melia Llana.",
+        "categories": [
+          {
+            "name": "Spa",
+            "description": "Escape to pure relaxation at our spa, where soothing treatments and a tranquil atmosphere rejuvenate your mind, body, and soul. From calming massages to luxurious facials, every moment is designed for your well-being. Let stress melt away as you unwind in our serene sanctuary.",
+            "img": "https://example.com/spa-image.jpg"
+          },
+          {
+            "name": "Gym",
+            "description": "Elevate your fitness routine in our state-of-the-art gym, equipped with the latest machines and free weights. Whether you're lifting, running, or stretching, we've got you covered. Stay energized with personalized training options and breathtaking views, making every workout inspiring.",
+            "img": "https://example.com/gym-image.jpg"
+          },
+          {
+            "name": "Group Training",
+            "description": "Elevate your fitness routine with our dynamic group classes, designed to challenge and energize. From yoga to high-intensity workouts, we offer something for every level. Stay motivated with expert instructors and a supportive atmosphere, making every session both fun and effective.",
+            "img": "https://example.com/group-training-image.jpg"
+          },
+          {
+            "name": "Yoga",
+            "description": "Elevate your wellness with yoga sessions, where the soothing sound of waves enhances your practice. Whether you're stretching, meditating, or flowing, we've got you covered. Stay balanced with personalized guidance and breathtaking ocean views, making every session both calming and inspiring.",
+            "img": "https://example.com/yoga-image.jpg"
+          }
+        ],
+        "infoBox": {
+          "title": "Activity center",
+          "infoBoxAdditionalInformation": [
+            "Gym",
+            "Spa",
+            "Spa treatments (additional fee)",
+            "Massage (additional fee)",
+            "Sauna",
+            "Hot Tub",
+            "Yoga",
+            "Group fitness classes"
+          ]
+        }
+      },
+      "map": {
+        "title": "Sunny Lodge",
+        "location": {
+          "address": "Sunny Lodge, Mallorca, Spain",
+          "latitude": 39.5756,
+          "longitude": 2.6558
+        },
+        "zoomLevel": 14,
+        "marker": {
+          "title": "Sunny Lodge",
+          "iconUrl": "https://example.com/marker-icon2.png"
+        }
+      },
+      "weather": [
+        {
+          "month": "January",
+          "dayTemp": "15°C",
+          "nightTemp": "8°C",
+          "sunHours": "6",
+          "waterTemp": "14°C",
+          "rainFreeDays": "20"
+        },
+        {
+          "month": "February",
+          "dayTemp": "16°C",
+          "nightTemp": "9°C",
+          "sunHours": "7",
+          "waterTemp": "14°C",
+          "rainFreeDays": "19"
+        },
+        {
+          "month": "March",
+          "dayTemp": "18°C",
+          "nightTemp": "10°C",
+          "sunHours": "8",
+          "waterTemp": "15°C",
+          "rainFreeDays": "21"
+        },
+        {
+          "month": "April",
+          "dayTemp": "20°C",
+          "nightTemp": "12°C",
+          "sunHours": "8",
+          "waterTemp": "16°C",
+          "rainFreeDays": "22"
+        },
+        {
+          "month": "May",
+          "dayTemp": "23°C",
+          "nightTemp": "15°C",
+          "sunHours": "9",
+          "waterTemp": "18°C",
+          "rainFreeDays": "25"
+        },
+        {
+          "month": "June",
+          "dayTemp": "27°C",
+          "nightTemp": "19°C",
+          "sunHours": "10",
+          "waterTemp": "21°C",
+          "rainFreeDays": "28"
+        },
+        {
+          "month": "July",
+          "dayTemp": "30°C",
+          "nightTemp": "22°C",
+          "sunHours": "11",
+          "waterTemp": "23°C",
+          "rainFreeDays": "29"
+        },
+        {
+          "month": "August",
+          "dayTemp": "31°C",
+          "nightTemp": "23°C",
+          "sunHours": "11",
+          "waterTemp": "24°C",
+          "rainFreeDays": "29"
+        },
+        {
+          "month": "September",
+          "dayTemp": "28°C",
+          "nightTemp": "21°C",
+          "sunHours": "9",
+          "waterTemp": "23°C",
+          "rainFreeDays": "26"
+        },
+        {
+          "month": "October",
+          "dayTemp": "24°C",
+          "nightTemp": "17°C",
+          "sunHours": "8",
+          "waterTemp": "21°C",
+          "rainFreeDays": "24"
+        },
+        {
+          "month": "November",
+          "dayTemp": "19°C",
+          "nightTemp": "13°C",
+          "sunHours": "7",
+          "waterTemp": "18°C",
+          "rainFreeDays": "22"
+        },
+        {
+          "month": "December",
+          "dayTemp": "16°C",
+          "nightTemp": "9°C",
+          "sunHours": "6",
+          "waterTemp": "15°C",
+          "rainFreeDays": "21"
+        }
+      ],
+      "ratings": [
+        { "label": "Overall Experience", "rating": 4.8 },
+        { "label": "Hotel Cleanliness", "rating": 4.7 },
+        { "label": "Atmosphere & Comfort", "rating": 4.5 },
+        { "label": "Staff Friendliness", "rating": 4.8 },
+        { "label": "Wi-Fi", "rating": 4.6 }
+      ],
+      "reviews": {
+        "overallRating": 4.65,
+        "totalSurveyResponses": 6500,
+        "recommendationPercentage": 93
       }
-    ],
-    "infoBoxTitle": "In all rooms",
-    "infoBoxItems": [
-      "Central air conditioning",
-      "Queen or king-size bed options",
-      "Smart TV with streaming services",
-      "Room service available",
-      "In-room safe",
-      "Mini fridge stocked with beverages",
-      "Coffee maker and kettle",
-      "Bathrobe and slippers",
-      "Walk-in shower or soaking tub",
-      "Daily housekeeping"
-    ]
-  },
-  
-  "aboutTheRestaurant": {
-    "headingText": "Sunny Lodge offers a diverse culinary experience with on-site dining options that bring the flavors of Mallorca to your table. Enjoy scenic views and local specialties as you dine in style.",
-    "introParagraph": "At Sunny Lodge, we are proud to offer a selection of dining options that cater to all tastes. From casual poolside snacks to exquisite dining under the stars, our restaurants and bars ensure a delightful gastronomic journey during your stay.",
-    "images": [
-      "https://example.com/sunny-lodge-restaurant1.jpg",
-      "https://example.com/sunny-lodge-restaurant2.jpg",
-      "https://example.com/sunny-lodge-restaurant3.jpg"
-    ],
-    "sections": [
-      {
-        "title": "The Poolside Restaurant",
-        "description": "Our Poolside Restaurant offers an array of local and international dishes, perfect for a relaxed lunch or dinner by the water. With fresh ingredients sourced daily, our chefs create vibrant flavors that capture the essence of Mallorca."
-      },
-      {
-        "title": "The Rooftop Bar",
-        "description": "For a spectacular evening, visit our Rooftop Bar and enjoy cocktails crafted by our expert mixologists. With panoramic views of the Mallorcan skyline, it's the ideal spot for a sunset drink or a nightcap under the stars."
-      },
-      {
-        "title": "The Garden Café",
-        "description": "Set in our lush tropical garden, The Garden Café is a serene escape where you can enjoy light bites and refreshing drinks throughout the day. Our menu includes freshly made smoothies, salads, and a selection of pastries."
-      },
-      {
-        "title": "Dining Reservations",
-        "description": "To ensure a memorable dining experience, we recommend making reservations for dinner at our a la carte restaurants. Dress code is smart casual, and we look forward to welcoming you for an unforgettable meal."
-      }
-    ],
-    "infoBox": {
-      "title": "Dietary Options",
-      "description": "We cater to a variety of dietary needs. Please inform our staff of any allergies or special requests so that we can prepare your meal accordingly.",
-      "optionsTitle": "We also offer:",
-      "dietaryOptions": [
-        "Vegetarian options",
-        "Vegan options",
-        "Lactose-free options",
-        "Gluten-free options"
-      ]
-    }
-  },
-  "poolAndBeach": {
-  "headingText": "Pool and Beach",
-  "introParagraph": "At Sunny Lodge, you can unwind by the pools or explore the nearby beautiful beaches. Located just a short walk from the city center, our pools and nearby beaches offer the perfect blend of relaxation and adventure.",
-  "images": [
-    "https://example.com/sunny-lodge-pool1.jpg",
-    "https://example.com/sunny-lodge-pool2.jpg",
-    "https://example.com/sunny-lodge-beach1.jpg",
-    "https://example.com/sunny-lodge-beach2.jpg"
-  ],
-  "beaches": [
-    {
-      "title": "Cala Major Beach",
-      "description": "Just a stone's throw from the lodge, Cala Major Beach is a popular spot known for its golden sands and clear waters. Perfect for sunbathing and a refreshing swim, this beach also offers various water sports and activities for thrill-seekers."
-    },
-    {
-      "title": "Palma Nova Beach",
-      "description": "Ideal for families, Palma Nova Beach features a long stretch of fine sand and calm, shallow waters. With plenty of sun loungers, beach bars, and restaurants, it’s a great spot for a leisurely day by the sea."
-    },
-    {
-      "title": "Magaluf Beach",
-      "description": "A vibrant beach known for its lively atmosphere, Magaluf Beach is perfect for those who enjoy a bit of excitement. Enjoy water sports, beach volleyball, or relax at one of the many beach bars and restaurants along the promenade."
-    },
-    {
-      "title": "Illetas Beach",
-      "description": "For a more secluded experience, head to Illetas Beach. Nestled in a cove, this beach offers crystal-clear waters and a quieter atmosphere, perfect for those seeking tranquility and stunning views."
-    }
-  ],
-  "pools": {
-    "poolList": [
-      "Main Pool with sun loungers and poolside service",
-      "Rooftop Pool with panoramic views of Mallorca",
-      "Private Cabanas available for rent",
-      "Poolside Bar offering cocktails and light snacks",
-      "Complimentary pool towels provided"
-    ]
-  }
-},
-
-"activities": {
-    "title": "Activities",
-    "description": "The hotel features a spa offering a range of relaxing treatments, a hot tub, and a sauna. For those looking to stay active during their vacation, guests can use the tennis courts at the neighboring Melia Dunas Beach Resort & Spa (200 meters away). Reservations can be made at the reception of Melia Llana.",
-    "categories": [
-      {
-        "name": "Spa",
-        "description": "Escape to pure relaxation at our spa, where soothing treatments and a tranquil atmosphere rejuvenate your mind, body, and soul. From calming massages to luxurious facials, every moment is designed for your well-being. Let stress melt away as you unwind in our serene sanctuary.",
-        "imgUrl": "https://example.com/spa-image.jpg"
-      },
-      {
-        "name": "Gym",
-        "description": "Elevate your fitness routine in our state-of-the-art gym, equipped with the latest machines and free weights. Whether you're lifting, running, or stretching, we've got you covered. Stay energized with personalized training options and breathtaking views, making every workout inspiring.",
-        "imgUrl": "https://example.com/gym-image.jpg"
-      },
-      {
-        "name": "Group Training",
-        "description": "Elevate your fitness routine with our dynamic group classes, designed to challenge and energize. From yoga to high-intensity workouts, we offer something for every level. Stay motivated with expert instructors and a supportive atmosphere, making every session both fun and effective.",
-        "imgUrl": "https://example.com/group-training-image.jpg"
-      },
-      {
-        "name": "Yoga",
-        "description": "Elevate your wellness with yoga sessions, where the soothing sound of waves enhances your practice. Whether you're stretching, meditating, or flowing, we've got you covered. Stay balanced with personalized guidance and breathtaking ocean views, making every session both calming and inspiring.",
-        "imgUrl": "https://example.com/yoga-image.jpg"
-      }
-    ],
-    "activityCenter": {
-      "facilities": [
-        "Gym",
-        "Spa",
-        "Spa treatments (additional fee)",
-        "Massage (additional fee)",
-        "Sauna",
-        "Hot Tub",
-        "Yoga",
-        "Group fitness classes"
-      ]
-    }
-  },
-
-"destination": {
-    "title": "Sunny Lodge",
-    "location": {
-      "address": "Sunny Lodge, Mallorca, Spain",
-      "latitude": 39.5756,
-      "longitude": 2.6558
-    },
-    "zoomLevel": 14,
-    "marker": {
-      "title": "Sunny Lodge",
-      "iconUrl": "https://example.com/marker-icon2.png"
-    }
-  },
-  
-    "weather": [
-      {
-        "month": "January",
-        "dayTemp": "15°C",
-        "nightTemp": "8°C",
-        "sunHours": "6",
-        "waterTemp": "14°C",
-        "rainFreeDays": "20"
-      },
-      {
-        "month": "February",
-        "dayTemp": "16°C",
-        "nightTemp": "9°C",
-        "sunHours": "7",
-        "waterTemp": "14°C",
-        "rainFreeDays": "19"
-      },
-      {
-        "month": "March",
-        "dayTemp": "18°C",
-        "nightTemp": "10°C",
-        "sunHours": "8",
-        "waterTemp": "15°C",
-        "rainFreeDays": "21"
-      },
-      {
-        "month": "April",
-        "dayTemp": "20°C",
-        "nightTemp": "12°C",
-        "sunHours": "8",
-        "waterTemp": "16°C",
-        "rainFreeDays": "22"
-      },
-      {
-        "month": "May",
-        "dayTemp": "23°C",
-        "nightTemp": "15°C",
-        "sunHours": "9",
-        "waterTemp": "18°C",
-        "rainFreeDays": "25"
-      },
-      {
-        "month": "June",
-        "dayTemp": "27°C",
-        "nightTemp": "19°C",
-        "sunHours": "10",
-        "waterTemp": "21°C",
-        "rainFreeDays": "28"
-      },
-      {
-        "month": "July",
-        "dayTemp": "30°C",
-        "nightTemp": "22°C",
-        "sunHours": "11",
-        "waterTemp": "23°C",
-        "rainFreeDays": "29"
-      },
-      {
-        "month": "August",
-        "dayTemp": "31°C",
-        "nightTemp": "23°C",
-        "sunHours": "11",
-        "waterTemp": "24°C",
-        "rainFreeDays": "29"
-      },
-      {
-        "month": "September",
-        "dayTemp": "28°C",
-        "nightTemp": "21°C",
-        "sunHours": "9",
-        "waterTemp": "23°C",
-        "rainFreeDays": "26"
-      },
-      {
-        "month": "October",
-        "dayTemp": "24°C",
-        "nightTemp": "17°C",
-        "sunHours": "8",
-        "waterTemp": "21°C",
-        "rainFreeDays": "24"
-      },
-      {
-        "month": "November",
-        "dayTemp": "19°C",
-        "nightTemp": "13°C",
-        "sunHours": "7",
-        "waterTemp": "18°C",
-        "rainFreeDays": "22"
-      },
-      {
-        "month": "December",
-        "dayTemp": "16°C",
-        "nightTemp": "9°C",
-        "sunHours": "6",
-        "waterTemp": "15°C",
-        "rainFreeDays": "21"
-      }
-    ],
-  
-
-    "ratings": [
-      { "label": "Overall Experience", "rating": 4.8 },
-      { "label": "Hotel Cleanliness", "rating": 4.7 },
-      { "label": "Atmosphere & Comfort", "rating": 4.5 },
-      { "label": "Staff Friendliness", "rating": 4.8 },
-      { "label": "Wi-Fi", "rating": 4.6 }
-    ],
-    "reviews": {
-      "overallRating": "4.65 / 5",
-      "totalSurveyResponses": 6500,
-      "recommendationPercentage": 93
-    }
-
-  
     },
 
 
@@ -1017,10 +1056,6 @@
 
 
 
-
-
-
-    
     {
       "id": 3,
       "name": "Cityscape",
@@ -1031,54 +1066,55 @@
       "typeOfHotel": "family_friendly",
       "highlights": ["Two pools", "Exclusive infinity pool and spa", "500m from the beach"],
       "pricePerNight": 152,
-      "startingFromPrice": "Starting from: €39",
-"rating": 3.2,
-
+      "startingFromPrice": 39,
+      "rating": 3.2,
       "description": "Modern design hotel with easy access to the vibrant nightlife of Crete.",
       "descriptionParagraphs": [
-    "Cityscape is a contemporary hotel located in the heart of Crete, offering guests stylish accommodations with a focus on modern comfort.",
-    "With two pools, including an exclusive infinity pool and spa, guests can relax in style after a day exploring the vibrant nightlife of Crete.",
-    "The hotel is just 300 meters from the beach, providing easy access to both the stunning coastlines and the buzzing city atmosphere.",
-    "Whether you're relaxing by the pool, enjoying the hotel’s free WiFi, or savoring a meal at the on-site restaurant, Cityscape combines luxury with convenience to offer an unforgettable stay."
-  ],
-
+        "Cityscape is a contemporary hotel located in the heart of Crete, offering guests stylish accommodations with a focus on modern comfort.",
+        "With two pools, including an exclusive infinity pool and spa, guests can relax in style after a day exploring the vibrant nightlife of Crete.",
+        "The hotel is just 500 meters from the beach, providing easy access to both the stunning coastlines and the buzzing city atmosphere.",
+        "Whether you're relaxing by the pool, enjoying the hotel’s free WiFi, or savoring a meal at the on-site restaurant, Cityscape combines luxury with convenience to offer an unforgettable stay."
+      ],
       "checkInTime": "13:00",
       "checkOutTime": "12:00",
       "cancellationPolicy": "No refund on cancellation",
-      "imgUrl": "https://img.freepik.com/free-photo/traditional-house-interior-design_23-2151050952.jpg?t=st=1729166942~exp=1729170542~hmac=f2eb26a2a3bfc084fbac5a595ba363df2bc70e97445bf5d6f2105166f6079366&w=1800",
-      
+      "imgUrl": "https://img.freepik.com/free-photo/traditional-house-interior-design_23-2151050952.jpg?w=1800",
       "images": [
-        "https://img.freepik.com/free-photo/pillow-travel-nobody-pillows-luxury_1203-4932.jpg?t=st=1729156759~exp=1729160359~hmac=414bce105b33d05e86ddd081712d6868a3fa37dd5a0747a823a2d4c095089b9b&w=1800",
-        "https://img.freepik.com/free-photo/hotel-interior-bed-pillow-home_1203-4105.jpg?t=st=1729157185~exp=1729160785~hmac=5d30a2bad4cbbe26f72b1263a6cf5f8656513f6679517487106bea7b18b34942&w=1480",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150695002.jpg?t=st=1729156970~exp=1729160570~hmac=ca082a93d4829e49e099d022e615bd4fbbcd96b27c98f4c42ab9600460704db0&w=1060",
-        "https://img.freepik.com/free-photo/empty-restaurants-with-terrace-street-afytos-greece_1268-15716.jpg?t=st=1729157159~exp=1729160759~hmac=3f0038e826c95753c84b47460db931c6629c4895eeacc49cbbde17b545d49627&w=826",
-        "https://img.freepik.com/free-photo/3d-rendering-mediteranean-door_23-2151280853.jpg?t=st=1729157491~exp=1729161091~hmac=576ff64e778ca8043db003d38ca56229e551c135b541cf7c7ecd0bad770ea730&w=826"
+        "https://img.freepik.com/free-photo/pillow-travel-nobody-pillows-luxury_1203-4932.jpg?w=1800",
+        "https://img.freepik.com/free-photo/hotel-interior-bed-pillow-home_1203-4105.jpg?w=1480",
+        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150695002.jpg?w=1060",
+        "https://img.freepik.com/free-photo/empty-restaurants-with-terrace-street-afytos-greece_1268-15716.jpg?w=826",
+        "https://img.freepik.com/free-photo/3d-rendering-mediteranean-door_23-2151280853.jpg?w=826"
       ],
-
-
-      "infoBoxAmenities": ["Free Parking", "Spa", "Free WiFi", "Swimming Pool", "Restaurant"],
+      "infoBox": {
+        "title": "Additional Information",
+        "infoBoxAdditionalInformation": ["Free Parking", "Spa", "Free WiFi", "Swimming Pool", "Restaurant"],
+        "optionsTitle": "We also offer:",
+        "extraInformation": [
+          "Free WiFi throughout the hotel",
+          "Free WiFi in rooms and suites"
+        ]
+      },
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
-
       "roomDescription": "At Cityscape, we offer a diverse range of elegantly designed rooms that perfectly capture the essence of Crete. Each space is tailored to provide guests with comfort and tranquility, allowing you to relax after a day of adventure. With convenient access to our exclusive infinity pool and spa, and a vibrant atmosphere just steps away, our accommodations serve as a perfect base for exploring the beautiful surroundings.",
       "rooms": [
-    {
-      "roomType": "Cozy Family Room",
-      "availableRooms": 4,
-      "sqm": "50 square meters",
-      "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
-      "imgUrl": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
-  
-      "amenities": [
-        "Central air conditioning",
-        "Queen-size bed and two twin beds",
-        "Smart TV with streaming services",
-        "Mini-fridge with complimentary water",
-        "In-room safe",
-        "Coffee and tea-making facilities",
-        "Balcony with seating area",
-        "Daily housekeeping",
-        "Slippers and bathrobes"
-      ],
+        {
+          "roomType": "Cozy Family Room",
+          "availableRooms": 4,
+          "sqm": "50 square meters",
+          "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
+          "imgUrl": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?w=1800",
+          "amenities": [
+            "Central air conditioning",
+            "Queen-size bed and two twin beds",
+            "Smart TV with streaming services",
+            "Mini-fridge with complimentary water",
+            "In-room safe",
+            "Coffee and tea-making facilities",
+            "Balcony with seating area",
+            "Daily housekeeping",
+            "Slippers and bathrobes"
+          ],
           "iconDescription": [
             "Square Meters",
             "Sea/garden view",
@@ -1087,33 +1123,33 @@
             "Shared pool with others",
             "1 double bed"
           ],
-       "iconAmenities": {
+          "iconAmenities": {
             "hasShower": true,
             "hasTv": true,
             "hasAC": true,
             "hasHairdryer": false
           },
-               "pricePerNight": 148
-    },
-    {
-      "roomType": "Garden View Double Room",
-      "availableRooms": 5,
-      "sqm": "40 square meters",
-      "description": "Breathe in the fresh air from your 40-square-meter Garden View Double Room, complete with a serene balcony overlooking the lush gardens. Featuring two cozy double beds and tasteful decor, this room provides a restful escape for friends or family, complete with modern amenities to ensure a delightful stay.",
-      "imgUrl": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
-      "amenities": [
-        "Air conditioning",
-        "Two double beds",
-        "Complimentary breakfast",
-        "Free high-speed Wi-Fi",
-        "Flat-screen TV",
-        "Mini-bar",
-        "Coffee maker",
-        "Work desk",
-        "Bathroom amenities",
-        "Housekeeping: daily service"
-      ],
-      "iconDescription": [
+          "pricePerNight": 148
+        },
+        {
+          "roomType": "Garden View Double Room",
+          "availableRooms": 5,
+          "sqm": "40 square meters",
+          "description": "Breathe in the fresh air from your 40-square-meter Garden View Double Room, complete with a serene balcony overlooking the lush gardens. Featuring two cozy double beds and tasteful decor, this room provides a restful escape for friends or family, complete with modern amenities to ensure a delightful stay.",
+          "imgUrl": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?w=1800",
+          "amenities": [
+            "Air conditioning",
+            "Two double beds",
+            "Complimentary breakfast",
+            "Free high-speed Wi-Fi",
+            "Flat-screen TV",
+            "Mini-bar",
+            "Coffee maker",
+            "Work desk",
+            "Bathroom amenities",
+            "Housekeeping: daily service"
+          ],
+          "iconDescription": [
             "Square Meters",
             "Sea/garden view",
             "Breakfast included",
@@ -1128,27 +1164,27 @@
             "hasAC": true,
             "hasHairdryer": true
           },
-           "pricePerNight": 168
-    },
-    {
-      "roomType": "Luxury Swim-Up Room",
-      "availableRooms": 2,
-      "sqm": "60 square meters",
-      "description": "Dive into luxury in our 60-square-meter Luxury Swim-Up Room, where the pool is just a step away from your terrace. With a plush king-size bed and contemporary decor, this room combines style and comfort, making it an ideal sanctuary for guests seeking a unique and relaxing experience.",
-      "imgUrl": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
-      "amenities": [
-        "Direct pool access",
-        "King-size bed",
-        "Complimentary breakfast",
-        "Free Wi-Fi",
-        "Smart TV with streaming options",
-        "In-room safe",
-        "Minibar",
-        "Coffee maker",
-        "Luxurious bathroom with rain shower",
-        "Slippers and bathrobes"
-      ],
-      "iconDescription": [
+          "pricePerNight": 168
+        },
+        {
+          "roomType": "Luxury Swim-Up Room",
+          "availableRooms": 2,
+          "sqm": "60 square meters",
+          "description": "Dive into luxury in our 60-square-meter Luxury Swim-Up Room, where the pool is just a step away from your terrace. With a plush king-size bed and contemporary decor, this room combines style and comfort, making it an ideal sanctuary for guests seeking a unique and relaxing experience.",
+          "imgUrl": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?w=1800",
+          "amenities": [
+            "Direct pool access",
+            "King-size bed",
+            "Complimentary breakfast",
+            "Free Wi-Fi",
+            "Smart TV with streaming options",
+            "In-room safe",
+            "Minibar",
+            "Coffee maker",
+            "Luxurious bathroom with rain shower",
+            "Slippers and bathrobes"
+          ],
+          "iconDescription": [
             "Square Meters",
             "Sea view",
             "Breakfast included",
@@ -1163,27 +1199,27 @@
             "hasAC": true,
             "hasHairdryer": true
           },
-               "pricePerNight": 188
-    },
-    {
-      "roomType": "Contemporary Loft",
-      "availableRooms": 1,
-      "sqm": "75 square meters",
-      "description": "Stay in style in our 75-square-meter Contemporary Loft. Featuring an open-plan layout with a king-size bed, living area, and kitchenette, this room is designed for those who appreciate a modern lifestyle. The loft also boasts stunning views of the city and the sea, creating a perfect backdrop for your stay.",
-      "imgUrl": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800",
-      "amenities": [
-        "Open-plan living space",
-        "King-size bed",
-        "Kitchenette with dining area",
-        "Complimentary breakfast",
-        "Free Wi-Fi",
-        "Flat-screen TV with premium channels",
-        "In-room safe",
-        "Minibar",
-        "Coffee and tea-making facilities",
-        "Luxurious bathroom with tub and shower"
-    ],
-      "iconDescription": [
+          "pricePerNight": 188
+        },
+        {
+          "roomType": "Contemporary Loft",
+          "availableRooms": 1,
+          "sqm": "75 square meters",
+          "description": "Stay in style in our 75-square-meter Contemporary Loft. Featuring an open-plan layout with a king-size bed, living area, and kitchenette, this room is designed for those who appreciate a modern lifestyle. The loft also boasts stunning views of the city and the sea, creating a perfect backdrop for your stay.",
+          "imgUrl": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?w=1800",
+          "amenities": [
+            "Open-plan living space",
+            "King-size bed",
+            "Kitchenette with dining area",
+            "Complimentary breakfast",
+            "Free Wi-Fi",
+            "Flat-screen TV with premium channels",
+            "In-room safe",
+            "Minibar",
+            "Coffee and tea-making facilities",
+            "Luxurious bathroom with tub and shower"
+          ],
+          "iconDescription": [
             "Square Meters",
             "Sea view",
             "Breakfast included",
@@ -1198,297 +1234,290 @@
             "hasAC": true,
             "hasHairdryer": true
           },
-                "pricePerNight": 68
+          "pricePerNight": 68
         }
-
+      ],
+      "aboutTheRooms": {
+        "headingText": "At Cityscape, we offer thoughtfully designed accommodations that cater to families and travelers alike. Each room is a sanctuary, blending modern comforts with the stunning landscape of Crete. Whether you're lounging by the pool or exploring the nearby beaches, our rooms provide a perfect retreat.",
+        "cards": [
+          {
+            "title": "Cozy Family Room",
+            "text": "Perfect for families, our Cozy Family Room features ample space, modern decor, and amenities to ensure a comfortable stay. Enjoy direct access to the lush gardens and the hotel's family-friendly atmosphere.",
+            "images": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?w=1800"
+          },
+          {
+            "title": "Garden View Double Room",
+            "text": "Our Garden View Double Room offers a serene environment with beautiful views and a spacious layout. Equipped with modern amenities, this room is ideal for guests looking to relax and rejuvenate.",
+            "images": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?w=1800"
+          },
+          {
+            "title": "Luxury Swim-Up Room",
+            "text": "Experience the ultimate luxury in our Swim-Up Room, where you can dive into the pool directly from your private terrace. It's the perfect blend of relaxation and sophistication, ensuring an unforgettable stay.",
+            "images": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?w=1800"
+          },
+          {
+            "title": "Contemporary Loft",
+            "text": "Our spacious Contemporary Loft features an elegant design and ample living space. Perfect for long stays or family getaways, enjoy a home-away-from-home experience with breathtaking views.",
+            "images": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?w=1800"
+          }
         ],
-
-
-     "aboutTheRooms": {
-    "headingText": "At Cityscape, we offer thoughtfully designed accommodations that cater to families and travelers alike. Each room is a sanctuary, blending modern comforts with the stunning landscape of Crete. Whether you're lounging by the pool or exploring the nearby beaches, our rooms provide a perfect retreat.",
-    "cards": [
-      {
-        "title": "Cozy Family Room",
-        "text": "Perfect for families, our Cozy Family Room features ample space, modern decor, and amenities to ensure a comfortable stay. Enjoy direct access to the lush gardens and the hotel's family-friendly atmosphere.",
-        "images": "https://img.freepik.com/free-photo/family-room-hotel_1288-10001.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+        "infoBox": {
+          "title": "In all rooms",
+          "infoBoxAdditionalInformation": [
+            "Central air conditioning",
+            "Queen or king-size bed options",
+            "Flat-screen TV with local and international channels",
+            "Room service available",
+            "In-room safe",
+            "Mini-fridge stocked with complimentary water",
+            "Coffee maker and kettle",
+            "Daily housekeeping service",
+            "Luxurious bathroom amenities",
+            "Complimentary Wi-Fi"
+          ],
+          "optionsTitle": "We also offer:",
+          "extraInformation": [
+            "Free WiFi throughout the hotel",
+            "Free WiFi in rooms and suites"
+          ]
+        }
       },
-      {
-        "title": "Garden View Double Room",
-        "text": "Our Garden View Double Room offers a serene environment with beautiful views and a spacious layout. Equipped with modern amenities, this room is ideal for guests looking to relax and rejuvenate.",
-        "images": "https://img.freepik.com/free-photo/garden-view-room-hotel_1288-10002.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      "restaurant": {
+        "headingText": "Cityscape offers a variety of dining options that celebrate the flavors of Crete, with a modern twist. Our restaurants and bars cater to all tastes, from casual snacks to fine dining experiences.",
+        "introParagraph": "At Cityscape, we invite you to indulge in a culinary journey that showcases the vibrant spirit of Crete. Whether you’re in the mood for a sophisticated dining experience or a casual meal by the pool, our diverse dining options provide something for everyone.",
+        "images": [
+          "https://example.com/cityscape-restaurant1.jpg",
+          "https://example.com/cityscape-restaurant2.jpg",
+          "https://example.com/cityscape-restaurant3.jpg"
+        ],
+        "sections": [
+          {
+            "title": "The Infinity Pool Bar",
+            "description": "Unwind at the Infinity Pool Bar, where you can enjoy refreshing cocktails and light snacks with stunning views of the Cretan landscape. It's the perfect place to relax and soak up the sun during the day or enjoy a sunset drink."
+          },
+          {
+            "title": "The Cretan Bistro",
+            "description": "Sample the authentic flavors of Crete at The Cretan Bistro. Our chefs craft dishes using locally sourced ingredients to bring you a true taste of the region, blending traditional recipes with modern flair. Ideal for a cozy dinner with friends or family."
+          },
+          {
+            "title": "The Beachfront Café",
+            "description": "Located just steps from the beach, our Beachfront Café offers a variety of light bites and refreshing drinks, perfect for a quick break during your day of exploring Crete's beautiful coastline."
+          },
+          {
+            "title": "Table Reservations",
+            "description": "We recommend reserving a table for dinner at our à la carte restaurants. Smart casual dress code applies. Please let us know if you have any dietary requirements so that we can prepare a delightful meal tailored to your needs."
+          }
+        ],
+        "infoBox": {
+          "title": "Dietary Options",
+          "description": "Our restaurants accommodate a variety of dietary needs, including options for allergies and special dietary preferences. Please inform our staff in advance, and we will ensure that your meal is prepared to your satisfaction.",
+          "optionsTitle": "We also offer:",
+          "extraInformation": [
+            "Vegetarian options",
+            "Vegan options",
+            "Lactose-free options",
+            "Gluten-free options"
+          ]
+        }
       },
-      {
-        "title": "Luxury Swim-Up Room",
-        "text": "Experience the ultimate luxury in our Swim-Up Room, where you can dive into the pool directly from your private terrace. It's the perfect blend of relaxation and sophistication, ensuring an unforgettable stay.",
-        "images": "https://img.freepik.com/free-photo/luxury-swim-up-room-hotel_1288-10003.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      "poolAndBeach": {
+        "headingText": "Pool and Beach",
+        "introParagraph": "Cityscape offers two stylish pools and is located just 500 meters from the beach. Relax by the exclusive infinity pool or take a short stroll to the coast to enjoy Crete's beautiful beaches. With modern facilities and convenient access to the shoreline, Cityscape provides the perfect mix of relaxation and adventure.",
+        "images": [
+          "https://example.com/cityscape-pool1.jpg",
+          "https://example.com/cityscape-pool2.jpg",
+          "https://example.com/cityscape-beach1.jpg",
+          "https://example.com/cityscape-beach2.jpg"
+        ],
+        "beaches": [
+          {
+            "title": "Elounda Beach",
+            "description": "Elounda Beach is a popular destination offering soft sands and calm, turquoise waters. With nearby restaurants and cafes, it’s the perfect spot to relax and soak up the Mediterranean sun. This beach is suitable for families and offers amenities such as sun loungers and umbrellas."
+          },
+          {
+            "title": "Vai Beach",
+            "description": "Famous for its natural palm forest, Vai Beach provides a tropical escape right in Crete. Enjoy a scenic beach surrounded by lush greenery, where you can swim in crystal-clear waters and explore the area’s unique flora. Vai Beach is ideal for nature lovers and those looking to explore the beauty of Crete’s coast."
+          },
+          {
+            "title": "Balos Lagoon",
+            "description": "Known for its white sands and shallow, turquoise waters, Balos Lagoon is a must-visit. This picturesque beach offers breathtaking views and is perfect for a day of swimming and sunbathing. The shallow waters make it suitable for families with young children."
+          },
+          {
+            "title": "Matala Beach",
+            "description": "Matala Beach is famous for its unique sandstone caves and vibrant atmosphere. This beach is perfect for those looking to explore or enjoy a lively day by the sea. With a rich history and beautiful waters, Matala Beach is a favorite for both locals and tourists."
+          }
+        ],
+        "infoBox": {
+          "title": "Pools",
+          "infoBoxAdditionalInformation": [
+            "Main Pool with sun loungers and poolside service",
+            "Infinity Pool with breathtaking views of Crete",
+            "Private Cabanas available for rent",
+            "Poolside Bar offering cocktails and light snacks",
+            "Complimentary pool towels available"
+          ]
+        }
       },
-      {
-        "title": "Contemporary Loft",
-        "text": "Our spacious Contemporary Loft features an elegant design and ample living space. Perfect for long stays or family getaways, enjoy a home-away-from-home experience with breathtaking views.",
-        "images": "https://img.freepik.com/free-photo/contemporary-loft-hotel_1288-10004.jpg?t=st=1729163493~exp=1729167093~hmac=4201b9a20ee78e192c6cb63e9ea73a9fee9f0d9ac5b6744f1b1e4258accef602&w=1800"
+      "activities": {
+        "headingText": "Activities",
+        "introParagraph": "Cityscape offers a variety of activities designed to enhance your stay, whether you're looking to relax, stay active, or explore the vibrant surroundings of Crete. From on-site fitness facilities to beachside excursions, there's something for everyone.",
+        "categories": [
+          {
+            "title": "Spa",
+            "description": "Unwind in our exclusive spa, offering a range of treatments including massages, facials, and body wraps. Our relaxing environment and expert therapists will ensure you leave feeling refreshed and rejuvenated.",
+            "imgUrl": "https://example.com/cityscape-spa.jpg"
+          },
+          {
+            "title": "Gym",
+            "description": "Stay fit during your stay with our fully equipped gym, featuring state-of-the-art machines and free weights. Whether you're lifting, running, or stretching, we have everything you need for an energizing workout.",
+            "imgUrl": "https://example.com/cityscape-gym.jpg"
+          },
+          {
+            "title": "Infinity Pool",
+            "description": "Take a dip in our stunning infinity pool, offering breathtaking views of Crete. Lounge by the pool with a cocktail or enjoy a relaxing swim in this exclusive area reserved for our guests.",
+            "imgUrl": "https://example.com/cityscape-pool.jpg"
+          },
+          {
+            "title": "Beach Activities",
+            "description": "Explore the nearby beaches with a range of exciting activities such as snorkeling, jet skiing, and paddleboarding. Whether you're an adventure seeker or just looking to unwind by the sea, the beach is just a short walk away.",
+            "imgUrl": "https://example.com/cityscape-beach.jpg"
+          }
+        ],
+        "infoBox": {
+          "title": "Activity Center",
+          "infoBoxAdditionalInformation": [
+            "Gym",
+            "Spa",
+            "Infinity Pool",
+            "Snorkeling (additional fee)",
+            "Jet Skiing (additional fee)",
+            "Paddleboarding (additional fee)"
+          ]
+        }
+      },
+      "map": {
+        "title": "Cityscape",
+        "location": {
+          "address": "Cityscape, Crete, Greece",
+          "latitude": 35.2401,
+          "longitude": 24.8093
+        },
+        "zoomLevel": 14,
+        "marker": {
+          "title": "Cityscape",
+          "iconUrl": "https://example.com/marker-icon3.png"
+        }
+      },
+      "weather": [
+        {
+          "month": "January",
+          "dayTemp": "15°C",
+          "nightTemp": "8°C",
+          "sunHours": "5",
+          "waterTemp": "15°C",
+          "rainFreeDays": "19"
+        },
+        {
+          "month": "February",
+          "dayTemp": "16°C",
+          "nightTemp": "9°C",
+          "sunHours": "6",
+          "waterTemp": "15°C",
+          "rainFreeDays": "18"
+        },
+        {
+          "month": "March",
+          "dayTemp": "18°C",
+          "nightTemp": "10°C",
+          "sunHours": "7",
+          "waterTemp": "16°C",
+          "rainFreeDays": "22"
+        },
+        {
+          "month": "April",
+          "dayTemp": "20°C",
+          "nightTemp": "12°C",
+          "sunHours": "8",
+          "waterTemp": "17°C",
+          "rainFreeDays": "24"
+        },
+        {
+          "month": "May",
+          "dayTemp": "24°C",
+          "nightTemp": "15°C",
+          "sunHours": "9",
+          "waterTemp": "19°C",
+          "rainFreeDays": "26"
+        },
+        {
+          "month": "June",
+          "dayTemp": "27°C",
+          "nightTemp": "19°C",
+          "sunHours": "10",
+          "waterTemp": "22°C",
+          "rainFreeDays": "28"
+        },
+        {
+          "month": "July",
+          "dayTemp": "30°C",
+          "nightTemp": "22°C",
+          "sunHours": "11",
+          "waterTemp": "24°C",
+          "rainFreeDays": "30"
+        },
+        {
+          "month": "August",
+          "dayTemp": "31°C",
+          "nightTemp": "23°C",
+          "sunHours": "11",
+          "waterTemp": "25°C",
+          "rainFreeDays": "30"
+        },
+        {
+          "month": "September",
+          "dayTemp": "28°C",
+          "nightTemp": "21°C",
+          "sunHours": "9",
+          "waterTemp": "24°C",
+          "rainFreeDays": "27"
+        },
+        {
+          "month": "October",
+          "dayTemp": "24°C",
+          "nightTemp": "17°C",
+          "sunHours": "7",
+          "waterTemp": "22°C",
+          "rainFreeDays": "24"
+        },
+        {
+          "month": "November",
+          "dayTemp": "20°C",
+          "nightTemp": "13°C",
+          "sunHours": "6",
+          "waterTemp": "20°C",
+          "rainFreeDays": "22"
+        },
+        {
+          "month": "December",
+          "dayTemp": "17°C",
+          "nightTemp": "10°C",
+          "sunHours": "5",
+          "waterTemp": "17°C",
+          "rainFreeDays": "20"
+        }
+      ],
+      "ratings": [
+        { "label": "Overall Experience", "rating": 4.6 },
+        { "label": "Hotel Cleanliness", "rating": 4.5 },
+        { "label": "Atmosphere & Comfort", "rating": 4.6 },
+        { "label": "Staff Friendliness", "rating": 4.9 },
+        { "label": "Wi-Fi", "rating": 4.3 }
+      ],
+      "reviews": {
+        "overallRating": 4.5,
+        "totalSurveyResponses": 6625,
+        "recommendationPercentage": 90
       }
-    ],
-    "infoBoxTitle": "In all rooms",
-    "infoBoxItems": [
-      "Central air conditioning",
-      "Queen or king-size bed options",
-      "Flat-screen TV with local and international channels",
-      "Room service available",
-      "In-room safe",
-      "Mini-fridge stocked with complimentary water",
-      "Coffee maker and kettle",
-      "Daily housekeeping service",
-      "Luxurious bathroom amenities",
-      "Complimentary Wi-Fi"
-        ]
-      },
-
-
-      "aboutTheRestaurant": {
-    "headingText": "Cityscape offers a variety of dining options that celebrate the flavors of Crete, with a modern twist. Our restaurants and bars cater to all tastes, from casual snacks to fine dining experiences.",
-    "introParagraph": "At Cityscape, we invite you to indulge in a culinary journey that showcases the vibrant spirit of Crete. Whether you’re in the mood for a sophisticated dining experience or a casual meal by the pool, our diverse dining options provide something for everyone.",
-    "images": [
-      "https://example.com/cityscape-restaurant1.jpg",
-      "https://example.com/cityscape-restaurant2.jpg",
-      "https://example.com/cityscape-restaurant3.jpg"
-    ],
-    "sections": [
-      {
-        "title": "The Infinity Pool Bar",
-        "description": "Unwind at the Infinity Pool Bar, where you can enjoy refreshing cocktails and light snacks with stunning views of the Cretan landscape. It's the perfect place to relax and soak up the sun during the day or enjoy a sunset drink."
-      },
-      {
-        "title": "The Cretan Bistro",
-        "description": "Sample the authentic flavors of Crete at The Cretan Bistro. Our chefs craft dishes using locally sourced ingredients to bring you a true taste of the region, blending traditional recipes with modern flair. Ideal for a cozy dinner with friends or family."
-      },
-      {
-        "title": "The Beachfront Café",
-        "description": "Located just steps from the beach, our Beachfront Café offers a variety of light bites and refreshing drinks, perfect for a quick break during your day of exploring Crete's beautiful coastline."
-      },
-      {
-        "title": "Table Reservations",
-        "description": "We recommend reserving a table for dinner at our à la carte restaurants. Smart casual dress code applies. Please let us know if you have any dietary requirements so that we can prepare a delightful meal tailored to your needs."
-      }
-    ],
-    "infoBox": {
-      "title": "Dietary Options",
-      "description": "Our restaurants accommodate a variety of dietary needs, including options for allergies and special dietary preferences. Please inform our staff in advance, and we will ensure that your meal is prepared to your satisfaction.",
-      "optionsTitle": "We also offer:",
-      "dietaryOptions": [
-        "Vegetarian options",
-        "Vegan options",
-        "Lactose-free options",
-        "Gluten-free options"
-      ]
-    }
-  }, 
-
-  "poolAndBeach": {
-  "headingText": "Pool and Beach",
-  "introParagraph": "Cityscape offers two stylish pools and is located just 500 meters from the beach. Relax by the exclusive infinity pool or take a short stroll to the coast to enjoy Crete's beautiful beaches. With modern facilities and convenient access to the shoreline, Cityscape provides the perfect mix of relaxation and adventure.",
-  "images": [
-    "https://example.com/cityscape-pool1.jpg",
-    "https://example.com/cityscape-pool2.jpg",
-    "https://example.com/cityscape-beach1.jpg",
-    "https://example.com/cityscape-beach2.jpg"
-  ],
-  "beaches": [
-    {
-      "title": "Elounda Beach",
-      "description": "Elounda Beach is a popular destination offering soft sands and calm, turquoise waters. With nearby restaurants and cafes, it’s the perfect spot to relax and soak up the Mediterranean sun. This beach is suitable for families and offers amenities such as sun loungers and umbrellas."
-    },
-    {
-      "title": "Vai Beach",
-      "description": "Famous for its natural palm forest, Vai Beach provides a tropical escape right in Crete. Enjoy a scenic beach surrounded by lush greenery, where you can swim in crystal-clear waters and explore the area’s unique flora. Vai Beach is ideal for nature lovers and those looking to explore the beauty of Crete’s coast."
-    },
-    {
-      "title": "Balos Lagoon",
-      "description": "Known for its white sands and shallow, turquoise waters, Balos Lagoon is a must-visit. This picturesque beach offers breathtaking views and is perfect for a day of swimming and sunbathing. The shallow waters make it suitable for families with young children."
-    },
-    {
-      "title": "Matala Beach",
-      "description": "Matala Beach is famous for its unique sandstone caves and vibrant atmosphere. This beach is perfect for those looking to explore or enjoy a lively day by the sea. With a rich history and beautiful waters, Matala Beach is a favorite for both locals and tourists."
-    }
-  ],
-  "pools": {
-    "poolList": [
-      "Main Pool with sun loungers and poolside service",
-      "Infinity Pool with breathtaking views of Crete",
-      "Private Cabanas available for rent",
-      "Poolside Bar offering cocktails and light snacks",
-      "Complimentary pool towels available"
-    ]
-  }
-},
-
-
-"activities": {
-    "headingText": "Activities",
-    "introParagraph": "Cityscape offers a variety of activities designed to enhance your stay, whether you're looking to relax, stay active, or explore the vibrant surroundings of Crete. From on-site fitness facilities to beachside excursions, there's something for everyone.",
-    "categories": [
-      {
-        "title": "Spa",
-        "description": "Unwind in our exclusive spa, offering a range of treatments including massages, facials, and body wraps. Our relaxing environment and expert therapists will ensure you leave feeling refreshed and rejuvenated.",
-        "imgUrl": "https://example.com/cityscape-spa.jpg"
-      },
-      {
-        "title": "Gym",
-        "description": "Stay fit during your stay with our fully equipped gym, featuring state-of-the-art machines and free weights. Whether you're lifting, running, or stretching, we have everything you need for an energizing workout.",
-        "imgUrl": "https://example.com/cityscape-gym.jpg"
-      },
-      {
-        "title": "Infinity Pool",
-        "description": "Take a dip in our stunning infinity pool, offering breathtaking views of Crete. Lounge by the pool with a cocktail or enjoy a relaxing swim in this exclusive area reserved for our guests.",
-        "imgUrl": "https://example.com/cityscape-pool.jpg"
-      },
-      {
-        "title": "Beach Activities",
-        "description": "Explore the nearby beaches with a range of exciting activities such as snorkeling, jet skiing, and paddleboarding. Whether you're an adventure seeker or just looking to unwind by the sea, the beach is just a short walk away.",
-        "imgUrl": "https://example.com/cityscape-beach.jpg"
-      }
-    ],
-    "activityCenter": {
-      "title": "Activity Center",
-      "options": [
-        "Gym",
-        "Spa",
-        "Infinity Pool",
-        "Snorkeling (additional fee)",
-        "Jet Skiing (additional fee)",
-        "Paddleboarding (additional fee)"
-      ]
-    }
-  },
-  
-  
-"destination": {
-    "title": "Cityscape",
-    "location": {
-      "address": "Cityscape, Crete, Greece",
-      "latitude": 35.2401,
-      "longitude": 24.8093
-    },
-    "zoomLevel": 14,
-    "marker": {
-      "title": "Cityscape",
-      "iconUrl": "https://example.com/marker-icon3.png"
-    }
-  },
-  
-    "weather": [
-      {
-        "month": "January",
-        "dayTemp": "15°C",
-        "nightTemp": "8°C",
-        "sunHours": "5",
-        "waterTemp": "15°C",
-        "rainFreeDays": "19"
-      },
-      {
-        "month": "February",
-        "dayTemp": "16°C",
-        "nightTemp": "9°C",
-        "sunHours": "6",
-        "waterTemp": "15°C",
-        "rainFreeDays": "18"
-      },
-      {
-        "month": "March",
-        "dayTemp": "18°C",
-        "nightTemp": "10°C",
-        "sunHours": "7",
-        "waterTemp": "16°C",
-        "rainFreeDays": "22"
-      },
-      {
-        "month": "April",
-        "dayTemp": "20°C",
-        "nightTemp": "12°C",
-        "sunHours": "8",
-        "waterTemp": "17°C",
-        "rainFreeDays": "24"
-      },
-      {
-        "month": "May",
-        "dayTemp": "24°C",
-        "nightTemp": "15°C",
-        "sunHours": "9",
-        "waterTemp": "19°C",
-        "rainFreeDays": "26"
-      },
-      {
-        "month": "June",
-        "dayTemp": "27°C",
-        "nightTemp": "19°C",
-        "sunHours": "10",
-        "waterTemp": "22°C",
-        "rainFreeDays": "28"
-      },
-      {
-        "month": "July",
-        "dayTemp": "30°C",
-        "nightTemp": "22°C",
-        "sunHours": "11",
-        "waterTemp": "24°C",
-        "rainFreeDays": "30"
-      },
-      {
-        "month": "August",
-        "dayTemp": "31°C",
-        "nightTemp": "23°C",
-        "sunHours": "11",
-        "waterTemp": "25°C",
-        "rainFreeDays": "30"
-      },
-      {
-        "month": "September",
-        "dayTemp": "28°C",
-        "nightTemp": "21°C",
-        "sunHours": "9",
-        "waterTemp": "24°C",
-        "rainFreeDays": "27"
-      },
-      {
-        "month": "October",
-        "dayTemp": "24°C",
-        "nightTemp": "17°C",
-        "sunHours": "7",
-        "waterTemp": "22°C",
-        "rainFreeDays": "24"
-      },
-      {
-        "month": "November",
-        "dayTemp": "20°C",
-        "nightTemp": "13°C",
-        "sunHours": "6",
-        "waterTemp": "20°C",
-        "rainFreeDays": "22"
-      },
-      {
-        "month": "December",
-        "dayTemp": "17°C",
-        "nightTemp": "10°C",
-        "sunHours": "5",
-        "waterTemp": "17°C",
-        "rainFreeDays": "20"
-      }
-    ],
-
-  
-  
-    "ratings": [
-      { "label": "Overall Experience", "rating": 4.6 },
-      { "label": "Hotel Cleanliness", "rating": 4.5 },
-      { "label": "Atmosphere & Comfort", "rating": 4.6 },
-      { "label": "Staff Friendliness", "rating": 4.9 },
-      { "label": "Wi-Fi", "rating": 4.3 }
-    ],
-    "reviews": {
-      "overallRating": 4.5,
-      "totalSurveyResponses": 6625,
-      "recommendationPercentage": 90
-    }
-  
     },
 
 
@@ -1538,9 +1567,18 @@
         "https://img.freepik.com/free-photo/photorealistic-timber-house-interior-with-wooden-decor-furnishings_23-2151263597.jpg?t=st=1729157914~exp=1729161514~hmac=18b1966dfdd3ed821371732331e198d0a0219261abe2f5cba87adc1bd341eaef&w=1800"
       ],
 
+         "infoBox": {
+      "title": "Additional Information",
+  "infoBoxAdditionalInformation": ["Private Pool", "Snorkeling Equipment", "Room Service", "Spa", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
 
 
-      "infoBoxAmenities": ["Private Pool", "Snorkeling Equipment", "Room Service", "Spa", "Restaurant"],
+    
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Palm Breeze Retreat, we invite you to indulge in an unparalleled escape where luxury meets serenity. Each of our rooms is designed to provide an intimate haven, harmonizing modern comforts with the breathtaking beauty of the Maldives. From overwater bungalows to private villas, your sanctuary awaits.",
       "rooms": [
@@ -1728,7 +1766,7 @@
 
 
 
-  "aboutTheRestaurant": {
+"restaurant": {
     "headingText": "Palm Breeze Retreat offers an exquisite culinary journey in the heart of the Maldives, where guests can savor a blend of local flavors and international cuisines. Dine under the stars or enjoy a casual poolside snack while surrounded by breathtaking ocean views.",
     "introParagraph": "At Palm Breeze Retreat, we provide an exceptional dining experience with an array of culinary options to suit every palate. From overwater dining to intimate beachside dinners, our restaurants and bars ensure that each meal is a memorable part of your stay.",
     "images": [
@@ -1758,7 +1796,7 @@
       "title": "Dietary Options",
       "description": "We are pleased to accommodate a variety of dietary needs, including allergies and special preferences. Please inform our staff in advance, and we will ensure that your meals are prepared safely and deliciously.",
       "optionsTitle": "We also offer:",
-      "dietaryOptions": [
+      "extraInformation": [
         "Vegetarian options",
         "Vegan options",
         "Lactose-free options",
@@ -2015,9 +2053,17 @@
         "https://img.freepik.com/free-photo/photorealistic-wooden-house-interior-with-timber-decor-furnishings_23-2151263547.jpg?t=st=1729158200~exp=1729161800~hmac=1159de84c126851dc80e1b5fb4af11c7a4958a802eacf4d4c952a53bb1af7c67&w=2000"
       ],
 
+   "infoBox": {
+      "title": "Additional Information",
+   "infoBoxAdditionalInformation": ["Ski Storage", "Spa", "Heated Pool", "Free WiFi", "Restaurant", "Bar"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
 
-
-      "infoBoxAmenities": ["Ski Storage", "Spa", "Heated Pool", "Free WiFi", "Restaurant", "Bar"],
+   
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Mountain Escape, we blend alpine charm with modern comfort to create the ultimate getaway. Our thoughtfully designed rooms cater to adults seeking a serene environment, with touches of luxury that complement the breathtaking surroundings of Zermatt.",
       "rooms": [
@@ -2209,7 +2255,7 @@
     ]
   }, 
 
-  "aboutTheRestaurant": {
+"restaurant": {
     "headingText": "Mountain Escape offers a refined culinary experience in the Swiss Alps, where guests can indulge in hearty alpine flavors and gourmet international dishes. Enjoy meals by a cozy fireplace or relish après-ski cocktails with breathtaking mountain views.",
     "introParagraph": "At Mountain Escape, we invite you to explore our diverse dining options, each crafted to complement the stunning alpine surroundings. From fireside feasts to intimate dinners with a view, our restaurants and bars make every meal a memorable part of your alpine getaway.",
     "images": [
@@ -2472,8 +2518,17 @@
        "https://img.freepik.com/free-photo/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge_105762-2045.jpg?t=st=1729158493~exp=1729162093~hmac=a1f47932dc5a07cacf1568dd9236b32071bb3fb13174ee0a2b58d37fb40d94b0&w=1800"
       ],
 
+         "infoBox": {
+      "title": "Additional Information",
+     "infoBoxAdditionalInformation": ["Private Pool", "Butler Service", "Dune Buggy Rentals", "Restaurant", "Spa"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
 
-      "infoBoxAmenities": ["Private Pool", "Butler Service", "Dune Buggy Rentals", "Restaurant", "Spa"],
+ 
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Desert Mirage, we provide a unique blend of luxury and adventure tailored for families. Each of our rooms is designed to offer a comfortable escape while immersing you in the enchanting beauty of the Arabian desert.",
       "rooms": [
@@ -2662,7 +2717,7 @@
   },
 
 
-  "aboutTheRestaurant": {
+"restaurant": {
     "headingText": "Desert Mirage provides a unique dining experience that combines the flavors of the Arabian desert with international culinary excellence. Guests can enjoy a variety of dining options, from alfresco feasts under the stars to intimate meals with sweeping desert views.",
     "introParagraph": "At Desert Mirage, we offer a range of exquisite dining experiences designed to reflect the beauty and culture of the Arabian desert. Savor dishes inspired by local traditions and international cuisine, all while surrounded by the breathtaking expanse of the desert.",
     "images": [
@@ -2931,7 +2986,18 @@
         "https://img.freepik.com/free-photo/ai-generated-modern-styled-entryway_23-2150692311.jpg?t=st=1729159015~exp=1729162615~hmac=4a85f60c940c7bd2480d317faa300d9d18cbedad2bd5e172a419243007581af8&w=1800"
        ],
       
-      "infoBoxAmenities": ["Beachfront Access", "Spa", "Swimming Pool", "Free WiFi", "Bar"],
+       
+         "infoBox": {
+      "title": "Additional Information",
+      "infoBoxAdditionalInformation": ["Beachfront Access", "Spa", "Swimming Pool", "Free WiFi", "Bar"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Island Breeze Resort, we invite you to immerse yourself in a tropical paradise where comfort meets luxury. Our thoughtfully designed rooms provide a peaceful sanctuary for adults seeking relaxation and rejuvenation amidst the stunning backdrop of Phuket's pristine beaches.",
       "rooms": [
@@ -3115,7 +3181,7 @@
     ]
   }, 
 
-  "aboutTheRestaurant": {
+"restaurant": {
     "headingText": "Island Breeze Resort presents a culinary experience that celebrates the vibrant flavors of Thailand alongside international cuisine. Enjoy fresh, locally sourced ingredients in a stunning tropical setting, perfect for a memorable dining experience.",
     "introParagraph": "At Island Breeze Resort, guests can indulge in a variety of dining options that reflect the essence of Thai culture and the beauty of the surrounding environment. From intimate beachside meals to lively garden dining, each meal is crafted to provide a unique taste of paradise.",
     "images": [
@@ -3381,8 +3447,20 @@
         "https://img.freepik.com/free-photo/modern-styled-small-entryway_23-2150712989.jpg?t=st=1729160675~exp=1729164275~hmac=605a97e4ec55ec99503a8284e7a393881fe017431556670982ebb7ce82155560&w=1800"
       ],
 
+             
+         "infoBox": {
+      "title": "Additional Information",
 
-      "infoBoxAmenities": ["Hot Springs", "Rooftop Garden", "Free WiFi", "Restaurant", "Spa"],
+      "infoBoxAdditionalInformation": ["Hot Springs", "Rooftop Garden", "Free WiFi", "Restaurant", "Spa"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Urban Oasis, we offer thoughtfully designed rooms that harmonize modern comfort with the tranquil energy of Tokyo. Whether you're traveling solo, with family, or on business, our accommodations are tailored to provide you with a peaceful haven in the heart of this vibrant city.",
       "rooms": [
@@ -3843,9 +3921,19 @@
         "https://img.freepik.com/free-photo/view-small-bathroom-with-modern-style-decor-furniture_23-2150864526.jpg?t=st=1729160856~exp=1729164456~hmac=4db04e01ed0a0a675ab896eb34414b0b4b59269dde46538d19691461bab8878c&w=740",
         "https://img.freepik.com/free-photo/vertical-shot-pathway-middle-buildings-funchal-madeira-portugal_181624-14992.jpg?t=st=1729161043~exp=1729164643~hmac=929b4b0056782d1b0a56903a2967eff1dae52e7a1d8a081d8ed8a13844dbf93d&w=826",
         "https://img.freepik.com/free-photo/beautiful-luxury-pillow-sofa_74190-2066.jpg?t=st=1729161063~exp=1729164663~hmac=b432270777a42fdfed9a5e4f9f908d57e86f50f718b98f4b8ea94ffcc75093a5&w=1800"
-      ],
+      ],       
+         "infoBox": {
+      "title": "Additional Information",
+      "infoBoxAdditionalInformation": ["Rooftop Bar", "Free WiFi", "Spa", "Fitness Center", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
       
-      "infoBoxAmenities": ["Rooftop Bar", "Free WiFi", "Spa", "Fitness Center", "Restaurant"],
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Coastal Haven, every room is thoughtfully designed to provide a cozy retreat with a touch of luxury. Whether you’re looking for a peaceful escape by the coast or a base to explore the vibrant streets of Lisbon, our rooms blend comfort with modern amenities to make your stay unforgettable.",
       "rooms": [
@@ -4309,9 +4397,18 @@
         "https://img.freepik.com/free-photo/bali-waterfall-indonesia_1150-11024.jpg?t=st=1729161308~exp=1729164908~hmac=36c35c7fec437136cfb67e219ebcc644565dd333b045a6dda5974fcbeb488ba3&w=826",
         "https://img.freepik.com/free-photo/view-luxurious-hotel-interior-space_23-2150683413.jpg?t=st=1729161460~exp=1729165060~hmac=5134641ad9e8032210c0e34510a5e5c19ba86d250501b74b6fb851b57f811d10&w=1800"
         ],
+               "infoBox": {
+      "title": "Additional Information",
       
-      
-      "infoBoxAmenities": ["Private Pool", "Jungle Spa", "Free WiFi", "Restaurant", "Bar"],
+      "infoBoxAdditionalInformation": ["Private Pool", "Jungle Spa", "Free WiFi", "Restaurant", "Bar"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Tropical Retreat, we offer a curated selection of rooms and villas that capture the essence of Bali’s serene beauty while providing modern comfort for families and couples alike. Our rooms are designed to complement the lush surroundings, making your stay a harmonious blend of relaxation and luxury.",
       "rooms": [
@@ -4777,8 +4874,17 @@
         "https://img.freepik.com/free-photo/view-mexican-urban-architecture-culture_23-2149749981.jpg?t=st=1729161650~exp=1729165250~hmac=0b45a28a2ab285cfec0798e989ee7ccbaa7185d0d1499e89f561626d5638e416&w=1800",
         "https://img.freepik.com/free-photo/hotel-lobby-with-impressive-design-modern-furniture-expensive-resort-accommodation-with-marble-floors-empty-reception-front-desk-with-computers-service-bell-registration_482257-61927.jpg?t=st=1729161697~exp=1729165297~hmac=d1c671909bf0ace1cd51427f2b873c227b656edcf3965e4342c4bba23c7a124d&w=1800"
       ],
-      
-      "infoBoxAmenities": ["All-Inclusive", "Water Sports", "Private Beach", "Spa", "Restaurant"],
+
+      "infoBox": {
+      "title": "Additional Information",
+      "infoBoxAdditionalInformation": ["All-Inclusive", "Water Sports", "Private Beach", "Spa", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Ocean Breeze Resort, we offer a range of stylish and family-friendly rooms to ensure every guest enjoys their perfect getaway. Whether you're looking for a cozy space for two or a fun-filled family suite, each room is designed to blend comfort with the vibrant spirit of Cancun.",
       "rooms": [
@@ -5245,7 +5351,18 @@
       ],
       
       
-      "infoBoxAmenities": ["Ski Storage", "Heated Pool", "Spa", "Free WiFi", "Restaurant"],
+            "infoBox": {
+      "title": "Additional Information",
+ "infoBoxAdditionalInformation": ["Ski Storage", "Heated Pool", "Spa", "Free WiFi", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
+      
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Grand Alpine Hotel, we offer a range of beautifully crafted rooms that blend alpine charm with modern comfort. Whether you're here for a family vacation or a romantic escape, our rooms are designed to make your stay unforgettable, with breathtaking views of the Austrian Alps.",
       "rooms": [
@@ -5708,8 +5825,18 @@
         "https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826265.jpg?t=st=1729162684~exp=1729166284~hmac=9d1ff9747fe26afd228b3c1d062594d145e65a9bdf40d85dcb7b19b5332fdd51&w=2000"
     ],
       
+            "infoBox": {
+      "title": "Additional Information",
+  "infoBoxAdditionalInformation": ["Infinity Pool", "Free WiFi", "Spa", "Restaurant", "Bar"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
       
-      "infoBoxAmenities": ["Infinity Pool", "Free WiFi", "Spa", "Restaurant", "Bar"],
+    
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Seaside Escape, our rooms are thoughtfully designed to merge the elegance of Santorini's natural beauty with modern comforts. Each space is carefully crafted for families, couples, or solo travelers who seek both relaxation and adventure. Experience the warmth of the Greek islands in rooms designed for your perfect getaway.",
       "rooms": [
@@ -6178,8 +6305,17 @@
         "https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826280.jpg?t=st=1729162263~exp=1729165863~hmac=60eee77b30e0f953afcf5610a0cd573d6f389543081ce92de9007a221f20ecb4&w=2000"
     ],
       
-      
-      "infoBoxAmenities": ["Private Beach", "Diving", "Snorkeling", "Free WiFi", "Spa"],
+               "infoBox": {
+      "title": "Additional Information",
+     "infoBoxAdditionalInformation": ["Private Beach", "Diving", "Snorkeling", "Free WiFi", "Spa"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
+
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Beachfront Paradise, we offer a range of thoughtfully designed rooms that combine comfort with the natural beauty of the Bahamas. Whether you’re here for a quick getaway or a long stay, our rooms provide the perfect balance between simplicity and modern conveniences, all just steps from the beach.",
 
@@ -6641,9 +6777,19 @@
       "https://img.freepik.com/free-photo/beautiful-manhattan-bridge-new-york-usa_181624-48458.jpg?t=st=1729162878~exp=1729166478~hmac=46e0d2148d6bc2409a7d5944388791c76a0007687a2c83d67a9b4fa7ec0258d7&w=1800",
       "https://img.freepik.com/free-photo/view-luxurious-hotel-interior-space_23-2150683473.jpg?t=st=1729163045~exp=1729166645~hmac=b4640848beb3e9c3e5519176f10c45b0c689af7cfc7ed44ca067aef5671ea3b7&w=1800"  
       ],
+
+                  "infoBox": {
+      "title": "Additional Information",
+"infoBoxAdditionalInformation": ["Free WiFi", "Rooftop Bar", "Spa", "Fitness Center", "Restaurant"],
+      "optionsTitle": "We also offer:",
+      "extraInformation": [
+        "Free WiFi throughout the hotel",
+        "Free WiFi in rooms and suites"
+      ]  
+    },
+
       
       
-      "infoBoxAmenities": ["Free WiFi", "Rooftop Bar", "Spa", "Fitness Center", "Restaurant"],
       "roomFeatures": ["King-sized bed", "Ensuite bathroom", "Flat-screen TV", "Balcony"],
       "roomDescription": "At Urban Escape, we offer a unique selection of elegantly designed rooms that capture the essence of New York City. Each room provides a blend of comfort and sophistication, ensuring an unforgettable stay for every guest.",
       "rooms": [
@@ -6793,72 +6939,10 @@
     }
   ],
 
-  "aboutTheRooms": {
-    "headingText": "Discover Urban Escape: Where Luxury Meets Comfort in the Heart of New York City.",
-    "cards": [
-      {
-        "title": "Chic King Room",
-        "text": "Immerse yourself in elegance with our Chic King Room, offering a king-size bed and stunning city views. Enjoy complimentary breakfast and high-speed WiFi, making it the perfect choice for urban explorers.",
-        "images": "https://img.freepik.com/free-photo/luxurious-hotel-room-with-city-view_1288-3963.jpg?t=st=1729165432~exp=1729169032~hmac=ac7bda2f30103d1be2a4b5c63a30cc576942cd99fd6f48b1f6d16eec69e2f235&w=1800"
-      },
-      {
-        "title": "Premier Suite",
-        "text": "Our Premier Suite is designed for relaxation, featuring a spacious layout with modern amenities. Perfect for business or leisure travelers, it includes complimentary breakfast and WiFi.",
-        "images": "https://img.freepik.com/free-photo/modern-luxury-executive-suite_1288-3964.jpg?t=st=1729165500~exp=1729169100~hmac=3e06b6de40ac7b4044ee3a0b70c48909f70f4e28e4b55bb60c1e0bcd68e70df4&w=1800"
-      },
-      {
-        "title": "Skyline Double Room",
-        "text": "Unwind in our Skyline Double Room, featuring breathtaking views and modern decor. With complimentary breakfast and WiFi, it’s the ideal space for family or friends visiting the city.",
-        "images": "https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-hotel_105762-2156.jpg?t=st=1729165550~exp=1729169150~hmac=5c74c9a12f836b8b0cfbd44582d325803c7c8c658fe9160c86d4e645e8961ef0&w=1800"
-      },
-      {
-        "title": "Luxurious Penthouse Suite",
-        "text": "Unwind in our Skyline Double Room, featuring breathtaking views and modern decor. With complimentary breakfast and WiFi, it’s the ideal space for family or friends visiting the city.",
-        "images": "https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-hotel_105762-2156.jpg?t=st=1729165550~exp=1729169150~hmac=5c74c9a12f836b8b0cfbd44582d325803c7c8c658fe9160c86d4e645e8961ef0&w=1800"
-      }
-    ],
 
-  "infoBoxTitle": "Included in Every Room/Suite",
-  "infoBoxItems": [
-    "Individual climate control",
-      "Options for queen or king-size beds",
-      "Smart TV with streaming services",
-      "In-room dining available",
-      "Safety deposit box",
-      "Minibar stocked with beverages",
-      "Coffee maker and kettle",
-      "Luxury bathrobe and slippers",
-      "Walk-in shower or soaking tub",
-      "Daily housekeeping"
-  ]
-},
-"aboutTheRestaurant": {
-    "headingText": "Urban Escape presents a sophisticated dining experience in the heart of New York City, where guests can indulge in a fusion of contemporary flavors and classic dishes. Whether it's a rooftop dinner or a chic cocktail hour, every meal at Urban Escape is designed to complement the vibrant city backdrop.",
-    "introParagraph": "At Urban Escape, we bring the best of New York's culinary scene to our guests, offering a range of dining options that reflect the city's diversity. From rooftop fine dining to casual bites at the lobby lounge, our restaurants provide a gastronomic journey that mirrors the energy of the city.",
-    "images": [
-      "https://example.com/urban-escape-restaurant1.jpg",
-      "https://example.com/urban-escape-restaurant2.jpg",
-      "https://example.com/urban-escape-restaurant3.jpg"
-    ],
-    "sections": [
-      {
-        "title": "The Skyline Restaurant",
-        "description": "Dine at The Skyline Restaurant, where innovative dishes and a sleek ambiance come together with panoramic views of the iconic New York City skyline. The menu is a blend of modern American cuisine with international influences, crafted from the freshest ingredients."
-      },
-      {
-        "title": "The Rooftop Lounge",
-        "description": "Unwind at The Rooftop Lounge, a chic space that offers expertly mixed cocktails and a curated selection of small plates. With the city lights twinkling below, this is the perfect spot for a night out in the city or a relaxed evening with friends."
-      },
-      {
-        "title": "The Urban Bistro",
-        "description": "For a more casual meal, head to The Urban Bistro, where guests can enjoy gourmet sandwiches, fresh salads, and locally sourced coffee. This cozy spot provides a quick and satisfying option for guests on the go, without compromising on taste."
-      },
-      {
-        "title": "Private Dining",
-        "description": "Urban Escape offers exclusive private dining experiences for those seeking a more personalized setting. From intimate gatherings in a private room to bespoke dining on your suite’s terrace, our team will ensure every detail is tailored to your desires."
-      }
-    ]
-},
+
+
+
 "poolAndBeach": {
     "headingText": "Rooftop Pool and City Views",
     "introParagraph": "At Urban Escape, you can relax and enjoy the bustling city skyline from our exclusive rooftop pool. While New York City may not be known for its beaches, our hotel offers a tranquil urban oasis with stunning views of the iconic Manhattan skyline. If you're looking to dip your toes in the sand, some of the city’s best beaches are just a short ride away.",
@@ -7068,6 +7152,8 @@
     "recommendationPercentage": 90
   },
 
+  
+
 
 
   "offers": [
@@ -7154,13 +7240,21 @@
       "ctaText": "Book Now"
     }
   ]
-
-
-
-
-
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

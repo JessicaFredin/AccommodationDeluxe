@@ -2,7 +2,7 @@
 import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { FaMapMarkerAlt, FaPhone, FaPrint, FaFloppyDisk } from '@fortawesome/free-solid-svg-icons';
-import HotelRoomImage1 from "../assets/images/HotelRoomImage1.png";
+import HotelRoomImage1 from "../../assets/images/HotelRoomImage1.png";
 
 // Definierar textinnehåll utanför return i konstanter för enklare underhåll
 const title = "Thank you! Your booking is confirmed!";

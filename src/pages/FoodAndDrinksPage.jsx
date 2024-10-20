@@ -3,25 +3,43 @@ import React from "react";
 import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RestaurantInfo from "../components/RestaurantInfo";
 import RoomCardsSection from "../components/RoomCardsSection";
+import { useHotelData } from "../contexts/HotelDataContext";
+import { useParams } from "react-router-dom";
 
-const title = "Food and drinks";
-const paragraph = "Hotel Riviera Resort features three restaurants and four bars. The main restaurant offers a buffet withthemed nights, blending international cuisine with Spanish specialties.";
+function FoodAndDrinksPage() {
+	const { hotelId } = useParams(); // Get hotelId from the URL
+	const { hotels, error } = useHotelData();
 
-function RestaurantPage() {
+	// Handle error and loading states
+	if (error) {
+		return <p>Error loading hotel data: {error.message}</p>;
+	}
+	if (!hotels) {
+		return <p>Loading hotel data...</p>;
+	}
+
+	// Find the specific hotel by hotelId
+	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
+
+	// Handle case where the hotel is not found
+	if (!hotel) {
+		return <p>Hotel not found.</p>;
+	}
+console.log("Helloooo", hotel.restaurant.headingText)
 	return (
 		<div>
 			<div className="w-[85%] mx-auto mt-8">
 				<div className="flex justify-between w-[85%] mx-auto mt-8">
 					<div className="w-[70%] pr-8">
 						<h2 className="text-[32px] font-bold mb-4">
-							{title}
+							{hotel.restaurant.headingText}
 						</h2>
 						<p className="text-[16px] text-black mb-4">
-							{paragraph}
+							{hotel.restaurant.introParagraph}
 						</p>
-				      <RestaurantInfo />
+						<RestaurantInfo />
 					</div>
-					<InfoBoxSpecificHotel />
+					<InfoBoxSpecificHotel title={hotel.restaurant.infoBox.title } />
 				</div>
 			</div>
 			<div>
@@ -31,8 +49,7 @@ function RestaurantPage() {
 	);
 }
 
-export default RestaurantPage
-
+export default FoodAndDrinksPage;
 
 // // eslint-disable-next-line no-unused-vars
 // import React from "react";

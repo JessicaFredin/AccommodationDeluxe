@@ -21,7 +21,7 @@ import FavoritesPage from "./pages/FavoritesPage";
 import HotelDetailPage from "./pages/HotelDetailPage";
 import AboutTheHotelPage from "./pages/AboutTheHotelPage";
 import RoomsPage from "./pages/RoomsPage";
-import RestaurantPage from "./pages/RestaurantPage";
+import FoodAndDrinksPage from "./pages/FoodAndDrinksPage";
 import PoolAndBeachPage from "./pages/PoolAndBeachPage";
 import ActivitiesPage from "./pages/ActivitiesPage";
 import MapPage from "./pages/MapPage";
@@ -36,6 +36,7 @@ import AboutUsPage from "./pages/FooterLinks/About/AboutUsPage";
 import ContactPage from "./pages/FooterLinks/About/ContactPage";
 // Booking
 import BookingPage from "./pages/Booking/BookingPage";
+import ConfirmationPage from "./pages/Booking/ConfirmationPage";
 
 function App() {
 	return (
@@ -88,8 +89,8 @@ function App() {
 										element={<RoomsPage />}
 									/>
 									<Route
-										path="restaurant"
-										element={<RestaurantPage />}
+										path="food-and-drinks"
+										element={<FoodAndDrinksPage />}
 									/>
 									<Route
 										path="pool"
@@ -113,6 +114,10 @@ function App() {
 								<Route
 									path="booking"
 									element={<BookingPage />}
+								/>
+								<Route
+									path="confirmation"
+									element={<ConfirmationPage />}
 								/>
 
 								{/* Footer links except the Explore category, as that is part of the main navigation as well*/}

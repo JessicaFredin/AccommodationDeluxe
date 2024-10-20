@@ -104,7 +104,7 @@ import { NavLink, useParams, useLocation } from "react-router-dom";
 const menuItems = [
   { icon: faHotel, text: "About the hotel", link: "about" },
   { icon: faBed, text: "Rooms", link: "rooms" },
-  { icon: faUtensils, text: "Food & drinks", link: "restaurant" },
+  { icon: faUtensils, text: "Food & drinks", link: "food-and-drinks" },
   { icon: faWater, text: "Pool & Beach", link: "pool" },
   { icon: faDumbbell, text: "Activities", link: "activities" },
   { icon: faMap, text: "Map", link: "map" },

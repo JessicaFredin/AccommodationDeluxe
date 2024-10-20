@@ -25,14 +25,35 @@ function InfoBoxSpecificHotel({ hotelId }) {
 
 	return (
 		<div className="p-4 bg-opacityLightBlue rounded-[10px] shadow-lg w-[400px] h-[500px]">
-			<h3 className="text-[20px] font-semibold mb-3">{hotel.name}</h3>
+			<h3 className="text-[20px] font-semibold mb-3">
+				{hotel.infoBox.title}
+			</h3>
 			<ul className="list-disc list-inside text-black space-y-1">
-				{hotel.infoBoxAmenities.map((amenity, index) => (
-					<li className="text-[16px]" key={index}>
-						{amenity}
-					</li>
-				))}
+				{hotel.infoBox.infoBoxAdditionalInformation.map(
+					(amenity, index) => (
+						<li className="text-[16px]" key={index}>
+							{amenity}
+						</li>
+					)
+				)}
 			</ul>
+
+			{hotel.infoBox.optionsTitle && (
+				<h3 className="text-[18px] font-semibold my-4">
+					{hotel.infoBox.optionsTitle}
+				</h3>
+			)}
+
+
+			{hotel.infoBox.extraInformation.length > 0 && (
+				<ul className="list-disc list-inside text-black space-y-1">
+					{hotel.infoBox.extraInformation.map((amenity, index) => (
+						<li className="text-[16px]" key={index}>
+							{amenity}
+						</li>
+					))}
+				</ul>
+			)}
 		</div>
 	);
 }
