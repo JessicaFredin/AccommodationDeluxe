@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { useSearchParams } from "react-router-dom";
 import ScrollCheck from "../../components/BookingFlow/ScrollCheck";
 import SelectionOverview from "../../components/BookingFlow/SelectionOverview";
 import PaymentForm from "../../components/BookingFlow/PaymentForm";
@@ -11,6 +11,11 @@ import NavBar from "../../components/NavBar";
 import GuestDetailsForm from "../../components/BookingFlow/GuestDetailsForm";
 
 function BookingPage() {
+	// Capture query parameters
+	const [searchParams] = useSearchParams();
+	const hotelId = searchParams.get("hotelId");
+	const roomIndex = searchParams.get("roomIndex");
+
 	return (
 		<div>
 			<div className="fixed top-0 z-50 w-full">
@@ -21,7 +26,11 @@ function BookingPage() {
 			</div>
 			<div className="flex flex-col items-center space-y-8 p-6 rounded-lg">
 				<div className="mt-[120px] w-[60%]">
-					<SelectionOverview />
+					{/* Pass the captured parameters as props to SelectionOverview */}
+					<SelectionOverview
+						hotelId={hotelId}
+						roomIndex={roomIndex}
+					/>
 				</div>
 
 				<div className="w-[60%]">

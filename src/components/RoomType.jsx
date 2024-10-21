@@ -51,7 +51,7 @@ const descriptionIcons = {
 	"Balcony or Terrace": { icon: faMemory, type: "fontawesome" },
 };
 
-function RoomType({ room, totalNights, adults, children }) {
+function RoomType({ room, totalNights, adults, children, hotelId, index }) {
 	const totalCost = room.pricePerNight * totalNights;
 	console.log(totalNights);
 	return (
@@ -153,11 +153,23 @@ function RoomType({ room, totalNights, adults, children }) {
 				<div className="ml-auto flex flex-col items-end">
 					{room.availableRooms < 3 && (
 						<span className="text-accentPink text-[12px] font-semibold">
-							 Only {room.availableRooms} room{room.availableRooms > 1 ? "s" : ""} left
+							Only {room.availableRooms} room
+							{room.availableRooms > 1 ? "s" : ""} left
 						</span>
 					)}
 
-					<Link to="/booking">
+					{/* <Link to="/booking">
+						<Button size="medium" buttonText={"Book"} />
+					</Link> */}
+
+					{/* <Link to={`/hotel/${hotelId}/room/${index}`}>
+						<Button size="medium" buttonText={"Book"} />
+					</Link> */}
+
+					{/* Link to booking page with query parameters */}
+					<Link
+						to={`/booking?hotelId=${hotelId}&roomIndex=${index}&adults=${adults}&children=${children}&totalNights=${totalNights}`}
+					>
 						<Button size="medium" buttonText={"Book"} />
 					</Link>
 

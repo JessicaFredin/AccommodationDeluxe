@@ -10,7 +10,7 @@ import dayjs from "dayjs";
 import LocationInput from "./LocationInput";
 import { useNavigate } from "react-router-dom";
 import { useHotelData } from "../contexts/HotelDataContext";
-
+import { useSearchParamsContext } from "../contexts/SearchParamsContext";
 function SearchBar({
 	onSearch,
 	initialLocation,
@@ -29,14 +29,13 @@ function SearchBar({
 	const [rooms, setRooms] = useState(initialRooms);
 
 	const { hotels } = useHotelData(); //Hämta hotellinformationen från kontexten
+	const { setSearchParams } = useSearchParamsContext(); // Set global search params
 
 	// State för att ändra synlighet
 	const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 	const [isGuestSelectorOpen, setIsGuestSelectorOpen] = useState(false);
 
 	const [locationSuggestions, setLocationSuggestions] = useState([]);
-
-
 
 	// Funktion för att visa/dölja
 	const toggleGuestSelector = () => {
@@ -98,10 +97,23 @@ function SearchBar({
 			!endDate ||
 			adults === 0 ||
 			rooms === 0
-		) { {/*Om något fält saknas eller har felaktigt värde, visa en varning till användaren*/}
+		) {
+			{
+				/*Om något fält saknas eller har felaktigt värde, visa en varning till användaren*/
+			}
 			alert("Please fill in all fields before searching.");
 			return; // Stoppa vidare exekvering av funktionen om inte alla fälten är korrekt ifyllda
 		}
+
+		// Set the global search parameters in context
+		setSearchParams({
+			location,
+			startDate,
+			endDate,
+			adults,
+			children,
+			rooms,
+		});
 
 		// Construct the search query with all relevant parameters
 		const params = new URLSearchParams({
@@ -139,8 +151,10 @@ function SearchBar({
 
 		// Navigera till samma /hotels-sida med query-parametrar
 		navigate(`/hotels?${params.toString()}`);
-
 	};
+
+
+
 
 	return (
 		<div className="bg-secondaryLightBlue p-4 rounded-lg shadow-lg flex justify-between mx-auto max-w-[1400px] px-20 space-x-9 border border-accentPink">

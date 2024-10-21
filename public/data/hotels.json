@@ -68,6 +68,11 @@
           "sqm": "40 square meters",
           "description": "Indulge in our 48-square-meter Swim-Up Double Room at Hotel Riviera Resort, featuring direct access to a shared pool from your private terrace. This room includes a queen-size bed, breakfast, and free WiFi, offering the perfect retreat for two guests seeking luxury and convenience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Adjustable air conditioning",
             "Double bed and bunkbeds",
@@ -576,7 +581,7 @@
       "imgUrl": "https://cdn.pixabay.com/photo/2017/09/30/18/55/hotel-2803203_1280.jpg",
       "images": [
         "https://cdn.pixabay.com/photo/2019/07/29/05/56/resort-4369984_1280.jpg",
-       "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336167_1280.jpg"
+        "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336167_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -607,6 +612,11 @@
           "sqm": "28 square meters",
           "description": "Retreat to our Cozy Single Room, a perfect haven for solo adventurers. This compact yet comfortable space features a plush queen-size bed, a dedicated workspace, and modern amenities. Enjoy tranquil views of the surrounding gardens and recharge with complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "Queen-size bed",
@@ -1103,6 +1113,11 @@
           "sqm": "50 square meters",
           "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "Queen-size bed and two twin beds",
@@ -1362,7 +1377,7 @@
         "categories": [
           {
             "title": "Yoga",
-            "description": "Reconnect with nature through our beachside yoga sessions. Breathe in the fresh sea air and feel the warm sand beneath your feet as you flow through a series of relaxing poses. Our experienced instructors will guide you, ensuring a serene and rejuvenating experience that leaves you feeling balanced and revitalized.",            
+            "description": "Reconnect with nature through our beachside yoga sessions. Breathe in the fresh sea air and feel the warm sand beneath your feet as you flow through a series of relaxing poses. Our experienced instructors will guide you, ensuring a serene and rejuvenating experience that leaves you feeling balanced and revitalized.",
             "imgUrl": "https://cdn.pixabay.com/photo/2016/11/20/09/05/yoga-1842292_1280.jpg"
           },
           {
@@ -1592,6 +1607,11 @@
           "sqm": "45 square meters",
           "description": "Awaken to the soothing sounds of the ocean in our Oceanfront Deluxe Room. Spanning 45 square meters, this beautifully appointed space features a plush king-size bed, a private terrace overlooking the turquoise waters, and luxurious furnishings that promise comfort and relaxation. Enjoy complimentary breakfast and high-speed Wi-Fi for a perfect start to your day.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with sun loungers",
             "King-size bed",
@@ -2080,6 +2100,11 @@
           "sqm": "45 square meters",
           "description": "Experience tranquility in our 45-square-meter Alpine View Double Room, featuring a king-size bed adorned with premium linens and large windows showcasing stunning mountain vistas. With a cozy sitting area, complimentary breakfast, and high-speed WiFi, it’s the perfect escape for couples looking to unwind after a day of adventure.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/08/07/00/44/bed-1575491_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Smart climate control",
             "Premium king-size bed",
@@ -2296,7 +2321,7 @@
             ]
           }
         },
-      "poolAndBeach": {
+        "poolAndBeach": {
           "headingText": "Pool and Outdoor Facilities",
           "introParagraph": "At Mountain Escape, immerse yourself in the pristine beauty of the Swiss Alps with access to our heated outdoor pool and ski-in/ski-out facilities. After a day on the slopes, unwind in the warm waters of our pool, surrounded by snow-covered peaks, or relax in the sauna. Our outdoor amenities provide a unique alpine experience that combines adventure with ultimate relaxation.",
           "images": [
@@ -2557,6 +2582,11 @@
           "sqm": "45 square meters",
           "description": "Retreat to our 45-square-meter Desert Oasis Room, where plush bedding meets stunning desert vistas. This room features a spacious king-size bed and a cozy sitting area, perfect for relaxation after a day of adventure. Enjoy complimentary breakfast and Wi-Fi as you unwind in your serene sanctuary.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/09/09/06/34/bedroom-8242523_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "King-size bed",
@@ -3034,6 +3064,11 @@
           "sqm": "45 square meters",
           "description": "Escape to our 45-square-meter Tropical Oasis Room, where you can unwind in a serene atmosphere adorned with tropical decor. Featuring a spacious king-size bed, an outdoor terrace, and breathtaking garden views, this room offers a peaceful retreat with modern amenities like complimentary breakfast and free Wi-Fi.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416063_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Individual air conditioning",
             "King-size bed",
@@ -3286,7 +3321,7 @@
         "categories": [
           {
             "title": "Yoga",
-            "description": "Embrace the serenity of the ocean with our morning yoga classes on the beach. Let the gentle rhythm of the waves guide you through a series of restorative poses, designed to enhance flexibility and calm the mind. A perfect way to start your day feeling refreshed and connected to nature.",            
+            "description": "Embrace the serenity of the ocean with our morning yoga classes on the beach. Let the gentle rhythm of the waves guide you through a series of restorative poses, designed to enhance flexibility and calm the mind. A perfect way to start your day feeling refreshed and connected to nature.",
             "imgUrl": "https://cdn.pixabay.com/photo/2020/06/10/07/05/yoga-5281457_1280.jpg"
           },
           {
@@ -3503,6 +3538,11 @@
           "sqm": "38 square meters",
           "description": "Discover serenity in our 38-square-meter Zen Double Room. This room features minimalist Japanese-inspired decor, a comfortable queen-size bed, and large windows offering calming views of the rooftop garden. Perfect for two guests looking to unwind after a busy day exploring Tokyo. Enjoy free Wi-Fi, complimentary tea service, and daily breakfast.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/02/22/01/34/bed-644728_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed",
             "Smart TV with family-friendly streaming options",
@@ -3990,6 +4030,11 @@
           "sqm": "38 square meters",
           "description": "Relax in our 38-square-meter Serenity Double Room, featuring soft tones inspired by the Portuguese coast. This room offers a queen-size bed, a peaceful garden view, and modern touches like free high-speed WiFi and complimentary breakfast. Perfect for couples or solo travelers looking for tranquility.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148893_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Air conditioning with eco-control",
             "Queen-size bed",
@@ -4479,6 +4524,11 @@
           "sqm": "38 square meters",
           "description": "Wake up to the sights and sounds of Bali’s tropical gardens in our 38-square-meter Garden View Double Room. This room offers a queen-size bed, a private balcony, and complimentary WiFi, making it a perfect escape for nature lovers looking to unwind. Enjoy serene mornings with breakfast on your balcony, surrounded by the calming greenery.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/01/14/09/room-8669028_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed",
             "Private balcony with garden views",
@@ -4970,6 +5020,11 @@
           "sqm": "38 square meters",
           "description": "Soak in the tropical ambiance of Cancun in our 38-square-meter Ocean Breeze Double Room. This space offers a comfortable queen-size bed, ocean-inspired decor, and a private balcony where you can enjoy the cool sea breeze. Perfect for couples looking for a tranquil escape with complimentary breakfast and WiFi included.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/30/08/07/wardrobe-4167972_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Individually controlled air conditioning",
             "Queen-size bed",
@@ -5459,6 +5514,11 @@
           "sqm": "32 square meters",
           "description": "Embrace the rustic charm of the Alps in our Cozy Alpine Double Room. This 32-square-meter retreat offers a queen-size bed, wooden accents, and a private balcony with stunning views of the surrounding mountains. Perfect for couples seeking a peaceful hideaway, the room includes complimentary breakfast, WiFi, and a calming atmosphere to relax after a day of alpine adventures.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/23/11/55/bedroom-8714874_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed with premium linens",
             "Private balcony with mountain views",
@@ -5936,6 +5996,11 @@
           "sqm": "42 square meters",
           "description": "Relax in the tranquility of our Family Garden Room, offering 42 square meters of space perfect for a small family. With two queen-size beds, a private garden patio, and vibrant, island-inspired decor, it’s the ideal retreat. Enjoy complimentary breakfast and Wi-Fi to make your stay even more comfortable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846174_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Private garden terrace",
             "Two queen-size beds",
@@ -6422,6 +6487,11 @@
           "sqm": "35 square meters",
           "description": "Wake up to the serene sound of the ocean in our 35-square-meter Standard Ocean View Room. This cozy space features a comfortable queen-size bed, a private balcony overlooking the beach, and essential amenities like free Wi-Fi and air conditioning for a relaxed stay by the sea.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/07/08/23/33/hotel-room-1505455_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with ocean view",
             "Queen-size bed",
@@ -6916,6 +6986,11 @@
           "sqm": "45 square meters",
           "description": "Immerse yourself in the heart of New York in our 45-square-meter Chic King Room. Featuring a lavish king-size bed and contemporary decor, this room also offers stunning views of the cityscape, along with complimentary breakfast and high-speed WiFi. Perfect for travelers seeking style and comfort.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/11/13/11/46/bedroom-8385265_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+          ],
           "amenities": [
             "Individual climate control",
             "Queen-size bed",
