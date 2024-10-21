@@ -10,36 +10,51 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RoomCardsSection from "../components/RoomCardsSection";
-import { useParams } from "react-router-dom";
-import { useHotelData } from "../contexts/HotelDataContext";
-
+// import { useParams } from "react-router-dom";
+// import { useHotelData } from "../contexts/HotelDataContext";
+import useHotelDetails from "../hooks/useHotelDetails";
 function AboutTheHotelPage() {
-	const { hotelId } = useParams(); // Get hotelId from the URL
-	const { hotels, error } = useHotelData(); // Get hotel data from context
+	// const { hotelId } = useParams(); // Get hotelId from the URL
+	// const { hotels, error } = useHotelData(); // Get hotel data from context
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-	// Handle loading and error states
+	// // Handle loading and error states
+	// if (error) {
+	// 	return <p>Error loading hotel data: {error.message}</p>;
+	// }
+
+	// // Handle the loading state
+	// if (!hotels) {
+	// 	return <p>Loading hotel data...</p>;
+	// }
+
+	// // Find the specific hotel based on hotelId
+	// const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
+
+	// // Handle cases where the hotel data is not found
+	// if (!hotel) {
+	// 	return <p>Hotel information not found.</p>;
+	// }
+	const { hotel, error, loading } = useHotelDetails();
+
+	// Handle loading, error, and not found states
+	if (loading) {
+		return <p>Loading hotel data...</p>;
+	}
 	if (error) {
 		return <p>Error loading hotel data: {error.message}</p>;
 	}
-
-	// Handle the loading state
-	if (!hotels) {
-		return <p>Loading hotel data...</p>;
-	}
-
-	// Find the specific hotel based on hotelId
-	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
-
-	// Handle cases where the hotel data is not found
 	if (!hotel) {
-		return <p>Hotel information not found.</p>;
+		return <p>Hotel not found.</p>;
 	}
-
-	console.log("Hotel data:", hotel);
-
-	console.log("Hotels data:", hotels);
+	// Define the info box content for this view
+	const infoBoxContent = {
+		title: hotel.infoBox.title,
+		additionalInformation: hotel.infoBox.additionalInformation,
+		optionsTitle: hotel.infoBox.optionsTitle,
+		extraInformation: hotel.infoBox.extraInformation,
+	};
 
 	// Set default image for the modal
 	const images = hotel.images || [];
@@ -102,18 +117,13 @@ function AboutTheHotelPage() {
 						<h2 className="text-3xl font-bold mb-4">
 							About {hotel.name}
 						</h2>
-						{hotel.descriptionParagraphs.map(
-							(paragraph, index) => (
-								<p
-									key={index}
-									className="text-lg text-black mb-4"
-								>
-									{paragraph}
-								</p>
-							)
-						)}
+						{hotel.descriptionParagraphs.map((paragraph, index) => (
+							<p key={index} className="text-lg text-black mb-4">
+								{paragraph}
+							</p>
+						))}
 					</div>
-					<InfoBoxSpecificHotel hotelId={hotelId} />
+					<InfoBoxSpecificHotel {...infoBoxContent} />
 				</div>
 
 				{/* Image Gallery Section */}

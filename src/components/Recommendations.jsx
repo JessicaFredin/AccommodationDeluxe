@@ -35,7 +35,7 @@ function Recommendations() {
 						country={hotel.location.country}
 						description={hotel.description}
 						rating={hotel.rating}
-						startingFromPrice={`Starting from: €${hotel.pricePerNight}`}
+						startingFromPrice={`Starting from: €${hotel.startingFromPrice}`}
 					/>
 				))}
 			</div>

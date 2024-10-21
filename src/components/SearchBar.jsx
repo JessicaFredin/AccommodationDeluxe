@@ -20,7 +20,7 @@ function SearchBar({
 	initialChildren,
 	initialRooms,
 }) {
-	// Initialize state with initial props
+	//Initierar state med initiala props
 	const [location, setLocation] = useState(initialLocation);
 	const [startDate, setStartDate] = useState(initialStartDate);
 	const [endDate, setEndDate] = useState(initialEndDate);
@@ -28,9 +28,9 @@ function SearchBar({
 	const [children, setChildren] = useState(initialChildren);
 	const [rooms, setRooms] = useState(initialRooms);
 
-	const { hotels } = useHotelData(); // Get the hotel data from the context
+	const { hotels } = useHotelData(); //Hämta hotellinformationen från kontexten
 
-	// State to toggle the visibility
+	// State för att ändra synlighet
 	const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 	const [isGuestSelectorOpen, setIsGuestSelectorOpen] = useState(false);
 
@@ -38,7 +38,7 @@ function SearchBar({
 
 
 
-	// Toggle function for showing/hiding
+	// Funktion för att visa/dölja
 	const toggleGuestSelector = () => {
 		setIsGuestSelectorOpen(!isGuestSelectorOpen);
 	};
@@ -46,14 +46,14 @@ function SearchBar({
 		setIsCalendarOpen(!isCalendarOpen);
 	};
 
-	// Handle Apply button click inside the CustomCalendar
+	// Funtion för att hantera klick på knappen i CustomCalendar
 	const handleApply = (selectedStartDate, selectedEndDate) => {
 		setStartDate(selectedStartDate);
 		setEndDate(selectedEndDate);
-		setIsCalendarOpen(false); // Close the calendar after applying the date
+		setIsCalendarOpen(false); // Stänger kalendern efter att ha tillämpat datumet
 	};
 
-	// Handle location input change and show suggestions
+	//Hanterar ändring i platsinmatningen och visa förslag
 	const handleLocationChange = (e) => {
 		const inputValue = e.target.value;
 		setLocation(inputValue);
@@ -81,25 +81,26 @@ function SearchBar({
 		}
 	};
 
-	// Handle location selection from dropdown
+	// Hantera platsval från dropdown
 	const handleLocationSelect = (suggestion) => {
 		setLocation(suggestion);
-		setLocationSuggestions([]); // Clear suggestions after selecting
+		setLocationSuggestions([]); //Rensar förslag efter val
 	};
 
 	const navigate = useNavigate();
 
-	// Handle search button click
+	// Funktion för att hantera klick på sökknappen
 	const handleSearch = () => {
+		//Kontrollerar om något av fälten är tomma eller om vuxna/rum är 0
 		if (
 			!location ||
 			!startDate ||
 			!endDate ||
 			adults === 0 ||
 			rooms === 0
-		) {
+		) { {/*Om något fält saknas eller har felaktigt värde, visa en varning till användaren*/}
 			alert("Please fill in all fields before searching.");
-			return;
+			return; // Stoppa vidare exekvering av funktionen om inte alla fälten är korrekt ifyllda
 		}
 
 		// Construct the search query with all relevant parameters
@@ -124,7 +125,7 @@ function SearchBar({
 					selectedCountry.toLowerCase()
 		);
 
-		// Pass the search results to the parent component with all the filter data
+		//// Skicka sökresultaten till föräldrakomponenten tillsammans med all filterdata
 		if (typeof onSearch === "function") {
 			onSearch({
 				results,
@@ -136,7 +137,7 @@ function SearchBar({
 			});
 		}
 
-		// Navigate to the same /hotels page with query params
+		// Navigera till samma /hotels-sida med query-parametrar
 		navigate(`/hotels?${params.toString()}`);
 
 	};

@@ -3,29 +3,30 @@ import React from "react";
 import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RestaurantInfo from "../components/RestaurantInfo";
 import RoomCardsSection from "../components/RoomCardsSection";
-import { useHotelData } from "../contexts/HotelDataContext";
-import { useParams } from "react-router-dom";
+import useHotelDetails from "../hooks/useHotelDetails";
 
 function FoodAndDrinksPage() {
-	const { hotelId } = useParams(); // Get hotelId from the URL
-	const { hotels, error } = useHotelData();
+	  const { hotel, error, loading } = useHotelDetails();
 
-	// Handle error and loading states
-	if (error) {
-		return <p>Error loading hotel data: {error.message}</p>;
-	}
-	if (!hotels) {
-		return <p>Loading hotel data...</p>;
+		// Handle loading, error, and not found states
+		if (loading) {
+			return <p>Loading hotel data...</p>;
+		}
+		if (error) {
+			return <p>Error loading hotel data: {error.message}</p>;
+		}
+		if (!hotel) {
+			return <p>Hotel not found.</p>;
 	}
 
-	// Find the specific hotel by hotelId
-	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
+	const infoBoxContent = {
+		title: hotel.restaurant.infoBox.title,
+		description: hotel.restaurant.infoBox.description,
+		optionsTitle: hotel.restaurant.infoBox.optionsTitle,
+		extraInformation: hotel.restaurant.infoBox.extraInformation,
+	};
 
-	// Handle case where the hotel is not found
-	if (!hotel) {
-		return <p>Hotel not found.</p>;
-	}
-console.log("Helloooo", hotel.restaurant.headingText)
+
 	return (
 		<div>
 			<div className="w-[85%] mx-auto mt-8">
@@ -39,7 +40,9 @@ console.log("Helloooo", hotel.restaurant.headingText)
 						</p>
 						<RestaurantInfo />
 					</div>
-					<InfoBoxSpecificHotel title={hotel.restaurant.infoBox.title } />
+					<InfoBoxSpecificHotel
+						{...infoBoxContent} // Tar allt innehåll från infoBoxContent, inklusive namnen på dem, dvs, title, description, optionsTitle, extraInformation... 
+					/>
 				</div>
 			</div>
 			<div>

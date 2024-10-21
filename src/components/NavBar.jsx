@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"; // Import Link from React Router
 
 function NavBar() {
 	return (
-		<nav className="bg-primaryDarkBlue p-4 flex justify-between items-center text-white w-full ">
+		<nav className="bg-primaryDarkBlue p-4 flex justify-between items-center text-white w-full">
 			<div className="flex items-center space-x-8 pl-12">
 				{" "}
 				{/* Logo and Nav Links */}

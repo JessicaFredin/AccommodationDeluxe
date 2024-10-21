@@ -11,15 +11,15 @@ import { useFavorites } from "../contexts/FavoritesContext";
 function VerticalHotelCard(props) {
 	const { favorites, toggleFavorites, removeFavorite } = useFavorites();
 
-	// Check if this hotel is already in the favorites list
+	// Kontrollerar om det specifika hotellet finns i favoriter
 	const isFavorite = favorites.some((fav) => fav.id === props.hotelId);
 
 	const handleHeartClick = () => {
 		if (isFavorite) {
-			// Remove from favorites if already there
+			// Tar birt från favoriter om det redan är där
 			removeFavorite(props.hotelId);
 		} else {
-			// Add to favorites
+			// Lägger till i favoriter
 			toggleFavorites({
 				id: props.hotelId,
 				name: props.hotelName,
@@ -55,7 +55,7 @@ function VerticalHotelCard(props) {
 			{/*Definierar layout för hotel detaljer */}
 			<div className="flex-1 p-4 flex flex-col justify-between">
 				<div className="flex justify-between">
-					{/*Hotellnamn, plats och beskrivning*/}
+					{/*Hotellnamn och hotel information*/}
 					<div>
 						<div className="flex items-bottom">
 							<h2 className="text-[20px] text-black font-bold mb-1">

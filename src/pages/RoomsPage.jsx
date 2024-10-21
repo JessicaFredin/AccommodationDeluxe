@@ -3,32 +3,51 @@
 import React from 'react';
 import HorizontalRoomType from '../components/HorizontalRoomType';
 import InfoBoxSpecificHotel from '../components/InfoBoxSpecificHotel';
-import HotelNavBar from "../components/HotelNavBar";
 import RoomCardsSection from '../components/RoomCardsSection';
-import { useParams } from 'react-router-dom';
-import { useHotelData } from '../contexts/HotelDataContext';
 import PropTypes from "prop-types";
-import HotelHeroSection from '../components/HotelHeroSection';
+import useHotelDetails from '../hooks/useHotelDetails';
 
 function RoomsPage() {
-	const { hotelId } = useParams(); // Get hotelId from the URL
-	const { hotels } = useHotelData(); // Get hotel data from context
+	// const { hotelId } = useParams(); // Get hotelId from the URL
+	// const { hotels } = useHotelData(); // Get hotel data from context
 
-	// Handle loading state
-	if (!hotels) {
-		return <p>Loading hotel data...</p>;
-	}
+	// // Handle loading state
+	// if (!hotels) {
+	// 	return <p>Loading hotel data...</p>;
+	// }
 
-	// Find the specific hotel based on hotelId
-	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
+	// // Find the specific hotel based on hotelId
+	// const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
 
-	// Handle cases where the hotel data is not found
-	if (!hotel) {
-		return <p>Hotel information not found.</p>;
-	}
+	// // Handle cases where the hotel data is not found
+	// if (!hotel) {
+	// 	return <p>Hotel information not found.</p>;
+	// }
 
-	// Now you can get the rooms data from the hotel
-	const { rooms } = hotel;
+	// // Now you can get the rooms data from the hotel
+	// const { rooms } = hotel;
+
+
+
+		  const { hotel, error, loading } = useHotelDetails();
+
+			// Handle loading, error, and not found states
+			if (loading) {
+				return <p>Loading hotel data...</p>;
+			}
+			if (error) {
+				return <p>Error loading hotel data: {error.message}</p>;
+			}
+			if (!hotel) {
+				return <p>Hotel not found.</p>;
+			}
+
+			const infoBoxContent = {
+				title: hotel.aboutTheRooms.infoBox.title,
+				additionalInformation: hotel.aboutTheRooms.infoBox.additionalInformation,
+				optionsTitle: hotel.aboutTheRooms.infoBox.optionsTitle,
+				extraInformation: hotel.aboutTheRooms.infoBox.extraInformation,
+			};
 
 
 	return (
@@ -45,11 +64,11 @@ function RoomsPage() {
 						</p>
 						{/* Rooms */}
 						<div className="w-[60%] space-y-6">
-							{rooms.map((room, roomIndex) => (
+							{hotel.rooms.map((room, roomIndex) => (
 								<HorizontalRoomType
 									key={roomIndex}
 									room={room}
-									roomType={room.roomType}
+									title={room.roomType}
 									imgUrl={room.imgUrl}
 									sqm={room.sqm}
 									description={room.description}
@@ -58,11 +77,7 @@ function RoomsPage() {
 						</div>
 					</div>
 
-					<InfoBoxSpecificHotel
-						hotelId={hotelId}
-						title={"In all rooms/suites:"}
-						amenities={hotel.amenities}
-					/>
+					<InfoBoxSpecificHotel {...infoBoxContent} />
 				</div>
 			</div>
 			<RoomCardsSection />

@@ -179,7 +179,7 @@
 
 
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React from "react";
 import { useParams, Outlet } from "react-router-dom";
 import { useHotelData } from "../contexts/HotelDataContext";
 import HotelNavBar from "../components/HotelNavBar";

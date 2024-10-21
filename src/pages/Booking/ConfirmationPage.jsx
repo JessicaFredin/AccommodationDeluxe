@@ -13,7 +13,7 @@ const bookingDetails = {
     checkIn: "10am, 3 November 2024",
     checkOut: "11am, 10 November 2024",
     roomType: "Double Room",
-    guests: 2,
+    guests: 2
 };
 const importantInfo = [
     "Check-in is from 10 am and check-out is by 11:00 AM.",

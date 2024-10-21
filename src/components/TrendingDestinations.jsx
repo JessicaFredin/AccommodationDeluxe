@@ -15,10 +15,10 @@ function TrendingDestinations() {
 				Discover accommodations in trendy destinations
 			</p>
 
-			{/* Container for trending destination cards */}
+			{/* Kontainern för trendingdestinationcards */}
 			<div className="flex gap-10">
 				{" "}
-				{/* Left section */}
+				{/* Vänstra sektionen med två bilder och text */}
 				<div className="flex flex-col gap-10">
 					<TrendingDestinationCard
 						imageSrc={TrendingDestinationImage1}
@@ -33,7 +33,7 @@ function TrendingDestinations() {
 						textSize="medium"
 					/>
 				</div>
-				{/* Right section with large image */}
+				{/* Högra bilden tar upp ett större utrymme */}
 				<TrendingDestinationCard
 					imageSrc={TrendingDestinationImage3}
 					location="Greece, Chora"

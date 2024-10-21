@@ -181,7 +181,7 @@ function HorizontalHotelCard({ hotel }) {
 
   const isFavorite = favorites.some((fav) => fav.id === hotel.id);
 
-  // Calculate nights based on context values
+  //Beräknar antal nätter baserat på kontextvärden
   const nights =
     searchParams.startDate && searchParams.endDate
       ? dayjs(searchParams.endDate).diff(dayjs(searchParams.startDate), "day")
@@ -191,7 +191,7 @@ function HorizontalHotelCard({ hotel }) {
     toggleFavorites(hotel);
   };
 
-  // Format dates as strings if necessary
+  // Formaterar datum som strängar med hjälp av dayjs, om startdatum eller slutdatum saknas returneras en tom stärng
   const formattedStartDate = searchParams.startDate
     ? dayjs(searchParams.startDate).format("YYYY-MM-DD")
     : "";
@@ -201,7 +201,7 @@ function HorizontalHotelCard({ hotel }) {
 
   return (
     <div className="w-[730px] h-[250px] bg-white rounded-[10px] flex overflow-hidden shadow-lg shadow-darkGrey ml-auto">
-      {/* Hotel image */}
+      {/* Hotel bild*/}
       <img
         className="w-[313px] h-[250px] object-cover"
         src={hotel.imgUrl}
@@ -224,13 +224,13 @@ function HorizontalHotelCard({ hotel }) {
                 </p>
               </div>
             </div>
-            {/* Favorite icon */}
+            {/* Favorite ikon */}
             <div className="text-accentPink cursor-pointer">
               <HeartIcon isFavorite={isFavorite} onClick={handleHeartClick} />
             </div>
           </div>
 
-          {/* List of hotel highlights */}
+          {/* Lista över hotellets highlights */}
           <ul className="list-disc text-[14px] list-inside mb-5 ml-2.5">
             {hotel.highlights.slice(0, 3).map((highlight, index) => (
               <li key={index}>{highlight}</li>
@@ -238,9 +238,9 @@ function HorizontalHotelCard({ hotel }) {
           </ul>
         </div>
 
-        {/* Price, guests, and booking button section */}
+        {/* Sektion för pris, gäster och bokningsknapp */}
         <div className="bg-opacityLightBlue flex justify-between p-3 rounded-br-lg -m-4 items-center">
-          {/* Guests */}
+          {/* Gäster */}
           <div className="text-center">
             <div className="flex items-center mt-1 space-x-2 ml-3">
               <FontAwesomeIcon icon={faUserGroup} className="text-[20px]" />
@@ -259,7 +259,7 @@ function HorizontalHotelCard({ hotel }) {
           {/* Divider */}
           <div className="border-l border-darkGrey h-10 mx-4"></div>
 
-          {/* Price */}
+          {/* Pris per natt*/}
           <div className="text-center">
             <div className="flex items-baseline space-x-2">
               <p className="text-[16px]">€{hotel.pricePerNight}/night</p>
@@ -273,7 +273,7 @@ function HorizontalHotelCard({ hotel }) {
           {/* Divider */}
           <div className="border-l border-darkGrey h-10 mx-4"></div>
 
-          {/* Booking button */}
+          {/* Bokningsknapp */}
           <div className="flex items-center justify-center">
             <Link
               to={`/hotels/${hotel.id}/about?startDate=${formattedStartDate}&endDate=${formattedEndDate}&adults=${searchParams.adults}&children=${searchParams.children}&nights=${nights}`}

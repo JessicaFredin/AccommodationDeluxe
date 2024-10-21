@@ -9,7 +9,7 @@ function HorizontalRoomType(props) {
 			<div className="w-1/3 h-full">
 				<img
 					src={props.imgUrl}
-					alt={props.roomType}
+					alt={props.title}
 					className="object-cover w-full h-full"
 				/>
 			</div>
@@ -17,7 +17,7 @@ function HorizontalRoomType(props) {
 			{/* Returnerar textinnehåll och textstorlek för det specifika rummet */}
 			<div className="flex flex-col justify-center p-3 w-2/3">
 				<h3 className="text-[16px] font-bold text-black">
-					{props.roomType}
+					{props.title}
 				</h3>
 				<p className="text-black text-[12px]">{props.sqm}</p>
 				<p className="text-black text-[12px]">{props.description}</p>

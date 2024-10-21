@@ -7,12 +7,15 @@ import SelectionOverview from "../../components/BookingFlow/SelectionOverview";
 import PaymentForm from "../../components/BookingFlow/PaymentForm";
 import Button from "../../components/Button";
 import AddOns from "../../components/BookingFlow/AddOns";
-
+import NavBar from "../../components/NavBar";
 import GuestDetailsForm from "../../components/BookingFlow/GuestDetailsForm";
 
 function BookingPage() {
 	return (
 		<div>
+			<div className="fixed top-0 z-50 w-full">
+				<NavBar />
+			</div>
 			<div className="fixed top-[70px] w-full z-40">
 				<ScrollCheck />
 			</div>
