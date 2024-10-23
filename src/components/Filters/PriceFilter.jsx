@@ -1,16 +1,19 @@
+// PriceFilter.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Range } from "react-range";
 
-const PriceFilter = () => {
+// eslint-disable-next-line react/prop-types
+const PriceFilter = ({ setFilters }) => {
 	const [values, setValues] = useState([0, 500]); // Initial range values
 	const STEP = 1;
 	const MIN = 0;
 	const MAX = 500;
 
-	// Handle range change
+	// Handle range change and update filters
 	const handleRangeChange = (newValues) => {
 		setValues(newValues);
+		setFilters((prev) => ({ ...prev, price: newValues }));
 	};
 
 	// Create the fake distribution bars for visualization
@@ -19,7 +22,7 @@ const PriceFilter = () => {
 		30, 70, 70, 50, 30, 30, 30, 50, 30, 30, 30, 20, 10, 20, 40,
 	];
 
-    return (
+	return (
 		<div>
 			<div className="p-4 max-w-sm">
 				<div className="flex w-full items-center -mx-3 pb-4 mb-8">
@@ -35,7 +38,7 @@ const PriceFilter = () => {
 								key={index}
 								className="w-[4px] bg-grey rounded-full"
 								style={{
-									height: `${height}px`, // Adjust bar height
+									height: `${height}px`,
 								}}
 							/>
 						))}
@@ -75,7 +78,7 @@ const PriceFilter = () => {
 						)}
 					/>
 
-					{/* Min/Max Display */}
+					{/* Display Min/Max Values */}
 					<div className="flex justify-between mt-4">
 						<div className="p-2 border border-accentPink rounded-md">
 							<p className="text-xs">Minimum</p>
