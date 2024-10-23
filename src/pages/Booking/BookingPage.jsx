@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Link } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import ScrollCheck from "../../components/BookingFlow/ScrollCheck";
 import SelectionOverview from "../../components/BookingFlow/SelectionOverview";
 import PaymentForm from "../../components/BookingFlow/PaymentForm";
@@ -15,6 +14,10 @@ function BookingPage() {
 	const [searchParams] = useSearchParams();
 	const hotelId = searchParams.get("hotelId");
 	const roomIndex = searchParams.get("roomIndex");
+	const startDate = searchParams.get("startDate");
+	const endDate = searchParams.get("endDate");
+	const adults = searchParams.get("adults");
+	const children = searchParams.get("children");
 
 	return (
 		<div>
@@ -45,9 +48,11 @@ function BookingPage() {
 					<PaymentForm />
 				</div>
 
-				{/* Knapp */}
+				{/* Button to proceed to confirmation */}
 				<div className="flex items-center justify-center">
-					<Link to="/confirmation">
+					<Link
+						to={`/confirmation?hotelId=${hotelId}&roomIndex=${roomIndex}&startDate=${startDate}&endDate=${endDate}&adults=${adults}&children=${children}`}
+					>
 						<Button size="large" buttonText="Book" />
 					</Link>
 				</div>

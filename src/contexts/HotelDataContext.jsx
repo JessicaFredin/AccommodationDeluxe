@@ -36,3 +36,12 @@ export function HotelDataProvider({ children }) {
 export function useHotelData() {
 	return React.useContext(HotelDataContext);
 }
+
+
+
+
+
+
+
+
+

@@ -246,11 +246,10 @@ function HorizontalHotelCard({ hotel }) {
               <FontAwesomeIcon icon={faUserGroup} className="text-[20px]" />
               <span>
                 <p className="font-bold text-black text-[16px]">
-                  {searchParams.adults} Adult{searchParams.adults > 1 ? "s" : ""}
+                  {searchParams.adults} {searchParams.adults === 1 ? "Adult" : "Adults"}
                 </p>
                 <p className="text-shadyBlack text-[10px]">
-                  {searchParams.children} Child
-                  {searchParams.children !== 1 ? "ren" : ""}
+                  {searchParams.children} {searchParams.children === 1 ? "Child" : "Children"}
                 </p>
               </span>
             </div>

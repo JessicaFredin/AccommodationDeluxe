@@ -3,6 +3,7 @@
 import React from "react";
 
 function ActivitiesFilter() {
+	
     return (
 		<div>
 			<div className="p-4 max-w-sm">

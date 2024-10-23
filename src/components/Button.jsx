@@ -15,15 +15,15 @@ function Button({ size, buttonText, onClick, color, rounded = false, active = fa
 		active: `bg-hoverColorLightPink text-black border-accentPink`,
 	};
 
-	// Default button styles
+	// Standard knappstilar
 	const baseStyle = `bg-accentPink text-white rounded-lg shadow-lg hover:bg-hoverColorDarkPink transition-all duration-300 ease-in-out cursor-pointer`;
 
 	const roundedStyle = `border rounded-full mx-1 px-[20px] py-[10px] h-[37px] flex items-center justify-center whitespace-nowrap cursor-pointer `;
 
-	// Use the rounded style or the default style
+	//Använder den rundade stilen eller standardstilen
 	const buttonStyle = rounded ? roundedStyle : baseStyle;
 
-	// Apply active style only to the rounded button
+	// Tillämpar aktiv stil endast på den rundade knappen
 	const activeStyle = rounded && active ? colors.active : colors[color];
 
 	return (

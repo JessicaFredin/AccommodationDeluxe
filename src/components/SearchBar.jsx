@@ -225,11 +225,11 @@ function SearchBar({
 						className="text-black size-5"
 					/>
 					<span>
-						{`${adults} adult${
-							adults > 1 ? "s" : ""
-						}, ${children} child${
-							children > 1 ? "ren" : ""
-						}, ${rooms} room${rooms > 1 ? "s" : ""}`}
+						{`${adults} ${
+							adults === 1 ? "adult" : "adults"
+						}, ${children} ${
+							children === 1 ? "child" : "children"
+						}, ${rooms} ${rooms === 1 ? "room" : "rooms"}`}
 					</span>
 				</div>
 

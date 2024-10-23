@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// Home.jsx
 import React from "react";
 import Header from "../components/Header";
 import OfferSlider from "../components/OfferSlider";
@@ -19,7 +18,7 @@ function HomePage() {
 		children,
 		rooms,
 	}) => {
-		// Update the URL with the search parameters
+		//  Uppdatera URL med sökparametrarna
 		const params = new URLSearchParams({
 			location,
 			checkin: startDate,
@@ -32,7 +31,7 @@ function HomePage() {
 	};
 	return (
 		<div>
-			{/* Header and Search Bar */}
+			{/* Header and Sökbar */}
 			<div className="relative">
 				<Header
 					size="large"
@@ -44,7 +43,7 @@ function HomePage() {
 					}
 				/>
 				<div className="absolute bottom-[-50px] w-full flex justify-center">
-					{/* Pass the handleSearch function to the SearchBar */}
+					{/* Skickar handleSearch fuktionen till SearchBar */}
 					<SearchBar onSearch={handleSearch} />
 				</div>
 			</div>

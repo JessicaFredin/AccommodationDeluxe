@@ -1,4 +1,3 @@
-// RoomsPage.jsx
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import HorizontalRoomType from '../components/HorizontalRoomType';
@@ -8,30 +7,10 @@ import PropTypes from "prop-types";
 import useHotelDetails from '../hooks/useHotelDetails';
 
 function RoomsPage() {
-	// const { hotelId } = useParams(); // Get hotelId from the URL
-	// const { hotels } = useHotelData(); // Get hotel data from context
-
-	// // Handle loading state
-	// if (!hotels) {
-	// 	return <p>Loading hotel data...</p>;
-	// }
-
-	// // Find the specific hotel based on hotelId
-	// const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
-
-	// // Handle cases where the hotel data is not found
-	// if (!hotel) {
-	// 	return <p>Hotel information not found.</p>;
-	// }
-
-	// // Now you can get the rooms data from the hotel
-	// const { rooms } = hotel;
-
-
-
+	
 		  const { hotel, error, loading } = useHotelDetails();
 
-			// Handle loading, error, and not found states
+			// Felhantering
 			if (loading) {
 				return <p>Loading hotel data...</p>;
 			}
@@ -42,6 +21,7 @@ function RoomsPage() {
 				return <p>Hotel not found.</p>;
 			}
 
+			 // Innehåll för infobox, hämtat från de specifika hotellet och dess rumstyper
 			const infoBoxContent = {
 				title: hotel.aboutTheRooms.infoBox.title,
 				additionalInformation: hotel.aboutTheRooms.infoBox.additionalInformation,
@@ -53,21 +33,20 @@ function RoomsPage() {
 	return (
 		<div>
 
-			{/* Main Layout */}
+			{/* Huvudlayout */}
 			<div className="w-[85%] mx-auto mt-8">
-				{/* Description Section */}
 				<div className="flex justify-between w-[85%] mx-auto mt-8">
 					<div className="w-[60%] pr-8">
 						<h2 className="text-3xl font-bold mb-4">Rooms</h2>
 						<p className="text-lg text-black py-3 mb-9">
 							{hotel.roomDescription}
 						</p>
-						{/* Rooms */}
+						 {/* Lista med alla rum , dynamiskt innehåll hämtat från de specifika hotellet*/}
 						<div className="w-[60%] space-y-6">
 							{hotel.rooms.map((room, roomIndex) => (
 								<HorizontalRoomType
-									key={roomIndex}
-									room={room}
+									key={roomIndex} 
+									room={room} 
 									title={room.roomType}
 									imgUrl={room.imgUrl}
 									sqm={room.sqm}
@@ -80,12 +59,13 @@ function RoomsPage() {
 					<InfoBoxSpecificHotel {...infoBoxContent} />
 				</div>
 			</div>
+			{/* Visar RoomCardSection */}
 			<RoomCardsSection />
 		</div>
 	);
 }
 
-// PropTypes for the RoomsPage
+// PropTypes
 RoomsPage.propTypes = {
   hotel: PropTypes.shape({
     name: PropTypes.string,

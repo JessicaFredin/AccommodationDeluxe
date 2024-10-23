@@ -26,14 +26,12 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00",
       "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
-      "imgUrl": "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/06/09/09/30/swimming-pool-2386261_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2017/06/09/09/30/swimming-pool-2386261_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/08/09/10/20/breakfast-4394771_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336164_1280.jpg",
-        "https://cdn.pixabay.com/photo/2019/08/09/10/20/breakfast-4394771_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336164_1280.jpg",
-        "https://cdn.pixabay.com/photo/2019/08/09/10/20/breakfast-4394771_1280.jpg",
-        "https://cdn.pixabay.com/photo/2019/08/09/10/20/breakfast-4394771_1280.jpg"
+        "https://cdn.pixabay.com/photo/2015/09/23/23/23/hall-954558_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/10/20/15/26/samos-997876_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -69,9 +67,9 @@
           "description": "Indulge in our 48-square-meter Swim-Up Double Room at Hotel Riviera Resort, featuring direct access to a shared pool from your private terrace. This room includes a queen-size bed, breakfast, and free WiFi, offering the perfect retreat for two guests seeking luxury and convenience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336164_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/11/09/17/07/chair-5727263_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/15/12/43/living-room-8254772_1280.jpg"
           ],
           "amenities": [
             "Adjustable air conditioning",
@@ -109,6 +107,11 @@
           "sqm": "50 square meters",
           "description": "Indulge in unparalleled luxury in our Suite, where sophistication meets comfort. Each detail is thoughtfully curated to create a serene retreat, featuring a spacious layout that allows for both relaxation and productivity. Sink into the plush king-size bed for a restful night's sleep, and enjoy the convenience of modern amenities at your fingertips.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/11/08/00/30/bedroom-6778193_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336167_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/08/23/01/57/chair-902360_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/08/05/18/50/houseplant-7367379_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -145,6 +148,11 @@
           "sqm": "50 square meters",
           "description": "Indulge in our 50-square-meter Penthouse Suite in Marbella, featuring a luxurious king-size bed and stylish decor. Enjoy complimentary breakfast and modern amenities such as free Wi-Fi and room service, making this the perfect retreat for those seeking comfort and elegance in a stunning setting.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/01/15/18/01/room-4768551_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/08/18/23/02/bathroom-3615667_1280.jpg",
+            "https://cdn.pixabay.com/photo/2013/07/19/20/57/chair-165422_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/04/11/11/21/plants-3310274_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -181,6 +189,11 @@
           "sqm": "50 square meters",
           "description": "Dive into luxury in our 50-square-meter Swim-Up Double Room, featuring direct access to a shared pool from your terrace. With a plush king-size bed, complimentary breakfast, and modern amenities like free Wi-Fi and room service, this room offers the perfect blend of relaxation and convenience for an unforgettable getaway.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/04/18/08/50/bathroom-1336162_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/25/17/14/armchair-8275689_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/06/18/48/botanical-6851296_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -217,6 +230,11 @@
           "sqm": "40 square meters",
           "description": "Indulge in our 48-square-meter Swim-Up Double Room at Hotel Riviera Resort, featuring direct access to a shared pool from your private terrace. This room includes a queen-size bed, breakfast, and free WiFi, offering the perfect retreat for two guests seeking luxury and convenience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/07/27/05/47/furniture-8152531_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/06/26/15/56/condo-3499679_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/07/00/42/chaise-1575490_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/01/05/12/22/leaf-3062792_1280.jpg"
+          ],
           "amenities": [
             "Adjustable air conditioning",
             "Double bed and bunkbeds",
@@ -580,8 +598,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/09/30/18/55/hotel-2803203_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2017/09/30/18/55/hotel-2803203_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/07/29/05/56/resort-4369984_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336167_1280.jpg"
+        "https://cdn.pixabay.com/photo/2020/01/31/21/09/braunschweig-stadium-4808980_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/08/04/15/59/view-874888_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -613,9 +633,9 @@
           "description": "Retreat to our Cozy Single Room, a perfect haven for solo adventurers. This compact yet comfortable space features a plush queen-size bed, a dedicated workspace, and modern amenities. Enjoy tranquil views of the surrounding gardens and recharge with complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094735_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/05/23/45/sofa-1078931_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/01/03/09/12/garden-6912055_1280.jpg"
           ],
           "amenities": [
             "Central air conditioning",
@@ -652,6 +672,11 @@
           "sqm": "65 square meters",
           "description": "Enjoy our Spacious Twin Room, thoughtfully designed for friends or families. This inviting room features two comfortable double beds and a balcony that opens up to breathtaking views of the island. With modern decor and all essential amenities, your stay will be both comfortable and convenient, complemented by free Wi-Fi and a delicious breakfast.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/25/13/10/bathroom-6893077_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/08/00/27/house-2609603_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/30/06/51/cactus-2801322_1280.jpg"
+          ],
           "amenities": [
             "Private terrace",
             "Two double beds",
@@ -688,6 +713,11 @@
           "sqm": "50 square meters",
           "description": "Our Family Double Room is perfect for families seeking comfort and style. Featuring a king-size bed and a cozy pull-out sofa, this spacious room ensures everyone has a good night's sleep. Relax on the private balcony with pool views and enjoy a range of amenities, including a complimentary breakfast to start your day off right.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/11/06/02/20/bathroom-8368662_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/10/23/22/01/living-2882718_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/03/17/09/plant-5978606_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with pool view",
             "King-size bed and sofa bed",
@@ -724,6 +754,11 @@
           "sqm": "55 square meters",
           "description": "Indulge in our Deluxe Pool View Room, where luxury meets relaxation. With a king-size bed, chic furnishings, and expansive views of the sparkling pool, this room offers the perfect setting for unwinding. Enjoy complimentary breakfast, high-speed Wi-Fi, and access to all the hotel's fantastic amenities for an unforgettable stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/02/29/11/41/bathroom-1228427_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/05/23/20/bedroom-1078887_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/23/14/42/books-1853290_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -1081,8 +1116,10 @@
       "cancellationPolicy": "No refund on cancellation",
       "imgUrl": "https://cdn.pixabay.com/photo/2014/08/26/21/47/pool-428591_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2014/08/26/21/47/pool-428591_1280.jpg",
         "https://cdn.pixabay.com/photo/2016/06/11/15/02/phuket-1450234_1280.jpg",
-        "https://cdn.pixabay.com/photo/2018/08/18/23/02/bathroom-3615667_1280.jpg"
+        "https://cdn.pixabay.com/photo/2015/02/06/15/04/hotel-626168_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/08/05/18/17/dining-410832_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -1114,9 +1151,9 @@
           "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2023/09/10/12/08/bathroom-8244824_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/10/09/14/58/chair-3735168_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/22/04/08/succulent-7148759_1280.jpg"
           ],
           "amenities": [
             "Central air conditioning",
@@ -1151,6 +1188,11 @@
           "sqm": "40 square meters",
           "description": "Breathe in the fresh air from your 40-square-meter Garden View Double Room, complete with a serene balcony overlooking the lush gardens. Featuring two cozy double beds and tasteful decor, this room provides a restful escape for friends or family, complete with modern amenities to ensure a delightful stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/12/24/19/11/hotel-room-5858069_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2017/02/24/12/23/bathroom-2094716_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/21/chair-8539204_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/07/22/08/10/flowers-5428401_1280.jpg"
+          ],
           "amenities": [
             "Air conditioning",
             "Two double beds",
@@ -1186,6 +1228,11 @@
           "sqm": "60 square meters",
           "description": "Dive into luxury in our 60-square-meter Luxury Swim-Up Room, where the pool is just a step away from your terrace. With a plush king-size bed and contemporary decor, this room combines style and comfort, making it an ideal sanctuary for guests seeking a unique and relaxing experience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/04/09/12/52/bed-7911520_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/10/18/11/18/bathroom-8323932_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/13/00/37/love-seat-1090458_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/10/21/23/10/cacti-5674490_1280.jpg"
+          ],
           "amenities": [
             "Direct pool access",
             "King-size bed",
@@ -1221,6 +1268,11 @@
           "sqm": "75 square meters",
           "description": "Stay in style in our 75-square-meter Contemporary Loft. Featuring an open-plan layout with a king-size bed, living area, and kitchenette, this room is designed for those who appreciate a modern lifestyle. The loft also boasts stunning views of the city and the sea, creating a perfect backdrop for your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/25/13/13/bathroom-6893122_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/02/17/08/12/chair-4855826_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/05/15/20/29/cactus-4205889_1280.jpg"
+          ],
           "amenities": [
             "Open-plan living space",
             "King-size bed",
@@ -1575,8 +1627,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/09/27/06/57/holiday-4507669_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/03/10/10/07/bathroom-2132342_1280.jpg"
+        "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/04/20/14/30/beach-2245867_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -1608,9 +1662,9 @@
           "description": "Awaken to the soothing sounds of the ocean in our Oceanfront Deluxe Room. Spanning 45 square meters, this beautifully appointed space features a plush king-size bed, a private terrace overlooking the turquoise waters, and luxurious furnishings that promise comfort and relaxation. Enjoy complimentary breakfast and high-speed Wi-Fi for a perfect start to your day.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094733_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/sofa-8539130_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/11/04/09/05/succulent-plants-7569399_1280.jfif"
           ],
           "amenities": [
             "Private terrace with sun loungers",
@@ -1647,6 +1701,11 @@
           "sqm": "60 square meters",
           "description": "Experience the magic of the Maldives in our stunning Overwater Bungalow. This spacious 60-square-meter retreat features direct access to the shimmering lagoon, a king-size bed, and a private deck perfect for sunbathing or stargazing. Pamper yourself with modern amenities and indulge in a complimentary breakfast while soaking in the views.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/06/10/01/05/hotel-room-1447201_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/25/13/13/bathroom-6893117_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-trio-2026503_1280.jpg"
+          ],
           "amenities": [
             "Private deck with sun loungers",
             "Direct lagoon access",
@@ -1682,6 +1741,11 @@
           "sqm": "80 square meters",
           "description": "Unwind in our Lagoon View Villa, a spacious 80-square-meter oasis featuring a luxurious king-size bed and stunning views of the lagoon. This villa offers a serene atmosphere, complete with a private pool and a large terrace for ultimate relaxation. Experience personalized service and modern comforts throughout your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664223_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/09/10/12/07/bathroom-8244818_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/22/07/49/plant-7149139_1280.jpg"
+          ],
           "amenities": [
             "Private pool",
             "King-size bed",
@@ -1717,6 +1781,11 @@
           "sqm": "90 square meters",
           "description": "Enjoy breathtaking sunsets in our exclusive Sunset Pool Villa. Spanning 90 square meters, this villa features a private infinity pool, expansive living areas, and luxurious amenities that ensure a memorable stay. Revel in the stunning views while enjoying complimentary breakfast and exceptional service.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/10/16/08/39/bedroom-490779_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/09/10/12/07/bathroom-8244815_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/01/23/17/04/chair-4788242_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/26/05/26/plant-7221918_1280.jpg"
+          ],
           "amenities": [
             "Private infinity pool",
             "King-size bed",
@@ -2067,8 +2136,10 @@
       "cancellationPolicy": "Non-refundable rate",
       "imgUrl": "https://cdn.pixabay.com/photo/2022/06/12/22/35/village-7258991_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2022/06/12/22/35/village-7258991_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/08/08/06/33/pool-4392060_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/04/18/08/50/bathroom-1336162_1280.jpg"
+        "https://cdn.pixabay.com/photo/2014/05/17/18/03/lobby-346426_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/12/31/21/47/restaurant-237060_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -2101,9 +2172,9 @@
           "description": "Experience tranquility in our 45-square-meter Alpine View Double Room, featuring a king-size bed adorned with premium linens and large windows showcasing stunning mountain vistas. With a cozy sitting area, complimentary breakfast, and high-speed WiFi, it’s the perfect escape for couples looking to unwind after a day of adventure.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/08/07/00/44/bed-1575491_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2023/11/21/11/45/bathroom-8403136_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/09/17/house-2563853_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/05/28/12/41/cactus-6290762_1280.jpg"
           ],
           "amenities": [
             "Smart climate control",
@@ -2140,6 +2211,11 @@
           "sqm": "55 square meters",
           "description": "Indulge in our 55-square-meter Mountain Escape Suite, where elegance meets adventure. This suite features a spacious living area, a luxurious king-size bed, and a private balcony offering panoramic views of the iconic Matterhorn. Enjoy amenities like a whirlpool bath and a complimentary breakfast, making your stay truly unforgettable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/09/18/12/03/bathroom-8260425_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/30/10/07/sofa-8352433_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/11/11/15/53/cactus-3809018_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with mountain views",
             "Luxurious king-size bed",
@@ -2176,6 +2252,11 @@
           "sqm": "40 square meters",
           "description": "Step into our Cozy Cabin Room, a 40-square-meter retreat designed to make you feel at home in the mountains. With rustic wooden decor, a comfortable queen-size bed, and a warm ambiance, this room offers a perfect balance of comfort and style. Enjoy a delightful breakfast and high-speed WiFi, perfect for a cozy stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/09/11/04/45/interior-design-4467771_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/11/08/00/30/furniture-6778198_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/12/06/11/55/interior-3001599_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/02/12/13/03/mini-potted-633702_1280.jpg"
+          ],
           "amenities": [
             "Custom wooden furnishings",
             "Comfortable queen-size bed",
@@ -2212,6 +2293,11 @@
           "sqm": "38 square meters",
           "description": "Discover our Charming Studio Room, an intimate space designed for a romantic getaway. This 38-square-meter room features a cozy king-size bed, a small kitchenette for light meals, and a private balcony with enchanting views of the Swiss Alps. Enjoy complimentary breakfast and high-speed WiFi to make your stay even more comfortable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132435_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2017/02/24/12/20/bathroom-2094682_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/08/14/01/50/room-6544382_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-in-blue-pot-2026508_1280.jpg"
+          ],
           "amenities": [
             "Intimate kitchenette with microwave",
             "King-size bed",
@@ -2550,8 +2636,10 @@
       "cancellationPolicy": "Free cancellation within 72 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2022/01/15/23/03/burj-khalifa-6940925_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2022/01/15/23/03/burj-khalifa-6940925_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/08/19/13/54/fruit-4416502_1280.jpg",
-        "https://cdn.pixabay.com/photo/2023/09/10/12/08/bathroom-8244824_1280.jpg"
+        "https://cdn.pixabay.com/photo/2015/01/16/11/19/bar-601318_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -2583,9 +2671,9 @@
           "description": "Retreat to our 45-square-meter Desert Oasis Room, where plush bedding meets stunning desert vistas. This room features a spacious king-size bed and a cozy sitting area, perfect for relaxation after a day of adventure. Enjoy complimentary breakfast and Wi-Fi as you unwind in your serene sanctuary.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/09/09/06/34/bedroom-8242523_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2020/01/23/02/30/toilet-4786773_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/01/49/table-2587598_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/30/20/38/succulent-in-purple-pot-2022016_1280.jpg"
           ],
           "amenities": [
             "Central air conditioning",
@@ -2622,6 +2710,11 @@
           "sqm": "60 square meters",
           "description": "Experience the allure of the desert in our Family Safari Tent, a spacious 60-square-meter canvas retreat that blends luxury with nature. With a king-size bed and two twin beds, this tent accommodates families perfectly. Enjoy the gentle sounds of the desert while relishing modern amenities and personal butler service.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/00/room-6878004_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/11/21/11/37/bathroom-8403051_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/07/18/13/55/potted-plant-5417270_1280.jpg"
+          ],
           "amenities": [
             "Personalized butler service",
             "Comfortable bedding for the whole family",
@@ -2657,6 +2750,11 @@
           "sqm": "70 square meters",
           "description": "Escape to our Luxury Desert Villa, a lavish 70-square-meter sanctuary featuring a private terrace with panoramic views of the dunes. With elegant furnishings and a serene ambiance, this villa is perfect for those looking to unwind in style while enjoying all the amenities you expect.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/01/05/08/39/furniture-3062400_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/25/13/09/bathroom-6893065_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/11/17/22/25/sofa-4633582_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/01/22/15/52/houseplant-7736733_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with desert views",
             "Spacious king-size bed",
@@ -2692,6 +2790,11 @@
           "sqm": "50 square meters",
           "description": "Immerse yourself in tranquility in our Sunset Retreat Room, featuring expansive windows that frame the breathtaking desert sunsets. This 50-square-meter room includes a plush king-size bed and a relaxing lounge area, ensuring a perfect escape after a day of exploration. Enjoy complimentary breakfast and Wi-Fi as you unwind in this peaceful haven.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/22/16/57/room-6887944_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539137_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/15/44/house-2593570_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/04/12/22/51/cactus-3315096_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "King-size bed",
@@ -3032,8 +3135,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
         "https://cdn.pixabay.com/photo/2018/03/06/16/13/monolithic-part-of-the-waters-3203821_1280.jpg",
-        "https://cdn.pixabay.com/photo/2023/11/06/02/20/bathroom-8368662_1280.jpg"
+        "https://cdn.pixabay.com/photo/2014/08/05/22/01/lobby-411029_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/08/21/46/chairs-3733547_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -3065,9 +3170,9 @@
           "description": "Escape to our 45-square-meter Tropical Oasis Room, where you can unwind in a serene atmosphere adorned with tropical decor. Featuring a spacious king-size bed, an outdoor terrace, and breathtaking garden views, this room offers a peaceful retreat with modern amenities like complimentary breakfast and free Wi-Fi.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416063_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539117_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/30/10/07/pillow-8352444_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/30/03/57/a-fleshy-plant-3571734_1280.jpg"
           ],
           "amenities": [
             "Individual air conditioning",
@@ -3103,6 +3208,11 @@
           "sqm": "55 square meters",
           "description": "Experience tranquility in our 55-square-meter Beachfront Serenity Room, where you can wake up to the sound of waves and stunning sea views. This room features a plush king-size bed, an elegant sitting area, and a private balcony perfect for savoring sunset cocktails.",
           "imgUrl": "https://cdn.pixabay.com/photo/2017/08/17/11/47/indoor-2650995_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539138_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/28/11/54/furniture-6830012_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/12/13/08/plant-7127956_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with ocean view",
             "King-size bed",
@@ -3137,6 +3247,11 @@
           "sqm": "60 square meters",
           "description": "Retreat to our 60-square-meter Garden View Suite, designed for ultimate relaxation. With a spacious layout that includes a cozy living area, a lavish king-size bed, and floor-to-ceiling windows showcasing the lush gardens, this suite is your perfect escape. Enjoy exclusive amenities and a complimentary breakfast during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/02/bed-6878038_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/08/26/15/06/bathroom-1622403_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/01/27/10/55/cushion-1164088_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/30/06/51/flowers-2801321_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony",
@@ -3171,6 +3286,11 @@
           "sqm": "50 square meters",
           "description": "Dive into relaxation in our 50-square-meter Lagoon Access Room, featuring direct access to a serene lagoon from your private terrace. Enjoy the tranquil ambiance, a comfortable king-size bed, and modern amenities that make your stay unforgettable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/07/10/17/17/bedroom-389254_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/09/18/12/03/bathroom-8260426_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/26/18/37/living-room-4720962_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/06/05/10/34/mimosa-4253396_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with lagoon access",
             "King-size bed",
@@ -3506,8 +3626,10 @@
       "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg",
         "https://cdn.pixabay.com/photo/2017/09/25/18/02/water-2786040_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/02/24/12/23/bathroom-2094716_1280.jpg"
+        "https://cdn.pixabay.com/photo/2018/08/28/21/53/hotel-3638616_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/28/13/34/bar-2689548_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -3539,9 +3661,9 @@
           "description": "Discover serenity in our 38-square-meter Zen Double Room. This room features minimalist Japanese-inspired decor, a comfortable queen-size bed, and large windows offering calming views of the rooftop garden. Perfect for two guests looking to unwind after a busy day exploring Tokyo. Enjoy free Wi-Fi, complimentary tea service, and daily breakfast.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/02/22/01/34/bed-644728_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2018/01/29/07/55/modern-minimalist-bathroom-3115450_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/09/04/14/18/pillow-3653868_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/22/16/17/daisies-1346049_1280.jpg"
           ],
           "amenities": [
             "Queen-size bed",
@@ -3578,6 +3700,11 @@
           "sqm": "42 square meters",
           "description": "Immerse yourself in the dazzling cityscape from our 42-square-meter Tokyo Panorama Room. With a plush king-size bed and floor-to-ceiling windows that frame the city's skyline, this room provides an inspiring atmosphere for both relaxation and reflection. Guests enjoy complimentary breakfast, Wi-Fi, and a serene seating area perfect for soaking in the Tokyo vibe.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/11/15/13/36/bed-8390092_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2017/03/10/10/07/bathroom-2132342_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/02/29/11/36/chair-1228423_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/02/01/02/tulip-2569334_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private seating area with skyline views",
@@ -3613,6 +3740,11 @@
           "sqm": "50 square meters",
           "description": "Our spacious 50-square-meter Family Retreat Room is designed for families or groups, featuring two queen-size beds and a cozy lounge area. With modern amenities and child-friendly options like a game console and a kids’ activity pack, this room is perfect for creating lasting memories. The room also includes a complimentary breakfast and a balcony overlooking the vibrant streets of Tokyo.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/08/16/03/21/bathroom-1597027_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/12/15/21/interior-8504195_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/25/19/49/flower-2786460_1280.jpg"
+          ],
           "amenities": [
             "Two queen-size beds",
             "Kids’ activity pack",
@@ -3649,6 +3781,11 @@
           "sqm": "60 square meters",
           "description": "Elevate your stay in our exclusive 60-square-meter Skyline Suite, complete with a king-size bed and a private balcony offering sweeping views of Tokyo. This luxurious suite features a separate living space, an elegant bathroom with a jacuzzi, and premium in-room amenities. Ideal for guests seeking a blend of modern luxury and a deep connection to the city’s skyline.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/09/17/00/22/interior-design-449009_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/10/05/11/23/bathroom-8295690_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/12/01/10/24/books-552572_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/03/27/17/59/vase-7095749_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony with city views",
@@ -3998,8 +4135,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2019/10/26/11/40/building-4579244_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2019/10/26/11/40/building-4579244_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/08/09/10/19/woman-4394764_1280.jpg",
-        "https://cdn.pixabay.com/photo/2021/12/25/13/10/bathroom-6893077_1280.jpg"
+        "https://cdn.pixabay.com/photo/2018/08/06/19/49/design-3588214_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -4031,9 +4170,9 @@
           "description": "Relax in our 38-square-meter Serenity Double Room, featuring soft tones inspired by the Portuguese coast. This room offers a queen-size bed, a peaceful garden view, and modern touches like free high-speed WiFi and complimentary breakfast. Perfect for couples or solo travelers looking for tranquility.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148893_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900977_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/45/real-estate-8589874_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/03/20/22/20/daffodils-7081935_1280.jpg"
           ],
           "amenities": [
             "Air conditioning with eco-control",
@@ -4069,6 +4208,11 @@
           "sqm": "42 square meters",
           "description": "Soak in breathtaking views of the Atlantic Ocean from our 42-square-meter Panoramic Ocean View Room. Designed for relaxation, it features a king-size bed, floor-to-ceiling windows, and a private balcony perfect for watching the sunset. With complimentary breakfast and modern amenities, this room offers a serene escape by the sea.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/01/23/06/58/modern-minimalist-bedroom-3100786_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/29/08/31/real-estate-6900982_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/04/17/12/27/sofa-5055005_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/24/05/20/flowers-7152917_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with sea view",
             "King-size bed",
@@ -4105,6 +4249,11 @@
           "sqm": "50 square meters",
           "description": "Ideal for families, the 50-square-meter Coastal Family Suite offers ample space with two connecting rooms, a king-size bed, and two twin beds. With direct access to a private garden, this suite features a spacious bathroom, free breakfast, and all the essentials to make your family’s stay memorable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/06/27/16/40/apartment-5346461_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/11/13/11/36/bathroom-8385147_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/00/58/sofa-2587273_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-in-dark-red-pot-2026500_1280.jpg"
+          ],
           "amenities": [
             "Private garden terrace",
             "King-size and twin beds",
@@ -4140,6 +4289,11 @@
           "sqm": "70 square meters",
           "description": "Elevate your stay in Lisbon with our 70-square-meter Horizon Penthouse Loft. Featuring a spacious living area, a king-size bed, and a private rooftop terrace with panoramic ocean views, this luxurious suite is perfect for guests who want to experience Lisbon in style. Enjoy a gourmet breakfast, free WiFi, and exclusive amenities.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/12/08/03/53/pillow-1890940_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/29/08/31/real-estate-6900991_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/18/11/16/sofa-8323905_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/30/03/56/a-fleshy-plant-3571733_1280.jpg"
+          ],
           "amenities": [
             "Private rooftop terrace with ocean views",
             "King-size bed",
@@ -4492,8 +4646,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/08/02/15/34/breakfast-4379937_1280.jpg",
-        "https://cdn.pixabay.com/photo/2018/06/26/15/56/condo-3499679_1280.jpg"
+        "https://cdn.pixabay.com/photo/2014/06/05/08/12/hotel-lobby-362568_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/06/14/23/59/tavern-7262963_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -4525,9 +4681,9 @@
           "description": "Wake up to the sights and sounds of Bali’s tropical gardens in our 38-square-meter Garden View Double Room. This room offers a queen-size bed, a private balcony, and complimentary WiFi, making it a perfect escape for nature lovers looking to unwind. Enjoy serene mornings with breakfast on your balcony, surrounded by the calming greenery.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/01/14/09/room-8669028_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900976_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/06/28/15/25/chair-1484853_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/09/19/57/cactus-7122180_1280.jpg"
           ],
           "amenities": [
             "Queen-size bed",
@@ -4564,6 +4720,11 @@
           "sqm": "55 square meters",
           "description": "Step into luxury with our 55-square-meter Poolside Villa, featuring direct access to a private plunge pool. This villa offers a king-size bed, an outdoor shower, and a secluded patio for a refreshing blend of indoor and outdoor living. It’s an ideal choice for couples seeking an intimate and peaceful getaway in tropical paradise.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/05/11/18/05/bedroom-4196199_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/01/23/02/30/tub-4786776_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/03/23/10/living-room-5979695_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/27/10/51/window-sill-3565758_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private plunge pool",
@@ -4599,6 +4760,11 @@
           "sqm": "60 square meters",
           "description": "Perfect for families, our 60-square-meter Family Garden Suite includes two interconnected bedrooms with king-size beds, a spacious living area, and a private balcony with garden views. Enjoy modern amenities and a kid-friendly atmosphere in this relaxing and functional suite.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/01/30/bedroom-8428539_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900971_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/18/21/07/sofa-1603928_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/11/06/10/58/pot-7573743_1280.jpg"
+          ],
           "amenities": [
             "Two king-size beds",
             "Private balcony with garden views",
@@ -4635,6 +4801,11 @@
           "sqm": "45 square meters",
           "description": "Immerse yourself in the beauty of Bali's coastline in our 45-square-meter Ocean Breeze Bungalow. Offering stunning ocean views, a king-size bed, and a private terrace, this bungalow combines luxury and nature for a truly tranquil experience. Enjoy your morning coffee with the sound of waves in the background.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/09/17/00/20/home-decor-449008_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/02/22/11/32/real-estate-8589798_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/09/13/35/living-room-7121425_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/09/21/19/12/dahlia-4494586_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private terrace with ocean views",
@@ -4988,8 +5159,10 @@
       "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/09/21/16/12/holidays-2772364_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2017/09/21/16/12/holidays-2772364_1280.jpg",
         "https://cdn.pixabay.com/photo/2017/06/24/07/56/sunbeds-2436919_1280.jpg",
-        "https://cdn.pixabay.com/photo/2023/12/04/01/19/bathroom-8428429_1280.jpg"
+        "https://cdn.pixabay.com/photo/2024/01/30/09/19/hotel-8541580_1280.jpg",
+        "https://cdn.pixabay.com/photo/2023/05/28/17/34/tavern-8024234_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5021,9 +5194,9 @@
           "description": "Soak in the tropical ambiance of Cancun in our 38-square-meter Ocean Breeze Double Room. This space offers a comfortable queen-size bed, ocean-inspired decor, and a private balcony where you can enjoy the cool sea breeze. Perfect for couples looking for a tranquil escape with complimentary breakfast and WiFi included.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/30/08/07/wardrobe-4167972_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2024/07/17/07/26/real-estate-8900769_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/07/17/07/26/real-estate-8900778_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/19/10/43/vase-1838553_1280.jpg"
           ],
           "amenities": [
             "Individually controlled air conditioning",
@@ -5060,6 +5233,11 @@
           "sqm": "55 square meters",
           "description": "Perfect for families, this 55-square-meter suite offers plenty of space with a queen-size bed for the adults and bunk beds for the kids. The suite is just steps away from the beach, and your private terrace opens directly onto the resort's lush gardens. Enjoy kid-friendly amenities, free breakfast, and WiFi for the whole family.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/12/05/23/22/bedroom-1078890_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/02/22/11/51/real-estate-8589944_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/26/09/24/background-8276986_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/08/23/10/27/flowers-8991384_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and bunk beds",
             "Private garden terrace",
@@ -5095,6 +5273,11 @@
           "sqm": "42 square meters",
           "description": "Escape to our serene 42-square-meter Lagoon View King Room, offering a plush king-size bed and breathtaking views of the peaceful lagoon. With a chic open-plan design, this room is perfect for couples seeking a romantic retreat, complete with complimentary breakfast, WiFi, and a private balcony for evening relaxation.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/08/27/01/36/bedroom-6577529_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/30/08/46/bathroom-1872193_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/10/14/09/20/picture-frame-5653770_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/05/31/14/18/azalea-791914_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony with lagoon view",
@@ -5130,6 +5313,11 @@
           "sqm": "50 square meters",
           "description": "Our 50-square-meter Swim-Up Family Room offers a unique poolside experience, where the whole family can step right into the water from your private terrace. With a spacious layout, a queen-size bed, and separate sleeping areas for children, this room is ideal for active families looking for fun in the sun.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/04/24/03/47/bed-1348721_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/07/26/10/36/bathroom-3563272_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/05/15/14/17/sofa-8763679_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/07/27/20/18/succulent-7348683_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and bunk beds",
             "Direct access to the pool",
@@ -5482,8 +5670,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2023/11/01/11/16/lake-8357183_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2023/11/01/11/16/lake-8357183_1280.jpg",
         "https://cdn.pixabay.com/photo/2019/09/24/09/06/holiday-4500818_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094735_1280.jpg"
+        "https://cdn.pixabay.com/photo/2016/08/22/19/28/governors-mansion-1612734_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/02/10/13/39/hotel-1191725_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5515,9 +5705,9 @@
           "description": "Embrace the rustic charm of the Alps in our Cozy Alpine Double Room. This 32-square-meter retreat offers a queen-size bed, wooden accents, and a private balcony with stunning views of the surrounding mountains. Perfect for couples seeking a peaceful hideaway, the room includes complimentary breakfast, WiFi, and a calming atmosphere to relax after a day of alpine adventures.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/23/11/55/bedroom-8714874_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2018/09/20/02/44/bathroom-3689922_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/23/15/40/teddy-bear-1853609_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/06/08/12/09/cactus-8049468_1280.jpg"
           ],
           "amenities": [
             "Queen-size bed with premium linens",
@@ -5551,6 +5741,11 @@
           "sqm": "45 square meters",
           "description": "Step into luxury with our 45-square-meter Mountain View Suite, designed for both relaxation and awe. Featuring a king-size bed and a separate living area, this suite provides panoramic views of the Alps from your private balcony. The suite also includes complimentary breakfast, free WiFi, and exclusive access to our rooftop heated pool for a perfect alpine escape.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/07/20/16/19/interior-3551003_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336165_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/10/12/04/living-room-8244791_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/24/06/58/green-plants-1855572_1280.jpg"
+          ],
           "amenities": [
             "King-size bed with cozy bedding",
             "Private balcony with uninterrupted mountain views",
@@ -5583,6 +5778,11 @@
           "sqm": "50 square meters",
           "description": "Designed with families in mind, our 50-square-meter Alpine Family Room offers a spacious setup with a queen-size bed and two single beds. Enjoy the comforts of home while experiencing the alpine environment. This room includes a family bathroom, complimentary breakfast, and WiFi, making it ideal for those traveling with children.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/06/02/12/27/apartment-4246371_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/01/11/13/57/bathroom-8501838_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/09/26/19/05/office-1696739_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/26/14/35/succulents-6052058_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and two single beds",
             "Spacious family bathroom with baby-friendly amenities",
@@ -5615,6 +5815,11 @@
           "sqm": "55 square meters",
           "description": "Perfect for travelers seeking extra space, our Junior Suite offers 55 square meters of alpine-inspired luxury. With a king-size bed, a cozy seating area, and a private terrace overlooking the snowy peaks, this suite is an idyllic escape. Enjoy complimentary breakfast, free WiFi, and access to all hotel facilities during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/01/27/bedroom-8428516_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/11/16/02/27/interior-design-6799917_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/46/real-estate-8589904_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/29/07/42/plant-1868156_1280.jpg"
+          ],
           "amenities": [
             "King-size bed with mountain-inspired decor",
             "Private terrace with panoramic views",
@@ -5964,8 +6169,10 @@
       "cancellationPolicy": "Non-refundable rate",
       "imgUrl": "https://cdn.pixabay.com/photo/2013/02/28/13/07/santorini-86833_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2013/02/28/13/07/santorini-86833_1280.jpg",
         "https://cdn.pixabay.com/photo/2016/08/30/00/01/sangria-1629530_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/02/29/11/41/bathroom-1228427_1280.jpg"
+        "https://cdn.pixabay.com/photo/2017/07/13/08/00/lobby-2499600_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/06/16/03/57/tavern-7264966_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5997,9 +6204,9 @@
           "description": "Relax in the tranquility of our Family Garden Room, offering 42 square meters of space perfect for a small family. With two queen-size beds, a private garden patio, and vibrant, island-inspired decor, it’s the ideal retreat. Enjoy complimentary breakfast and Wi-Fi to make your stay even more comfortable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846174_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2016/04/15/11/50/hotel-1330854_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/02/00/46/interior-2569204_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/23/19/52/vase-819061_1280.jpg"
           ],
           "amenities": [
             "Private garden terrace",
@@ -6035,6 +6242,11 @@
           "sqm": "48 square meters",
           "description": "Watch the famous Santorini sunsets from the comfort of your own suite. The Sunset Junior Suite offers 48 square meters of pure luxury, featuring a king-size bed, a private balcony with sea views, and a spacious living area. This suite is designed for families and couples alike, with a cozy atmosphere and luxury amenities.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/08/16/03/57/bed-890555_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2022/04/14/13/19/real-estate-7132372_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/22/23/34/sofa-2777511_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/12/16/53/notebook-6789505_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with sunset view",
             "King-size bed",
@@ -6070,6 +6282,11 @@
           "sqm": "35 square meters",
           "description": "Feel the fresh ocean breeze as you relax in our 35-square-meter Ocean Breeze Double Room. Perfect for two, this room offers a queen-size bed, floor-to-ceiling windows with a partial sea view, and contemporary Greek design elements that enhance your stay. Breakfast and Wi-Fi are always included.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/01/15/18/02/room-4768554_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/10/16/08/41/bathroom-490781_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/09/25/13/35/living-room-9073734_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/04/03/13/18/flowers-6147553_1280.jpg"
+          ],
           "amenities": [
             "Partial ocean view",
             "Queen-size bed",
@@ -6104,6 +6321,11 @@
           "sqm": "55 square meters",
           "description": "Our Poolside Family Suite provides direct access to the pool, with 55 square meters of space designed for families. This suite includes a king-size bed and two twin beds, perfect for larger families looking to unwind and enjoy poolside fun. Complimentary breakfast, high-speed Wi-Fi, and room service complete this luxurious family getaway.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846170_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/05/01/20/38/bathroom-335748_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/09/20/11/51/living-room-9061302_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/27/19/07/chili-6055488_1280.jpg"
+          ],
           "amenities": [
             "Direct pool access",
             "King-size bed and twin beds",
@@ -6288,7 +6510,7 @@
           ]
         }
       },
-      "destination": {
+      "map": {
         "title": "Seaside Escape",
         "location": {
           "address": "Seaside Escape, Oia, Santorini, Greece",
@@ -6455,8 +6677,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2013/10/07/13/34/pool-191972_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2013/10/07/13/34/pool-191972_1280.jpg",
         "https://cdn.pixabay.com/photo/2016/11/21/12/46/tourism-1845203_1280.jpg",
-        "https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_1280.jpg"
+        "https://cdn.pixabay.com/photo/2015/12/19/15/41/foyer-1099924_1280.jpg",
+        "https://cdn.pixabay.com/photo/2024/07/29/19/50/irish-8930481_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -6488,9 +6712,9 @@
           "description": "Wake up to the serene sound of the ocean in our 35-square-meter Standard Ocean View Room. This cozy space features a comfortable queen-size bed, a private balcony overlooking the beach, and essential amenities like free Wi-Fi and air conditioning for a relaxed stay by the sea.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/07/08/23/33/hotel-room-1505455_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2023/10/18/11/18/bathroom-8323929_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/27/12/03/living-room-7225004_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/18/30/green-2567165_1280.jpg"
           ],
           "amenities": [
             "Private balcony with ocean view",
@@ -6525,6 +6749,11 @@
           "sqm": "45 square meters",
           "description": "Our 45-square-meter Family Room with Garden View is ideal for families or groups. Featuring one queen-size bed and a set of bunk beds, it’s perfect for a relaxing stay amidst lush tropical gardens. The room offers a private balcony, complimentary Wi-Fi, and family-friendly amenities to ensure everyone’s comfort.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/13/hotel-6878054_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/12/04/01/28/bathroom-8428520_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/03/25/23/09/living-room-2174575_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/03/08/10/54/flowers-8620501_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with garden view",
             "Queen-size bed and bunk beds",
@@ -6559,6 +6788,11 @@
           "sqm": "40 square meters",
           "description": "Immerse yourself in beachfront luxury with our 40-square-meter Deluxe Oceanfront Room. Featuring a king-size bed, direct beach access, and contemporary Bahamian-inspired decor, this room provides an elevated experience. Enjoy the comfort of a private balcony and all the essential amenities for a perfect stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/14/58/bedroom-8429668_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/18/06/02/bathroom-6878035_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/10/06/16/hardwood-2618974_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/12/16/pink-2564916_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Direct beach access",
@@ -6594,6 +6828,11 @@
           "sqm": "38 square meters",
           "description": "Stay refreshed in our 38-square-meter Swim-Up Room, offering direct access to a shared pool from your private terrace. This room features a plush king-size bed and a blend of modern comforts like complimentary Wi-Fi and a smart TV, making it the perfect choice for a rejuvenating stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/10/30/09/59/bed-8352408_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/08/31/11/18/shower-9011233_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/18/06/02/sofa-6878039_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/07/27/17/24/roses-4367217_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with pool access",
             "King-size bed",
@@ -6876,7 +7115,7 @@
           }
         ]
       },
-      "destination": {
+      "map": {
         "title": "Beachfront Paradise",
         "location": {
           "address": "Beachfront Paradise, Nassau, Bahamas",
@@ -6949,8 +7188,10 @@
       "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2023/04/16/11/27/bridge-7930004_1280.jpg",
       "images": [
+        "https://cdn.pixabay.com/photo/2023/04/16/11/27/bridge-7930004_1280.jpg",
         "https://cdn.pixabay.com/photo/2020/01/17/06/12/breakfast-4772319_1280.jpg",
-        "https://cdn.pixabay.com/photo/2023/10/18/11/10/bathroom-8323836_1280.jpg"
+        "https://cdn.pixabay.com/photo/2021/03/31/08/47/hotel-6138965_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/02/16/16/28/bar-4854100_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -6987,9 +7228,9 @@
           "description": "Immerse yourself in the heart of New York in our 45-square-meter Chic King Room. Featuring a lavish king-size bed and contemporary decor, this room also offers stunning views of the cityscape, along with complimentary breakfast and high-speed WiFi. Perfect for travelers seeking style and comfort.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/11/13/11/46/bedroom-8385265_1280.jpg",
           "roomImages": [
-            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
-            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg"
+            "https://cdn.pixabay.com/photo/2024/08/31/11/18/bathroom-9011240_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/chair-8539176_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/03/17/13/10/chamomile-7858622_1280.jpg"
           ],
           "amenities": [
             "Individual climate control",
@@ -7026,6 +7267,11 @@
           "sqm": "60 square meters",
           "description": "Relax in our opulent 60-square-meter Premier Suite, thoughtfully designed for both leisure and work. This suite features a spacious living area, a plush king-size bed, and a well-appointed kitchenette. Guests enjoy complimentary breakfast and access to exclusive rooftop views of the city skyline.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/05/12/00/23/bedroom-4196929_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/09/24/house-2563911_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/12/27/flower-2592070_1280.jpg"
+          ],
           "amenities": [
             "Private terrace",
             "King-size bed",
@@ -7061,6 +7307,11 @@
           "sqm": "40 square meters",
           "description": "Experience the vibrant city life from our 40-square-meter Skyline Double Room. Featuring two comfortable double beds and large windows with breathtaking views, this room is perfect for friends or families traveling together. Enjoy complimentary breakfast and WiFi during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/11/04/18/15/bed-4601776_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/10/18/11/10/bathroom-8323836_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/03/07/16/11/chair-3206334_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/05/18/12/33/flowers-8002177_1280.jpg"
+          ],
           "amenities": [
             "Scenic balcony",
             "Two double beds",
@@ -7096,6 +7347,11 @@
           "sqm": "80 square meters",
           "description": "Elevate your experience in our magnificent 80-square-meter Penthouse Suite, featuring a stylish open layout and sweeping views of the New York skyline. This luxurious retreat includes a king-size bed, a gourmet kitchen, and an expansive terrace perfect for entertaining.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/06/17/03/09/comfort-8069094_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/10/13/09/08/travel-1737171_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/04/08/38/sofa-7173495_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/02/24/17/56/orchid-3178759_1280.jpg"
+          ],
           "amenities": [
             "Private outdoor space",
             "King-size bed",
@@ -7294,7 +7550,7 @@
         ]
       }
     },
-    "destination": {
+    "map": {
       "title": "Urban Escape",
       "location": {
         "address": "Urban Escape, New York, USA",

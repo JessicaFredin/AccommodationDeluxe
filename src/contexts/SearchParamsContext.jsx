@@ -12,7 +12,9 @@ export const SearchParamsProvider = ({ children }) => {
 		adults: 0,
 		children: 0,
 		nights: 0,
-		rooms:0
+		rooms: 0,
+		hotelId: null,
+		roomIndex: null,
 	});
 
 	return (

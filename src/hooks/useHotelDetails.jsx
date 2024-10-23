@@ -23,11 +23,7 @@ const useHotelDetails = () => {
 
 	// Handle case where the hotel is not found
 	if (!hotel) {
-		return {
-			error: null,
-			loading: false,
-			hotel: null,
-		};
+		return { hotel: null, loading: false, error: "Hotel not found" };
 	}
 
 	return { hotel, loading: false, error: null };

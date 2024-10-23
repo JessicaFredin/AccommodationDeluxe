@@ -10,35 +10,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RoomCardsSection from "../components/RoomCardsSection";
-// import { useParams } from "react-router-dom";
-// import { useHotelData } from "../contexts/HotelDataContext";
 import useHotelDetails from "../hooks/useHotelDetails";
 function AboutTheHotelPage() {
-	// const { hotelId } = useParams(); // Get hotelId from the URL
-	// const { hotels, error } = useHotelData(); // Get hotel data from context
+
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-	// // Handle loading and error states
-	// if (error) {
-	// 	return <p>Error loading hotel data: {error.message}</p>;
-	// }
-
-	// // Handle the loading state
-	// if (!hotels) {
-	// 	return <p>Loading hotel data...</p>;
-	// }
-
-	// // Find the specific hotel based on hotelId
-	// const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
-
-	// // Handle cases where the hotel data is not found
-	// if (!hotel) {
-	// 	return <p>Hotel information not found.</p>;
-	// }
 	const { hotel, error, loading } = useHotelDetails();
 
-	// Handle loading, error, and not found states
+	
+    // Hanterar laddning, fel och inte hittat tillstånd
 	if (loading) {
 		return <p>Loading hotel data...</p>;
 	}
@@ -48,7 +29,8 @@ function AboutTheHotelPage() {
 	if (!hotel) {
 		return <p>Hotel not found.</p>;
 	}
-	// Define the info box content for this view
+	
+   // Definierar informationsboxens innehåll 
 	const infoBoxContent = {
 		title: hotel.infoBox.title,
 		additionalInformation: hotel.infoBox.additionalInformation,
@@ -56,7 +38,7 @@ function AboutTheHotelPage() {
 		extraInformation: hotel.infoBox.extraInformation,
 	};
 
-	// Set default image for the modal
+	// Sätter standardbild för modalen
 	const images = hotel.images || [];
 
 	const openModal = (index) => {
@@ -78,7 +60,7 @@ function AboutTheHotelPage() {
 
 	return (
 		<div>
-			{/* Modal for Image Popup */}
+			{/* Modal för bildpopup */}
 			{isModalOpen && images.length > 0 && (
 				<div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center">
 					<div className="relative">
@@ -109,9 +91,9 @@ function AboutTheHotelPage() {
 				</div>
 			)}
 
-			{/* Main Layout */}
+			{/* Huvud Layout */}
 			<div className="w-[85%] mx-auto mt-8">
-				{/* Description Section */}
+				{/* Beskrivningssektion */}
 				<div className="flex justify-between w-[85%] mx-auto mt-8">
 					<div className="w-[60%] pr-8">
 						<h2 className="text-3xl font-bold mb-4">
@@ -126,9 +108,9 @@ function AboutTheHotelPage() {
 					<InfoBoxSpecificHotel {...infoBoxContent} />
 				</div>
 
-				{/* Image Gallery Section */}
+				{/* Bildgallerisektion */}
 				<div className="w-[85%] mx-auto flex mt-8">
-					{/* Main Images */}
+					{/* Huvudbilder */}
 					<div className="flex flex-col">
 						{images.length > 0 && (
 							<img
@@ -139,7 +121,7 @@ function AboutTheHotelPage() {
 							/>
 						)}
 
-						{/* Thumbnails below main image, aligned to the left */}
+						{/* Miniatyrer under huvudbilden, justerade till vänster */}
 						<div className="flex space-x-4 mt-4">
 							{images.map((image, index) => (
 								<img
@@ -153,7 +135,7 @@ function AboutTheHotelPage() {
 						</div>
 					</div>
 
-					{/* Right-side Images */}
+					{/* Högerställda bilder */}
 					<div className="flex flex-col space-y-4 ml-5">
 						{images.length > 1 ? (
 							images

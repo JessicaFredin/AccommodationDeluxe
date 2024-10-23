@@ -138,12 +138,11 @@ function SelectionOverview({ hotelId, roomIndex }) {
 									€{room.pricePerNight * totalNights}
 								</span>
 								<p className="text-[18px] text-gray-500">
-									{adults} Adult{adults > 1 ? "s" : ""} /{" "}
-									{totalNights} Night
-									{totalNights > 1 ? "s" : ""}
+									{adults} {adults === 1 ? "Adult" : "Adults"} /{" "}
+									{totalNights} {totalNights === 1 ? "Night" : "Nights"}
 								</p>
 								<p className="text-[14px] text-gray-500">
-									{children} Child{children > 1 ? "ren" : ""}
+									{children} {children === 1 ? "Child" : "Children"}
 								</p>
 							</div>
 						</div>

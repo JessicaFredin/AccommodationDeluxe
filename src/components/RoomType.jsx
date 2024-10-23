@@ -138,12 +138,12 @@ function RoomType({ room, totalNights, adults, children, hotelId, index }) {
 						/>
 						<span>
 							<p className="text-md font-bold text-black">
-								{adults} Adult{adults > 1 ? "s" : ""}
+								{adults} {adults === 1 ? "Adult" : "Adults"}
 							</p>
 							{/* Display children if provided */}
 							{children !== undefined && (
 								<p className="text-xs text-shadyBlack">
-									{children} Child{children > 1 ? "ren" : ""}
+									{children} {children === 1 ? "Child" : "Children"}
 								</p>
 							)}
 						</span>
@@ -153,8 +153,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index }) {
 				<div className="ml-auto flex flex-col items-end">
 					{room.availableRooms < 3 && (
 						<span className="text-accentPink text-[12px] font-semibold">
-							Only {room.availableRooms} room
-							{room.availableRooms > 1 ? "s" : ""} left
+							Only {room.availableRooms} {room.availableRooms === 1 ? "room" : "rooms"} left
 						</span>
 					)}
 
