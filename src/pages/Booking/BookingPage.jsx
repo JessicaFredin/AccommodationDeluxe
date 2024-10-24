@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Link, useSearchParams } from "react-router-dom";
@@ -16,6 +8,7 @@ import Button from "../../components/Button";
 import AddOns from "../../components/BookingFlow/AddOns";
 import NavBar from "../../components/NavBar";
 import GuestDetailsForm from "../../components/BookingFlow/GuestDetailsForm";
+import Summary from "../../components/BookingFlow/Summary";
 
 function BookingPage() {
 	// Capture query parameters
@@ -54,6 +47,10 @@ function BookingPage() {
 
 				<div className="w-[60%]">
 					<PaymentForm />
+				</div>
+
+				<div className="w-[60%]">
+					<Summary />
 				</div>
 
 				{/* Button to proceed to confirmation */}

@@ -89,7 +89,7 @@ function VerticalHotelCard(props) {
 
 				{/*Boka knapp och pris*/}
 				<div className="flex justify-between items-center mt-4">
-					<Button size="large" buttonText={"Read more"} />
+					<Button size="large" buttonText={"Book"} />
 					<p className="text-[14px] text-black">
 						{props.startingFromPrice}
 					</p>

@@ -1,4 +1,5 @@
-/* eslint-disable no-unused-vars */
+ 
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import PropTypes from "prop-types"; // Importing PropTypes
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,3 +78,4 @@ TimeSelector.propTypes = {
 };
 
 export default TimeSelector;
+

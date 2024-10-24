@@ -42,6 +42,7 @@ function SelectionOverview({ hotelId, roomIndex }) {
 		room.roomImages && room.roomImages.length > 0
 			? room.roomImages
 			: [room.imgUrl]; // Use roomImages if available, else fallback to imgUrl
+			
 
 	const checkinDate = dayjs(startDate).format("DD MMMM YYYY");
 	const checkoutDate = dayjs(endDate).format("DD MMMM YYYY");
@@ -77,7 +78,7 @@ function SelectionOverview({ hotelId, roomIndex }) {
 					</button>
 
 					{/* Image Container */}
-					<div className="flex-grow relative flex justify-center">
+					<div className="flex-grow relative flex justify-center max-h-[500px]">
 						<img
 							className="w-full h-auto object-cover"
 							src={roomImages[currentImageIndex]} // Display current image

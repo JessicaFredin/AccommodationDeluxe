@@ -18,7 +18,7 @@ const cards = [
 ];
 
 //Huvudkomponenten för betalning
-function Payment() {
+function PaymentForm() {
 
   //Använder "useState" för att kontrollera vald betalningsmetod
   const [paymentMethod, setPaymentMethod] = useState('card');
@@ -242,4 +242,4 @@ function Payment() {
   );
 };
 
-export default Payment;
+export default PaymentForm;

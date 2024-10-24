@@ -61,6 +61,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index }) {
 				alt="Room"
 				className="w-full h-40 object-cover"
 			/>
+			
 			<div className="p-4 flex-grow">
 				<h3 className="text-[18px] font-bold text-black">
 					{room.roomType}

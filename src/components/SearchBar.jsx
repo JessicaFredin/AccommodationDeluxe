@@ -88,6 +88,7 @@ function SearchBar({
 
 	const navigate = useNavigate();
 
+	
 	// Funktion för att hantera klick på sökknappen
 	const handleSearch = () => {
 		//Kontrollerar om något av fälten är tomma eller om vuxna/rum är 0

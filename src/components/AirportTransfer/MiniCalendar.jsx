@@ -76,10 +76,10 @@ function MiniCalendar(props) {
 	const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 	return (
-		<div className="p-4 shadow-lg rounded-lg w-[350px]">
+		<div className="p-4 shadow-xl rounded-lg w-[350px] bg-secondaryLightBlue border border-white">
 			{" "}
 			{/* Month header with light blue background */}
-			<div className="bg-opacityLightBlue p-4 rounded-t-lg flex items-center justify-between">
+			<div className="bg-white p-4 rounded-t-lg flex items-center justify-between border border-b-lightGrey">
 				<button
 					onClick={handlePrevMonth}
 					className="text-lg hover:text-accentPink"

@@ -21,7 +21,7 @@ function PassengerSelection(props) {
 	const handleSelectPassenger = (count) => {
 		setSelectedPassengerCount(count);
 		setIsOpen(false); // Close the dropdown after selection
-		props.onSelectPassenger(count); // Use props without destructuring
+		props.onSelectPassenger(count); 
 	};
 
 	return (
@@ -70,3 +70,4 @@ PassengerSelection.propTypes = {
 };
 
 export default PassengerSelection;
+
