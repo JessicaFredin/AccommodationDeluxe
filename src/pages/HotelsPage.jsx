@@ -137,6 +137,7 @@ import HorizontalHotelCard from "../components/HorizontalHotelCard";
 import Header from "../components/Header";
 import FilterContainer from "../components/Filters/FilterContainer";
 import dayjs from "dayjs";
+import Sort from "../components/Sort"
 
 const today = dayjs().format("YYYY-MM-DD");
 const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
@@ -299,6 +300,10 @@ function HotelsPage() {
 						}
 					/>
 				</div>
+			</div>
+
+			<div>
+				<Sort />
 			</div>
 
 			<div className="flex justify-center pt-[100px]">
