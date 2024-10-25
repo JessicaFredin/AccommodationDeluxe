@@ -6,7 +6,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Sort({ onSort }) { 
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedOption, setSelectedOption] = useState('MUST HAVES')
+  const [selectedOption, setSelectedOption] = useState('Top destination')
 
   const options = [
     'Price (low to high)',

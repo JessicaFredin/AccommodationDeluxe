@@ -37,10 +37,11 @@ import ContactPage from "./pages/FooterLinks/About/ContactPage";
 // Booking
 import BookingPage from "./pages/Booking/BookingPage";
 import ConfirmationPage from "./pages/Booking/ConfirmationPage";
+import TrendingDestinationsPage from "./pages/TrendingDestinationsPage";
 
 function App() {
 	return (
-		<div>
+		<div className="app-wrapper">
 			<SearchParamsProvider>
 				<HotelDataProvider>
 					<FavoritesProvider>
@@ -141,6 +142,7 @@ function App() {
 									path="/contact"
 									element={<ContactPage />}
 								/>
+								<Route path="/trending-destination" element={<TrendingDestinationsPage />} />
 							</Routes>
 							<Footer />
 						</Router>

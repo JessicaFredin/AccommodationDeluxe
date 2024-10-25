@@ -6,6 +6,7 @@ import { faMapMarkerAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 import HeartIcon from "./HeartIcon";
 import { useFavorites } from "../contexts/FavoritesContext";
+import { Link } from "react-router-dom";
 
 //Returnerar Vertikala hotelkorten
 function VerticalHotelCard(props) {
@@ -89,7 +90,10 @@ function VerticalHotelCard(props) {
 
 				{/*Boka knapp och pris*/}
 				<div className="flex justify-between items-center mt-4">
-					<Button size="large" buttonText={"Book"} />
+					<Link to={`/hotels/${props.hotelId}`}>
+						<Button size="large" buttonText={"Book"} />
+					</Link>
+
 					<p className="text-[14px] text-black">
 						{props.startingFromPrice}
 					</p>

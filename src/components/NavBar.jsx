@@ -22,6 +22,12 @@ function NavBar() {
 				</div>
 				<div className="flex space-x-8">
 					<Link
+						to="/"
+						className="hover:text-hoverColorLightPink"
+					>
+						Home
+					</Link>
+					<Link
 						to="/hotels"
 						className="hover:text-hoverColorLightPink"
 					>

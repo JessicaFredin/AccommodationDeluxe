@@ -5,12 +5,20 @@ import logo from "../assets/images/logo/LogoVertical.png";
 
 function Footer() {
 	return (
-		<footer className="bg-primaryDarkBlue p-8 text-white w-full mt-8">
+		<footer className="bg-primaryDarkBlue p-8 text-white w-full mt-10">
 			<div className="container mx-auto flex justify-between w-[90%]">
 				{/* Explore Section */}
 				<div className="flex flex-col">
 					<h4 className="font-bold text-lg mb-4">Explore</h4>
 					<ul className="space-y-2 text-sm">
+					<li>
+							<Link
+								to="/home"
+								className="hover:text-hoverColorLightPink"
+							>
+								Home
+							</Link>
+						</li>
 						<li>
 							<Link
 								to="/airport-transfer"

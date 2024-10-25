@@ -24,7 +24,8 @@ function TimeSelector(props) {
 		setIsOpen(false);
 		props.onTimeSelect(time); // Using props without destructuring
 	};
-
+	
+	
 	// Generate time slots with 30-minute intervals
 	const generateTimeSlots = () => {
 		const times = [];
