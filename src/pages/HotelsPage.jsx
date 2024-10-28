@@ -120,12 +120,6 @@
 
 // export default HotelsPage;
 
-
-
-
-
-
-
 // HotelsPage.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
@@ -137,7 +131,7 @@ import HorizontalHotelCard from "../components/HorizontalHotelCard";
 import Header from "../components/Header";
 import FilterContainer from "../components/Filters/FilterContainer";
 import dayjs from "dayjs";
-import Sort from "../components/Sort"
+// import Sort from "../components/Sort"
 
 const today = dayjs().format("YYYY-MM-DD");
 const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
@@ -166,8 +160,10 @@ function HotelsPage() {
 		rooms: 1,
 	};
 
+
 	useEffect(() => {
 		const params = new URLSearchParams(search);
+		const destinationId = params.get("destinationId");
 		const location = params.get("location") || defaultSearchParams.location;
 		const checkin = params.get("checkin") || defaultSearchParams.startDate;
 		const checkout = params.get("checkout") || defaultSearchParams.endDate;
@@ -191,6 +187,20 @@ function HotelsPage() {
 		if (hotels && hotels.length > 0) {
 			let results = hotels;
 
+			// Filter by destinationId if provided
+			if (destinationId) {
+				results = results.filter(
+					(hotel) => hotel.destinationId === parseInt(destinationId)
+				);
+			} else if (location) {
+				// Fallback to location-based filtering if destinationId is not present
+				results = results.filter((hotel) => {
+					const hotelLocation =
+						`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
+					return hotelLocation.includes(location.toLowerCase());
+				});
+			}
+
 			// Filter by price
 			results = results.filter(
 				(hotel) =>
@@ -213,8 +223,6 @@ function HotelsPage() {
 			}
 
 			// Filter by activities
-
-			// Filter by activities with proper array check and ensure `category.name` exists
 			if (filters.activities.length) {
 				results = results.filter(
 					(hotel) =>
@@ -224,7 +232,7 @@ function HotelsPage() {
 								(category) =>
 									category.name &&
 									category.name.toLowerCase().trim() ===
-										activity.toLowerCase().trim() // Ensure category.name exists
+										activity.toLowerCase().trim()
 							)
 						)
 				);
@@ -242,6 +250,107 @@ function HotelsPage() {
 			setFilteredHotels(results);
 		}
 	}, [search, setSearchParams, hotels, filters]);
+
+	
+	
+	// useEffect(() => {
+	// 	const params = new URLSearchParams(search);
+	// 	const destinationId = params.get("destinationId");
+	// 	const location = params.get("location") || defaultSearchParams.location;
+	// 	const checkin = params.get("checkin") || defaultSearchParams.startDate;
+	// 	const checkout = params.get("checkout") || defaultSearchParams.endDate;
+	// 	const adults =
+	// 		parseInt(params.get("adults")) || defaultSearchParams.adults;
+	// 	const children =
+	// 		parseInt(params.get("children")) || defaultSearchParams.children;
+	// 	const rooms =
+	// 		parseInt(params.get("rooms")) || defaultSearchParams.rooms;
+
+	// 	setSearchParams({
+	// 		location,
+	// 		startDate: checkin,
+	// 		endDate: checkout,
+	// 		adults,
+	// 		children,
+	// 		rooms,
+	// 	});
+
+	// 	// Apply filtering logic based on filters state
+	// 	if (hotels && hotels.length > 0) {
+	// 		let results = hotels;
+
+	// 		// New: Filter by destinationId from URL parameter (for Explore button functionality)
+	// 		if (destinationId) {
+	// 			results = results.filter(
+	// 				(hotel) => hotel.destinationId === parseInt(destinationId)
+	// 			);
+	// 		} else if (location) {
+	// 			// Fallback to location-based filtering if destinationId is not present
+	// 			results = results.filter((hotel) => {
+	// 				const hotelLocation =
+	// 					`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
+	// 				return hotelLocation.includes(location.toLowerCase());
+	// 			});
+	// 		}
+
+	// 		// Filter by location
+	// 		if (location) {
+	// 			results = results.filter((hotel) => {
+	// 				const hotelLocation =
+	// 					`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
+	// 				return hotelLocation.includes(location.toLowerCase());
+	// 			});
+
+	// 			// Filter by price
+	// 			results = results.filter(
+	// 				(hotel) =>
+	// 					hotel.pricePerNight >= filters.price[0] &&
+	// 					hotel.pricePerNight <= filters.price[1]
+	// 			);
+
+	// 			// Filter by rating
+	// 			if (filters.rating.length) {
+	// 				results = results.filter((hotel) =>
+	// 					filters.rating.includes(Math.round(hotel.rating))
+	// 				);
+	// 			}
+
+	// 			// Filter by hotel type
+	// 			if (filters.typeOfHotel.length) {
+	// 				results = results.filter((hotel) =>
+	// 					filters.typeOfHotel.includes(hotel.typeOfHotel)
+	// 				);
+	// 			}
+
+	// 			// Filter by activities
+	// 			if (filters.activities.length) {
+	// 				results = results.filter(
+	// 					(hotel) =>
+	// 						Array.isArray(hotel.activities?.categories) &&
+	// 						filters.activities.every((activity) =>
+	// 							hotel.activities.categories.some(
+	// 								(category) =>
+	// 									category.name &&
+	// 									category.name.toLowerCase().trim() ===
+	// 										activity.toLowerCase().trim() // Ensure category.name exists
+	// 							)
+	// 						)
+	// 				);
+	// 			}
+
+	// 			// Filter by food and drinks
+	// 			if (filters.foodAndDrinks.length) {
+	// 				results = results.filter((hotel) =>
+	// 					filters.foodAndDrinks.every((food) =>
+	// 						hotel.foodAndDrinks.includes(food)
+	// 					)
+	// 				);
+	// 			}
+
+	// 			setFilteredHotels(results);
+	// 		}
+	// 	}
+	// }, [search, setSearchParams, hotels, filters]);
 
 	const handleSearch = ({
 		location,
@@ -302,9 +411,9 @@ function HotelsPage() {
 				</div>
 			</div>
 
-			<div>
+			{/* <div>
 				<Sort />
-			</div>
+			</div> */}
 
 			<div className="flex justify-center pt-[100px]">
 				<div className="mr-8">

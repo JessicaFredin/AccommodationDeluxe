@@ -10,6 +10,7 @@ export function HotelDataProvider({ children }) {
 	const [hotelData, setHotelData] = useState([]);
 	const [offers, setOffers] = useState([]);
 	const [countries, setCountries] = useState([]);
+	const [trendingDestinations, setTrendingDestinations] = useState([]);
 	const [error, setError] = useState(null);
 
 	useEffect(() => {
@@ -20,6 +21,7 @@ export function HotelDataProvider({ children }) {
 				console.log("Fetched hotel data in context:", response.data);
 				setHotelData(response.data.hotels);
 				setOffers(response.data.offers);  // Fetch offers from the same JSON file
+				setTrendingDestinations(response.data.trendingDestinations);
 				setCountries(response.data.countries);
 			})
 			.catch((error) => {
@@ -29,7 +31,7 @@ export function HotelDataProvider({ children }) {
 	}, []);
 
 	return (
-		<HotelDataContext.Provider value={{ hotels: hotelData, offers, countries, error }}>
+		<HotelDataContext.Provider value={{ hotels: hotelData, offers, countries, trendingDestinations, error }}>
 			{children}
 		</HotelDataContext.Provider>
 	);

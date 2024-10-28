@@ -64,36 +64,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-// 	return (
-// 		<div className="w-11/12 max-w-7xl mx-auto">
-// 			{/* Header and Search Bar */}
-// 			<div className="relative">
-// 				<Header
-// 					size="large"
-// 					headingText={
-// 						<>
-// 							{"Your key to the world's best hotels"} <br />
-// 							{"- book fast, travel smart"}
-// 						</>
-// 					}
-// 				/>
-// 				<div className="absolute bottom-[-50px] w-full flex justify-center">
-// 					{/* Pass handleSearch function to SearchBar */}
-// 					<SearchBar onSearch={handleSearch} />
-// 				</div>
-// 			</div>
-// 			<div className="mt-16">
-// 				<OfferSlider />
-// 			</div>
-// 			<div className="mt-16">
-// 				<Recommendations />
-// 			</div>
-// 			<div className="mt-16">
-// 				<TrendingDestinations />
-// 			</div>
-// 		</div>
-// 	);
-// }
-
-// export default HomePage;

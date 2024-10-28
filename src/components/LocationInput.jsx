@@ -32,6 +32,10 @@ function LocationInput(props) {
 	);
 }
 
+
+
+export default LocationInput;
+
 // Props validation
 LocationInput.propTypes = {
 	placeholder: PropTypes.string.isRequired,
@@ -39,4 +43,6 @@ LocationInput.propTypes = {
 	value: PropTypes.string.isRequired,
 };
 
-export default LocationInput;
+
+
+

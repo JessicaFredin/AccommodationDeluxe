@@ -140,8 +140,10 @@ function ConfirmationPage() {
 
 	return (
 		<div>
-			<PrimeSave className="mr-2 text-black" />
-			<CilPrint className="mr-2 text-black" />
+			<div className="flex justify-end items-center w-full">
+				<PrimeSave className="mr-2 text-black text-2xl" />
+				<CilPrint className="mr-2 text-black text-2xl" />
+				</div>
 			<div className="p-6 bg-opacityLIghtBlue w-[1098px] mx-auto mt-10 rounded-md shadow-md">
 				<h1 className="text-[40px] font-bold text-center mb-4">
 					Thank you! Your booking is confirmed!

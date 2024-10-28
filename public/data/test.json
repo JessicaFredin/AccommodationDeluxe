@@ -26,15 +26,12 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00",
       "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
-      "imgUrl": "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/06/09/09/30/swimming-pool-2386261_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/small-hotel-room-interior-with-double-bed-bathroom_1262-12489.jpg?t=st=1729155435~exp=1729159035~hmac=93611c193aabb3dc3c45f19fbd234a53fe3821f974756412079e594d6b14cd61&w=1800",
-        "https://img.freepik.com/free-photo/two-individual-beds_1203-18.jpg?t=st=1729155800~exp=1729159400~hmac=3b47dcc7d5102e9cb701dcdcce4f976128a93554f30e1aa3df51aa0540b42982&w=1800",
-        "https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1729163822~exp=1729167422~hmac=504d0329133f73b70f59b263797a06ebd9414692044298abdbaa6e4f695b86ef&w=1800",
-        "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?t=st=1729163952~exp=1729167552~hmac=563057682cac3545048b8c31c25b72c6c25e285ab5223d988933291eccece489&w=1800",
-        "https://img.freepik.com/free-photo/luxury-bathtub-towel-inside-bedroom-hotel_1150-10838.jpg?t=st=1729167301~exp=1729170901~hmac=0543edca48d572676525753f854f265154dc5725e146497534d49ba861f6f087&w=1800",
-        "https://img.freepik.com/free-photo/empty-beach-with-umbrellas-morning_1268-14349.jpg?t=st=1729156047~exp=1729159647~hmac=979abe78ff9c33ac2999f9a797512a69add671f6d788eb899ac3dc77333e529f&w=1800",
-        "https://img.freepik.com/free-photo/wide-angle-shot-travel-accommodation-hotel-lounge-with-check-reception-desk-stylish-empty-modern-resort-foyer-interior-with-cozy-furniture-warm-fireplace-ready-welcome-tourists_482257-67830.jpg?t=st=1729155853~exp=1729159453~hmac=e0db542ac7fcc39e6f438af6b03b3c9e6542c621ac2d8b5742f9fe95b3066e50&w=1800"
+        "https://cdn.pixabay.com/photo/2017/06/09/09/30/swimming-pool-2386261_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/08/09/10/20/breakfast-4394771_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/09/23/23/23/hall-954558_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/10/20/15/26/samos-997876_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -69,6 +66,12 @@
           "sqm": "40 square meters",
           "description": "Indulge in our 48-square-meter Swim-Up Double Room at Hotel Riviera Resort, featuring direct access to a shared pool from your private terrace. This room includes a queen-size bed, breakfast, and free WiFi, offering the perfect retreat for two guests seeking luxury and convenience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336164_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/11/09/17/07/chair-5727263_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/15/12/43/living-room-8254772_1280.jpg"
+          ],
           "amenities": [
             "Adjustable air conditioning",
             "Double bed and bunkbeds",
@@ -105,6 +108,12 @@
           "sqm": "50 square meters",
           "description": "Indulge in unparalleled luxury in our Suite, where sophistication meets comfort. Each detail is thoughtfully curated to create a serene retreat, featuring a spacious layout that allows for both relaxation and productivity. Sink into the plush king-size bed for a restful night's sleep, and enjoy the convenience of modern amenities at your fingertips.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/11/08/00/30/bedroom-6778193_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/11/08/00/30/bedroom-6778193_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336167_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/08/23/01/57/chair-902360_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/08/05/18/50/houseplant-7367379_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -141,6 +150,12 @@
           "sqm": "50 square meters",
           "description": "Indulge in our 50-square-meter Penthouse Suite in Marbella, featuring a luxurious king-size bed and stylish decor. Enjoy complimentary breakfast and modern amenities such as free Wi-Fi and room service, making this the perfect retreat for those seeking comfort and elegance in a stunning setting.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/01/15/18/01/room-4768551_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/01/15/18/01/room-4768551_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/08/18/23/02/bathroom-3615667_1280.jpg",
+            "https://cdn.pixabay.com/photo/2013/07/19/20/57/chair-165422_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/04/11/11/21/plants-3310274_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -177,6 +192,12 @@
           "sqm": "50 square meters",
           "description": "Dive into luxury in our 50-square-meter Swim-Up Double Room, featuring direct access to a shared pool from your terrace. With a plush king-size bed, complimentary breakfast, and modern amenities like free Wi-Fi and room service, this room offers the perfect blend of relaxation and convenience for an unforgettable getaway.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/08/50/bathroom-1336162_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/25/17/14/armchair-8275689_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/06/18/48/botanical-6851296_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -213,6 +234,12 @@
           "sqm": "40 square meters",
           "description": "Indulge in our 48-square-meter Swim-Up Double Room at Hotel Riviera Resort, featuring direct access to a shared pool from your private terrace. This room includes a queen-size bed, breakfast, and free WiFi, offering the perfect retreat for two guests seeking luxury and convenience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/07/27/05/47/furniture-8152531_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/07/27/05/47/furniture-8152531_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/06/26/15/56/condo-3499679_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/07/00/42/chaise-1575490_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/01/05/12/22/leaf-3062792_1280.jpg"
+          ],
           "amenities": [
             "Adjustable air conditioning",
             "Double bed and bunkbeds",
@@ -322,7 +349,7 @@
         ],
         "infoBox": {
           "title": "Bar and restaurants",
-          "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+          "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -377,17 +404,17 @@
           {
             "name": "Spa",
             "description": "Escape to pure relaxation at our spa, where soothing treatments and a tranquil atmosphere rejuvenate your mind, body, and soul. From calming massages to luxurious facials, every moment is designed for your well-being. Let stress melt away as you unwind in our serene sanctuary.",
-            "img": "https://example.com/spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2016/06/16/08/47/flower-1460889_1280.jpg"
           },
           {
             "name": "Gym",
             "description": "Elevate your fitness routine in our state-of-the-art gym, equipped with the latest machines and free weights. Whether you're lifting, running, or stretching, we've got you covered. Stay energized with personalized training options and breathtaking views, making every workout inspiring.",
-            "img": "https://example.com/gym-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2013/03/09/14/38/gym-91849_1280.jpg"
           },
           {
-            "name": "Group Training",
-            "description": "Elevate your fitness routine with our dynamic group classes, designed to challenge and energize. From yoga to high-intensity workouts, we offer something for every level. Stay motivated with expert instructors and a supportive atmosphere, making every session both fun and effective.",
-            "img": "https://example.com/group-training-image.jpg"
+            "name": "Childrens club",
+            "description": "Unleash your child’s culinary creativity at our Children's Club cooking sessions! Kids will have a blast learning to prepare delicious and healthy dishes while discovering new flavors and cooking techniques. Under the guidance of our enthusiastic chefs, children will participate in fun, hands-on activities that inspire teamwork and foster a love for cooking, making every class a tasty adventure.",
+            "img": "https://cdn.pixabay.com/photo/2020/04/09/09/45/kochkurs-5020699_1280.jpg"
           },
           {
             "name": "Yoga",
@@ -576,13 +603,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/09/30/18/55/hotel-2803203_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?w=1800",
-        "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv-chandelier_105762-2156.jpg?w=1800",
-        "https://img.freepik.com/free-photo/pillow-bed_74190-4497.jpg?w=1800",
-        "https://img.freepik.com/free-photo/double-bed-with-cushions_1203-19.jpg?w=1800",
-        "https://img.freepik.com/free-photo/view-small-bathroom-with-modern-style-decor-furniture_23-2150864774.jpg?w=900",
-        "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?w=1260&h=750&dpr=2",
-        "https://img.freepik.com/free-photo/lonely-coconut-tree-by-seaside_23-2148249012.jpg?w=1800"
+        "https://cdn.pixabay.com/photo/2017/09/30/18/55/hotel-2803203_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/07/29/05/56/resort-4369984_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/01/31/21/09/braunschweig-stadium-4808980_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/08/04/15/59/view-874888_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -613,6 +637,12 @@
           "sqm": "28 square meters",
           "description": "Retreat to our Cozy Single Room, a perfect haven for solo adventurers. This compact yet comfortable space features a plush queen-size bed, a dedicated workspace, and modern amenities. Enjoy tranquil views of the surrounding gardens and recharge with complimentary breakfast and high-speed Wi-Fi to enhance your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839184_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094735_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/05/23/45/sofa-1078931_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/01/03/09/12/garden-6912055_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "Queen-size bed",
@@ -648,6 +678,12 @@
           "sqm": "65 square meters",
           "description": "Enjoy our Spacious Twin Room, thoughtfully designed for friends or families. This inviting room features two comfortable double beds and a balcony that opens up to breathtaking views of the island. With modern decor and all essential amenities, your stay will be both comfortable and convenient, complemented by free Wi-Fi and a delicious breakfast.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/25/13/10/bathroom-6893077_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/08/00/27/house-2609603_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/30/06/51/cactus-2801322_1280.jpg"
+          ],
           "amenities": [
             "Private terrace",
             "Two double beds",
@@ -684,6 +720,12 @@
           "sqm": "50 square meters",
           "description": "Our Family Double Room is perfect for families seeking comfort and style. Featuring a king-size bed and a cozy pull-out sofa, this spacious room ensures everyone has a good night's sleep. Relax on the private balcony with pool views and enjoy a range of amenities, including a complimentary breakfast to start your day off right.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/12/15/08/17/bedroom-4696556_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/11/06/02/20/bathroom-8368662_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/10/23/22/01/living-2882718_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/03/17/09/plant-5978606_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with pool view",
             "King-size bed and sofa bed",
@@ -720,6 +762,12 @@
           "sqm": "55 square meters",
           "description": "Indulge in our Deluxe Pool View Room, where luxury meets relaxation. With a king-size bed, chic furnishings, and expansive views of the sparkling pool, this room offers the perfect setting for unwinding. Enjoy complimentary breakfast, high-speed Wi-Fi, and access to all the hotel's fantastic amenities for an unforgettable stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/02/29/11/41/bathroom-1228427_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/05/23/20/bedroom-1078887_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/23/14/42/books-1853290_1280.jpg"
+          ],
           "amenities": [
             "Private balcony",
             "King-size bed",
@@ -824,7 +872,7 @@
         ],
         "infoBox": {
           "title": "Dietary Options",
-          "additionalInformation": "We cater to a variety of dietary needs. Please inform our staff of any allergies or special requests so that we can prepare your meal accordingly.",
+          "description": "We cater to a variety of dietary needs. Please inform our staff of any allergies or special requests so that we can prepare your meal accordingly.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -878,22 +926,22 @@
           {
             "name": "Spa",
             "description": "Escape to pure relaxation at our spa, where soothing treatments and a tranquil atmosphere rejuvenate your mind, body, and soul. From calming massages to luxurious facials, every moment is designed for your well-being. Let stress melt away as you unwind in our serene sanctuary.",
-            "img": "https://example.com/spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2022/01/09/12/19/orchids-6925826_1280.jpg"
           },
           {
-            "name": "Gym",
-            "description": "Elevate your fitness routine in our state-of-the-art gym, equipped with the latest machines and free weights. Whether you're lifting, running, or stretching, we've got you covered. Stay energized with personalized training options and breathtaking views, making every workout inspiring.",
-            "img": "https://example.com/gym-image.jpg"
+            "name": "Childrens club",
+            "description": "At our Children's Club, every day is a new adventure! Kids can dive into a world of fun with activities like outdoor exploration, creative workshops, and team challenges. Our dedicated team ensures a nurturing environment where children can unleash their imagination, learn new skills, and forge friendships that last a lifetime, all while having a blast during their holiday.",
+            "img": "https://cdn.pixabay.com/photo/2014/04/29/17/43/children-playing-334531_1280.jpg"
           },
           {
-            "name": "Group Training",
-            "description": "Elevate your fitness routine with our dynamic group classes, designed to challenge and energize. From yoga to high-intensity workouts, we offer something for every level. Stay motivated with expert instructors and a supportive atmosphere, making every session both fun and effective.",
-            "img": "https://example.com/group-training-image.jpg"
+            "name": "Hike",
+            "description": "Elevate your outdoor experience with our guided hiking adventures, designed to challenge and inspire. Whether you’re a beginner or an experienced hiker, our expert guides will lead you through stunning trails that showcase the beauty of nature. Connect with fellow adventurers and enjoy a supportive atmosphere as you explore breathtaking landscapes, all while staying active and engaged.",
+            "img": "https://cdn.pixabay.com/photo/2016/11/19/12/58/adventure-1839147_1280.jpg"
           },
           {
-            "name": "Yoga",
-            "description": "Elevate your wellness with yoga sessions, where the soothing sound of waves enhances your practice. Whether you're stretching, meditating, or flowing, we've got you covered. Stay balanced with personalized guidance and breathtaking ocean views, making every session both calming and inspiring.",
-            "img": "https://cdn.pixabay.com/photo/2017/08/20/15/51/woman-2662237_1280.jpg"
+            "name": "Cycling",
+            "description": "Immerse yourself in nature with our guided cycling sessions, where the beauty of the outdoors enhances your ride. Whether you're navigating scenic trails or leisurely exploring the countryside, our expert guides provide personalized tips to help you enjoy every moment. Experience the thrill of cycling through stunning landscapes, all while soaking up the fresh air and breathtaking views.",
+            "img": "https://cdn.pixabay.com/photo/2020/10/17/10/11/bicycles-5661632_1280.jpg"
           }
         ],
         "infoBox": {
@@ -1077,11 +1125,10 @@
       "cancellationPolicy": "No refund on cancellation",
       "imgUrl": "https://cdn.pixabay.com/photo/2014/08/26/21/47/pool-428591_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/pillow-travel-nobody-pillows-luxury_1203-4932.jpg?w=1800",
-        "https://img.freepik.com/free-photo/hotel-interior-bed-pillow-home_1203-4105.jpg?w=1480",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150695002.jpg?w=1060",
-        "https://img.freepik.com/free-photo/empty-restaurants-with-terrace-street-afytos-greece_1268-15716.jpg?w=826",
-        "https://img.freepik.com/free-photo/3d-rendering-mediteranean-door_23-2151280853.jpg?w=826"
+        "https://cdn.pixabay.com/photo/2014/08/26/21/47/pool-428591_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/06/11/15/02/phuket-1450234_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/02/06/15/04/hotel-626168_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/08/05/18/17/dining-410832_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -1112,6 +1159,12 @@
           "sqm": "50 square meters",
           "description": "Gather your loved ones in our spacious 50-square-meter Cozy Family Room. With a comfortable queen-size bed and two twin beds, this room is designed for family fun and relaxation. Enjoy the modern amenities, free Wi-Fi, and a delightful balcony that overlooks the vibrant gardens, perfect for unwinding together after a day of exploring.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/10/12/08/bathroom-8244824_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/10/09/14/58/chair-3735168_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/22/04/08/succulent-7148759_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "Queen-size bed and two twin beds",
@@ -1145,6 +1198,12 @@
           "sqm": "40 square meters",
           "description": "Breathe in the fresh air from your 40-square-meter Garden View Double Room, complete with a serene balcony overlooking the lush gardens. Featuring two cozy double beds and tasteful decor, this room provides a restful escape for friends or family, complete with modern amenities to ensure a delightful stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/12/24/19/11/hotel-room-5858069_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/12/24/19/11/hotel-room-5858069_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/02/24/12/23/bathroom-2094716_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/21/chair-8539204_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/07/22/08/10/flowers-5428401_1280.jpg"
+          ],
           "amenities": [
             "Air conditioning",
             "Two double beds",
@@ -1180,6 +1239,12 @@
           "sqm": "60 square meters",
           "description": "Dive into luxury in our 60-square-meter Luxury Swim-Up Room, where the pool is just a step away from your terrace. With a plush king-size bed and contemporary decor, this room combines style and comfort, making it an ideal sanctuary for guests seeking a unique and relaxing experience.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/04/09/12/52/bed-7911520_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/04/09/12/52/bed-7911520_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/18/11/18/bathroom-8323932_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/13/00/37/love-seat-1090458_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/10/21/23/10/cacti-5674490_1280.jpg"
+          ],
           "amenities": [
             "Direct pool access",
             "King-size bed",
@@ -1215,6 +1280,12 @@
           "sqm": "75 square meters",
           "description": "Stay in style in our 75-square-meter Contemporary Loft. Featuring an open-plan layout with a king-size bed, living area, and kitchenette, this room is designed for those who appreciate a modern lifestyle. The loft also boasts stunning views of the city and the sea, creating a perfect backdrop for your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/25/13/13/bathroom-6893122_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/02/17/08/12/chair-4855826_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/05/15/20/29/cactus-4205889_1280.jpg"
+          ],
           "amenities": [
             "Open-plan living space",
             "King-size bed",
@@ -1318,7 +1389,7 @@
         ],
         "infoBox": {
           "title": "Dietary Options",
-          "additionalInformation": "Our restaurants accommodate a variety of dietary needs, including options for allergies and special dietary preferences. Please inform our staff in advance, and we will ensure that your meal is prepared to your satisfaction.",
+          "description": "Our restaurants accommodate a variety of dietary needs, including options for allergies and special dietary preferences. Please inform our staff in advance, and we will ensure that your meal is prepared to your satisfaction.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -1377,17 +1448,17 @@
           {
             "title": "Gym",
             "description": "Stay fit during your stay with our fully equipped gym, featuring state-of-the-art machines and free weights. Whether you're lifting, running, or stretching, we have everything you need for an energizing workout.",
-            "imgUrl": "https://example.com/cityscape-gym.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2020/04/03/20/49/gym-5000169_1280.jpg"
           },
           {
-            "title": "Infinity Pool",
-            "description": "Take a dip in our stunning infinity pool, offering breathtaking views of Crete. Lounge by the pool with a cocktail or enjoy a relaxing swim in this exclusive area reserved for our guests.",
-            "imgUrl": "https://example.com/cityscape-pool.jpg"
+            "title": "Hike",
+            "description": "Discover the stunning trails just beyond our doorstep! Our hiking excursions offer a range of routes for all skill levels, from leisurely strolls to challenging hikes that showcase breathtaking views. Immerse yourself in nature, breathe in the fresh air, and experience the beauty of the surrounding landscape as you embark on your next adventure.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2019/07/22/16/13/children-4355469_1280.jpg"
           },
           {
             "title": "Beach Activities",
-            "description": "Explore the nearby beaches with a range of exciting activities such as snorkeling, jet skiing, and paddleboarding. Whether you're an adventure seeker or just looking to unwind by the sea, the beach is just a short walk away.",
-            "imgUrl": "https://example.com/cityscape-beach.jpg"
+            "description": "Welcome to our Children's Club, where adventure awaits just around the corner! Kids can engage in a variety of exciting activities, from treasure hunts and arts and crafts to interactive games and team sports. Our enthusiastic staff creates a fun and safe environment, ensuring that every child can explore, learn, and make new friends during their stay.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2014/04/29/17/40/children-334528_1280.jpg"
           }
         ],
         "infoBox": {
@@ -1555,7 +1626,7 @@
         "500m from the beach"
       ],
       "pricePerNight": 148,
-      "startingFromPrice": "Starting from: €92",
+      "startingFromPrice": 92,
       "rating": 2.7,
       "description": "A serene retreat in the Maldives offering breathtaking water views.",
       "descriptionParagraphs": [
@@ -1569,11 +1640,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/lamp-comfort-bed-pillow-fabric_1203-4833.jpg?t=st=1729157954~exp=1729161554~hmac=3ddffca7d4dbb2294a3389da87cb98b66cb2d0fff06bba8e0e2226f5b39e69f2&w=826",
-        "https://img.freepik.com/free-photo/towel-family-cute-love-room_1203-4818.jpg?t=st=1729157998~exp=1729161598~hmac=f6a0228e4261736f23834445f1b4872fb184b628af703ce8b4775a74d095fc9c&w=826",
-        "https://img.freepik.com/free-photo/close-up-bathtub-with-faucet_1203-1500.jpg?t=st=1729157697~exp=1729161297~hmac=d6fc351046220980cba786f6421b2ef835f51924b05333973c7c9e25acfe0eb8&w=1800",
-        "https://img.freepik.com/free-photo/maldives-island_74190-477.jpg?t=st=1729157641~exp=1729161241~hmac=990b66e9b950957c730a86cf81c44997b9e430dd2c881aef5114693d161ee548&w=1800",
-        "https://img.freepik.com/free-photo/photorealistic-timber-house-interior-with-wooden-decor-furnishings_23-2151263597.jpg?t=st=1729157914~exp=1729161514~hmac=18b1966dfdd3ed821371732331e198d0a0219261abe2f5cba87adc1bd341eaef&w=1800"
+        "https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/09/27/06/57/holiday-4507669_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/04/20/14/30/beach-2245867_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -1604,6 +1674,12 @@
           "sqm": "45 square meters",
           "description": "Awaken to the soothing sounds of the ocean in our Oceanfront Deluxe Room. Spanning 45 square meters, this beautifully appointed space features a plush king-size bed, a private terrace overlooking the turquoise waters, and luxurious furnishings that promise comfort and relaxation. Enjoy complimentary breakfast and high-speed Wi-Fi for a perfect start to your day.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094733_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/sofa-8539130_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/11/04/09/05/succulent-plants-7569399_1280.jfif"
+          ],
           "amenities": [
             "Private terrace with sun loungers",
             "King-size bed",
@@ -1639,6 +1715,12 @@
           "sqm": "60 square meters",
           "description": "Experience the magic of the Maldives in our stunning Overwater Bungalow. This spacious 60-square-meter retreat features direct access to the shimmering lagoon, a king-size bed, and a private deck perfect for sunbathing or stargazing. Pamper yourself with modern amenities and indulge in a complimentary breakfast while soaking in the views.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/06/10/01/05/hotel-room-1447201_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/06/10/01/05/hotel-room-1447201_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/25/13/13/bathroom-6893117_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-trio-2026503_1280.jpg"
+          ],
           "amenities": [
             "Private deck with sun loungers",
             "Direct lagoon access",
@@ -1674,6 +1756,12 @@
           "sqm": "80 square meters",
           "description": "Unwind in our Lagoon View Villa, a spacious 80-square-meter oasis featuring a luxurious king-size bed and stunning views of the lagoon. This villa offers a serene atmosphere, complete with a private pool and a large terrace for ultimate relaxation. Experience personalized service and modern comforts throughout your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664223_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664223_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/10/12/07/bathroom-8244818_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/22/07/49/plant-7149139_1280.jpg"
+          ],
           "amenities": [
             "Private pool",
             "King-size bed",
@@ -1709,6 +1797,12 @@
           "sqm": "90 square meters",
           "description": "Enjoy breathtaking sunsets in our exclusive Sunset Pool Villa. Spanning 90 square meters, this villa features a private infinity pool, expansive living areas, and luxurious amenities that ensure a memorable stay. Revel in the stunning views while enjoying complimentary breakfast and exceptional service.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/10/16/08/39/bedroom-490779_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/10/16/08/39/bedroom-490779_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/10/12/07/bathroom-8244815_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/01/23/17/04/chair-4788242_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/26/05/26/plant-7221918_1280.jpg"
+          ],
           "amenities": [
             "Private infinity pool",
             "King-size bed",
@@ -1808,7 +1902,7 @@
         ],
         "infoBox": {
           "title": "Dietary Options",
-          "additionalInformation": "We are pleased to accommodate a variety of dietary needs, including allergies and special preferences. Please inform our staff in advance, and we will ensure that your meals are prepared safely and deliciously.",
+          "description": "We are pleased to accommodate a variety of dietary needs, including allergies and special preferences. Please inform our staff in advance, and we will ensure that your meals are prepared safely and deliciously.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -1862,12 +1956,12 @@
           {
             "title": "Spa",
             "description": "Unwind in our exclusive spa, offering a range of treatments including massages, facials, and body wraps. Our relaxing environment and expert therapists will ensure you leave feeling refreshed and rejuvenated.",
-            "imgUrl": "https://example.com/cityscape-spa.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2015/05/09/17/09/towel-759980_1280.jpg"
           },
           {
             "title": "Gym",
             "description": "Stay fit during your stay with our fully equipped gym, featuring state-of-the-art machines and free weights. Whether you're lifting, running, or stretching, we have everything you need for an energizing workout.",
-            "imgUrl": "https://example.com/cityscape-gym.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2020/04/11/15/27/workout-5030857_1280.jpg"
           },
           {
             "title": "Yoga",
@@ -1875,9 +1969,9 @@
             "imgUrl": "https://cdn.pixabay.com/photo/2016/08/10/17/18/activity-1583805_1280.jpg"
           },
           {
-            "title": "Beach Activities",
-            "description": "Explore the nearby beaches with a range of exciting activities such as snorkeling, jet skiing, and paddleboarding. Whether you're an adventure seeker or just looking to unwind by the sea, the beach is just a short walk away.",
-            "imgUrl": "https://example.com/cityscape-beach.jpg"
+            "title": "Beach Volley-ball",
+            "description": "Join us for thrilling volleyball matches on our sandy courts! Whether you're a seasoned player or just looking to have fun, our volleyball area is the perfect spot to enjoy some friendly competition. Gather your friends or meet new ones while soaking up the sun and playing the game you love, all just steps away from the beautiful beach.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2017/08/14/08/22/volleyball-2639700_1280.jpg"
           }
         ],
         "infoBox": {
@@ -2059,11 +2153,10 @@
       "cancellationPolicy": "Non-refundable rate",
       "imgUrl": "https://cdn.pixabay.com/photo/2022/06/12/22/35/village-7258991_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/chair-sits-cabinstyle-bedroom_157027-4296.jpg?t=st=1729158395~exp=1729161995~hmac=7bf7d9a9cd04f1cb496452761b7d818cc3f5304f359a92a2a6702d9bc4f493ad&w=2000",
-        "https://img.freepik.com/free-photo/photorealistic-wooden-house-interior-with-timber-decor-furnishings_23-2151263523.jpg?t=st=1729158380~exp=1729161980~hmac=9a50eebe25a644c840c51d102c11a6d2fdb98d77f4a61436da3e71ac6fd7f979&w=2000",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150694914.jpg?t=st=1729158104~exp=1729161704~hmac=60480ce9520d33178aaca94f94fb96cd75e280eb4412ac88ec6065473486a776&w=1060",
-        "https://img.freepik.com/free-photo/amazing-autumn-scenery-santa-maddalena-village-with-church-colorful-trees-meadows-rising-sun-rays-dolomite-alps-italy_661209-245.jpg?t=st=1729158197~exp=1729161797~hmac=ff0962dae3d2d1025602986ccf0f479a2a24642dbf602301aec34ea9e95832d3&w=1800",
-        "https://img.freepik.com/free-photo/photorealistic-wooden-house-interior-with-timber-decor-furnishings_23-2151263547.jpg?t=st=1729158200~exp=1729161800~hmac=1159de84c126851dc80e1b5fb4af11c7a4958a802eacf4d4c952a53bb1af7c67&w=2000"
+        "https://cdn.pixabay.com/photo/2022/06/12/22/35/village-7258991_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/08/08/06/33/pool-4392060_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/05/17/18/03/lobby-346426_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/12/31/21/47/restaurant-237060_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -2095,6 +2188,12 @@
           "sqm": "45 square meters",
           "description": "Experience tranquility in our 45-square-meter Alpine View Double Room, featuring a king-size bed adorned with premium linens and large windows showcasing stunning mountain vistas. With a cozy sitting area, complimentary breakfast, and high-speed WiFi, it’s the perfect escape for couples looking to unwind after a day of adventure.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/08/07/00/44/bed-1575491_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/08/07/00/44/bed-1575491_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/11/21/11/45/bathroom-8403136_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/09/17/house-2563853_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/05/28/12/41/cactus-6290762_1280.jpg"
+          ],
           "amenities": [
             "Smart climate control",
             "Premium king-size bed",
@@ -2130,6 +2229,12 @@
           "sqm": "55 square meters",
           "description": "Indulge in our 55-square-meter Mountain Escape Suite, where elegance meets adventure. This suite features a spacious living area, a luxurious king-size bed, and a private balcony offering panoramic views of the iconic Matterhorn. Enjoy amenities like a whirlpool bath and a complimentary breakfast, making your stay truly unforgettable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/18/12/03/bathroom-8260425_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/30/10/07/sofa-8352433_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/11/11/15/53/cactus-3809018_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with mountain views",
             "Luxurious king-size bed",
@@ -2166,6 +2271,12 @@
           "sqm": "40 square meters",
           "description": "Step into our Cozy Cabin Room, a 40-square-meter retreat designed to make you feel at home in the mountains. With rustic wooden decor, a comfortable queen-size bed, and a warm ambiance, this room offers a perfect balance of comfort and style. Enjoy a delightful breakfast and high-speed WiFi, perfect for a cozy stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/09/11/04/45/interior-design-4467771_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/09/11/04/45/interior-design-4467771_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/08/00/30/furniture-6778198_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/12/06/11/55/interior-3001599_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/02/12/13/03/mini-potted-633702_1280.jpg"
+          ],
           "amenities": [
             "Custom wooden furnishings",
             "Comfortable queen-size bed",
@@ -2202,6 +2313,12 @@
           "sqm": "38 square meters",
           "description": "Discover our Charming Studio Room, an intimate space designed for a romantic getaway. This 38-square-meter room features a cozy king-size bed, a small kitchenette for light meals, and a private balcony with enchanting views of the Swiss Alps. Enjoy complimentary breakfast and high-speed WiFi to make your stay even more comfortable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132435_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132435_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/02/24/12/20/bathroom-2094682_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/08/14/01/50/room-6544382_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-in-blue-pot-2026508_1280.jpg"
+          ],
           "amenities": [
             "Intimate kitchenette with microwave",
             "King-size bed",
@@ -2301,7 +2418,7 @@
           ],
           "infoBox": {
             "title": "Bar and restaurants",
-            "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+            "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
             "optionsTitle": "We also offer:",
             "extraInformation": [
               "Vegetarian options",
@@ -2353,9 +2470,9 @@
           "introParagraph": "At Mountain Escape, we offer a variety of activities that allow you to fully enjoy the breathtaking surroundings of the Swiss Alps. Whether you're looking for adventure on the slopes or relaxation after a day in nature, our activities are designed to complement your alpine escape.",
           "categories": [
             {
-              "title": "Skiing",
-              "description": "With ski-in/ski-out access, Mountain Escape offers direct entry to some of the best ski runs in Zermatt. Enjoy the thrill of skiing through pristine alpine terrain with ease, thanks to our convenient facilities and gear storage options.",
-              "imgUrl": "https://example.com/mountain-escape-skiing.jpg"
+              "title": "Childrens club",
+              "description": "At our Children's Club, kids have direct access to a world of fun and adventure! With a variety of exciting activities, including arts and crafts, interactive games, and outdoor exploration, children can immerse themselves in creativity and play. Our dedicated team ensures a safe and engaging environment, allowing kids to make new friends and create unforgettable memories during their stay.",
+              "imgUrl": "https://cdn.pixabay.com/photo/2017/08/06/17/31/people-2594456_1280.jpg"
             },
             {
               "title": "Yoga",
@@ -2365,12 +2482,12 @@
             {
               "title": "Spa Treatments",
               "description": "Indulge in luxurious spa treatments, including massages, facials, and body scrubs, designed to rejuvenate your body and mind after a day on the slopes. Our serene spa environment ensures a relaxing and restorative experience.",
-              "imgUrl": "https://example.com/mountain-escape-spa.jpg"
+              "imgUrl": "https://cdn.pixabay.com/photo/2018/09/19/10/35/wellness-3688169_1280.jpg"
             },
             {
               "title": "Mountain Hiking",
               "description": "Explore the stunning alpine landscapes with guided mountain hikes. Our experienced guides will take you through scenic trails that offer breathtaking views of the Matterhorn and other iconic peaks, perfect for nature lovers and adventurers alike.",
-              "imgUrl": "https://example.com/mountain-escape-hiking.jpg"
+              "imgUrl": "https://cdn.pixabay.com/photo/2020/05/30/18/57/hiking-5240018_1280.jpg"
             }
           ],
           "infoBox": {
@@ -2540,11 +2657,10 @@
       "cancellationPolicy": "Free cancellation within 72 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2022/01/15/23/03/burj-khalifa-6940925_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/spacious-hotel-room-with-rug_1203-1495.jpg?t=st=1729158564~exp=1729162164~hmac=a55b0b58284918d5195111a92c661a1e62cd2ea96608b9ba57c3061ceda32e7b&w=1800",
-        "https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1729158583~exp=1729162183~hmac=eddc99eb12ec9689950dcf32f09e8f297270c501fdb2d8b0c0898ef1018eef8f&w=1800",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150695006.jpg?t=st=1729158691~exp=1729162291~hmac=f9e38ab091db943627fcd6100940d8156225a75573942c8e0c75451a032fb56b&w=996",
-        "https://img.freepik.com/free-photo/skyscrapers-palm-trees-dubai-uae_268835-1062.jpg?t=st=1729158675~exp=1729162275~hmac=a9d83ac781887c980cf8c5fa55b64c1e4deef9c4a8277e79b35e250917334e6b&w=1800",
-        "https://img.freepik.com/free-photo/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge_105762-2045.jpg?t=st=1729158493~exp=1729162093~hmac=a1f47932dc5a07cacf1568dd9236b32071bb3fb13174ee0a2b58d37fb40d94b0&w=1800"
+        "https://cdn.pixabay.com/photo/2022/01/15/23/03/burj-khalifa-6940925_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/08/19/13/54/fruit-4416502_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/01/16/11/19/bar-601318_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -2575,6 +2691,12 @@
           "sqm": "45 square meters",
           "description": "Retreat to our 45-square-meter Desert Oasis Room, where plush bedding meets stunning desert vistas. This room features a spacious king-size bed and a cozy sitting area, perfect for relaxation after a day of adventure. Enjoy complimentary breakfast and Wi-Fi as you unwind in your serene sanctuary.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/09/09/06/34/bedroom-8242523_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/09/09/06/34/bedroom-8242523_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/01/23/02/30/toilet-4786773_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/01/49/table-2587598_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/30/20/38/succulent-in-purple-pot-2022016_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "King-size bed",
@@ -2610,6 +2732,12 @@
           "sqm": "60 square meters",
           "description": "Experience the allure of the desert in our Family Safari Tent, a spacious 60-square-meter canvas retreat that blends luxury with nature. With a king-size bed and two twin beds, this tent accommodates families perfectly. Enjoy the gentle sounds of the desert while relishing modern amenities and personal butler service.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/00/room-6878004_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/18/06/00/room-6878004_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/11/21/11/37/bathroom-8403051_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/07/18/13/55/potted-plant-5417270_1280.jpg"
+          ],
           "amenities": [
             "Personalized butler service",
             "Comfortable bedding for the whole family",
@@ -2645,6 +2773,12 @@
           "sqm": "70 square meters",
           "description": "Escape to our Luxury Desert Villa, a lavish 70-square-meter sanctuary featuring a private terrace with panoramic views of the dunes. With elegant furnishings and a serene ambiance, this villa is perfect for those looking to unwind in style while enjoying all the amenities you expect.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/01/05/08/39/furniture-3062400_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/01/05/08/39/furniture-3062400_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/25/13/09/bathroom-6893065_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/11/17/22/25/sofa-4633582_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/01/22/15/52/houseplant-7736733_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with desert views",
             "Spacious king-size bed",
@@ -2680,6 +2814,12 @@
           "sqm": "50 square meters",
           "description": "Immerse yourself in tranquility in our Sunset Retreat Room, featuring expansive windows that frame the breathtaking desert sunsets. This 50-square-meter room includes a plush king-size bed and a relaxing lounge area, ensuring a perfect escape after a day of exploration. Enjoy complimentary breakfast and Wi-Fi as you unwind in this peaceful haven.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/22/16/57/room-6887944_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/22/16/57/room-6887944_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539137_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/15/44/house-2593570_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/04/12/22/51/cactus-3315096_1280.jpg"
+          ],
           "amenities": [
             "Central air conditioning",
             "King-size bed",
@@ -2778,7 +2918,7 @@
         ],
         "infoBox": {
           "title": "Bar and restaurants",
-          "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+          "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -2830,19 +2970,19 @@
         "introParagraph": "At Desert Mirage, we offer an array of exclusive activities that allow you to fully embrace the beauty and excitement of the Arabian desert. Whether you're seeking adventure or relaxation, our curated activities provide a perfect balance of both.",
         "categories": [
           {
-            "title": "Dune Bashing",
-            "description": "Experience the thrill of dune bashing in the Dubai desert with our personalized tours. Hop in a private dune buggy and ride over the golden dunes for an adrenaline-pumping adventure.",
-            "imgUrl": "https://example.com/desert-mirage-dune-bashing.jpg"
+            "title": "Childrens club",
+            "description": "Welcome to our Children's Club, where every day is an adventure! Kids can enjoy a variety of exciting activities, from treasure hunts and team sports to arts and crafts that spark creativity. Our dedicated staff provides a safe and nurturing environment, ensuring that every child has the opportunity to explore, learn, and make new friends while having the time of their lives!",
+            "imgUrl": "https://cdn.pixabay.com/photo/2016/08/01/06/51/people-1560569_1280.jpg"
           },
           {
             "title": "Camel Rides",
             "description": "Take a leisurely camel ride across the desert and immerse yourself in the timeless beauty of the Arabian landscape. This serene experience is perfect for those looking to connect with the traditions of the desert.",
-            "imgUrl": "https://example.com/desert-mirage-camel-rides.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2019/07/13/21/42/camel-4335803_1280.jpg"
           },
           {
-            "title": "Stargazing",
-            "description": "At night, the desert sky comes alive with stars. Enjoy a guided stargazing session and witness the breathtaking expanse of the cosmos, far away from the city lights.",
-            "imgUrl": "https://example.com/desert-mirage-stargazing.jpg"
+            "title": "Gym",
+            "description": "Transform your fitness journey in our state-of-the-art gym, equipped with the latest exercise machines and free weights. Whether you’re looking to build strength, improve your endurance, or engage in high-energy group classes, our expert trainers are here to guide you every step of the way. Enjoy a motivating atmosphere and stunning views while you work towards your fitness goals!",
+            "imgUrl": "https://cdn.pixabay.com/photo/2020/04/03/18/34/fitness-4999754_1280.jpg"
           },
           {
             "title": "Yoga",
@@ -3020,11 +3160,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/indoor-design-luxury-resort_23-2150497284.jpg?t=st=1729159043~exp=1729162643~hmac=5991b1bc16834d7e38d72f9ac0fe1e6581f89ae83aa0d6c7489c1b6e51db2a2f&w=2000",
-        "https://img.freepik.com/free-photo/luxury-chill-bedroom-hotel_1150-10902.jpg?t=st=1729159123~exp=1729162723~hmac=ac16faa807fc716775d1c286e4b2fe00509840dbac0f7d2d46e96867fce944e4&w=1800",
-        "https://img.freepik.com/free-photo/small-bathroom-space-with-modern-style-furniture_23-2150864674.jpg?t=st=1729158883~exp=1729162483~hmac=37ae14fd055ef44a35eaf38e19e5f74eed647ce64a8fd797283c1765f27a89a8&w=740",
-        "https://img.freepik.com/free-photo/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand_335224-895.jpg?t=st=1729158919~exp=1729162519~hmac=f7b2489f7753e5333efbb01352e01249885ee25b5a3e9ac469db427747307192&w=1800",
-        "https://img.freepik.com/free-photo/ai-generated-modern-styled-entryway_23-2150692311.jpg?t=st=1729159015~exp=1729162615~hmac=4a85f60c940c7bd2480d317faa300d9d18cbedad2bd5e172a419243007581af8&w=1800"
+        "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/03/06/16/13/monolithic-part-of-the-waters-3203821_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/08/05/22/01/lobby-411029_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/08/21/46/chairs-3733547_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -3055,6 +3194,12 @@
           "sqm": "45 square meters",
           "description": "Escape to our 45-square-meter Tropical Oasis Room, where you can unwind in a serene atmosphere adorned with tropical decor. Featuring a spacious king-size bed, an outdoor terrace, and breathtaking garden views, this room offers a peaceful retreat with modern amenities like complimentary breakfast and free Wi-Fi.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416063_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416063_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539117_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/30/10/07/pillow-8352444_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/30/03/57/a-fleshy-plant-3571734_1280.jpg"
+          ],
           "amenities": [
             "Individual air conditioning",
             "King-size bed",
@@ -3089,6 +3234,12 @@
           "sqm": "55 square meters",
           "description": "Experience tranquility in our 55-square-meter Beachfront Serenity Room, where you can wake up to the sound of waves and stunning sea views. This room features a plush king-size bed, an elegant sitting area, and a private balcony perfect for savoring sunset cocktails.",
           "imgUrl": "https://cdn.pixabay.com/photo/2017/08/17/11/47/indoor-2650995_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2017/08/17/11/47/indoor-2650995_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/bathroom-8539138_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/28/11/54/furniture-6830012_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/12/13/08/plant-7127956_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with ocean view",
             "King-size bed",
@@ -3123,6 +3274,12 @@
           "sqm": "60 square meters",
           "description": "Retreat to our 60-square-meter Garden View Suite, designed for ultimate relaxation. With a spacious layout that includes a cozy living area, a lavish king-size bed, and floor-to-ceiling windows showcasing the lush gardens, this suite is your perfect escape. Enjoy exclusive amenities and a complimentary breakfast during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/02/bed-6878038_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/18/06/02/bed-6878038_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/26/15/06/bathroom-1622403_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/01/27/10/55/cushion-1164088_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/30/06/51/flowers-2801321_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony",
@@ -3157,6 +3314,12 @@
           "sqm": "50 square meters",
           "description": "Dive into relaxation in our 50-square-meter Lagoon Access Room, featuring direct access to a serene lagoon from your private terrace. Enjoy the tranquil ambiance, a comfortable king-size bed, and modern amenities that make your stay unforgettable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/07/10/17/17/bedroom-389254_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/07/10/17/17/bedroom-389254_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/18/12/03/bathroom-8260426_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/12/26/18/37/living-room-4720962_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/06/05/10/34/mimosa-4253396_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with lagoon access",
             "King-size bed",
@@ -3254,7 +3417,7 @@
         ],
         "infoBox": {
           "title": "Bar and restaurants",
-          "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+          "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -3313,17 +3476,17 @@
           {
             "title": "Thai Cooking Classes",
             "description": "Learn the secrets of authentic Thai cuisine with our expert chefs. Our cooking classes will guide you through the preparation of traditional Thai dishes, using fresh ingredients from the local markets.",
-            "imgUrl": "https://example.com/island-breeze-cooking.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2021/09/20/06/55/spaghetti-6639970_1280.jpg"
           },
           {
-            "title": "Daily Yoga Sessions",
-            "description": "Start your day with a rejuvenating yoga session on the beach. Our experienced instructors guide guests through relaxing and energizing routines, helping you find peace and balance in this tropical paradise.",
-            "imgUrl": "https://example.com/island-breeze-yoga.jpg"
+            "title": "Childrens club",
+            "description": "Welcome to our Children's Club, where imagination knows no bounds! Each day is filled with thrilling adventures, from nature explorations and interactive science experiments to fun-filled sports and team challenges. Our passionate team creates a dynamic environment where children can learn, play, and grow, encouraging teamwork and creativity while making friends that last a lifetime. Join us for unforgettable experiences tailored to ignite curiosity and joy!",
+            "imgUrl": "https://cdn.pixabay.com/photo/2018/03/03/06/26/girl-3194977_1280.jpg"
           },
           {
-            "title": "Snorkeling and Kayaking",
-            "description": "Explore the vibrant underwater world just off our private beach or paddle through the calm waters in a kayak. Snorkeling and kayaking equipment are available at the resort for your convenience.",
-            "imgUrl": "https://example.com/island-breeze-snorkeling.jpg"
+            "title": "Kayaking",
+            "description": "Embark on a thrilling kayaking adventure in the crystal-clear waters of Thailand! Paddle through stunning coastal scenery, explore hidden lagoons, and navigate along serene mangrove forests. Our resort provides top-notch kayaking equipment, making it easy for you to discover the breathtaking beauty of the surrounding landscapes at your own pace.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2015/07/07/00/51/kayak-833928_1280.jpg"
           }
         ],
         "infoBox": {
@@ -3492,11 +3655,10 @@
       "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/relax-bedroom_1150-17980.jpg?t=st=1729160478~exp=1729164078~hmac=9fde1b0f91419183adc27e847599c8b8191a4d74efaed9a9084099c51cc66e7d&w=1800",
-        "https://img.freepik.com/free-photo/hotel-room-luxury-resort_53876-138105.jpg?t=st=1729160510~exp=1729164110~hmac=6b3843b90d701aa8c2648bc150ab39c428c3e052c232c7c38ae87211f516b26f&w=1800",
-        "https://img.freepik.com/free-photo/small-bathroom-space-with-modern-style-furniture_23-2150864624.jpg?t=st=1729159300~exp=1729162900~hmac=06c57ed28b172f01f8299f4f9faff9dbaf7d74c60b2258004404d5d2c31fc1df&w=740",
-        "https://img.freepik.com/free-photo/front-view-japanese-structure-with-lanterns-nature_23-2148809586.jpg?t=st=1729160711~exp=1729164311~hmac=98fb043e889f90d574ab47ad956d0b7a258f8dcea6ee37b608d7edaf8d452145&w=826",
-        "https://img.freepik.com/free-photo/modern-styled-small-entryway_23-2150712989.jpg?t=st=1729160675~exp=1729164275~hmac=605a97e4ec55ec99503a8284e7a393881fe017431556670982ebb7ce82155560&w=1800"
+        "https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/25/18/02/water-2786040_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/28/21/53/hotel-3638616_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/28/13/34/bar-2689548_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -3527,6 +3689,12 @@
           "sqm": "38 square meters",
           "description": "Discover serenity in our 38-square-meter Zen Double Room. This room features minimalist Japanese-inspired decor, a comfortable queen-size bed, and large windows offering calming views of the rooftop garden. Perfect for two guests looking to unwind after a busy day exploring Tokyo. Enjoy free Wi-Fi, complimentary tea service, and daily breakfast.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/02/22/01/34/bed-644728_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2015/02/22/01/34/bed-644728_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/01/29/07/55/modern-minimalist-bathroom-3115450_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/09/04/14/18/pillow-3653868_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/22/16/17/daisies-1346049_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed",
             "Smart TV with family-friendly streaming options",
@@ -3562,6 +3730,12 @@
           "sqm": "42 square meters",
           "description": "Immerse yourself in the dazzling cityscape from our 42-square-meter Tokyo Panorama Room. With a plush king-size bed and floor-to-ceiling windows that frame the city's skyline, this room provides an inspiring atmosphere for both relaxation and reflection. Guests enjoy complimentary breakfast, Wi-Fi, and a serene seating area perfect for soaking in the Tokyo vibe.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/11/15/13/36/bed-8390092_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/11/15/13/36/bed-8390092_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/03/10/10/07/bathroom-2132342_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/02/29/11/36/chair-1228423_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/02/01/02/tulip-2569334_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private seating area with skyline views",
@@ -3597,6 +3771,12 @@
           "sqm": "50 square meters",
           "description": "Our spacious 50-square-meter Family Retreat Room is designed for families or groups, featuring two queen-size beds and a cozy lounge area. With modern amenities and child-friendly options like a game console and a kids’ activity pack, this room is perfect for creating lasting memories. The room also includes a complimentary breakfast and a balcony overlooking the vibrant streets of Tokyo.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/16/03/21/bathroom-1597027_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/12/15/21/interior-8504195_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/25/19/49/flower-2786460_1280.jpg"
+          ],
           "amenities": [
             "Two queen-size beds",
             "Kids’ activity pack",
@@ -3633,6 +3813,12 @@
           "sqm": "60 square meters",
           "description": "Elevate your stay in our exclusive 60-square-meter Skyline Suite, complete with a king-size bed and a private balcony offering sweeping views of Tokyo. This luxurious suite features a separate living space, an elegant bathroom with a jacuzzi, and premium in-room amenities. Ideal for guests seeking a blend of modern luxury and a deep connection to the city’s skyline.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/09/17/00/22/interior-design-449009_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/09/17/00/22/interior-design-449009_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/05/11/23/bathroom-8295690_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/12/01/10/24/books-552572_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/03/27/17/59/vase-7095749_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony with city views",
@@ -3732,7 +3918,7 @@
         ],
         "infoBox": {
           "title": "Bar and restaurants",
-          "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+          "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -3786,22 +3972,22 @@
           {
             "title": "Tea Ceremonies",
             "description": "Immerse yourself in the tradition of Japanese tea ceremonies. Hosted by experienced tea masters, these intimate sessions provide insight into the cultural significance of tea and offer a peaceful moment of reflection.",
-            "imgUrl": "https://example.com/urban-oasis-tea.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2019/03/09/15/14/tea-4044272_1280.jpg"
           },
           {
-            "title": "Private Hot Spring Baths",
-            "description": "Unwind in our luxurious private hot springs, where you can soak in natural mineral waters while enjoying a serene atmosphere. These baths offer a unique relaxation experience, blending tradition with modern comforts.",
-            "imgUrl": "https://example.com/urban-oasis-hot-spring.jpg"
+            "title": "Childrens club",
+            "description": "Step into a world of imagination at our Children's Club, where every day is packed with excitement! Kids can dive into a variety of activities, from adventurous scavenger hunts and energetic dance parties to interactive workshops that spark creativity. With our enthusiastic staff guiding the fun, children will have the chance to make new friends and embark on unforgettable adventures, all within a safe and supportive space.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2016/07/28/08/35/children-1547261_1280.jpg"
           },
           {
             "title": "City Tours",
-            "description": "Explore Tokyo’s vibrant streets with our guided city tours. From famous landmarks to hidden gems, these tours provide a comprehensive look at Tokyo's diverse culture, history, and modern wonders.",
-            "imgUrl": "https://example.com/urban-oasis-city-tour.jpg"
+            "description": "Discover the breathtaking landscapes of Tokyo's surrounding nature with our guided hiking tours. From serene trails that wind through lush forests to panoramic viewpoints overlooking the city, each hike offers a unique opportunity to immerse yourself in the natural beauty and tranquility of the area. Our knowledgeable guides will share insights about the local flora, fauna, and history, ensuring a rewarding experience for adventurers of all skill levels.",
+            "imgUrl": "https://cdn.pixabay.com/photo/2019/08/12/10/03/backpacking-4400872_1280.jpg"
           },
           {
             "title": "Rooftop Yoga",
             "description": "Join our daily yoga sessions on the rooftop garden, where you can practice mindfulness and relaxation with stunning views of the city skyline. These sessions are designed to help you find peace and balance amidst the bustling city.",
-            "imgUrl": "https://cdn.pixabay.com/photo/2021/10/16/06/05/woman-6714008_1280.jpg"
+            "imgUrl": "https://cdn.pixabay.com/photo/2017/08/20/15/51/woman-2662237_1280.jpg"
           }
         ],
         "infoBox": {
@@ -3982,11 +4168,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2019/10/26/11/40/building-4579244_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/pillow-bed_1203-3552.jpg?t=st=1729160934~exp=1729164534~hmac=4bb40788101278327d0598f4af543ca59a51c03b100a3972e120873ac01cec4c&w=1800",
-        "https://img.freepik.com/free-photo/white-bedroom-hotel_1150-12633.jpg?t=st=1729160903~exp=1729164503~hmac=5567509b82d85f12d4477a1243b966d3e14114bbd66fa983d3989be5f80a4c29&w=1800",
-        "https://img.freepik.com/free-photo/view-small-bathroom-with-modern-style-decor-furniture_23-2150864526.jpg?t=st=1729160856~exp=1729164456~hmac=4db04e01ed0a0a675ab896eb34414b0b4b59269dde46538d19691461bab8878c&w=740",
-        "https://img.freepik.com/free-photo/vertical-shot-pathway-middle-buildings-funchal-madeira-portugal_181624-14992.jpg?t=st=1729161043~exp=1729164643~hmac=929b4b0056782d1b0a56903a2967eff1dae52e7a1d8a081d8ed8a13844dbf93d&w=826",
-        "https://img.freepik.com/free-photo/beautiful-luxury-pillow-sofa_74190-2066.jpg?t=st=1729161063~exp=1729164663~hmac=b432270777a42fdfed9a5e4f9f908d57e86f50f718b98f4b8ea94ffcc75093a5&w=1800"
+        "https://cdn.pixabay.com/photo/2019/10/26/11/40/building-4579244_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/08/09/10/19/woman-4394764_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/08/06/19/49/design-3588214_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -4017,6 +4202,12 @@
           "sqm": "38 square meters",
           "description": "Relax in our 38-square-meter Serenity Double Room, featuring soft tones inspired by the Portuguese coast. This room offers a queen-size bed, a peaceful garden view, and modern touches like free high-speed WiFi and complimentary breakfast. Perfect for couples or solo travelers looking for tranquility.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148893_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148893_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900977_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/45/real-estate-8589874_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/03/20/22/20/daffodils-7081935_1280.jpg"
+          ],
           "amenities": [
             "Air conditioning with eco-control",
             "Queen-size bed",
@@ -4051,6 +4242,12 @@
           "sqm": "42 square meters",
           "description": "Soak in breathtaking views of the Atlantic Ocean from our 42-square-meter Panoramic Ocean View Room. Designed for relaxation, it features a king-size bed, floor-to-ceiling windows, and a private balcony perfect for watching the sunset. With complimentary breakfast and modern amenities, this room offers a serene escape by the sea.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/01/23/06/58/modern-minimalist-bedroom-3100786_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/01/23/06/58/modern-minimalist-bedroom-3100786_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/29/08/31/real-estate-6900982_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/04/17/12/27/sofa-5055005_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/24/05/20/flowers-7152917_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with sea view",
             "King-size bed",
@@ -4087,6 +4284,12 @@
           "sqm": "50 square meters",
           "description": "Ideal for families, the 50-square-meter Coastal Family Suite offers ample space with two connecting rooms, a king-size bed, and two twin beds. With direct access to a private garden, this suite features a spacious bathroom, free breakfast, and all the essentials to make your family’s stay memorable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/06/27/16/40/apartment-5346461_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/06/27/16/40/apartment-5346461_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/11/13/11/36/bathroom-8385147_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/00/58/sofa-2587273_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/01/31/19/07/succulent-in-dark-red-pot-2026500_1280.jpg"
+          ],
           "amenities": [
             "Private garden terrace",
             "King-size and twin beds",
@@ -4122,6 +4325,12 @@
           "sqm": "70 square meters",
           "description": "Elevate your stay in Lisbon with our 70-square-meter Horizon Penthouse Loft. Featuring a spacious living area, a king-size bed, and a private rooftop terrace with panoramic ocean views, this luxurious suite is perfect for guests who want to experience Lisbon in style. Enjoy a gourmet breakfast, free WiFi, and exclusive amenities.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/12/08/03/53/pillow-1890940_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/12/08/03/53/pillow-1890940_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/29/08/31/real-estate-6900991_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/18/11/16/sofa-8323905_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/30/03/56/a-fleshy-plant-3571733_1280.jpg"
+          ],
           "amenities": [
             "Private rooftop terrace with ocean views",
             "King-size bed",
@@ -4222,7 +4431,7 @@
         ],
         "infoBox": {
           "title": "Bar and restaurants",
-          "additionalInformation": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
+          "description": "Our restaurant accommodates any dietary needs, including all types of allergies. Please let us know in advance, and we will ensure your meal is prepared safely and to your preferences.",
           "optionsTitle": "We also offer:",
           "extraInformation": [
             "Vegetarian options",
@@ -4275,22 +4484,22 @@
           {
             "name": "Spa Retreat",
             "description": "Unwind at our spa retreat, where a variety of soothing treatments await you. From revitalizing massages to indulgent body scrubs, immerse yourself in tranquility. Enjoy a serene atmosphere that invites relaxation, allowing you to escape the hustle and bustle of everyday life.",
-            "img": "https://example.com/spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2015/07/20/23/08/spa-853462_1280.jpg"
           },
           {
-            "name": "Fitness Center",
+            "name": "Gym",
             "description": "Stay active during your stay at our fully-equipped fitness center, featuring the latest workout machines and free weights. With stunning views of the coastline, every workout becomes a refreshing experience. Join us for personalized training sessions that cater to your fitness goals.",
-            "img": "https://example.com/gym-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2020/04/11/16/11/workout-5031071_1280.jpg"
           },
           {
-            "name": "Outdoor Activities",
+            "name": "Hiking Activities",
             "description": "Embrace the great outdoors with our range of activities, including cycling and beach volleyball. Explore the beautiful Lisbon coastline or take a guided hike to discover hidden gems in the area. Adventure awaits just outside your doorstep!",
-            "img": "https://example.com/outdoor-activities-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2020/10/12/19/10/mountaineers-5649828_1280.jpg"
           },
           {
-            "name": "Yoga by the Sea",
-            "description": "Enhance your well-being with yoga sessions held on the beach, where the sound of waves complements your practice. Whether you're a beginner or an experienced yogi, our skilled instructors will guide you through sessions designed to refresh your body and mind while enjoying stunning ocean views.",
-            "img": "https://cdn.pixabay.com/photo/2017/08/06/00/27/yoga-2587066_1280.jpg"
+            "name": "Childrens club",
+            "description": "Welcome to our vibrant Children's Club, where adventure awaits at every corner! From exciting outdoor games and creative arts and crafts to engaging storytelling sessions, every day is a new opportunity for fun and learning. Our dedicated team ensures a safe and nurturing environment, allowing children to explore their creativity, make friends, and create lasting memories while enjoying a variety of interactive activities.",
+            "img": "https://cdn.pixabay.com/photo/2016/02/13/23/44/children-playing-1198834_1280.jpg"
           }
         ],
         "infoBox": {
@@ -4474,11 +4683,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/room-house-decorated-with-brazilian-folklore-design_23-2150794111.jpg?t=st=1729161153~exp=1729164753~hmac=eb17d93d614b9ed05dae7c1f6981a567a905fab60b9a9d9cca53a18faf9fa524&w=2000",
-        "https://img.freepik.com/free-photo/modern-bedroom-interior-with-large-bed-bookshelf-large-window-wood-floors_9975-33145.jpg?t=st=1729161246~exp=1729164846~hmac=385e8fba4bc3ab41146de1e0b36c0cd75ca666c9821a057cd5f9ef58efa35775&w=2000",
-        "https://img.freepik.com/free-photo/modern-style-small-bathroom-with-furnishings_23-2150836709.jpg?t=st=1729161268~exp=1729164868~hmac=8eeb79517547da41ce4d58107266294769832c27f02c8bd19ab2be1df69e53d8&w=1060",
-        "https://img.freepik.com/free-photo/bali-waterfall-indonesia_1150-11024.jpg?t=st=1729161308~exp=1729164908~hmac=36c35c7fec437136cfb67e219ebcc644565dd333b045a6dda5974fcbeb488ba3&w=826",
-        "https://img.freepik.com/free-photo/view-luxurious-hotel-interior-space_23-2150683413.jpg?t=st=1729161460~exp=1729165060~hmac=5134641ad9e8032210c0e34510a5e5c19ba86d250501b74b6fb851b57f811d10&w=1800"
+        "https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/08/02/15/34/breakfast-4379937_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/06/05/08/12/hotel-lobby-362568_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/06/14/23/59/tavern-7262963_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -4509,6 +4717,12 @@
           "sqm": "38 square meters",
           "description": "Wake up to the sights and sounds of Bali’s tropical gardens in our 38-square-meter Garden View Double Room. This room offers a queen-size bed, a private balcony, and complimentary WiFi, making it a perfect escape for nature lovers looking to unwind. Enjoy serene mornings with breakfast on your balcony, surrounded by the calming greenery.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/01/14/09/room-8669028_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/04/01/14/09/room-8669028_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900976_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/06/28/15/25/chair-1484853_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/09/19/57/cactus-7122180_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed",
             "Private balcony with garden views",
@@ -4544,6 +4758,12 @@
           "sqm": "55 square meters",
           "description": "Step into luxury with our 55-square-meter Poolside Villa, featuring direct access to a private plunge pool. This villa offers a king-size bed, an outdoor shower, and a secluded patio for a refreshing blend of indoor and outdoor living. It’s an ideal choice for couples seeking an intimate and peaceful getaway in tropical paradise.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/05/11/18/05/bedroom-4196199_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/05/11/18/05/bedroom-4196199_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/01/23/02/30/tub-4786776_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/03/23/10/living-room-5979695_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/27/10/51/window-sill-3565758_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private plunge pool",
@@ -4579,6 +4799,12 @@
           "sqm": "60 square meters",
           "description": "Perfect for families, our 60-square-meter Family Garden Suite includes two interconnected bedrooms with king-size beds, a spacious living area, and a private balcony with garden views. Enjoy modern amenities and a kid-friendly atmosphere in this relaxing and functional suite.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/01/30/bedroom-8428539_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/12/04/01/30/bedroom-8428539_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/29/08/30/real-estate-6900971_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/08/18/21/07/sofa-1603928_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/11/06/10/58/pot-7573743_1280.jpg"
+          ],
           "amenities": [
             "Two king-size beds",
             "Private balcony with garden views",
@@ -4615,6 +4841,12 @@
           "sqm": "45 square meters",
           "description": "Immerse yourself in the beauty of Bali's coastline in our 45-square-meter Ocean Breeze Bungalow. Offering stunning ocean views, a king-size bed, and a private terrace, this bungalow combines luxury and nature for a truly tranquil experience. Enjoy your morning coffee with the sound of waves in the background.",
           "imgUrl": "https://cdn.pixabay.com/photo/2014/09/17/00/20/home-decor-449008_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2014/09/17/00/20/home-decor-449008_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/32/real-estate-8589798_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/09/13/35/living-room-7121425_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/09/21/19/12/dahlia-4494586_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private terrace with ocean views",
@@ -4768,17 +5000,17 @@
           {
             "name": "Spa",
             "description": "Discover tranquility at our tropical spa, where Balinese-inspired treatments harmonize your mind, body, and spirit. Enjoy signature massages, revitalizing facials, and soothing body wraps, all designed to elevate your relaxation experience amidst the sounds of nature.",
-            "img": "https://example.com/tropical-spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2016/08/22/16/23/massage-therapy-1612308_1280.jpg"
           },
           {
             "name": "Fitness Center",
             "description": "Stay active in our well-equipped fitness center featuring the latest equipment and free weights. Enjoy workouts with panoramic views of the gardens, making every session enjoyable. Join our outdoor classes for a refreshing change of scenery.",
-            "img": "https://example.com/fitness-center-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2018/09/13/16/46/fitness-studio-3675225_1280.jpg"
           },
           {
             "name": "Cultural Workshops",
             "description": "Engage in our enriching cultural workshops, including traditional Balinese dance, cooking classes, and art sessions. Experience the local culture firsthand and take home unique skills and memories from your stay.",
-            "img": "https://example.com/cultural-workshops-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2016/11/19/15/38/craftsman-1839920_1280.jpg"
           },
           {
             "name": "Cliff Yoga",
@@ -4968,11 +5200,10 @@
       "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2017/09/21/16/12/holidays-2772364_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/realistic-interior-design-with-furniture_23-2151439790.jpg?t=st=1729161521~exp=1729165121~hmac=b13bc11814c93fb6afc64a1b5316e6398c91daab55133faf606b2189edda78a3&w=1800",
-        "https://img.freepik.com/free-photo/realistic-interior-design-with-furniture_23-2151439786.jpg?t=st=1729161573~exp=1729165173~hmac=f4f9c14789b667a4e563bd09d53bdaa182f1650b054b7d5ebd407454cde447e2&w=826",
-        "https://img.freepik.com/free-photo/realistic-modern-interior-design_23-2151439840.jpg?t=st=1729162104~exp=1729165704~hmac=34d8d814562ca4659c4254970906995b47118b4e285e1aabcc4594739e10fb60&w=1800",
-        "https://img.freepik.com/free-photo/view-mexican-urban-architecture-culture_23-2149749981.jpg?t=st=1729161650~exp=1729165250~hmac=0b45a28a2ab285cfec0798e989ee7ccbaa7185d0d1499e89f561626d5638e416&w=1800",
-        "https://img.freepik.com/free-photo/hotel-lobby-with-impressive-design-modern-furniture-expensive-resort-accommodation-with-marble-floors-empty-reception-front-desk-with-computers-service-bell-registration_482257-61927.jpg?t=st=1729161697~exp=1729165297~hmac=d1c671909bf0ace1cd51427f2b873c227b656edcf3965e4342c4bba23c7a124d&w=1800"
+        "https://cdn.pixabay.com/photo/2017/09/21/16/12/holidays-2772364_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/06/24/07/56/sunbeds-2436919_1280.jpg",
+        "https://cdn.pixabay.com/photo/2024/01/30/09/19/hotel-8541580_1280.jpg",
+        "https://cdn.pixabay.com/photo/2023/05/28/17/34/tavern-8024234_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5003,6 +5234,12 @@
           "sqm": "38 square meters",
           "description": "Soak in the tropical ambiance of Cancun in our 38-square-meter Ocean Breeze Double Room. This space offers a comfortable queen-size bed, ocean-inspired decor, and a private balcony where you can enjoy the cool sea breeze. Perfect for couples looking for a tranquil escape with complimentary breakfast and WiFi included.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/04/30/08/07/wardrobe-4167972_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/04/30/08/07/wardrobe-4167972_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/07/17/07/26/real-estate-8900769_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/07/17/07/26/real-estate-8900778_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/19/10/43/vase-1838553_1280.jpg"
+          ],
           "amenities": [
             "Individually controlled air conditioning",
             "Queen-size bed",
@@ -5038,6 +5275,12 @@
           "sqm": "55 square meters",
           "description": "Perfect for families, this 55-square-meter suite offers plenty of space with a queen-size bed for the adults and bunk beds for the kids. The suite is just steps away from the beach, and your private terrace opens directly onto the resort's lush gardens. Enjoy kid-friendly amenities, free breakfast, and WiFi for the whole family.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/12/05/23/22/bedroom-1078890_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2015/12/05/23/22/bedroom-1078890_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/51/real-estate-8589944_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/26/09/24/background-8276986_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/08/23/10/27/flowers-8991384_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and bunk beds",
             "Private garden terrace",
@@ -5073,6 +5316,12 @@
           "sqm": "42 square meters",
           "description": "Escape to our serene 42-square-meter Lagoon View King Room, offering a plush king-size bed and breathtaking views of the peaceful lagoon. With a chic open-plan design, this room is perfect for couples seeking a romantic retreat, complete with complimentary breakfast, WiFi, and a private balcony for evening relaxation.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/08/27/01/36/bedroom-6577529_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/08/27/01/36/bedroom-6577529_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/30/08/46/bathroom-1872193_1280.jpg",
+            "https://cdn.pixabay.com/photo/2020/10/14/09/20/picture-frame-5653770_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/05/31/14/18/azalea-791914_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Private balcony with lagoon view",
@@ -5108,6 +5357,12 @@
           "sqm": "50 square meters",
           "description": "Our 50-square-meter Swim-Up Family Room offers a unique poolside experience, where the whole family can step right into the water from your private terrace. With a spacious layout, a queen-size bed, and separate sleeping areas for children, this room is ideal for active families looking for fun in the sun.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/04/24/03/47/bed-1348721_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/04/24/03/47/bed-1348721_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/07/26/10/36/bathroom-3563272_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/05/15/14/17/sofa-8763679_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/07/27/20/18/succulent-7348683_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and bunk beds",
             "Direct access to the pool",
@@ -5261,22 +5516,22 @@
           {
             "name": "Spa & Wellness",
             "description": "Escape to tranquility at our full-service spa, where expert therapists offer an array of indulgent treatments designed to relax and rejuvenate. Experience soothing massages, revitalizing facials, and holistic therapies in a serene ocean-view setting that melts away stress.",
-            "img": "https://example.com/spa-image-cancun.jpg"
+            "img": "https://cdn.pixabay.com/photo/2016/10/11/12/36/massage-therapy-1731456_1280.jpg"
           },
           {
-            "name": "Beach Fitness",
-            "description": "Stay fit while enjoying the sun with our beach fitness classes! Join us for invigorating workouts right on the sand, including beach volleyball, aqua aerobics, and yoga. The gentle sound of waves will motivate you to push your limits while you soak up the sun.",
-            "img": "https://example.com/beach-fitness-image.jpg"
+            "name": "Hike",
+            "description": "Embrace the great outdoors with our hiking excursions, designed for nature lovers of all abilities! Explore scenic trails that wind through lush forests and offer breathtaking views at every turn. Our knowledgeable guides will share insights about the local flora and fauna, making each hike an educational adventure. Whether you're looking for a leisurely stroll or a more challenging trek, there's a path waiting for you to discover.",
+            "img": "https://cdn.pixabay.com/photo/2022/09/14/10/13/hiking-group-7453923_1280.jpg"
           },
           {
-            "name": "Water Sports",
-            "description": "Dive into adventure with our selection of exciting water sports! From snorkeling in crystal-clear waters to paddleboarding along the coastline, there's an activity for everyone. Equipment is available for rent, making it easy to explore the vibrant marine life just off the shore.",
-            "img": "https://example.com/water-sports-image.jpg"
+            "name": "Childrens club",
+            "description": "Dive into fun at our Children's Club, where every day is filled with exciting activities! From treasure hunts and beach games to creative crafts and storytelling sessions, there's something for every child. Our friendly staff ensures a safe and engaging environment, allowing kids to explore, learn, and make lasting friendships.",
+            "img": "https://cdn.pixabay.com/photo/2016/11/28/10/48/child-1864718_1280.jpg"
           },
           {
-            "name": "Yoga on the Beach",
+            "name": "Yoga",
             "description": "Enhance your wellness journey with our yoga sessions held right on the beach. Feel the soft sand beneath you as you stretch and breathe in the fresh ocean air. Our experienced instructors guide you through sessions designed to relax your mind and energize your spirit.",
-            "img": "https://example.com/yoga-beach-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2022/02/19/19/09/yoga-7023285_1280.jpg"
           }
         ],
         "infoBox": {
@@ -5460,11 +5715,10 @@
       "cancellationPolicy": "Free cancellation within 48 hours",
       "imgUrl": "https://cdn.pixabay.com/photo/2023/11/01/11/16/lake-8357183_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/room-interior-hotel-bedroom_23-2150683419.jpg?t=st=1729161804~exp=1729165404~hmac=7fa5caa040a4fe0ab85f3442c42adf089887f80d695c2de56d42940e7f7b7bc2&w=1800",
-        "https://img.freepik.com/free-photo/soft-elegance-guest-bedding-comfortable_1203-4487.jpg?t=st=1729161849~exp=1729165449~hmac=6adf0f4176dee9f926f169160e72c5dceb327efdeaa0edc962587b221430ecea&w=1800",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150694990.jpg?t=st=1729161848~exp=1729165448~hmac=29cc1a8e2e6bd76ccbd695cdc727d3f1b6c43edb18e049348b9da6a9e3bec298&w=1060",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150694896.jpg?t=st=1729161593~exp=1729165193~hmac=5caa9e54f518b07237a121481d41d1da12f6ea5c23d7e3f781e26d91690498c5&w=900",
-        "https://www.freepik.com/free-ai-image/modern-minimalist-office_296531367.htm#fromView=image_search_similar&page=1&position=4&uuid=8ca38e48-9129-4279-a43d-af48fdce8786"
+        "https://cdn.pixabay.com/photo/2023/11/01/11/16/lake-8357183_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/09/24/09/06/holiday-4500818_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/08/22/19/28/governors-mansion-1612734_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/02/10/13/39/hotel-1191725_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5495,6 +5749,12 @@
           "sqm": "32 square meters",
           "description": "Embrace the rustic charm of the Alps in our Cozy Alpine Double Room. This 32-square-meter retreat offers a queen-size bed, wooden accents, and a private balcony with stunning views of the surrounding mountains. Perfect for couples seeking a peaceful hideaway, the room includes complimentary breakfast, WiFi, and a calming atmosphere to relax after a day of alpine adventures.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/04/23/11/55/bedroom-8714874_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/04/23/11/55/bedroom-8714874_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/09/20/02/44/bathroom-3689922_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/23/15/40/teddy-bear-1853609_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/06/08/12/09/cactus-8049468_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed with premium linens",
             "Private balcony with mountain views",
@@ -5527,6 +5787,12 @@
           "sqm": "45 square meters",
           "description": "Step into luxury with our 45-square-meter Mountain View Suite, designed for both relaxation and awe. Featuring a king-size bed and a separate living area, this suite provides panoramic views of the Alps from your private balcony. The suite also includes complimentary breakfast, free WiFi, and exclusive access to our rooftop heated pool for a perfect alpine escape.",
           "imgUrl": "https://cdn.pixabay.com/photo/2018/07/20/16/19/interior-3551003_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2018/07/20/16/19/interior-3551003_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/18/08/51/bathroom-1336165_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/09/10/12/04/living-room-8244791_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/24/06/58/green-plants-1855572_1280.jpg"
+          ],
           "amenities": [
             "King-size bed with cozy bedding",
             "Private balcony with uninterrupted mountain views",
@@ -5559,6 +5825,12 @@
           "sqm": "50 square meters",
           "description": "Designed with families in mind, our 50-square-meter Alpine Family Room offers a spacious setup with a queen-size bed and two single beds. Enjoy the comforts of home while experiencing the alpine environment. This room includes a family bathroom, complimentary breakfast, and WiFi, making it ideal for those traveling with children.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/06/02/12/27/apartment-4246371_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/06/02/12/27/apartment-4246371_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/11/13/57/bathroom-8501838_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/09/26/19/05/office-1696739_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/26/14/35/succulents-6052058_1280.jpg"
+          ],
           "amenities": [
             "Queen-size bed and two single beds",
             "Spacious family bathroom with baby-friendly amenities",
@@ -5591,6 +5863,12 @@
           "sqm": "55 square meters",
           "description": "Perfect for travelers seeking extra space, our Junior Suite offers 55 square meters of alpine-inspired luxury. With a king-size bed, a cozy seating area, and a private terrace overlooking the snowy peaks, this suite is an idyllic escape. Enjoy complimentary breakfast, free WiFi, and access to all hotel facilities during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/01/27/bedroom-8428516_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/12/04/01/27/bedroom-8428516_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/16/02/27/interior-design-6799917_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/02/22/11/46/real-estate-8589904_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/11/29/07/42/plant-1868156_1280.jpg"
+          ],
           "amenities": [
             "King-size bed with mountain-inspired decor",
             "Private terrace with panoramic views",
@@ -5739,29 +6017,24 @@
         "description": "At Grand Alpine Hotel, immerse yourself in a variety of experiences that celebrate both the thrill of the Austrian Alps and the serenity of our spa and wellness offerings. Whether you're hitting the slopes, hiking in the mountains, or relaxing in our luxurious spa, we ensure that every guest finds their perfect balance of activity and relaxation.",
         "categories": [
           {
-            "name": "Spa & Wellness",
-            "description": "Experience alpine-inspired relaxation at our wellness center. Our spa offers a variety of treatments using natural alpine ingredients to soothe your body after a day of adventure. Enjoy our saunas, steam rooms, and heated outdoor pool with stunning mountain views, providing a serene escape in the heart of the Alps.",
-            "img": "https://example.com/alpine-spa-image.jpg"
+            "name": "Aqua Adventure",
+            "description": "Experience the thrill of our inflatable water activities, perfect for adventure seekers of all ages! Grab your friends and hop onto our exciting banana boat or giant sofa, as you’re pulled across the sparkling water. Enjoy the rush of speed and the laughter of your companions as you glide over the waves, creating unforgettable memories under the sun.",
+            "img": "https://cdn.pixabay.com/photo/2022/01/16/17/58/banana-boat-6942818_1280.jpg"
           },
           {
-            "name": "Fitness Center",
+            "name": "Gym",
             "description": "Stay active in our modern fitness center, featuring top-of-the-line equipment and breathtaking views of the surrounding mountains. Whether you're lifting weights, doing cardio, or stretching, our gym provides everything you need for a full-body workout in an inspiring alpine setting.",
-            "img": "https://example.com/gym-mountain-view.jpg"
-          },
-          {
-            "name": "Ski & Snowboard",
-            "description": "Take advantage of Innsbruck's world-class ski and snowboard slopes, located just minutes from the hotel. We offer ski-in/ski-out access, as well as equipment rentals and lessons for beginners to seasoned pros. Enjoy the thrill of the Alps while our concierge ensures your seamless adventure.",
-            "img": "https://example.com/skiing-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2020/04/09/16/35/fitness-5022191_1280.jpg"
           },
           {
             "name": "Yoga & Meditation",
             "description": "Enhance your well-being with daily yoga and meditation sessions. Held in our tranquil yoga studio with panoramic mountain views, these classes are designed to refresh both body and mind. Perfect for unwinding after a day on the slopes or simply enjoying peaceful moments in the Alps.",
-            "img": "https://example.com/yoga-alps-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2020/07/08/01/27/spa-5382251_1280.jpg"
           },
           {
             "name": "Hiking & Nature Walks",
             "description": "Explore the beauty of the Austrian Alps with guided hikes and nature walks. Our trails offer breathtaking views and a chance to connect with the natural world. Whether you're an avid hiker or a casual walker, our excursions provide an unforgettable way to experience the outdoors.",
-            "img": "https://example.com/hiking-alps-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2016/11/18/14/16/mountaineer-1834841_1280.jpg"
           }
         ],
         "infoBox": {
@@ -5945,11 +6218,10 @@
       "cancellationPolicy": "Non-refundable rate",
       "imgUrl": "https://cdn.pixabay.com/photo/2013/02/28/13/07/santorini-86833_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/pillow-bed-with-light-lamp_1203-9444.jpg?t=st=1729162548~exp=1729166148~hmac=50e776046fa4830ca70dac47cd7724229d4a61581a232986db5584ea7451d307&w=1800",
-        "https://img.freepik.com/free-photo/breakfast-tray-put-single-bed-with-white-bedding_141793-117.jpg?t=st=1729162523~exp=1729166123~hmac=fd4aecba85cb48212ac60a0c5768e0a2bc18ddfc941f45626592d550cade477d&w=996",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-design-style_23-2150700254.jpg?t=st=1729162628~exp=1729166228~hmac=2174f311e7bba97130bcafe9fb08dd82b5c0589421df2ed02467914d4c4c6539&w=826",
-        "https://img.freepik.com/free-photo/vertical-high-angle-shot-white-buildings-santorini-greece_181624-31643.jpg?t=st=1729162646~exp=1729166246~hmac=edeabed589978c77328e7fcab01cb3011e3cbd66399772c19c1acd6601eb5a83&w=900",
-        "https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826265.jpg?t=st=1729162684~exp=1729166284~hmac=9d1ff9747fe26afd228b3c1d062594d145e65a9bdf40d85dcb7b19b5332fdd51&w=2000"
+        "https://cdn.pixabay.com/photo/2013/02/28/13/07/santorini-86833_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/08/30/00/01/sangria-1629530_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/07/13/08/00/lobby-2499600_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/06/16/03/57/tavern-7264966_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -5980,6 +6252,12 @@
           "sqm": "42 square meters",
           "description": "Relax in the tranquility of our Family Garden Room, offering 42 square meters of space perfect for a small family. With two queen-size beds, a private garden patio, and vibrant, island-inspired decor, it’s the ideal retreat. Enjoy complimentary breakfast and Wi-Fi to make your stay even more comfortable.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846174_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846174_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/04/15/11/50/hotel-1330854_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/02/00/46/interior-2569204_1280.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/23/19/52/vase-819061_1280.jpg"
+          ],
           "amenities": [
             "Private garden terrace",
             "Two queen-size beds",
@@ -6014,6 +6292,12 @@
           "sqm": "48 square meters",
           "description": "Watch the famous Santorini sunsets from the comfort of your own suite. The Sunset Junior Suite offers 48 square meters of pure luxury, featuring a king-size bed, a private balcony with sea views, and a spacious living area. This suite is designed for families and couples alike, with a cozy atmosphere and luxury amenities.",
           "imgUrl": "https://cdn.pixabay.com/photo/2015/08/16/03/57/bed-890555_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2015/08/16/03/57/bed-890555_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/04/14/13/19/real-estate-7132372_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/09/22/23/34/sofa-2777511_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/11/12/16/53/notebook-6789505_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with sunset view",
             "King-size bed",
@@ -6049,6 +6333,12 @@
           "sqm": "35 square meters",
           "description": "Feel the fresh ocean breeze as you relax in our 35-square-meter Ocean Breeze Double Room. Perfect for two, this room offers a queen-size bed, floor-to-ceiling windows with a partial sea view, and contemporary Greek design elements that enhance your stay. Breakfast and Wi-Fi are always included.",
           "imgUrl": "https://cdn.pixabay.com/photo/2020/01/15/18/02/room-4768554_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2020/01/15/18/02/room-4768554_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/10/16/08/41/bathroom-490781_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/09/25/13/35/living-room-9073734_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/04/03/13/18/flowers-6147553_1280.jpg"
+          ],
           "amenities": [
             "Partial ocean view",
             "Queen-size bed",
@@ -6083,6 +6373,12 @@
           "sqm": "55 square meters",
           "description": "Our Poolside Family Suite provides direct access to the pool, with 55 square meters of space designed for families. This suite includes a king-size bed and two twin beds, perfect for larger families looking to unwind and enjoy poolside fun. Complimentary breakfast, high-speed Wi-Fi, and room service complete this luxurious family getaway.",
           "imgUrl": "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846170_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2024/06/22/13/18/bedroom-8846170_1280.jpg",
+            "https://cdn.pixabay.com/photo/2014/05/01/20/38/bathroom-335748_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/09/20/11/51/living-room-9061302_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/02/27/19/07/chili-6055488_1280.jpg"
+          ],
           "amenities": [
             "Direct pool access",
             "King-size bed and twin beds",
@@ -6235,22 +6531,22 @@
           {
             "name": "Spa",
             "description": "Indulge in the ultimate relaxation at our spa, where treatments are inspired by the natural beauty of Santorini. Rejuvenate your body and mind with calming massages, luxurious facials, and wellness therapies. The serene ambiance, paired with breathtaking ocean views, will leave you feeling refreshed and revitalized.",
-            "img": "https://example.com/santorini-spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2018/01/30/16/54/herbs-3119132_1280.jpg"
           },
           {
             "name": "Gym",
             "description": "Stay fit while enjoying spectacular views of the Aegean Sea at our fully-equipped gym. Featuring modern equipment and a range of training options, you can maintain your fitness routine in style. Take in the natural beauty while you work out, making fitness as enjoyable as it is effective.",
-            "img": "https://example.com/santorini-gym-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2014/04/24/17/56/fitness-studio-331569_1280.jpg"
           },
           {
-            "name": "Group Training",
-            "description": "Join our exciting group fitness classes, offering something for every fitness level. From sunrise yoga on the terrace to high-energy cardio sessions, our expert instructors will motivate you to push your limits. Each class is set against the stunning backdrop of Santorini’s iconic landscapes.",
-            "img": "https://example.com/santorini-group-training-image.jpg"
+            "name": "Hike",
+            "description": "Join our invigorating hiking adventures, designed for all skill levels. From scenic sunrise treks to challenging mountain trails, our experienced guides will lead you through breathtaking landscapes. Each hike offers a chance to connect with nature, explore diverse terrains, and experience the beauty of the great outdoors.",
+            "img": "https://cdn.pixabay.com/photo/2022/06/15/17/28/mountain-7264352_1280.jpg"
           },
           {
-            "name": "Yoga",
-            "description": "Enhance your wellness journey with our beachfront yoga sessions. As you move through poses, the calming sound of the waves and the breathtaking views of the Santorini sunset will help you achieve inner peace. Whether you're a beginner or an experienced yogi, our personalized sessions cater to all levels.",
-            "img": "https://example.com/santorini-yoga-image.jpg"
+            "name": "Childrens club",
+            "description": "Enhance your child's experience at our Children's Club, where fun and creativity come together. With a variety of engaging activities, from arts and crafts to interactive games and storytelling, kids can explore their imagination and make new friends in a safe and nurturing environment. Our dedicated staff ensures every child enjoys a memorable adventure, no matter their interests.",
+            "img": "https://cdn.pixabay.com/photo/2018/09/23/23/13/children-3698745_1280.jpg"
           }
         ],
         "infoBox": {
@@ -6267,7 +6563,7 @@
           ]
         }
       },
-      "destination": {
+      "map": {
         "title": "Seaside Escape",
         "location": {
           "address": "Seaside Escape, Oia, Santorini, Greece",
@@ -6434,11 +6730,10 @@
       "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2013/10/07/13/34/pool-191972_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/side-view-breakfast-with-coffee-cup-omelette-plate-hotel-room_176474-3020.jpg?t=st=1729162017~exp=1729165617~hmac=b860041fc5944c707f04d27cb4295b8214832d4dbc4986c21e6cfc74abd9e3de&w=1060",
-        "https://img.freepik.com/free-photo/swan-towel_74190-4115.jpg?t=st=1729162057~exp=1729165657~hmac=3926fba674b0d763fc60095e32abecf96f0fa2eb952213c6a7a766dac8f26132&w=1800",
-        "https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150694996.jpg?t=st=1729161619~exp=1729165219~hmac=b7a91779c9c6aee377313c543a6b629a0f8823f4019ef1f079bb9987ad7a8b8b&w=1800",
-        "https://img.freepik.com/free-photo/travel-beautiful-blue-house-relaxation_1203-5364.jpg?t=st=1729162246~exp=1729165846~hmac=2e9488c0b0836f477e56b84cdc66749a423b7c17074a07bea7e0298a679396bc&w=1800",
-        "https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826280.jpg?t=st=1729162263~exp=1729165863~hmac=60eee77b30e0f953afcf5610a0cd573d6f389543081ce92de9007a221f20ecb4&w=2000"
+        "https://cdn.pixabay.com/photo/2013/10/07/13/34/pool-191972_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/11/21/12/46/tourism-1845203_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/12/19/15/41/foyer-1099924_1280.jpg",
+        "https://cdn.pixabay.com/photo/2024/07/29/19/50/irish-8930481_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -6469,6 +6764,12 @@
           "sqm": "35 square meters",
           "description": "Wake up to the serene sound of the ocean in our 35-square-meter Standard Ocean View Room. This cozy space features a comfortable queen-size bed, a private balcony overlooking the beach, and essential amenities like free Wi-Fi and air conditioning for a relaxed stay by the sea.",
           "imgUrl": "https://cdn.pixabay.com/photo/2016/07/08/23/33/hotel-room-1505455_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2016/07/08/23/33/hotel-room-1505455_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/18/11/18/bathroom-8323929_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/27/12/03/living-room-7225004_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/18/30/green-2567165_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with ocean view",
             "Queen-size bed",
@@ -6502,6 +6803,12 @@
           "sqm": "45 square meters",
           "description": "Our 45-square-meter Family Room with Garden View is ideal for families or groups. Featuring one queen-size bed and a set of bunk beds, it’s perfect for a relaxing stay amidst lush tropical gardens. The room offers a private balcony, complimentary Wi-Fi, and family-friendly amenities to ensure everyone’s comfort.",
           "imgUrl": "https://cdn.pixabay.com/photo/2021/12/18/06/13/hotel-6878054_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2021/12/18/06/13/hotel-6878054_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/12/04/01/28/bathroom-8428520_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/03/25/23/09/living-room-2174575_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/03/08/10/54/flowers-8620501_1280.jpg"
+          ],
           "amenities": [
             "Private balcony with garden view",
             "Queen-size bed and bunk beds",
@@ -6536,6 +6843,12 @@
           "sqm": "40 square meters",
           "description": "Immerse yourself in beachfront luxury with our 40-square-meter Deluxe Oceanfront Room. Featuring a king-size bed, direct beach access, and contemporary Bahamian-inspired decor, this room provides an elevated experience. Enjoy the comfort of a private balcony and all the essential amenities for a perfect stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/12/04/14/58/bedroom-8429668_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/12/04/14/58/bedroom-8429668_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/18/06/02/bathroom-6878035_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/10/06/16/hardwood-2618974_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/12/16/pink-2564916_1280.jpg"
+          ],
           "amenities": [
             "King-size bed",
             "Direct beach access",
@@ -6571,6 +6884,12 @@
           "sqm": "38 square meters",
           "description": "Stay refreshed in our 38-square-meter Swim-Up Room, offering direct access to a shared pool from your private terrace. This room features a plush king-size bed and a blend of modern comforts like complimentary Wi-Fi and a smart TV, making it the perfect choice for a rejuvenating stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/10/30/09/59/bed-8352408_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/10/30/09/59/bed-8352408_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/08/31/11/18/shower-9011233_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/18/06/02/sofa-6878039_1280.jpg",
+            "https://cdn.pixabay.com/photo/2019/07/27/17/24/roses-4367217_1280.jpg"
+          ],
           "amenities": [
             "Private terrace with pool access",
             "King-size bed",
@@ -6724,22 +7043,22 @@
           {
             "name": "Spa",
             "description": "Escape to a world of serenity at our oceanfront spa, where the gentle sound of waves creates the perfect atmosphere for relaxation. Indulge in a variety of rejuvenating treatments, from tropical-inspired massages to luxurious body wraps, leaving you refreshed and revitalized.",
-            "img": "https://example.com/beachfront-spa-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2017/08/07/21/33/towel-2608073_1280.jpg"
           },
           {
-            "name": "Water Sports",
-            "description": "For the adventurers, Beachfront Paradise offers an exciting range of water sports. Whether you're paddleboarding across crystal-clear waters, snorkeling vibrant coral reefs, or kayaking along the coast, there's a thrilling experience waiting for you.",
-            "img": "https://example.com/water-sports-image.jpg"
+            "name": "Childrens club",
+            "description": "At our Children's Club, young adventurers can enjoy a fun-filled range of activities designed just for them. From arts and crafts to treasure hunts and nature walks, every day is an exciting adventure where children can explore, learn, and make new friends in a safe and engaging environment.",
+            "img": "https://cdn.pixabay.com/photo/2017/07/06/18/35/children-2478895_1280.jpg"
           },
           {
-            "name": "Fitness Center",
+            "name": "Gym",
             "description": "Maintain your fitness routine at our beachfront gym, fully equipped with modern cardio machines, free weights, and strength training equipment. Enjoy inspiring ocean views while you work out, or join one of our dynamic fitness classes for an energizing group session.",
-            "img": "https://example.com/fitness-center-image.jpg"
+            "img": "https://cdn.pixabay.com/photo/2020/04/11/15/49/treadmill-5030966_1280.jpg"
           },
           {
             "name": "Yoga on the Beach",
-            "description": "Find your inner peace with yoga sessions held directly on the beach. With the soft sand beneath your feet and the soothing sound of the ocean in the background, our yoga classes offer the perfect balance of relaxation and mindfulness.",
-            "img": "https://example.com/yoga-on-beach-image.jpg"
+            "description": "Discover the natural beauty of the Bahamas with our guided hiking adventures. Explore lush trails surrounded by vibrant flora and fauna, while enjoying breathtaking views of the coastline and crystal-clear waters. Each hike offers a unique experience, allowing you to connect with nature and unwind in this tropical paradise.",
+            "img": "https://cdn.pixabay.com/photo/2014/07/08/12/40/forest-386751_1280.jpgg"
           }
         ],
         "infoBox": {
@@ -6853,7 +7172,7 @@
           }
         ]
       },
-      "destination": {
+      "map": {
         "title": "Beachfront Paradise",
         "location": {
           "address": "Beachfront Paradise, Nassau, Bahamas",
@@ -6926,11 +7245,10 @@
       "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
       "imgUrl": "https://cdn.pixabay.com/photo/2023/04/16/11/27/bridge-7930004_1280.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/interior-modern-comfortable-hotel-room_1232-1823.jpg?t=st=1729162754~exp=1729166354~hmac=0ac55e3793144126c3b731f843c9e62ddc453fe7a8bdec9155fa3fccec48c486&w=1800",
-        "https://img.freepik.com/free-photo/3d-rendering-luxury-bedroom-suite-resort-hotel-with-twin-bed-living_105762-2018.jpg?t=st=1729162793~exp=1729166393~hmac=4a1fd7b2f5354c166fccdab558b0679d865bd5f91ce8643e2188f406c14f35dd&w=1800",
-        "https://img.freepik.com/free-photo/modern-bathroom-with-small-space-contemporary-decor_23-2150836623.jpg?t=st=1729162815~exp=1729166415~hmac=fc30b3e522d19d1589ea46d2760bbacc17df7748a8b31f7e6ff76cf238cc1258&w=1060",
-        "https://img.freepik.com/free-photo/beautiful-manhattan-bridge-new-york-usa_181624-48458.jpg?t=st=1729162878~exp=1729166478~hmac=46e0d2148d6bc2409a7d5944388791c76a0007687a2c83d67a9b4fa7ec0258d7&w=1800",
-        "https://img.freepik.com/free-photo/view-luxurious-hotel-interior-space_23-2150683473.jpg?t=st=1729163045~exp=1729166645~hmac=b4640848beb3e9c3e5519176f10c45b0c689af7cfc7ed44ca067aef5671ea3b7&w=1800"
+        "https://cdn.pixabay.com/photo/2023/04/16/11/27/bridge-7930004_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/01/17/06/12/breakfast-4772319_1280.jpg",
+        "https://cdn.pixabay.com/photo/2021/03/31/08/47/hotel-6138965_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/02/16/16/28/bar-4854100_1280.jpg"
       ],
       "infoBox": {
         "title": "Additional Information",
@@ -6966,6 +7284,12 @@
           "sqm": "45 square meters",
           "description": "Immerse yourself in the heart of New York in our 45-square-meter Chic King Room. Featuring a lavish king-size bed and contemporary decor, this room also offers stunning views of the cityscape, along with complimentary breakfast and high-speed WiFi. Perfect for travelers seeking style and comfort.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/11/13/11/46/bedroom-8385265_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/11/13/11/46/bedroom-8385265_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/08/31/11/18/bathroom-9011240_1280.jpg",
+            "https://cdn.pixabay.com/photo/2024/01/29/08/20/chair-8539176_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/03/17/13/10/chamomile-7858622_1280.jpg"
+          ],
           "amenities": [
             "Individual climate control",
             "Queen-size bed",
@@ -7001,6 +7325,12 @@
           "sqm": "60 square meters",
           "description": "Relax in our opulent 60-square-meter Premier Suite, thoughtfully designed for both leisure and work. This suite features a spacious living area, a plush king-size bed, and a well-appointed kitchenette. Guests enjoy complimentary breakfast and access to exclusive rooftop views of the city skyline.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/05/12/00/23/bedroom-4196929_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/05/12/00/23/bedroom-4196929_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/01/09/24/house-2563911_1280.jpg",
+            "https://cdn.pixabay.com/photo/2017/08/06/12/27/flower-2592070_1280.jpg"
+          ],
           "amenities": [
             "Private terrace",
             "King-size bed",
@@ -7036,6 +7366,12 @@
           "sqm": "40 square meters",
           "description": "Experience the vibrant city life from our 40-square-meter Skyline Double Room. Featuring two comfortable double beds and large windows with breathtaking views, this room is perfect for friends or families traveling together. Enjoy complimentary breakfast and WiFi during your stay.",
           "imgUrl": "https://cdn.pixabay.com/photo/2019/11/04/18/15/bed-4601776_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2019/11/04/18/15/bed-4601776_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/10/18/11/10/bathroom-8323836_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/03/07/16/11/chair-3206334_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/05/18/12/33/flowers-8002177_1280.jpg"
+          ],
           "amenities": [
             "Scenic balcony",
             "Two double beds",
@@ -7071,6 +7407,12 @@
           "sqm": "80 square meters",
           "description": "Elevate your experience in our magnificent 80-square-meter Penthouse Suite, featuring a stylish open layout and sweeping views of the New York skyline. This luxurious retreat includes a king-size bed, a gourmet kitchen, and an expansive terrace perfect for entertaining.",
           "imgUrl": "https://cdn.pixabay.com/photo/2023/06/17/03/09/comfort-8069094_1280.jpg",
+          "roomImages": [
+            "https://cdn.pixabay.com/photo/2023/06/17/03/09/comfort-8069094_1280.jpg",
+            "https://cdn.pixabay.com/photo/2016/10/13/09/08/travel-1737171_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/05/04/08/38/sofa-7173495_1280.jpg",
+            "https://cdn.pixabay.com/photo/2018/02/24/17/56/orchid-3178759_1280.jpg"
+          ],
           "amenities": [
             "Private outdoor space",
             "King-size bed",
@@ -7237,22 +7579,22 @@
         {
           "name": "Rooftop Spa",
           "description": "Discover tranquility above the city streets in our exclusive rooftop spa. Indulge in rejuvenating treatments, including massages, facials, and body therapies, all while taking in stunning views of the Manhattan skyline. Relaxation meets luxury in the heart of New York.",
-          "img": "https://example.com/rooftop-spa-image.jpg"
+          "img": "https://cdn.pixabay.com/photo/2020/03/06/21/33/flower-4908193_1280.jpg"
         },
         {
-          "name": "Fitness Center",
+          "name": "Gym",
           "description": "Stay on top of your fitness goals in our cutting-edge gym, fully equipped with cardio machines, free weights, and strength training equipment. Whether you’re into HIIT workouts or light stretching, our gym provides the perfect environment to stay active while enjoying views of the city.",
-          "img": "https://example.com/fitness-center-image.jpg"
+          "img": "https://cdn.pixabay.com/photo/2021/02/03/11/32/gym-5977600_1280.jpg"
         },
         {
           "name": "Group Classes",
           "description": "Join our high-energy group classes, perfect for fitness enthusiasts of all levels. From spin sessions to city-inspired boot camps, our expert trainers will help you stay motivated while working out in a fun and engaging environment. Classes are designed to challenge both your body and mind.",
-          "img": "https://example.com/group-classes-image.jpg"
+          "img": "https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_1280.jpg"
         },
         {
           "name": "Yoga with a View",
           "description": "Reconnect with your body and mind during our rooftop yoga sessions, offering panoramic views of the New York skyline. Whether you’re a beginner or an experienced yogi, these classes provide the perfect balance of relaxation and exercise, set against the backdrop of the city that never sleeps.",
-          "img": "https://example.com/rooftop-yoga-image.jpg"
+          "img": "https://cdn.pixabay.com/photo/2019/11/01/20/24/yoga-4595164_1280.jpg"
         }
       ],
       "infoBox": {
@@ -7269,7 +7611,7 @@
         ]
       }
     },
-    "destination": {
+    "map": {
       "title": "Urban Escape",
       "location": {
         "address": "Urban Escape, New York, USA",
@@ -7416,7 +7758,7 @@
     {
       "id": 1,
       "title": "15% off on your first stay in Spain!",
-      "description": "Enjoy 15% off your next hotel booking in Spain when you book between 3-11 October.",
+      "description": "Enjoy 15% off your next hotel booking on accommodations in Spain when you book between 3-11 October.Limited-time offer — don’t miss out!",
       "validUntil": "2024-10-11",
       "overlay": false,
       "imageType": {
@@ -7429,9 +7771,9 @@
     {
       "id": 2,
       "title": "Family Summer Special!",
-      "description": "Book your summer vacation before November 1st, and kids stay for free!",
+      "description": "Book your summer vacation before November 1st, 2024, and kids stay for free! Create unforgettable memories with your loved ones - don’t miss out!",
       "validUntil": "2024-11-01",
-      "backgroundImage": "assets/images/Offer1.png",
+      "backgroundImage": "https://cdn.pixabay.com/photo/2016/11/29/04/16/beach-1867271_1280.jpg",
       "overlay": true,
       "imageType": {
         "fullWidth": true,
@@ -7443,9 +7785,9 @@
     {
       "id": 3,
       "title": "Free Excursions - In Egypt!",
-      "description": "Prepare your stay in November with free excursions to select destinations.",
+      "description": "Reserve your stay by November 1st, 2024, and unlock complimentary excursions and activities at select destinations. Don't miss this special opportunity!",
       "validUntil": "2024-11-02",
-      "backgroundImage": "assets/images/Offer2.png",
+      "backgroundImage": "https://cdn.pixabay.com/photo/2020/01/22/17/21/camel-4785794_1280.jpg",
       "overlay": false,
       "imageType": {
         "fullWidth": false,
@@ -7457,9 +7799,9 @@
     {
       "id": 4,
       "title": "Stay Longer, Save More!",
-      "description": "Extend your getaway for an amazing offer. Book seven nights and get two nights free!",
+      "description": "Extend your getaway with our special offer – book seven nights and pay for only five! Experience more for less at our selected destinations.",
       "validUntil": "2024-12-01",
-      "backgroundImage": "assets/images/Offer3.png",
+      "backgroundImage": "https://cdn.pixabay.com/photo/2015/03/02/23/40/father-656734_1280.jpg",
       "overlay": false,
       "imageType": {
         "fullWidth": false,
@@ -7470,10 +7812,10 @@
     },
     {
       "id": 5,
-      "title": "Free Excursions - In Egypt!",
-      "description": "Prepare your stay in November with free excursions to select destinations.",
+      "title": "Last-Minute Deal: Save Up to 40%",
+      "description": "Don't miss out on incredible last-minute savings! Enjoy up to 40% off your dream getaway with this limited-time offer. Hurry, these deals won't last long!",
       "validUntil": "2024-11-02",
-      "backgroundImage": "../../src/assets/images/Offer4.png",
+      "backgroundImage": "https://cdn.pixabay.com/photo/2015/08/14/02/54/beach-887847_1280.jpg",
       "overlay": true,
       "imageType": {
         "fullWidth": true,
@@ -7484,8 +7826,8 @@
     },
     {
       "id": 6,
-      "title": "Free Excursions - In Egypt!",
-      "description": "Prepare your stay in November with free excursions to select destinations.",
+      "title": "15% off on your first stay in Spain!",
+      "description": "Enjoy 15% off your next hotel booking on accommodations in Spain when you book between 3-11 October. Limited-time offer — don’t miss out!",
       "validUntil": "2024-11-02",
       "overlay": false,
       "imageType": {
@@ -7494,6 +7836,50 @@
         "smallRight": false
       },
       "ctaText": "Book Now"
+    }
+  ],
+  "countries": [
+    {
+      "flag": "🇺🇸",
+      "code": "+1"
+    },
+    {
+      "flag": "🇨🇳",
+      "code": "+86"
+    },
+    {
+      "flag": "🇮🇳",
+      "code": "+91"
+    },
+    {
+      "flag": "🇬🇧",
+      "code": "+44"
+    },
+    {
+      "flag": "🇩🇪",
+      "code": "+49"
+    }
+  ],
+  "trendingDestinations": [
+    {
+      "id": 16,
+      "name": "Spain",
+      "image": "spain.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Spain",
+      "image": "spain.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Spain",
+      "image": "spain.jpg"
+    }
+  ],
+  "discountedHotel": [
+    {
+      "id": 19
     }
   ]
 }

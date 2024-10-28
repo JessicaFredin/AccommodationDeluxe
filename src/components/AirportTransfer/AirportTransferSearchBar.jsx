@@ -6,22 +6,23 @@ import DateSelection from "./DateSelection";
 import TimeSelection from "./TimeSelection";
 import PassengerSelection from "./PassengerSelection";
 import Button from "../Button";
+import dayjs from "dayjs";
 
 function AirportTransferSearchBar({ onSearch }) {
 	const [isReturn, setIsReturn] = useState(false); // Return or one-way trip
 	const [searchData, setSearchData] = useState({
 		fromLocation: "", // Start address
 		toLocation: "", // Destination address
-		date: "",
-		time: "",
+		date: dayjs().format("YYYY-MM-DD"),
+		time: "00:00",
 		passengers: 1,
 	});
 
 	const [returnData, setReturnData] = useState({
 		fromLocation: "",
 		toLocation: "",
-		date: "",
-		time: "",
+		date: dayjs().format("YYYY-MM-DD"),
+		time: "00:00",
 		passengers: 1,
 	});
 
