@@ -7,11 +7,12 @@ import { Range } from "react-range";
 const PriceFilter = ({ setFilters }) => {
 	const [values, setValues] = useState([0, 500]); // Initiala värden för prisintervallet
 	const STEP = 1;
-	const MIN = 0;// Minimivärde för pris
+	const MIN = 0; // Minimivärde för pris
 	const MAX = 500; // Maxvärde för pris
 
 	// Uppdaterar värdena för prisintervallet och skickar dem till överordnad komponent
 	const handleRangeChange = (newValues) => {
+		// Uppdaterar tillståndet genom att sätta det till de nya värdena (newValues)
 		setValues(newValues);
 		setFilters((prev) => ({ ...prev, price: newValues })); // Sparar nya prisvärden i filtren
 	};
@@ -29,7 +30,7 @@ const PriceFilter = ({ setFilters }) => {
 					<h3 className="text-lg font-semibold">Price</h3>
 				</div>
 				<div className="">
-					{/* Prisfördelningsstaplar */}
+					{/* Används för att rendera en uppsättning "staplar" baserat på höjderna i "distributionBars", där varje stapel representeras av en div med en specifik höjd och stil */}
 					<div className="flex items-end justify-between h-16 mb-6">
 						{distributionBars.map((height, index) => (
 							<div
@@ -42,17 +43,21 @@ const PriceFilter = ({ setFilters }) => {
 						))}
 					</div>
 
-					{/* Prisintervall-slider */}
+					{/* Anänds för att visa ett intervallreglage som gör det möjligt för användaren att välja ett värde eller ett intervall mellan ett definierat minimi- och maximivärde.*/}
 					<Range
 						values={values}
 						step={STEP}
 						min={MIN}
 						max={MAX}
-						onChange={handleRangeChange}
-						renderTrack={({ props, children }) => (
+						onChange={handleRangeChange} // Funktion som anropas när användaren justerar intervallet.
+
+						// Renderar den visuella representationen av intervallet.
+						renderTrack={({ props, children }) => ( 
 							<div
-								{...props}
+								{...props}  // Sprider ut nödvändiga egenskaper för att styra utseendet och beteendet.
 								className="w-full h-[6px] relative"
+
+								// Skapar en bakgrundsgradient som visar intervallet mellan två valda värden.
 								style={{
 									background: `linear-gradient(to right, #d9d9d9 ${
 										((values[0] - MIN) / (MAX - MIN)) * 100
@@ -68,6 +73,8 @@ const PriceFilter = ({ setFilters }) => {
 								{children}
 							</div>
 						)}
+
+						// Används för att göra en liten rund, mörkblå knapp som kan dras för att ändra värdet i reglaget.
 						renderThumb={({ props }) => (
 							<div
 								{...props}
@@ -95,4 +102,3 @@ const PriceFilter = ({ setFilters }) => {
 };
 
 export default PriceFilter;
-

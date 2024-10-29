@@ -37,12 +37,13 @@ function HotelsPage() {
 		rooms: 1,
 	};
 
+	// useEffect körs varje gång search, setSearchParams, hotels eller filters ändras
 	useEffect(() => {
-		const params = new URLSearchParams(search);
-		const destinationId = params.get("destinationId");
-		const location = params.get("location") || defaultSearchParams.location;
-		const checkin = params.get("checkin") || defaultSearchParams.startDate;
-		const checkout = params.get("checkout") || defaultSearchParams.endDate;
+		const params = new URLSearchParams(search); // Hämtar sökparametrar från URL
+		const destinationId = params.get("destinationId"); // Hämtar destinationens ID om det finns
+		const location = params.get("location") || defaultSearchParams.location; // Hämtar plats eller använder standardvärde
+		const checkin = params.get("checkin") || defaultSearchParams.startDate; // Hämtar incheckningsdatum eller använder standardvärde
+		const checkout = params.get("checkout") || defaultSearchParams.endDate; // Hämtar utcheckningsdatum eller använder standardvärde
 		const adults =
 			parseInt(params.get("adults")) || defaultSearchParams.adults;
 		const children =
@@ -142,6 +143,7 @@ function HotelsPage() {
 		children,
 		rooms,
 	}) => {
+		// Skapar sökparametrar för URL
 		const params = new URLSearchParams({
 			location,
 			checkin: startDate,
@@ -150,6 +152,7 @@ function HotelsPage() {
 			children: children.toString(),
 			rooms: rooms.toString(),
 		});
+		// Navigerar till sökresultatssidan med de nya parametrarna
 		navigate(`/hotels?${params.toString()}`);
 	};
 	// Returnerar felmeddelande om något fel uppstått under datahämtningen

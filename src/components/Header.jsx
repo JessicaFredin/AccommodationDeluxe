@@ -11,7 +11,7 @@ function Header({ headingText, size }) {
 		small: "h-[150px] pt-5 pb-10",
 	};
 
-	// Bas layout för header
+	// Bas-layout för header
 	const baseStyle =
 		"relative bg-primaryDarkBlue flex items-center text-white text-6xl px-20";
 

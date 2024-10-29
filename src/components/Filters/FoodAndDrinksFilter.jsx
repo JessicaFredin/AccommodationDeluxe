@@ -22,16 +22,18 @@ function FoodAndDrinksFilter({ setFilters }) {
 				</div>
 				{/* Valbara alternativ */}
 				<div className="space-y-3">
+					{/*Del för "all inclusive" */}
 					<label className="flex items-center">
 						<input
 							type="checkbox"
 							className="mr-2 w-4 h-4"
-							checked={selectedOptions.includes("all_inclusive")}
-							onChange={() => toggleOption("all_inclusive")}
+							checked={selectedOptions.includes("all_inclusive")} // Kontrollerar om alternativet "All Inclusive" är valt
+							onChange={() => toggleOption("all_inclusive")} // Anropar toggleOption för att växla valet
 						/>
 						<span className="text-sm">All Inclusive</span>
 					</label>
-
+					
+					{/*Samma koncept för följande som för den första */}
 					<label className="flex items-center">
 						<input
 							type="checkbox"

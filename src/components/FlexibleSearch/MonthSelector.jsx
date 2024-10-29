@@ -58,30 +58,39 @@ function MonthSelector(props) {
 
 	// Uppdaterar navigeringsknappars synlighet baserat på scroll-position
 	useEffect(() => {
+
+		// Referens till scrollbehållaren
 		const scrollContainer = scrollContainerRef.current;
 
+		// Funktion för att hantera scrollningen
 		const handleScroll = () => {
+			// Kontrollerar om scrollbehållaren existerar
 			if (scrollContainer) {
+				// Hämtar scrollposition och storlek
 				const { scrollLeft, scrollWidth, clientWidth } =
 					scrollContainer;
+				// Sätter tillstånd för att indikera om vi är vid början
 				setIsScrolledToStart(scrollLeft <= 0);
+				// Sätter tillstånd för att indikera om vi är vid slutet
 				setIsScrolledToEnd(scrollLeft + clientWidth >= scrollWidth);
 			}
 		};
 
+		// Kollar om scrollbehållaren existerar
 		if (scrollContainer) {
-			scrollContainer.addEventListener("scroll", handleScroll);
-			// Kontrollerar scrollposition
+			scrollContainer.addEventListener("scroll", handleScroll); // Lägger till en lyssnare för scroll-händelser
+			// Anropar "handleScroll" för att kontrollera den aktuella scrollpositionen
 			handleScroll();
 		}
 
-		// Rensar eventlyssnaren när komponenten avmonteras
+		// Retur av en städningsfunktion när komponenten avmonteras
 		return () => {
 			if (scrollContainer) {
 				scrollContainer.removeEventListener("scroll", handleScroll);
 			}
 		};
 	}, []);
+	
 	// Funktion för att lägga till/ta bort månad från listan selectedMonths
 	const toggleMonth = (month) => {
 		let newSelectedMonths = [];

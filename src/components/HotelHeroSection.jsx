@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Hero sektion för specifikt hotel
+// Hero-sektion för specifikt hotel
 function HotelHeroSection({ imageUrl, hotelName }) {
 	return (
 		<div
@@ -23,6 +23,7 @@ function HotelHeroSection({ imageUrl, hotelName }) {
 	);
 }
 
+//definierar prop-typer för HotelHeroSection-komponenten, vilket innebär att den förväntar sig att få en imageUrl (som en obligatorisk sträng) och ett hotelName (också som en obligatorisk sträng) som argument.
 HotelHeroSection.propTypes = {
 	imageUrl: PropTypes.string.isRequired,
 	hotelName: PropTypes.string.isRequired,

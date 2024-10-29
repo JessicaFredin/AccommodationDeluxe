@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
+//definierar en knapp som anpassar sig efter storlek, färg, text och om den ska vara rundad eller aktiv baserat på de angivna props.
 // eslint-disable-next-line react/prop-types
 function Button({ size, buttonText, onClick, color, rounded = false, active = false }) {
 	const sizeClasses = {
@@ -28,8 +29,8 @@ function Button({ size, buttonText, onClick, color, rounded = false, active = fa
 
 	return (
 		<button
-			className={`${buttonStyle} ${sizeClasses[size]} ${activeStyle}`}
-			onClick={onClick}
+			className={`${buttonStyle} ${sizeClasses[size]} ${activeStyle}`} // Dynamisk klassnamn baserat på stil, storlek och aktiv status
+			onClick={onClick} // Anropar onClick-funktionen när knappen klickas
 		>
 			{buttonText}
 		</button>

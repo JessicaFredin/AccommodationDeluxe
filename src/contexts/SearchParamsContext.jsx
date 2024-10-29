@@ -3,9 +3,12 @@
 /* eslint-disable no-unused-vars */
 import React, { createContext, useState, useContext } from "react";
 
+// Skapar en kontext för sökparametrar
 const SearchParamsContext = createContext();
 
+// Provider-komponent som hanterar sökparametrar och gör dem tillgängliga i applikationen
 export const SearchParamsProvider = ({ children }) => {
+	// Definierar sökparametrar som ska hållas i tillståndet
 	const [searchParams, setSearchParams] = useState({
 		startDate: null,
 		endDate: null,
@@ -15,9 +18,10 @@ export const SearchParamsProvider = ({ children }) => {
 		rooms: 0,
 		hotelId: null,
 		roomIndex: null,
-		isNextToEachOther: 0,
+		isNextToEachOther: 0, // Anger om rummen ska vara bredvid varandra
 	});
 
+	// Tillgängliggör sökparametrar och metoden för att uppdatera dem
 	return (
 		<SearchParamsContext.Provider value={{ searchParams, setSearchParams }}>
 			{children}
@@ -25,4 +29,5 @@ export const SearchParamsProvider = ({ children }) => {
 	);
 };
 
+// Anpassad hook som används för att komma åt sökparametrarna från kontexten
 export const useSearchParamsContext = () => useContext(SearchParamsContext);

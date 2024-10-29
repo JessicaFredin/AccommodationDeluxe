@@ -8,11 +8,13 @@ function TypeOfHotelFilter({ setFilters }) {
 
 	// Funktion för att lägga till/ta bort en hotelltyp
 	const toggleType = (type) => {
+
+		// Kolla om den valda typen redan finns i listan över valda typer
 		const newTypes = selectedTypes.includes(type)
 			? selectedTypes.filter((t) => t !== type) // Ta bort om den redan finns
 			: [...selectedTypes, type];
-		setSelectedTypes(newTypes); // Uppdatera vald typ
-		setFilters((prev) => ({ ...prev, typeOfHotel: newTypes })); // Uppdatera filtret i överordnad komponent
+		setSelectedTypes(newTypes); // Uppdatera det lokala tillståndet med den nya listan av valda typer
+		setFilters((prev) => ({ ...prev, typeOfHotel: newTypes })); // Uppdatera filtret i den överordnade komponenten med den nya listan av hotelltyper
 	};
 
 	return (
@@ -27,12 +29,13 @@ function TypeOfHotelFilter({ setFilters }) {
 						<input
 							type="checkbox"
 							className="mr-2 w-4 h-4"
-							checked={selectedTypes.includes("family_friendly")}
-							onChange={() => toggleType("family_friendly")}
+							checked={selectedTypes.includes("family_friendly")} // Kontrollera om typen är vald
+							onChange={() => toggleType("family_friendly")} // Anropa toggleType för att lägga till/ta bort typen
 						/>
 						<span className="text-sm">Family hotels</span>
 					</label>
-
+					
+					{/*Samma koncept osm för ovanstående */}
 					<label className="flex items-center">
 						<input
 							type="checkbox"

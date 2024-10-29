@@ -14,22 +14,24 @@ export function HotelDataProvider({ children }) {
 	const [error, setError] = useState(null);
 
 	useEffect(() => {
-		// Fetch hotel data
+		// Hämtar hotelldata från en JSON-fil
 		axios
 			.get("/data/hotels.json")
 			.then((response) => {
-				console.log("Fetched hotel data in context:", response.data);
-				setHotelData(response.data.hotels);
-				setOffers(response.data.offers);  // Fetch offers from the same JSON file
-				setTrendingDestinations(response.data.trendingDestinations);
-				setCountries(response.data.countries);
+				console.log("Fetched hotel data in context:", response.data); // Loggar den hämtade datan
+				setHotelData(response.data.hotels); // Uppdaterar hotelldata
+				setOffers(response.data.offers);   // Hämtar erbjudanden från samma JSON-fil
+				setTrendingDestinations(response.data.trendingDestinations); // Uppdaterar trendiga resmål
+				setCountries(response.data.countries); // Uppdaterar länder
 			})
+
 			.catch((error) => {
-				console.error("Error fetching the data in context", error);
-				setError(error);
+				console.error("Error fetching the data in context", error); // Loggar eventuella fel
+				setError(error); // Uppdaterar felstatus
 			});
 	}, []);
 
+	// Tom array som beroende för att köra effekten bara en gång vid första renderingen
 	return (
 		<HotelDataContext.Provider value={{ hotels: hotelData, offers, countries, trendingDestinations, error }}>
 			{children}
@@ -37,7 +39,10 @@ export function HotelDataProvider({ children }) {
 	);
 }
 
+
+// Hook för att använda hotelldata
 export function useHotelData() {
+	// Returnerar kontexten
 	return React.useContext(HotelDataContext);
 }
 

@@ -106,7 +106,7 @@ function Slider() {
 				)}
 			</div>
 
-			{/* Pagination Dots */}
+			{/* Pagination Dots - loopar igenom "offers-arryen" och delar den på två, eftersom det ska vara två stycken per "sida" för att skapa prickarna/cirklarna som visar på vilken "sida" av slidern användaren befinenr sig*/}
 			<div className="flex justify-center mt-4">
 				{Array.from({ length: Math.ceil(offers.length / 2) }).map(
 					(_, index) => (

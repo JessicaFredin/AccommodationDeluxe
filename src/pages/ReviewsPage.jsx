@@ -7,7 +7,7 @@ import RoomCardsSection from "../components/RoomCardsSection";
 function ReviewsPage() {
   const { hotel, error, loading } = useHotelDetails();
 
-  // Felhantering om 
+  // Hanterar laddning och fel ifall hotelldata inte hittas
   if (loading) {
     return <p>Loading hotel data...</p>;
   }

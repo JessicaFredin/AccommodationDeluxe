@@ -10,6 +10,8 @@ function RatingFilter({ setFilters }) {
 
   // Funktion för att växla betyg lägga till/ta bort
   const toggleRating = (rating) => {
+
+	//Används för att undersöka om ett visst betyg är valt och lagrar resultatet (true eller false) i variabeln newRatings.
     const newRatings = selectedRatings.includes(rating)
       ? selectedRatings.filter((r) => r !== rating) // Tar bort om det redan finns
       : [...selectedRatings, rating]; // Lägger till om det saknas
@@ -24,7 +26,7 @@ function RatingFilter({ setFilters }) {
 				<div className="flex w-full items-center -mx-3 pb-4">
 					<h3 className="text-lg font-semibold">Rating</h3>
 				</div>
-				{/* Lista med checkboxar för olika betyg */}
+				{/* Används för att skapa en lista med kryssrutor för att välja betyg, där varje kryssruta representerar ett betyg från 5 till 1, och den hanterar användarens val genom att använda en funktion som togglar betyget i en lista */}
 				<div className="space-y-3">
 					{[5, 4, 3, 2, 1].map((rating) => (
 						<label key={rating} className="flex items-center">
@@ -34,7 +36,7 @@ function RatingFilter({ setFilters }) {
 								checked={selectedRatings.includes(rating)}
 								onChange={() => toggleRating(rating)}
 							/>
-							{/* Stjärnor som representerar betyg */}
+							{/* Används för att skapa en rad med stjärnor för att visualisera ett betyg. Antalet stjärnor som visas baseras på värdet av variabeln rating.*/}
 							<div className="flex space-x-1 text-primaryDarkBlue">
 								{[...Array(rating)].map((_, index) => (
 									<FontAwesomeIcon

@@ -15,9 +15,10 @@ function HorizontalHotelCard({ hotel }) {
 	const { favorites, toggleFavorites } = useFavorites();
 	const { searchParams } = useSearchParamsContext(); // Use search params context
 
+	// Kontrollerar om hotellet är lagt i favoriter
 	const isFavorite = favorites.some((fav) => fav.id === hotel.id);
 
-	//Beräknar antal nätter baserat på kontextvärden
+	// Beräknar antal nätter från sökparametrar om datum är satt
 	const nights =
 		searchParams.startDate && searchParams.endDate
 			? dayjs(searchParams.endDate).diff(
@@ -124,13 +125,10 @@ function HorizontalHotelCard({ hotel }) {
 						<p className="text-[10px] text-shadyBlack">
 							{nights} night{nights !== 1 ? "s" : ""}: €
 							{hotel.pricePerNight * nights}
-							{/* {(showDiscountedPrice
-								? hotel.discountedPrice
-								: hotel.pricePerNight) * nights} */}
 						</p>
 					</div>
 
-					{/* Divider */}
+					{/* Avdelare */}
 					<div className="border-l border-darkGrey h-10 mx-4"></div>
 
 					{/* Bokningsknapp */}
@@ -147,6 +145,8 @@ function HorizontalHotelCard({ hotel }) {
 	);
 }
 
+
+//definierar prop-typer för HorizontalHotelCard-komponenten, vilket säkerställer att den får ett objekt med specifika egenskaper
 HorizontalHotelCard.propTypes = {
 	hotel: PropTypes.shape({
 		id: PropTypes.number.isRequired,

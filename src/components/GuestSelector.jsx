@@ -125,7 +125,7 @@ function GuestSelector(props) {
 	);
 }
 
-// Proptypes för validering
+// Proptypes för validering - specificerar typer och krav för props i GuestSelector-komponenten, vilket säkerställer att rätt datatyper skickas in och att nödvändiga funktioner och värden tillhandahålls
 GuestSelector.propTypes = {
 	adults: PropTypes.number.isRequired,
 	setAdults: PropTypes.func.isRequired,

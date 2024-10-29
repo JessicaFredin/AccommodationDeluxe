@@ -14,7 +14,7 @@ function HorizontalRoomType(props) {
 				/>
 			</div>
 
-			{/* Returnerar textinnehåll och textstorlek för det specifika rummet */}
+			{/* Returnerar textinnehåll och textstorlek för det specifika rummet - visar en rubrik och två textstycken med information från props, vilket innebär att komponenten renderar en titel, en yta (sqm) och en beskrivning, alla i specifika stilklasser för typsnitt och färg*/}
 			<div className="flex flex-col justify-center p-3 w-2/3">
 				<h3 className="text-[16px] font-bold text-black">
 					{props.title}

@@ -96,7 +96,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 							</li>
 						))}
 
-					{/* Renderas ikoner dynamiskt om det finns */}
+					{/* Renderas ikoner dynamiskt om det finns - Det handlar om att en lista med ikoner renderas för olika bekvämligheter i ett rum, där varje bekvämlighet visas med en ikon och en kontroll (check eller kryss) som indikerar om den är tillgänglig eller inte. */}
 					{room.iconAmenities &&
 						Object.entries(room.iconAmenities).map(
 							([key, value]) => (
@@ -116,13 +116,14 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 												: "text-roomRed"
 										}`}
 									/>
+									{/* Visar etiketten för en bekvämlighet; använder namnet från ikonobjektet om det finns, annars används nyckeln som standardtext. */}
 									<span className="ml-2">
 										{amenityIcons[key]?.label || key}
 									</span>
 								</li>
 							)
 						)}
-					{/* ))} */}
+					
 				</ul>
 			</div>
 			{/* Pris och Bokningssektion */}

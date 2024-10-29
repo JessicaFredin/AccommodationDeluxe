@@ -73,6 +73,8 @@ function OfferCard(props) {
 	);
 }
 
+
+
 OfferCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
@@ -85,7 +87,7 @@ OfferCard.propTypes = {
 		noImage: PropTypes.bool,
 	}).isRequired,
 	overlay: PropTypes.bool,
-	hotelId: PropTypes.number.isRequired, // Add hotelId prop for navigation
+	hotelId: PropTypes.number.isRequired, 
 };
 
 export default OfferCard;

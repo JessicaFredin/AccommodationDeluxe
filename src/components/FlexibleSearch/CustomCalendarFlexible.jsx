@@ -322,15 +322,17 @@ function CustomCalendarFlexible(props) {
 
 					{/* Alternativ för datumintervall */}
 					<div className="flex justify-between mb-4 mt-6">
+						{/* En knapp som låter användaren välja "Exakta datum" som en del av en intervallvalsfunktion. */}
 						<Button
 							buttonText={"Exact dates"}
 							rounded={true}
 							color="transparent"
-							active={selectedRangeOption === "Exact dates"}
+							active={selectedRangeOption === "Exact dates"} // Kontrollerar om "Exact dates" är den valda alternativet
 							onClick={() =>
-								handleRangeOptionClick("Exact dates")
-							}
+								handleRangeOptionClick("Exact dates") 
+							} // Anropar en funktion när knappen klickas
 						/>
+						{/*Samma koncept som för första knappen gäller på resterande */}
 						<Button
 							buttonText={"± 1 day"}
 							rounded={true}
@@ -370,7 +372,7 @@ function CustomCalendarFlexible(props) {
 				</div>
 			) : (
 				<div>
-					{/* Flexible content */}
+					{/* "Flexible"-innehåll */}
 					<h4 className="text-lg font-semibold mb-4">
 						How long do you want to stay?
 					</h4>
@@ -433,16 +435,20 @@ function CustomCalendarFlexible(props) {
 								<input
 									type="number"
 									min="1"
-									value={customNights}
-									onChange={handleCustomNightsChange}
+									value={customNights} // Sätter värdet av fältet till antalet nätter som användaren har angett
+									onChange={handleCustomNightsChange} // Anropar "handleCustomNightsChange"-funktionen när användaren ändrar värdet
 									className="w-12 text-center outline-none appearance-none border-none bg-white"
 								/>
+								{/* Visar "night" i singular eller plural beroende på värdet av customNights */}
 								<span className="ml-1">
 									night{customNights > 1 ? "s" : ""}
 								</span>
 							</label>
 							<select
+							    // Anger vilket alternativ som för närvarande är valt i dropdown-menyn
 								value={startDay}
+
+								// Anropar handleStartDayChange-funktionen när användaren väljer ett annat alternativ
 								onChange={handleStartDayChange}
 								className="border rounded-md px-2 py-1 outline-none bg-white"
 							>
@@ -466,7 +472,10 @@ function CustomCalendarFlexible(props) {
 					<div className="relative">
 						<div className="grid grid-cols-3 gap-2 overflow-x-auto scrollbar-hide">
 							<MonthSelector
+							    // Skickar den valda månadslistan till MonthSelector-komponenten
 								selectedMonths={selectedMonths}
+								
+								// Anropar "handleMonthSelection"-funktionen när användaren ändrar ett månadsval
 								onMonthChange={handleMonthSelection}
 							/>
 						</div>
@@ -489,6 +498,8 @@ function CustomCalendarFlexible(props) {
 	);
 }
 
+
+// Definierar prop-typer för CustomCalendarFlexible-komponenten
 CustomCalendarFlexible.propTypes = {
 	startDate: PropTypes.instanceOf(Date),
 	endDate: PropTypes.instanceOf(Date),
