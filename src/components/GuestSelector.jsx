@@ -3,7 +3,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types"; // Import PropTypes
-
 function GuestSelector(props) {
 	return (
 		<div className="absolute bg-white p-6 rounded-lg shadow-lg border border-grey mt-2 z-50 w-[300px]">
@@ -37,7 +36,9 @@ function GuestSelector(props) {
 				<div className="flex items-center space-x-2">
 					<button
 						onClick={() =>
-							props.setChildren(Math.max(0, props.numChildren - 1))
+							props.setChildren(
+								Math.max(0, props.numChildren - 1)
+							)
 						}
 						className="border border-grey w-3.5 h-2.5 flex items-center justify-center text-sm text-grey"
 					>
@@ -91,6 +92,9 @@ function GuestSelector(props) {
 								name="room-proximity"
 								value="yes"
 								className="form-radio h-4 w-4 text-accentPink"
+								onChange={() => {
+									props.setIsNextToEachOther(1);
+								}}
 							/>
 							<span className="text-sm">Yes, please!</span>
 						</label>
@@ -100,6 +104,9 @@ function GuestSelector(props) {
 								name="room-proximity"
 								value="no"
 								className="form-radio h-4 w-4 text-accentPink"
+								onChange={() => {
+									props.setIsNextToEachOther(0);
+								}}
 							/>
 							<span className="text-sm">No, not necessary!</span>
 						</label>
@@ -118,6 +125,8 @@ GuestSelector.propTypes = {
 	setChildren: PropTypes.func.isRequired,
 	rooms: PropTypes.number.isRequired,
 	setRooms: PropTypes.func.isRequired,
+	isNextToEachOther: PropTypes.number.isRequired,
+	setIsNextToEachOther: PropTypes.func.isRequired,
 };
 
 export default GuestSelector;

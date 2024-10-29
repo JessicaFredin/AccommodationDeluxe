@@ -51,8 +51,8 @@ const descriptionIcons = {
 	"Balcony or Terrace": { icon: faMemory, type: "fontawesome" },
 };
 
-function RoomType({ room, totalNights, adults, children, hotelId, index }) {
-	const totalCost = room.pricePerNight * totalNights;
+function RoomType({ room, totalNights, adults, children, hotelId, index, discountedPrice }) {
+	const totalCost = (discountedPrice || room.pricePerNight) * totalNights;
 	console.log(totalNights);
 	return (
 		<div className="w-[340px] mb-[30px] bg-white rounded-xl shadow-lg shadow-darkGrey overflow-hidden flex flex-col justify-between">
@@ -177,7 +177,9 @@ function RoomType({ room, totalNights, adults, children, hotelId, index }) {
 						<p className="text-xs text-black">
 							{totalNights} nights: €{totalCost.toFixed(2)}
 						</p>
-					</div>
+                    </div>
+                    
+                    
 				</div>
 			</div>
 		</div>

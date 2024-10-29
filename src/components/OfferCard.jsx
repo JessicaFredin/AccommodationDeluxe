@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function OfferCard(props) {
 	//Stil för bilder i karusellen
@@ -13,7 +15,7 @@ function OfferCard(props) {
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 		  }
-            : {};
+		: {};
 
 	return (
 		<div
@@ -31,9 +33,7 @@ function OfferCard(props) {
 			{/* Opacity for fullWidth cards */}
 			{props.imageType.fullWidth && props.overlay && (
 				<div className="absolute inset-0 bg-black bg-opacity-50 rounded-[10px]"></div>
-            )}{" "}
-            
-
+			)}{" "}
 			{/* Card content */}
 			<div
 				className={`flex flex-col flex-1 p-6 ${
@@ -44,7 +44,12 @@ function OfferCard(props) {
 				<h3 className="font-semibold text-lg mb-2">{props.title}</h3>
 				<p className="mb-4 text-sm">{props.description}</p>{" "}
 				<div className="mt-auto">
-					<Button size={"large"} buttonText={props.ctaText} />
+					{/* Link to the hotel page */}
+					<Link to={`/hotels/${props.hotelId}?offerId${props.id}`}>
+						<Button size="large" buttonText={props.ctaText} />
+					</Link>
+
+					{/* <Button size={"large"} buttonText={props.ctaText} /> */}
 					<span
 						className={`text-sm mx-3 ${
 							props.imageType.fullWidth && props.backgroundImage
@@ -82,6 +87,7 @@ OfferCard.propTypes = {
 		noImage: PropTypes.bool,
 	}).isRequired,
 	overlay: PropTypes.bool,
+	hotelId: PropTypes.number.isRequired, // Add hotelId prop for navigation
 };
 
 export default OfferCard;

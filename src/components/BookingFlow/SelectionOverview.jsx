@@ -150,12 +150,6 @@ function SelectionOverview({ hotelId, roomIndex }) {
 					</div>
 				</div>
 				<div className="flex justify-between items-end mt-4">
-					<div className="ml-auto flex flex-col items-end">
-						{/* Bokningsknapp */}
-						<Button size="large" buttonText={"Proceed"} />
-
-						<p className="text-sm mt-2 text-Black">Other options</p>
-					</div>
 				</div>
 			</div>
 		</div>

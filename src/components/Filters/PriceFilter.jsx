@@ -97,3 +97,4 @@ const PriceFilter = ({ setFilters }) => {
 };
 
 export default PriceFilter;
+

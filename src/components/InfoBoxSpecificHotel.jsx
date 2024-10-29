@@ -11,7 +11,7 @@ function InfoBoxSpecificHotel({
 	extraInformation = [],
 }) {
 	return (
-		<div className="p-4 bg-opacityLightBlue rounded-[10px] shadow-lg w-[400px] h-auto">
+		<div className="p-4 bg-opacityLightBlue rounded-[10px] shadow-lg w-[400px] h-fit">
 			<h3 className="text-[20px] font-semibold mb-3">{title}</h3>
 {/* 
 			{additionalInformation.length > 0 && (

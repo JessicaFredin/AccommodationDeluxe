@@ -49,3 +49,4 @@ function TypeOfHotelFilter({ setFilters }) {
 }
 
 export default TypeOfHotelFilter;
+

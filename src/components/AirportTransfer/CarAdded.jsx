@@ -17,8 +17,34 @@ function CarAdded({ transferData, onRemove }) {
       </div>
 
       {/* Middle Section */}
-      <div className="flex-grow ml-4 text-darkGrey">
+      <div className="flex-grow ml-4 text-darkGrey p-[10px]">
         <h2 className="text-black text-[12px] font-bold mb-2">One way</h2>
+        <ul className="space-y-2 text-[12px]">
+          <li className="flex items-center">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+            <span>From: {transferData.fromLocation}</span>
+          </li>
+          <li className="flex items-center">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+            <span>To: {transferData.toLocation}</span>
+          </li>
+          <li className="flex items-center">
+            <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+            {transferData.date}
+          </li>
+          <li className="flex items-center">
+            <FontAwesomeIcon icon={faClock} className="mr-2" />
+            {transferData.time}
+          </li>
+          <li className="flex items-center">
+            <FontAwesomeIcon icon={faUserFriends} className="mr-2" />
+            {transferData.passengers} people
+          </li>
+        </ul>
+      </div>
+      {/* Middle Section */}
+      <div className="flex-grow ml-4 text-darkGrey p-[10px]">
+        <h2 className="text-black text-[12px] font-bold mb-2">Return</h2>
         <ul className="space-y-2 text-[12px]">
           <li className="flex items-center">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />

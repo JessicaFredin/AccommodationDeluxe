@@ -3,7 +3,6 @@
 /* eslint-disable no-unused-vars */
 import React, { createContext, useState, useContext } from "react";
 
-
 const SearchParamsContext = createContext();
 
 export const SearchParamsProvider = ({ children }) => {
@@ -16,6 +15,7 @@ export const SearchParamsProvider = ({ children }) => {
 		rooms: 0,
 		hotelId: null,
 		roomIndex: null,
+		isNextToEachOther: 0,
 	});
 
 	return (

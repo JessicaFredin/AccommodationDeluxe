@@ -138,7 +138,7 @@ const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
 
 function HotelsPage() {
 	const { search } = useLocation();
-	const { hotels, error } = useHotelData();
+	const { hotels, offers, error } = useHotelData();
 	const navigate = useNavigate();
 	const { searchParams, setSearchParams } = useSearchParamsContext();
 	const [filteredHotels, setFilteredHotels] = useState([]);
@@ -159,7 +159,6 @@ function HotelsPage() {
 		children: 0,
 		rooms: 1,
 	};
-
 
 	useEffect(() => {
 		const params = new URLSearchParams(search);
@@ -238,21 +237,29 @@ function HotelsPage() {
 				);
 			}
 
+			// Filter by
+
 			// Filter by food and drinks
-			if (filters.foodAndDrinks.length) {
-				results = results.filter((hotel) =>
-					filters.foodAndDrinks.every((food) =>
-						hotel.foodAndDrinks.includes(food)
-					)
-				);
+			try {
+				if (filters.foodAndDrinks.length) {
+					results = results.filter((hotel) =>
+						filters.foodAndDrinks.every((food) => {
+							// Check if the food filter option exists and is set to true in the hotel object
+							return (
+								hotel.foodFilter &&
+								hotel.foodFilter[food] === true
+							);
+						})
+					);
+				}
+			} catch (error) {
+				alert(error);
 			}
 
 			setFilteredHotels(results);
 		}
 	}, [search, setSearchParams, hotels, filters]);
 
-	
-	
 	// useEffect(() => {
 	// 	const params = new URLSearchParams(search);
 	// 	const destinationId = params.get("destinationId");
@@ -415,7 +422,7 @@ function HotelsPage() {
 				<Sort />
 			</div> */}
 
-			<div className="flex justify-center pt-[100px]">
+			{/* <div className="flex justify-center pt-[100px]">
 				<div className="mr-8">
 					<FilterContainer setFilters={setFilters} />
 				</div>
@@ -426,6 +433,36 @@ function HotelsPage() {
 						))
 					) : (
 						<p>No hotels match your filters.</p>
+					)}
+				</div>
+			</div> */}
+
+			<div className="flex justify-center pt-[100px]">
+				<div className="mr-8">
+					<FilterContainer setFilters={setFilters} />
+				</div>
+				<div className="flex flex-col gap-y-8">
+					{filteredHotels && filteredHotels.length > 0 ? (
+						filteredHotels.map((hotel) => {
+							// Check if there’s a matching offer for the hotel
+							const offer = offers.find(
+								(o) => o.hotelId === hotel.id
+							);
+							return (
+								<HorizontalHotelCard
+									key={hotel.id}
+									hotel={hotel}
+									showDiscountedPrice={!!offer}
+									discountedPrice={
+										offer ? offer.discountedPrice : null
+									}
+								/>
+							);
+						})
+					) : (
+						<p className="text-center">
+							No hotels found matching the criteria.
+						</p>
 					)}
 				</div>
 			</div>

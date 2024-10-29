@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import ScrollCheck from "../../components/BookingFlow/ScrollCheck";
 import SelectionOverview from "../../components/BookingFlow/SelectionOverview";
@@ -20,6 +19,13 @@ function BookingPage() {
 	const adults = searchParams.get("adults");
 	const children = searchParams.get("children");
 
+	// Add state variables for airport transfer
+	const [airportTransferSelected, setAirportTransferSelected] =
+		useState(false);
+	const [transferData, setTransferData] = useState(null);
+	const [isTransferAdded, setIsTransferAdded] = useState(false);
+	const [addedTransferData, setAddedTransferData] = useState(null);
+
 	return (
 		<div>
 			<div className="fixed top-0 z-50 w-full">
@@ -30,7 +36,6 @@ function BookingPage() {
 			</div>
 			<div className="flex flex-col items-center space-y-8 p-6 rounded-lg">
 				<div className="mt-[120px] w-[60%]">
-					{/* Pass the captured parameters as props to SelectionOverview */}
 					<SelectionOverview
 						hotelId={hotelId}
 						roomIndex={roomIndex}
@@ -38,7 +43,16 @@ function BookingPage() {
 				</div>
 
 				<div className="w-[60%]">
-					<AddOns />
+					<AddOns
+						airportTransferSelected={airportTransferSelected}
+						setAirportTransferSelected={setAirportTransferSelected}
+						transferData={transferData}
+						setTransferData={setTransferData}
+						isTransferAdded={isTransferAdded}
+						setIsTransferAdded={setIsTransferAdded}
+						addedTransferData={addedTransferData}
+						setAddedTransferData={setAddedTransferData}
+					/>
 				</div>
 
 				<div className="w-[60%]">
@@ -50,7 +64,13 @@ function BookingPage() {
 				</div>
 
 				<div className="w-[60%]">
-					<Summary />
+					<Summary
+						hotelId={hotelId}
+						roomIndex={roomIndex}
+						startDate={startDate}
+						endDate={endDate}
+						transferData={addedTransferData}
+					/>
 				</div>
 
 				{/* Button to proceed to confirmation */}

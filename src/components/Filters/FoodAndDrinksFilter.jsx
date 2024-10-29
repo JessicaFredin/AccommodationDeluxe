@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 // FoodAndDrinksFilter.jsx
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -73,3 +73,5 @@ function FoodAndDrinksFilter({ setFilters }) {
 }
 
 export default FoodAndDrinksFilter;
+
+

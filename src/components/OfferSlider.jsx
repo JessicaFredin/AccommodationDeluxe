@@ -77,6 +77,7 @@ function Slider() {
 										overlay={offer.overlay}
 										imageType={offer.imageType}
 										ctaText={offer.ctaText}
+										hotelId={offer.hotelId}
 									/>
 								))}
 							</div>

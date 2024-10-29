@@ -19,6 +19,7 @@ function SearchBar({
 	initialAdults,
 	initialChildren,
 	initialRooms,
+	initialIsNextToEachOther,
 }) {
 	//Initierar state med initiala props
 	const [location, setLocation] = useState(initialLocation);
@@ -27,7 +28,9 @@ function SearchBar({
 	const [adults, setAdults] = useState(initialAdults);
 	const [children, setChildren] = useState(initialChildren);
 	const [rooms, setRooms] = useState(initialRooms);
-
+	const [isNextToEachOther, setIsNextToEachOther] = useState(
+		initialIsNextToEachOther
+	);
 	const { hotels } = useHotelData(); //Hämta hotellinformationen från kontexten
 	const { setSearchParams } = useSearchParamsContext(); // Set global search params
 
@@ -88,7 +91,6 @@ function SearchBar({
 
 	const navigate = useNavigate();
 
-	
 	// Funktion för att hantera klick på sökknappen
 	const handleSearch = () => {
 		//Kontrollerar om något av fälten är tomma eller om vuxna/rum är 0
@@ -114,6 +116,7 @@ function SearchBar({
 			adults,
 			children,
 			rooms,
+			isNextToEachOther,
 		});
 
 		// Construct the search query with all relevant parameters
@@ -124,6 +127,7 @@ function SearchBar({
 			adults: adults.toString(),
 			children: children.toString(),
 			rooms: rooms.toString(),
+			isNextToEachOther: isNextToEachOther.toString(),
 		});
 
 		const [selectedCity, selectedCountry] = location
@@ -147,15 +151,13 @@ function SearchBar({
 				adults,
 				children,
 				rooms,
+				isNextToEachOther,
 			});
 		}
 
 		// Navigera till samma /hotels-sida med query-parametrar
 		navigate(`/hotels?${params.toString()}`);
 	};
-
-
-
 
 	return (
 		<div className="bg-secondaryLightBlue p-4 rounded-lg shadow-lg flex justify-between mx-auto max-w-[1400px] px-20 space-x-9 border border-accentPink">
@@ -244,6 +246,8 @@ function SearchBar({
 							setChildren={setChildren}
 							rooms={rooms}
 							setRooms={setRooms}
+							isNextToEachOther={isNextToEachOther}
+							setIsNextToEachOther={setIsNextToEachOther}
 						/>
 					</div>
 				)}
@@ -257,7 +261,6 @@ function SearchBar({
 
 export default SearchBar;
 
-
 // Add these prop types
 SearchBar.propTypes = {
 	onSearch: PropTypes.func.isRequired,
@@ -267,6 +270,7 @@ SearchBar.propTypes = {
 	initialAdults: PropTypes.number,
 	initialChildren: PropTypes.number,
 	initialRooms: PropTypes.number,
+	initialIsNextToEachOther: PropTypes.number,
 };
 
 // Set default props with dynamic dates
@@ -277,4 +281,5 @@ SearchBar.defaultProps = {
 	initialAdults: 2,
 	initialChildren: 0,
 	initialRooms: 1,
+	initialIsNextToEachOther: 0,
 };

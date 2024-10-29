@@ -37,7 +37,7 @@ import ContactPage from "./pages/FooterLinks/About/ContactPage";
 // Booking
 import BookingPage from "./pages/Booking/BookingPage";
 import ConfirmationPage from "./pages/Booking/ConfirmationPage";
-
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
 	return (
 		<div className="app-wrapper">
@@ -45,8 +45,8 @@ function App() {
 				<HotelDataProvider>
 					<FavoritesProvider>
 						<Router>
+							<ScrollToTop /> {/* Place here to apply globally */}
 							<NavBar />
-
 							<Routes>
 								{/* Main navigation */}
 								<Route path="/" element={<HomePage />} />
