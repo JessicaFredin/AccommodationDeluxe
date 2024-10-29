@@ -41,7 +41,7 @@ function PassengerSelection(props) {
 					className="ml-2"
 				/>
 			</button>
-			{/* Innehåll för dropdown-menyn */}
+			{/* Innehåll för dropdown-menyn. Används för att rendera en lista med passagerarantal från 1 till 5 som klickbara element, där varje klick anropar "handleSelectPassenger"-funktionen med det valda antalet passagerare. */}
 			{isOpen && (
 				<div className="absolute top-full mt-2 bg-white border rounded-lg shadow-lg z-10 w-[200px]">
 					{" "}

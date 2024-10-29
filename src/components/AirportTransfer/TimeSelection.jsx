@@ -9,9 +9,12 @@ import {
 	faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Komponenten tar emot props och hanterar visningen och valet av tid
 function TimeSelector(props) {
-	const [isOpen, setIsOpen] = useState(false); // State för att hantera dropdownens öppning/stängning
-	const [selectedTime, setSelectedTime] = useState("00:00"); //State för attspara vald tid
+	// State för att hantera dropdownens öppning/stängning
+	const [isOpen, setIsOpen] = useState(false); 
+	 //State för attspara vald tid
+	const [selectedTime, setSelectedTime] = useState("00:00");
 
 	// Toggle dropdown öppning/stängning
 	const toggleDropdown = () => {
@@ -39,7 +42,7 @@ function TimeSelector(props) {
 
 	return (
 		<div className="relative">
-			{/* Knapp för att visa vald tid */}
+			{/* Knapp som visar vald tid och hanterar öppning/stängning av dropdown */}
 			<button
 				className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer hover:bg-grey w-[150px] h-[45px]"
 				onClick={toggleDropdown}
@@ -52,17 +55,18 @@ function TimeSelector(props) {
 				/>
 			</button>
 
-			{/* Dropdown-innehåll för att visa alla tillgängliga tider */}
+			{/* Dropdown-meny som visar alla tillgängliga tider om isOpen är true */}
 			{isOpen && (
 				<div className="absolute top-full mt-2 bg-white border rounded-lg shadow-lg z-10 w-[150px] h-[500px] overflow-y-auto">
 					<ul className="text-center">
+						{/* LOopar igenom generateTimeslots för att rendera tiderna*/}
 						{generateTimeSlots().map((time, index) => (
 							<li
 								key={index}
 								className="p-2 cursor-pointer hover:bg-accentPink hover:text-white"
 								onClick={() => handleTimeSelect(time)}
 							>
-								{time}
+								{time} {/* Visar den aktuella tiden i listan */}
 							</li>
 						))}
 					</ul>

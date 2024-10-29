@@ -9,15 +9,17 @@ import {
 	faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Funktion för att generera de kommande 12 månaderna som en array
 function generateNextTwelveMonths() {
 	const months = [];
-	const startMonth = dayjs(); // Current month
+	const startMonth = dayjs(); // Startmånad är nuvarande månad
 
+	// Loopar över de kommande 12 månaderna och läggeer till dem i arrayen months
 	for (let i = 0; i < 12; i++) {
 		const month = startMonth.add(i, "month");
 		months.push({
-			name: month.format("MMM"), // e.g., 'Oct'
-			year: month.format("YYYY"), // e.g., '2024'
+			name: month.format("MMM"), // ex 'Oct'
+			year: month.format("YYYY"), // ex '2024'
 			full: month.format("MMM YYYY"),
 		});
 	}
@@ -26,17 +28,15 @@ function generateNextTwelveMonths() {
 }
 
 function MonthSelector(props) {
+	// Tar emot selectedMOnths och onMonthChange som props
 	const selectedMonths = props.selectedMonths;
-    const onMonthChange = props.onMonthChange;
-    
-	const months = generateNextTwelveMonths();
-	const scrollContainerRef = useRef(null);
-	// const [selectedMonths, setSelectedMonths] = useState([]);
+	const onMonthChange = props.onMonthChange;
 
-	// State to manage the visibility of navigation buttons
-	const [isScrolledToStart, setIsScrolledToStart] = useState(true);
-	const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
-
+	const months = generateNextTwelveMonths(); // Genererar en lista med de kommande 12 månaderna
+	const scrollContainerRef = useRef(null); // Referens till den scrollbara container för att hantera scroll
+	const [isScrolledToStart, setIsScrolledToStart] = useState(true); // Om scrollen är i början
+	const [isScrolledToEnd, setIsScrolledToEnd] = useState(false); // Om scrollen är i slutet
+    // Funktion för att scrolla till vänster om den vänstra knappen klickas
 	const handlePrevClick = () => {
 		if (scrollContainerRef.current) {
 			scrollContainerRef.current.scrollBy({
@@ -46,6 +46,7 @@ function MonthSelector(props) {
 		}
 	};
 
+	// Funktion för att scrolla till höger när högra knappen klickas
 	const handleNextClick = () => {
 		if (scrollContainerRef.current) {
 			scrollContainerRef.current.scrollBy({
@@ -55,7 +56,7 @@ function MonthSelector(props) {
 		}
 	};
 
-	// Update the visibility of navigation buttons based on scroll position
+	// Uppdaterar navigeringsknappars synlighet baserat på scroll-position
 	useEffect(() => {
 		const scrollContainer = scrollContainerRef.current;
 
@@ -70,43 +71,35 @@ function MonthSelector(props) {
 
 		if (scrollContainer) {
 			scrollContainer.addEventListener("scroll", handleScroll);
-			// Check initial scroll position
+			// Kontrollerar scrollposition
 			handleScroll();
 		}
 
+		// Rensar eventlyssnaren när komponenten avmonteras
 		return () => {
 			if (scrollContainer) {
 				scrollContainer.removeEventListener("scroll", handleScroll);
 			}
 		};
 	}, []);
-
-	// const toggleMonth = (month) => {
-	// 	if (selectedMonths.includes(month)) {
-	// 		// If the month is already selected, remove it
-	// 		setSelectedMonths(selectedMonths.filter((m) => m !== month));
-	// 	} else if (selectedMonths.length < 3) {
-	// 		// If less than 3 months are selected, add the new month
-	// 		setSelectedMonths([...selectedMonths, month]);
-	// 	} // If 3 months are already selected, do nothing
-	// };
-
-	// Toggle month selection
+	// Funktion för att lägga till/ta bort månad från listan selectedMonths
 	const toggleMonth = (month) => {
 		let newSelectedMonths = [];
 		if (selectedMonths.includes(month)) {
+			// Om månaden redan är vald, ta bort den från listan
 			newSelectedMonths = selectedMonths.filter((m) => m !== month);
 		} else if (selectedMonths.length < 3) {
+			// Om månaden inte är vald och mindre än 3 månader är valda, lägg till den i listan
 			newSelectedMonths = [...selectedMonths, month];
 		} else {
-			newSelectedMonths = [...selectedMonths]; // No change if limit reached
+			newSelectedMonths = [...selectedMonths]; // Uppdaterar valda månader i föräldrakomponenten
 		}
 		onMonthChange(newSelectedMonths);
 	};
 
 	return (
 		<div className="relative my-3 w-[700px]">
-			{/* Custom left arrow */}
+			{/* Används i de fall användaren inte har rullat till början. Då visas en knapp för att gå till föregående innehåll med en ikon; */}
 			{!isScrolledToStart && (
 				<button
 					onClick={handlePrevClick}
@@ -116,20 +109,26 @@ function MonthSelector(props) {
 				</button>
 			)}
 
-			{/* Scrollable months container */}
 			<div
 				ref={scrollContainerRef}
 				className="flex overflow-x-auto space-x-4 scrollbar-hide"
 			>
+				{/* Används för att i terera genom varje månad i months-arrayen. Skapa en unik nyckel för varje månad baserat på namn och år. Kontrollera om månaden är vald*/}
 				{months.map((month, index) => {
 					const monthKey = `${month.name} ${month.year}`;
 					const isSelected = selectedMonths.includes(monthKey);
-					// const isSelected = selectedMonths.includes(month.full);
 					return (
+
+						
 						<button
 							key={index}
-							onClick={() => toggleMonth(monthKey)}
+							// Anropar funktionen toggleMonth för att välja eller avmarkera månaden baserat på den unika månadsnyckeln
+							onClick={() => toggleMonth(monthKey)} 
+
+							// Inaktiverar knappen om den aktuella månaden inte är vald och tre eller fler månader redan är valda
 							disabled={!isSelected && selectedMonths.length >= 3}
+
+							// Om vald, ge knappen en rosa kant och bakgrund med "cursor" som indikerar klickbarhet; om tre eller fler månader är valda, använd inaktiverad stil med grå kant och bakgrund samt "cursor" som visar att den inte kan klickas; annars använd standardstil för ovalda månader med vit bakgrund och "cursorn" som indikerar klickbarhet.
 							className={`border-2 rounded-md p-4 text-center min-w-[80px] flex flex-col items-center ${
 								isSelected
 									? "border-accentPink bg-hoverColorLightPink cursor-pointer"
@@ -138,18 +137,23 @@ function MonthSelector(props) {
 									: "border-grey bg-white cursor-pointer"
 							}`}
 						>
+
+							{/*Används för att visa en kalenderikon */}
 							<FontAwesomeIcon
 								icon={faCalendarAlt}
 								className="text-lg mb-1"
 							/>
-							<span className="text-sm">{month.name}</span>
+							{/*Används för att visa månadens namn */}
+							<span className="text-sm">{month.name}</span> 
+							
+							{/*Används för att visa månadens år */}
 							<span className="text-xs">{month.year}</span>
 						</button>
 					);
 				})}
 			</div>
 
-			{/* Custom right arrow */}
+			{/* Används i de fall användaren inte har rullat till slutet. Då visas en knapp för att gå till nästa innehåll med en ikon; knappen är placerad till höger, centrerad vertikalt, med en vit bakgrund, ljusgrå kant, rundad form och skugga för att ge en upphöjd effekt. */}
 			{!isScrolledToEnd && (
 				<button
 					onClick={handleNextClick}
@@ -162,7 +166,7 @@ function MonthSelector(props) {
 	);
 }
 
-// Add PropTypes validation
+//Proptyper för vaildering
 MonthSelector.propTypes = {
 	selectedMonths: PropTypes.arrayOf(PropTypes.string).isRequired,
 	onMonthChange: PropTypes.func.isRequired,

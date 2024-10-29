@@ -15,12 +15,13 @@ function VerticalHotelCard(props) {
 	// Kontrollerar om det specifika hotellet finns i favoriter
 	const isFavorite = favorites.some((fav) => fav.id === props.hotelId);
 
+	//Funktion för att hanterar logiken för att markera eller avmarkera hotellet som favorit
 	const handleHeartClick = () => {
 		if (isFavorite) {
-			// Tar bort från favoriter om det redan är där
+			// Om hotellet redan är markerat som favorit, körs removeFavorite för att ta bort det från favoriter
 			removeFavorite(props.hotelId);
 		} else {
-			// Lägger till i favoriter
+			// Om hotellet inte är markerat som favorit, körs toggleFavorites och skapar ett objekt med hotellets information och lägger till det i favoriter
 			toggleFavorites({
 				id: props.hotelId,
 				name: props.hotelName,

@@ -21,7 +21,7 @@ function SearchBar({
 	initialRooms,
 	initialIsNextToEachOther,
 }) {
-	//Initierar state med initiala props
+    // Definierar state för sökkriterier baserat på de initiala värdena som skickas som props
 	const [location, setLocation] = useState(initialLocation);
 	const [startDate, setStartDate] = useState(initialStartDate);
 	const [endDate, setEndDate] = useState(initialEndDate);
@@ -32,35 +32,36 @@ function SearchBar({
 		initialIsNextToEachOther
 	);
 	const { hotels } = useHotelData(); //Hämta hotellinformationen från kontexten
-	const { setSearchParams } = useSearchParamsContext(); // Set global search params
+	const { setSearchParams } = useSearchParamsContext(); // Sätter de globala sökparametrarna
 
-	// State för att ändra synlighet
+	// State för att hantera visning av kalender och gästväljare
 	const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 	const [isGuestSelectorOpen, setIsGuestSelectorOpen] = useState(false);
-
 	const [locationSuggestions, setLocationSuggestions] = useState([]);
 
-	// Funktion för att visa/dölja
+	// Funktion för att toggla visning av gästväljare
 	const toggleGuestSelector = () => {
 		setIsGuestSelectorOpen(!isGuestSelectorOpen);
 	};
+	// Funktion för att toggla visning av kalender
 	const toggleCalendar = () => {
 		setIsCalendarOpen(!isCalendarOpen);
 	};
 
-	// Funtion för att hantera klick på knappen i CustomCalendar
+	// Funktion för att hantera valet av datum i kalendern
 	const handleApply = (selectedStartDate, selectedEndDate) => {
 		setStartDate(selectedStartDate);
 		setEndDate(selectedEndDate);
 		setIsCalendarOpen(false); // Stänger kalendern efter att ha tillämpat datumet
 	};
 
-	//Hanterar ändring i platsinmatningen och visa förslag
+	// Hanterar förändringar i platsinmatning och genererar förslag
 	const handleLocationChange = (e) => {
 		const inputValue = e.target.value;
 		setLocation(inputValue);
 
 		if (inputValue.length > 0) {
+			// Filtrerar hotell baserat på inmatad plats för att ge relevanta förslag
 			const suggestions = hotels
 				.map((hotel) => hotel.location)
 				.filter(
@@ -72,7 +73,7 @@ function SearchBar({
 							.toLowerCase()
 							.startsWith(inputValue.toLowerCase())
 				);
-
+            // Genererar förslag
 			setLocationSuggestions([
 				...new Set(
 					suggestions.map((loc) => `${loc.city}, ${loc.country}`)
@@ -83,7 +84,7 @@ function SearchBar({
 		}
 	};
 
-	// Hantera platsval från dropdown
+	// Hanterar val av plats från förslagsmenyn
 	const handleLocationSelect = (suggestion) => {
 		setLocation(suggestion);
 		setLocationSuggestions([]); //Rensar förslag efter val
@@ -108,7 +109,7 @@ function SearchBar({
 			return; // Stoppa vidare exekvering av funktionen om inte alla fälten är korrekt ifyllda
 		}
 
-		// Set the global search parameters in context
+		// Sätter de globala sökparametrarna i sammanhanget
 		setSearchParams({
 			location,
 			startDate,
@@ -119,7 +120,7 @@ function SearchBar({
 			isNextToEachOther,
 		});
 
-		// Construct the search query with all relevant parameters
+		// Konstruerar en sökfråga med alla relevanta parametrar
 		const params = new URLSearchParams({
 			location,
 			checkin: dayjs(startDate).format("YYYY-MM-DD"),
@@ -130,10 +131,10 @@ function SearchBar({
 			isNextToEachOther: isNextToEachOther.toString(),
 		});
 
+		// Filtrerar hotell baserat på vald stad och land
 		const [selectedCity, selectedCountry] = location
 			.split(", ")
 			.map((s) => s.trim());
-
 		const results = hotels.filter(
 			(hotel) =>
 				hotel.location.city.toLowerCase() ===
@@ -142,7 +143,7 @@ function SearchBar({
 					selectedCountry.toLowerCase()
 		);
 
-		//// Skicka sökresultaten till föräldrakomponenten tillsammans med all filterdata
+		// Anropar onSearch-funktionen om den är tillgänglig och skickar resultaten
 		if (typeof onSearch === "function") {
 			onSearch({
 				results,
@@ -155,13 +156,13 @@ function SearchBar({
 			});
 		}
 
-		// Navigera till samma /hotels-sida med query-parametrar
+		// Navigerar till /hotels-sidan med alla sökparametrar
 		navigate(`/hotels?${params.toString()}`);
 	};
 
 	return (
 		<div className="bg-secondaryLightBlue p-4 rounded-lg shadow-lg flex justify-between mx-auto max-w-[1400px] px-20 space-x-9 border border-accentPink">
-			{/* Location Input */}
+			{/* Platsinmatning */}
 			<div className="flex items-center rounded-lg shadow-md relative">
 				<LocationInput
 					placeholder="Where do you want to go?"
@@ -169,6 +170,7 @@ function SearchBar({
 					value={location}
 					size="mainSearch"
 				/>
+				{/* Visar platsförslag som en dropdown-lista */}
 				{locationSuggestions.length > 0 && (
 					<div className="absolute top-full bg-white shadow-md rounded-lg w-full mt-1 z-10">
 						{" "}
@@ -184,7 +186,7 @@ function SearchBar({
 					</div>
 				)}
 			</div>
-			{/* Check-in / Check-out */}
+			{/* datumval - Check-in / Check-out */}
 			<div className="relative">
 				<div
 					onClick={toggleCalendar}
@@ -203,7 +205,7 @@ function SearchBar({
 					</span>
 				</div>
 
-				{/* Conditionally render the Calendar */}
+				{/* Kalender visas bara om isCalendarOpen är true */}
 				{isCalendarOpen && (
 					<div className="absolute top-12 left-0 z-50">
 						<CustomCalendarFlexible
@@ -211,13 +213,13 @@ function SearchBar({
 							setStartDate={setStartDate}
 							endDate={endDate}
 							setEndDate={setEndDate}
-							onApply={handleApply} // Pass the apply handler
-							closeCalendar={toggleCalendar} // Call to close the calendar
+							onApply={handleApply} 
+							closeCalendar={toggleCalendar} // stänger kallendern
 						/>
 					</div>
 				)}
 			</div>
-			{/* Guests Input */}
+			{/* Gästinmatning */}
 			<div className="relative">
 				<div
 					onClick={toggleGuestSelector}
@@ -236,7 +238,7 @@ function SearchBar({
 					</span>
 				</div>
 
-				{/* Conditionally render the GuestSelector */}
+				{/* Gästväljare visas bara om isGuestSelectorOpen är true */}
 				{isGuestSelectorOpen && (
 					<div className="absolute top-12 left-0 z-50">
 						<GuestSelector
@@ -253,7 +255,7 @@ function SearchBar({
 				)}
 			</div>
 
-			{/* Search Button */}
+			{/* Sökknapp */}
 			<Button size="large" buttonText={"Search"} onClick={handleSearch} />
 		</div>
 	);
@@ -261,7 +263,7 @@ function SearchBar({
 
 export default SearchBar;
 
-// Add these prop types
+// Prop-typer för att säkerställa korrekt typ och struktur av props
 SearchBar.propTypes = {
 	onSearch: PropTypes.func.isRequired,
 	initialLocation: PropTypes.string,
@@ -273,11 +275,11 @@ SearchBar.propTypes = {
 	initialIsNextToEachOther: PropTypes.number,
 };
 
-// Set default props with dynamic dates
+// Standardvärden för de initiala props med dynamiska datum
 SearchBar.defaultProps = {
 	initialLocation: "",
-	initialStartDate: dayjs().format("YYYY-MM-DD"), // Today's date
-	initialEndDate: dayjs().add(1, "day").format("YYYY-MM-DD"), // Tomorrow's date
+	initialStartDate: dayjs().format("YYYY-MM-DD"), // Dagens datum
+	initialEndDate: dayjs().add(1, "day").format("YYYY-MM-DD"), // Morgondagens datum
 	initialAdults: 2,
 	initialChildren: 0,
 	initialRooms: 1,

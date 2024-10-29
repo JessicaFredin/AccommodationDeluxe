@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,9 +8,10 @@ import Car from "../../assets/images/Car.png";
 // Bekträftelse för bokad flygplatstransfer
 function AirportTransferConfirmation({ onClose }) {
   return (
-    //Layout
+    //Layout som omfamnar allt innehåll
     <div className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-70">
       <div className="rounded-lg shadow-xl max-w-md w-full relative bg-white">
+        
         {/* Stängningsknapp i övre högra hörnet */}
         <button
           onClick={onClose}
@@ -18,7 +20,8 @@ function AirportTransferConfirmation({ onClose }) {
         >
           <FontAwesomeIcon icon={faTimes} className="w-6 h-6" />
         </button>
-        {/* Bekräftelse Text-content */}
+
+        {/* Bekräftelse - text-innehåll */}
         <div className="p-6 text-center">
           <h2 className="text-[24px] font-bold mb-4">Confirmation</h2>
           <p className="text-[20px] mb-4">

@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons"; 
 import logo from "../assets/images/logo/LogoHorizontal.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
 	return (
@@ -12,41 +12,50 @@ function NavBar() {
 				{" "}
 				{/* Logo och Nav Länkar */}
 				<div className="flex items-center space-x-2">
-					<Link to="/" className="hover:text-hoverColorLightPink">
+					<NavLink to="/">
 						<img
 							src={logo}
 							alt="AccommodationDeluxe Logo"
 							className="h-10"
 						/>
-					</Link>
+					</NavLink>
 				</div>
 				<div className="flex space-x-8">
-					<Link
-						to="/"
-						className="hover:text-hoverColorLightPink"
-					>
+					<NavLink to="/" className={({ isActive }) =>
+							isActive
+								? "text-accentPink"
+								: "hover:text-secondaryLightBlue"
+						}>
 						Home
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to="/hotels"
-						className="hover:text-hoverColorLightPink"
+						className={({ isActive }) =>
+							isActive
+								? "text-accentPink"
+								: "hover:text-secondaryLightBlue"
+						}
 					>
 						Hotels
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to="/airport-transfer"
-						className="hover:text-hoverColorLightPink"
+						className={({ isActive }) =>
+							isActive
+								? "text-accentPink"
+								: "hover:text-secondaryLightBlue"
+						}
 					>
 						Airport transfer
-					</Link>
+					</NavLink>
 				</div>
 			</div>
-			<Link
+			<NavLink
 				to="/favorites"
 				className="text-accentPink hover:text-hoverColorLightPink"
 			>
 				<FontAwesomeIcon icon={faHeart} className="h-6 w-6 mx-9" />
-			</Link>
+			</NavLink>
 		</nav>
 	);
 }

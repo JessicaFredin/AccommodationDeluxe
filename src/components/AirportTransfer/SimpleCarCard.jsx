@@ -20,6 +20,8 @@ function SimpleCarCard({ transferData, onAdd }) {
       {/* Detaljer för enkelresa */}
       <div className="flex justify-between items-center mb-4">
         <div className="flex flex-col items-start">
+
+          {/* Visar en rubrik för standardbilen, där texten ändras beroende på om det är en returresa eller enkel resa. */}
           <h2 className="text-xl font-bold mb-4">
             Standard car – {transferData.returnTrip ? "First Trip" : "One way"}
           </h2>
@@ -28,6 +30,8 @@ function SimpleCarCard({ transferData, onAdd }) {
 
         <div className="flex-grow ml-4">
           <div className="flex">
+
+            {/*Används för att visa listor med information om transport, inklusive avrese- och destinationsorter, datum och tid, med mera med tillhörande ikoner.*/}
             <ul className="text-darkGrey text-sm space-y-2">
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
@@ -72,7 +76,7 @@ function SimpleCarCard({ transferData, onAdd }) {
         </div>
       </div>
 
-      {/*Detaljer för retur om valt*/}
+      {/*Detaljer för retur om val - se ovanstående kommentarer då de beygger på samma koncept på dit- och retur-resan*/}
       {transferData.returnTrip && (
         <div className="flex justify-between items-center mb-4">
           <div className="flex flex-col items-start">

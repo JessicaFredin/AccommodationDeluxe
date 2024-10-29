@@ -16,6 +16,8 @@ dayjs.extend(updateLocale);
 dayjs.updateLocale("en", { weekStart: 1 });
 
 function MiniCalendar(props) {
+
+	// Skapar en state-variabel för att hålla det aktuella månadens datum, med standardvärdet som den första dagen av den aktuella månaden.
 	const [currentMonth, setCurrentMonth] = useState(dayjs().startOf("month"));
 
 	// Genererar dagar för den aktuella månader
@@ -24,7 +26,7 @@ function MiniCalendar(props) {
 		const firstDayOfMonth = month.startOf("month").day();
 		const days = [];
 
-		// Lägger till tomma utrymmen för dagarna före månadens första dag
+		// Lägger till "null"-värden i "days-arrayen" för att representera de tomma dagarna i början av månaden, baserat på veckodagen för den första dagen av månaden.
 		for (
 			let i = 0;
 			i < (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1);
@@ -56,6 +58,7 @@ function MiniCalendar(props) {
 		const isToday = day.format("YYYY-MM-DD") === props.today;
 		const isSelected = day.format("YYYY-MM-DD") === props.selectedDate;
 
+		// Renderar en dag med dynamiska klasser beroende på om den är vald eller dagens datum
 		return (
 			<div
 				className={`calendar-day ${
@@ -65,9 +68,9 @@ function MiniCalendar(props) {
 						? "bg-opacityLightBlue text-black"
 						: ""
 				} rounded-full text-center p-2 cursor-pointer hover:bg-opacityLightBlue`}
-				onClick={() => props.onDateClick(day)}
+				onClick={() => props.onDateClick(day)} // Anropar onDateClick-funktionen med den valda dagen
 			>
-				{day.date()}
+				{day.date()} {/* Visar dagnummer */}
 			</div>
 		);
 	};
@@ -80,6 +83,7 @@ function MiniCalendar(props) {
 			{" "}
 			{/* Månadens namn och navigationsknappar */}
 			<div className="bg-white p-4 rounded-t-lg flex items-center justify-between border border-b-lightGrey">
+				{/* Knapp för att navigera till föregående månad */}
 				<button
 					onClick={handlePrevMonth}
 					className="text-lg hover:text-accentPink"
@@ -89,6 +93,7 @@ function MiniCalendar(props) {
 				<h4 className="text-xl font-semibold">
 					{currentMonth.format("MMMM YYYY")}
 				</h4>
+				{/* Knapp för att navigera till nästa månad */}
 				<button
 					onClick={handleNextMonth}
 					className="text-lg hover:text-accentPink"
@@ -96,7 +101,7 @@ function MiniCalendar(props) {
 					<FontAwesomeIcon icon={faChevronRight} />
 				</button>
 			</div>
-			{/* Kalenderns innehåll */}
+			{/* Kalenderns huvudinnehåll */}
 			<div className="bg-white p-4 rounded-b-lg">
 				{/* Labels för veckodagar */}
 				<div className="grid grid-cols-7 gap-2">
@@ -107,8 +112,9 @@ function MiniCalendar(props) {
 					))}
 				</div>
 
-				{/*Kallenderns dagar*/}
+				{/* Visar alla dagar för den aktuella månaden */}
 				<div className="grid grid-cols-7 gap-2">
+					{/* Genererar dagarna i månaden*/}
 					{generateMonthDays(currentMonth).map((day, index) =>
 						renderDay(day, index)
 					)}

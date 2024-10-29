@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/LogoVertical.png";
 
 function Footer() {
@@ -11,37 +11,53 @@ function Footer() {
 				<div className="flex flex-col">
 					<h4 className="font-bold text-lg mb-4">Explore</h4>
 					<ul className="space-y-2 text-sm">
-					<li>
-							<Link
-								to="/home"
-								className="hover:text-hoverColorLightPink"
+						<li>
+							<NavLink
+								to="/"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Home
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/airport-transfer"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Airport Transfer
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/hotels"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Hotels
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/favorites"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Favorites
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
@@ -51,36 +67,52 @@ function Footer() {
 					<h4 className="font-bold text-lg mb-4">Preferences</h4>
 					<ul className="space-y-2 text-sm">
 						<li>
-							<Link
+							<NavLink
 								to="/terms-and-conditions"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Terms & Conditions
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/privacy-policy"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Privacy Policy
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/faq"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								FAQ
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/cookies"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Cookies
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
@@ -90,36 +122,41 @@ function Footer() {
 					<h4 className="font-bold text-lg mb-4">About</h4>
 					<ul className="space-y-2 text-sm">
 						<li>
-							<Link
+							<NavLink
 								to="/about-us"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								About Us
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link
+							<NavLink
 								to="/contact"
-								className="hover:text-hoverColorLightPink"
+								className={({ isActive }) =>
+									isActive
+										? "text-accentPink"
+										: "hover:text-secondaryLightBlue"
+								}
 							>
 								Contact
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
 
 				{/* Logo sektion */}
 				<div className="logo flex flex-col">
-					<Link
-						to="/"
-						className="hover:text-hoverColorLightPink"
-					>
+					<NavLink to="/">
 						<img
 							src={logo}
 							alt="AccommodationDeluxe Logo"
 							className="h-20"
 						/>
-					</Link>
+					</NavLink>
 				</div>
 			</div>
 		</footer>

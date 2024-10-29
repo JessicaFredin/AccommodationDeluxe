@@ -6,11 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import dayjs from "dayjs";
 
-//hanterar datumval och visar en minikalender
-function DateSelection({ onChange }) { // Tar emot onChange som en prop
+// Komponenten används för att hantera datumvalet. Den tar emot en onChange-funktion som prop.
+function DateSelection({ onChange }) { 
+	//Används för att initierar dagens datum med formatet "YYYY-MM-DD" och sätter det som valt datum.
 	const today = dayjs().format("YYYY-MM-DD");
-	const [selectedDate, setSelectedDate] = useState(today); // Håller valt datum
-	const [showCalendar, setShowCalendar] = useState(false); // Styr visningen av kalendern
+
+	// Definierar en state-variabel för att hålla det valda datumet och en för att styra visningen av kalendern.
+	const [selectedDate, setSelectedDate] = useState(today); 
+	const [showCalendar, setShowCalendar] = useState(false); 
 
 	// Funktioen körs om ett datum valts i kalendern
 	const handleDateClick = (date) => {
@@ -22,10 +25,10 @@ function DateSelection({ onChange }) { // Tar emot onChange som en prop
 
 	return (
 		<div className="relative inline-block">
-			{/* Datumfältsinput och kalenderikon */}
+			{/* Anvädns för att visa ett datumfält med en kalenderikon som användaren kan klicka på för att växla visningen av kalendern. Det valda datumet visas bredvid ikonen. */}
 			<div
 				className="flex items-center p-4 bg-white border rounded-lg cursor-pointer w-[150px] h-[45px]"
-				onClick={() => setShowCalendar(!showCalendar)} // Toggle calendar
+				onClick={() => setShowCalendar(!showCalendar)} 
 			>
 				<FontAwesomeIcon icon={faCalendar} className="mr-2" />
 				<span>{selectedDate}</span>
@@ -35,9 +38,9 @@ function DateSelection({ onChange }) { // Tar emot onChange som en prop
 			{showCalendar && (
 				<div className="absolute mt-2 z-10">
 					<MiniCalendar
-						onDateClick={handleDateClick}
-						selectedDate={selectedDate}
-						today={today}
+						onDateClick={handleDateClick} // "handleDateClick" anropas när ett datum valts och hanterar det valda datumet
+						selectedDate={selectedDate} // "selectedDate" skickas för att markera vilket datum som är valt i kalendern
+						today={today} 
 					/>
 				</div>
 			)}

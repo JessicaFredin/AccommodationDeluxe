@@ -52,6 +52,7 @@ TrendingDestinationCard.propTypes = {
 	textSize: PropTypes.oneOf(["small", "medium", "large"]),
 	imageSrc: PropTypes.string.isRequired,
 	location: PropTypes.string.isRequired,
+	destinationId: PropTypes.Number
 };
 
 export default TrendingDestinationCard;

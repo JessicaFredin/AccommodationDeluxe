@@ -4,14 +4,14 @@ import TrendingDestinationCard from "./TrendingDestinationCard";
 import { useHotelData } from "../contexts/HotelDataContext"; 
 
 function TrendingDestinations() {
-	const { trendingDestinations, error } = useHotelData(); // Access data from context
+	const { trendingDestinations, error } = useHotelData(); //Hämtar data från context
 
-	// Hantering av error när data hämtas
+	// Hantering av eventuella fel när data hämtas
 	if (error) {
 		return <p>Error loading trending destinations.</p>;
 	}
 
-	// Säkerställer att trendingdestination har data
+	// Säkerställer att trendingdestinations har data
 	if (!trendingDestinations || trendingDestinations.length < 3) {
 		return <p>Loading trending destinations...</p>;
 	}
@@ -32,7 +32,7 @@ function TrendingDestinations() {
 					<TrendingDestinationCard
 						imageSrc={trendingDestinations[0].image}
 						location={trendingDestinations[0].name}
-						destinationId={trendingDestinations[0].id} // Skickar destinationId
+						destinationId={trendingDestinations[0].id}
 						size="medium"
 						textSize="medium"
 					/>

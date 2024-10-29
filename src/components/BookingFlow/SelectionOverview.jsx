@@ -78,11 +78,10 @@ function SelectionOverview({ hotelId, roomIndex }) {
 			<div className="p-6 space-y-4">
 				<h2 className="text-2xl font-bold">Check your selection</h2>
 				<div className="relative w-full flex items-center justify-between">
-					
 					{/* Vänsterpil för bildnavigering */}
 					<button
 						onClick={handlePrevImage}
-						className="absolute left-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 ml-2"
+						className="absolute left-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 ml-2 hover:bg-shadyBlack"
 					>
 						<FontAwesomeIcon
 							icon={faChevronLeft}
@@ -99,11 +98,10 @@ function SelectionOverview({ hotelId, roomIndex }) {
 						/>
 					</div>
 
-		
 					{/* Högerpil för bildnavigering */}
 					<button
 						onClick={handleNextImage}
-						className="absolute right-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 mr-2"
+						className="absolute right-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 mr-2 hover:bg-shadyBlack"
 					>
 						<FontAwesomeIcon
 							icon={faChevronRight}
@@ -133,7 +131,6 @@ function SelectionOverview({ hotelId, roomIndex }) {
 					<div className="flex justify-between">
 						<div className="flex flex-col space-y-1">
 							<div className="flex space-x-3">
-
 								<p className="w-20">Check in: </p>
 
 								{/* Visar incheckningstid och datum */}
@@ -144,7 +141,7 @@ function SelectionOverview({ hotelId, roomIndex }) {
 							<div className="flex space-x-3">
 								<p className="w-20">Check out:</p>
 
-								 {/* Visar utcheckningstid och datum */}
+								{/* Visar utcheckningstid och datum */}
 								<span className="ml-3">
 									{hotel.checkOutTime}, {checkoutDate}
 								</span>
@@ -162,20 +159,21 @@ function SelectionOverview({ hotelId, roomIndex }) {
 
 								{/* Visar antal vuxna och nätter */}
 								<p className="text-[18px] text-darkGrey">
-									{adults} {adults === 1 ? "Adult" : "Adults"} /{" "}
-									{totalNights} {totalNights === 1 ? "Night" : "Nights"}
+									{adults} {adults === 1 ? "Adult" : "Adults"}{" "}
+									/ {totalNights}{" "}
+									{totalNights === 1 ? "Night" : "Nights"}
 								</p>
 
 								{/* Visar antal barn */}
 								<p className="text-[14px] text-darkGrey">
-									{children} {children === 1 ? "Child" : "Children"}
+									{children}{" "}
+									{children === 1 ? "Child" : "Children"}
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-between items-end mt-4">
-				</div>
+				<div className="flex justify-between items-end mt-4"></div>
 			</div>
 		</div>
 	);

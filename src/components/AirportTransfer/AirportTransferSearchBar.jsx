@@ -10,15 +10,17 @@ import dayjs from "dayjs";
 
 // Komponent för att söka flygplatstransfer med enkel eller returresa
 function AirportTransferSearchBar({ onSearch }) {
-	const [isReturn, setIsReturn] = useState(false); // Return eller enkel resa
+	// Definierar komponentens tillstånd med useState. "isReturn" håller reda på om det är en returbiljettsbokning (true) eller enkel resa (false). "searchData" är ett objekt som lagrar information för sökningen, inklusive startadress, destination, datum (standard är dagens datum), tid (standard är midnatt) och antal passagerare (standard är 1).
+	const [isReturn, setIsReturn] = useState(false);
 	const [searchData, setSearchData] = useState({
-		fromLocation: "", // Start address
-		toLocation: "", // Destination address
+		fromLocation: "",
+		toLocation: "",
 		date: dayjs().format("YYYY-MM-DD"),
 		time: "00:00",
 		passengers: 1,
 	});
 
+	// Returnerar tillstånd för returbiljettsbokning med useState. "returnData" är ett objekt som lagrar information specifik för returresan, inklusive startadress, destination, datum (standard är dagens datum), tid (standard är midnatt) och antal passagerare (standard är 1). Detta används i kombination med "searchData" för att hantera både enkel och returbiljettbokning.
 	const [returnData, setReturnData] = useState({
 		fromLocation: "",
 		toLocation: "",
@@ -68,6 +70,7 @@ function AirportTransferSearchBar({ onSearch }) {
 			{/* Inmatningsfält för enkel eller returresa */}
 			<div className="space-y-4">
 				<div className="flex justify-between items-center space-x-2">
+					{/* Används för att ange hämtadressen.  När användaren skriver i fältet uppdateras "fromLocation" i "searchData"-objektet med det aktuella värdet från inmatningen. "value-attributet" används för att binda inputfältet till "searchData.fromLocation", vilket gör att det alltid visar det senaste inmatade värdet.*/}
 					<LocationInput
 						placeholder="Enter the pickup address"
 						onChange={(e) =>
@@ -79,6 +82,8 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.fromLocation}
 						size="airportTransferSearch"
 					/>
+
+					{/* Används för att ange avlämningsadressen.  När användaren skriver i fältet uppdateras "toLocation" i "searchData"-objektet med det aktuella värdet från inmatningen. "value-attributet" används för att binda inputfältet till "searchData.toLocation", vilket gör att det alltid visar det senaste inmatade värdet.*/}
 					<LocationInput
 						placeholder="Enter the drop-off address"
 						onChange={(e) =>
@@ -90,7 +95,7 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.toLocation}
 						size="airportTransferSearch"
 					/>
-					{/* Val för datum/tid */}
+					{/* Datumväljare som uppdaterar "searchData.date" när användaren ändrar datumet. "value"-bindning säkerställer att den visar det aktuella valda datumet.*/}
 					<DateSelection
 						onChange={(date) =>
 							setSearchData({ ...searchData, date })
@@ -98,6 +103,8 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.date}
 						size="airportTransferSearch"
 					/>
+
+					{/* Tidsvalskomponent som uppdaterar "searchData.time" vid användarens val. "value"-bindning visar det aktuella valda tidsvärdet. */}
 					<TimeSelection
 						onTimeSelect={(time) =>
 							setSearchData({ ...searchData, time })
@@ -105,7 +112,8 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.time}
 						size="airportTransferSearch"
 					/>
-					{/* Val av antal passagerare */}
+
+					{/* Passagerarvalskomponent som uppdaterar searchData.passengers vid val av antal passagerare. "value"-bindningen visar det aktuella valda antalet passagerare.*/}
 					<PassengerSelection
 						onSelectPassenger={(passengers) =>
 							setSearchData({ ...searchData, passengers })
@@ -113,6 +121,8 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.passengers}
 						size="airportTransferSearch"
 					/>
+
+					{/* Används för att visa  en tom div om det är en returresa; annars visas en sökknapp för enkelresa. Sökknappen anropar handleSearch-funktionen vid klick. */}
 					{isReturn ? (
 						<div className="w-[125px] h-[40px]"></div>
 					) : (
@@ -124,7 +134,7 @@ function AirportTransferSearchBar({ onSearch }) {
 						/>
 					)}
 				</div>
-				{/* Fält för returresa, om valt */}
+				{/* Fält för returresa, om valt - Se därmed ovanstående kommenterar då det är samma koncept för följande*/}
 				{isReturn && (
 					<div className="flex justify-between items-center space-x-2">
 						<LocationInput
