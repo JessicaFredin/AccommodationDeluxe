@@ -29,7 +29,7 @@ function PhoneNumberSelection({ onSelectCountry }) {
 	};
 
 	// Används för att hantera valet av ett land
-	const handleSelectCountry = (country, e) => {
+	const handleSelectCountry = (country) => {
 		console.log("Country selected:", country); 
 		setSelectedCountry(country);
 		onSelectCountry(country);
@@ -43,7 +43,7 @@ function PhoneNumberSelection({ onSelectCountry }) {
 			{/*Knapp som används för att visa det valda landet och växlar dropdownens synlighet*/}
 			<button
 				onClick={toggleDropdown}
-				className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer w-[120px] h-12"
+				className="flex items-center justify-between p-4 bg-[#FFF] rounded-lg border cursor-pointer w-[120px] h-12"
 				type="button"
 			>
 				<span className="text-lg font-medium">

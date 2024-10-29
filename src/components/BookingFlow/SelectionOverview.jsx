@@ -158,14 +158,14 @@ function SelectionOverview({ hotelId, roomIndex }) {
 								</span>
 
 								{/* Visar antal vuxna och nätter */}
-								<p className="text-[18px] text-darkGrey">
+								<p className="text-[18px] text-shadyBlack">
 									{adults} {adults === 1 ? "Adult" : "Adults"}{" "}
 									/ {totalNights}{" "}
 									{totalNights === 1 ? "Night" : "Nights"}
 								</p>
 
 								{/* Visar antal barn */}
-								<p className="text-[14px] text-darkGrey">
+								<p className="text-[14px] text-shadyBlack">
 									{children}{" "}
 									{children === 1 ? "Child" : "Children"}
 								</p>
