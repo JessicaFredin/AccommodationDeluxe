@@ -11,20 +11,20 @@ import {
 import dayjs from "dayjs";
 import updateLocale from "dayjs/plugin/updateLocale";
 
-// Extend dayjs to start the week on Monday
+// Använder dayjs för att starta veckan på måndag
 dayjs.extend(updateLocale);
 dayjs.updateLocale("en", { weekStart: 1 });
 
 function MiniCalendar(props) {
 	const [currentMonth, setCurrentMonth] = useState(dayjs().startOf("month"));
 
-	// Generate the days for the current month
+	// Genererar dagar för den aktuella månader
 	const generateMonthDays = (month) => {
 		const daysInMonth = month.daysInMonth();
 		const firstDayOfMonth = month.startOf("month").day();
 		const days = [];
 
-		// Add empty spaces for the days before the 1st of the month
+		// Lägger till tomma utrymmen för dagarna före månadens första dag
 		for (
 			let i = 0;
 			i < (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1);
@@ -33,7 +33,7 @@ function MiniCalendar(props) {
 			days.push(null);
 		}
 
-		// Add the actual days of the month
+		// Lägger till faktiska dagar i månaden
 		for (let day = 1; day <= daysInMonth; day++) {
 			days.push(month.date(day));
 		}
@@ -41,15 +41,15 @@ function MiniCalendar(props) {
 		return days;
 	};
 
-	// Handle month navigation
+	// Funktion för navigation till föregående månad
 	const handlePrevMonth = () => {
 		setCurrentMonth(currentMonth.subtract(1, "month"));
 	};
-
+	//Funktion för navigation till kommande månad
 	const handleNextMonth = () => {
 		setCurrentMonth(currentMonth.add(1, "month"));
 	};
-
+	// Renderar en specifik dag
 	const renderDay = (day) => {
 		if (!day) return <div className="calendar-day empty"></div>;
 
@@ -72,13 +72,13 @@ function MiniCalendar(props) {
 		);
 	};
 
-	// Weekday labels (Mon, Tue, etc.)
+	// Labels för veckodagar (mån, tis, osv.)
 	const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 	return (
 		<div className="p-4 shadow-xl rounded-lg w-[350px] bg-secondaryLightBlue border border-white">
 			{" "}
-			{/* Month header with light blue background */}
+			{/* Månadens namn och navigationsknappar */}
 			<div className="bg-white p-4 rounded-t-lg flex items-center justify-between border border-b-lightGrey">
 				<button
 					onClick={handlePrevMonth}
@@ -96,9 +96,9 @@ function MiniCalendar(props) {
 					<FontAwesomeIcon icon={faChevronRight} />
 				</button>
 			</div>
-			{/* Calendar body with white background */}
+			{/* Kalenderns innehåll */}
 			<div className="bg-white p-4 rounded-b-lg">
-				{/* Weekday labels */}
+				{/* Labels för veckodagar */}
 				<div className="grid grid-cols-7 gap-2">
 					{weekdayLabels.map((label) => (
 						<div key={label} className="text-center text-sm">
@@ -107,7 +107,7 @@ function MiniCalendar(props) {
 					))}
 				</div>
 
-				{/* Calendar days */}
+				{/*Kallenderns dagar*/}
 				<div className="grid grid-cols-7 gap-2">
 					{generateMonthDays(currentMonth).map((day, index) =>
 						renderDay(day, index)
@@ -117,7 +117,7 @@ function MiniCalendar(props) {
 		</div>
 	);
 }
-
+// Validerar att onDateClick är en funktion
 MiniCalendar.propTypes = {
 	onDateClick: PropTypes.func.isRequired,
 };

@@ -8,7 +8,7 @@ import {
 	faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-// Utility function to chunk an array into groups of two
+// Funktion för att dela upp en array i grupper om två
 const chunkArray = (array, chunkSize) => {
 	const chunks = [];
 	for (let i = 0; i < array.length; i += chunkSize) {
@@ -18,28 +18,28 @@ const chunkArray = (array, chunkSize) => {
 };
 
 function Slider() {
-	const { offers } = useHotelData(); // Fetch offers from context
+	const { offers } = useHotelData(); // // Hämtar offers från kontexten
 
-	// Chunk the offers array into groups of two
+	// Dela upp offers-arrayen i grupper om två
 	const offerChunks = chunkArray(offers, 2);
 
 	const [currentSlide, setCurrentSlide] = useState(0);
 
-	// Go to the next slide
+	// Gå till nästa slide
 	const nextSlide = () => {
 		if (currentSlide < offerChunks.length - 1) {
 			setCurrentSlide(currentSlide + 1);
 		}
 	};
 
-	// Go to the previous slide
+	// Gå till föregående slide
 	const prevSlide = () => {
 		if (currentSlide > 0) {
 			setCurrentSlide(currentSlide - 1);
 		}
 	};
 
-	// Handle dot click for pagination
+	// Hanterar klick på pagination dots
 	const goToSlide = (index) => {
 		setCurrentSlide(index);
 	};
@@ -51,11 +51,11 @@ function Slider() {
 				Promotions, deals, and special offers for you
 			</p>
 
-			{/* Outer container for arrows and slider */}
+			{/* Yttercontainer för pilar och slider */}
 			<div className="relative">
-				{/* Slider Container with overflow hidden */}
+				{/* Slider container med overflow hidden */}
 				<div className="relative flex overflow-hidden w-full">
-					{/* Slider Content */}
+					{/* Innehåll i slider */}
 					<div
 						className="flex w-full transition-transform duration-500"
 						style={{
@@ -85,7 +85,7 @@ function Slider() {
 					</div>
 				</div>
 
-				{/* Left Arrow */}
+				{/* Vänsterpil */}
 				{currentSlide > 0 && (
 					<button
 						onClick={prevSlide}
@@ -95,7 +95,7 @@ function Slider() {
 					</button>
 				)}
 
-				{/* Right Arrow */}
+				{/* Högerpil */}
 				{currentSlide < Math.ceil(offers.length / 2) - 1 && (
 					<button
 						onClick={nextSlide}

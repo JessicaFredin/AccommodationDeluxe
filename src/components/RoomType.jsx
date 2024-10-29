@@ -24,7 +24,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-// Map amenities keys to FontAwesome icons
+// Ikonobjekt för att mappa olika amenities till deras respektive FontAwesome-ikoner
 const amenityIcons = {
   hasShower: { icon: faShower, label: "Shower" },
   hasTv: { icon: faTv, label: "TV" },
@@ -34,7 +34,7 @@ const amenityIcons = {
 
 // Definierar ett objekt som länkar varje beskrivning till dess ikon
 const descriptionIcons = {
-	"Square Meters": { icon: SquareMeters, type: "custom" }, // Custom icon
+	"Square Meters": { icon: SquareMeters, type: "custom" }, 
 	"Breakfast included": { icon: faMugSaucer, type: "fontawesome" },
 	"Free WiFi": { icon: faWifi, type: "fontawesome" },
 	People: { icon: faUserGroup, type: "fontawesome" },
@@ -67,15 +67,14 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 					{room.roomType}
 				</h3>
 				<ul className="mt-3 space-y-2 text-black">
-					{/* Ritar upp beskrivning med sin rätta ikon */}
+					{/* Renderar rumsbeskrivningar med respektive ikon */}
 					{room.iconDescription &&
 						Array.isArray(room.iconDescription) &&
 						room.iconDescription.length > 0 &&
 						room.iconDescription.map((desc, index) => (
-							// {room[0].iconDescription[0].map((desc, index) => (
 							<li className="flex items-center" key={index}>
 								<span className="mr-2 ml-[4px]">
-									{/* Check if the icon is fontawesome or custom */}
+									{/* Undersöker om ikonen är fontawesome eller custom */}
 									{descriptionIcons[desc].type ===
 									"fontawesome" ? (
 										<FontAwesomeIcon
@@ -97,7 +96,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 							</li>
 						))}
 
-					{/* Dynamically render icon amenities if present */}
+					{/* Renderas ikoner dynamiskt om det finns */}
 					{room.iconAmenities &&
 						Object.entries(room.iconAmenities).map(
 							([key, value]) => (
@@ -114,7 +113,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 										className={`ml-3 ${
 											value
 												? "text-roomGreen"
-												: "text-red-500"
+												: "text-roomRed"
 										}`}
 									/>
 									<span className="ml-2">
@@ -126,7 +125,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 					{/* ))} */}
 				</ul>
 			</div>
-			{/* Price and Book Section */}
+			{/* Pris och Bokningssektion */}
 			<div className="bg-opacityLightBlue px-4 py-3 flex items-center justify-between mt-auto">
 				<div>
 					<span className="text-[18px] font-bold text-black">
@@ -141,7 +140,7 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 							<p className="text-md font-bold text-black">
 								{adults} {adults === 1 ? "Adult" : "Adults"}
 							</p>
-							{/* Display children if provided */}
+							{/* Visar antal barn om värde finns*/}
 							{children !== undefined && (
 								<p className="text-xs text-shadyBlack">
 									{children} {children === 1 ? "Child" : "Children"}
@@ -150,36 +149,24 @@ function RoomType({ room, totalNights, adults, children, hotelId, index, discoun
 						</span>
 					</div>
 				</div>
-
+				{/* Bokningsinformation och knapp */}
 				<div className="ml-auto flex flex-col items-end">
 					{room.availableRooms < 3 && (
 						<span className="text-accentPink text-[12px] font-semibold">
 							Only {room.availableRooms} {room.availableRooms === 1 ? "room" : "rooms"} left
 						</span>
 					)}
-
-					{/* <Link to="/booking">
-						<Button size="medium" buttonText={"Book"} />
-					</Link> */}
-
-					{/* <Link to={`/hotel/${hotelId}/room/${index}`}>
-						<Button size="medium" buttonText={"Book"} />
-					</Link> */}
-
-					{/* Link to booking page with query parameters */}
 					<Link
 						to={`/booking?hotelId=${hotelId}&roomIndex=${index}&adults=${adults}&children=${children}&totalNights=${totalNights}`}
 					>
 						<Button size="medium" buttonText={"Book"} />
 					</Link>
-
+					{/* Visar totalpriset baserat på antal nätter */}
 					<div className="py-1">
 						<p className="text-xs text-black">
 							{totalNights} nights: €{totalCost.toFixed(2)}
 						</p>
-                    </div>
-                    
-                    
+                    </div> 
 				</div>
 			</div>
 		</div>

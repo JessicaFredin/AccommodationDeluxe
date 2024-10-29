@@ -1,7 +1,7 @@
  
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import PropTypes from "prop-types"; // Importing PropTypes
+import PropTypes from "prop-types"; // Importerar PropTypes
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faClock,
@@ -10,23 +10,23 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function TimeSelector(props) {
-	const [isOpen, setIsOpen] = useState(false);
-	const [selectedTime, setSelectedTime] = useState("00:00");
+	const [isOpen, setIsOpen] = useState(false); // State för att hantera dropdownens öppning/stängning
+	const [selectedTime, setSelectedTime] = useState("00:00"); //State för attspara vald tid
 
-	// Toggle dropdown
+	// Toggle dropdown öppning/stängning
 	const toggleDropdown = () => {
 		setIsOpen(!isOpen);
 	};
 
-	// Handle selecting a time
+	// Hanterar val av tid
 	const handleTimeSelect = (time) => {
-		setSelectedTime(time);
-		setIsOpen(false);
-		props.onTimeSelect(time); // Using props without destructuring
+		setSelectedTime(time); // Uppdaterar vald tid
+		setIsOpen(false); // Stäng dropdown efter val
+		props.onTimeSelect(time); // Anropa onTimeSelect-funktion från props
 	};
 	
 	
-	// Generate time slots with 30-minute intervals
+	// Genererar tider med 30-minutersintervall
 	const generateTimeSlots = () => {
 		const times = [];
 		for (let hour = 0; hour < 24; hour++) {
@@ -39,9 +39,8 @@ function TimeSelector(props) {
 
 	return (
 		<div className="relative">
-			{/* Time Display Button */}
+			{/* Knapp för att visa vald tid */}
 			<button
-				// className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer hover:bg-gray-100 w-full"
 				className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer hover:bg-grey w-[150px] h-[45px]"
 				onClick={toggleDropdown}
 			>
@@ -53,7 +52,7 @@ function TimeSelector(props) {
 				/>
 			</button>
 
-			{/* Dropdown Content */}
+			{/* Dropdown-innehåll för att visa alla tillgängliga tider */}
 			{isOpen && (
 				<div className="absolute top-full mt-2 bg-white border rounded-lg shadow-lg z-10 w-[150px] h-[500px] overflow-y-auto">
 					<ul className="text-center">
@@ -73,9 +72,9 @@ function TimeSelector(props) {
 	);
 }
 
-// PropTypes for validation
+// Validering av props
 TimeSelector.propTypes = {
-	onTimeSelect: PropTypes.func.isRequired, // Ensure that onTimeSelect is a required function
+	onTimeSelect: PropTypes.func.isRequired, // Säkerställer att onTimeSelect är en obligatorisk funktion
 };
 
 export default TimeSelector;

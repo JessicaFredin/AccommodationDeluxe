@@ -17,7 +17,7 @@ import {
 function SimpleCarCard({ transferData, onAdd }) {
   return (
     <div className="w-full max-w-[800px] bg-white rounded-lg p-6 shadow-md mx-auto mt-8">
-      {/* Car Card with details for one-way trip */}
+      {/* Detaljer för enkelresa */}
       <div className="flex justify-between items-center mb-4">
         <div className="flex flex-col items-start">
           <h2 className="text-xl font-bold mb-4">
@@ -28,7 +28,7 @@ function SimpleCarCard({ transferData, onAdd }) {
 
         <div className="flex-grow ml-4">
           <div className="flex">
-            <ul className="text-gray-700 text-sm space-y-2">
+            <ul className="text-darkGrey text-sm space-y-2">
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
                 From: {transferData.fromLocation}
@@ -47,7 +47,7 @@ function SimpleCarCard({ transferData, onAdd }) {
               </li>
             </ul>
 
-            <ul className="text-gray-700 text-sm space-y-2 ml-8">
+            <ul className="text-darkGrey text-sm space-y-2 ml-8">
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faUserFriends} className="mr-2" />
                 {transferData.passengers} people
@@ -63,7 +63,7 @@ function SimpleCarCard({ transferData, onAdd }) {
               <li className="flex items-center">
                 <FontAwesomeIcon
                   icon={faCheck}
-                  className="mr-2 text-green-500"
+                  className="mr-2 text-roomGreen"
                 />
                 Free cancellation
               </li>
@@ -72,7 +72,7 @@ function SimpleCarCard({ transferData, onAdd }) {
         </div>
       </div>
 
-      {/* Car Card for Return Trip */}
+      {/*Detaljer för retur om valt*/}
       {transferData.returnTrip && (
         <div className="flex justify-between items-center mb-4">
           <div className="flex flex-col items-start">
@@ -82,7 +82,7 @@ function SimpleCarCard({ transferData, onAdd }) {
 
           <div className="flex-grow ml-4">
             <div className="flex">
-              <ul className="text-gray-700 text-sm space-y-2">
+              <ul className="text-darkGrey text-sm space-y-2">
                 <li className="flex items-center">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
                   From: {transferData.returnTrip.fromLocation}
@@ -101,7 +101,7 @@ function SimpleCarCard({ transferData, onAdd }) {
                 </li>
               </ul>
 
-              <ul className="text-gray-700 text-sm space-y-2 ml-8">
+              <ul className="text-darkGrey text-sm space-y-2 ml-8">
                 <li className="flex items-center">
                   <FontAwesomeIcon icon={faUserFriends} className="mr-2" />
                   {transferData.returnTrip.passengers} people
@@ -117,7 +117,7 @@ function SimpleCarCard({ transferData, onAdd }) {
                 <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    className="mr-2 text-green-500"
+                    className="mr-2 text-roomGreen"
                   />
                   Free cancellation
                 </li>
@@ -127,7 +127,7 @@ function SimpleCarCard({ transferData, onAdd }) {
         </div>
       )}
 
-      {/* Price and Add to Booking button */}
+      {/* Pris justeras beroende på enkel/ returresa, add to booking-knapp triggar onAdd funktion */}
       <div className="text-center mt-4">
         <div className="flex flex-col items-end justify-end">
           {transferData.returnTrip ? (

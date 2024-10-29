@@ -17,7 +17,7 @@ const cards = [
 	{ id: "applepay", icon: faCcApplePay, label: "Apple Pay" },
 ];
 
-//Huvudkomponenten för betalning
+//Huvudkomponent för betalning
 function PaymentForm() {
 
   //Använder "useState" för att kontrollera vald betalningsmetod
@@ -94,7 +94,7 @@ function PaymentForm() {
 								className="mt-1 block w-[100px] h-[30px] rounded-md border-lightGrey shadow-sm placeholder:text-[14px] pl-4"
 								placeholder="000"
 							/>
-							{/*Komponenet för att visa information om var säkerhetskoden kan hittas*/}
+							{/*Används för att visa information om var säkerhetskoden kan hittas*/}
 							<div className="mx-3">
 								<SecurityCodeQuestionMark />
 							</div>
@@ -136,11 +136,11 @@ function PaymentForm() {
             {/*Se tidigare kommmentar "Kort - ..." - Det är samma koncept som följs här */}
             <div className="mb-4">
               <label className="block text-sm font-medium text-black">Enter the gift card number (16 numbers) <span className="text-accentPink">*</span></label>
-              <input type="text" className="mt-1 block w-[200px] h-[30px] rounded-md border-gray-300 shadow-sm placeholder:text-[14px] pl-4" placeholder="0000 0000 0000 0000" />
+              <input type="text" className="mt-1 block w-[200px] h-[30px] rounded-md border-lightGrey shadow-sm placeholder:text-[14px] pl-4" placeholder="0000 0000 0000 0000" />
             </div>
             <div className="mb-4">
               <label className="block text-sm font-medium text-black">Enter the pin code of the gift card (8 numbers) <span className="text-accentPink">*</span></label>
-              <input type="text" className="mt-1 block w-[100px] h-[30px] rounded-md border-gray-300 shadow-sm placeholder:text-[14px] pl-4" placeholder="0000 0000" />
+              <input type="text" className="mt-1 block w-[100px] h-[30px] rounded-md border-lightGrey shadow-sm placeholder:text-[14px] pl-4" placeholder="0000 0000" />
             </div>
 
             {/* Knapp för att bekräfta presenkortsuppgifterna*/}
@@ -222,7 +222,7 @@ function PaymentForm() {
 								onChange={(e) =>
 									setPaymentMethod(e.target.value)
 								}
-								className="form-radio text-blue-600"
+								className="form-radio text-accentPink"
 							/>
 
 							{/*Ikon för att visuellt representera betalningsmetoden samt texten som visar namnet på betalningsmetoden, ex. "Card".*/}

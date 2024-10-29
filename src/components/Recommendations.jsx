@@ -3,21 +3,20 @@ import React from "react";
 import VerticalHotelCard from "./VerticalHotelCard";
 import { useHotelData } from "../contexts/HotelDataContext";
 
-// Recommendations component to display the hotel cards
+// Recommendations-komponent för att visa rekommenderade hotellkort
 function Recommendations() {
 	const { hotels } = useHotelData();
 
-	// Ensure hotels data is available
+	// Kontrollerar att hotelldata finns
 	if (!hotels || hotels.length === 0) {
 		return <p>Loading recommendations...</p>;
 	}
 
-	// Select the first 4 hotels
+	// Väljer de första fyra hotellen
 	const recommendedHotels = hotels.slice(0, 4);
 
 	return (
 		<div className="my-16 px-8">
-			{/* Title Section */}
 			<h2 className="text-3xl font-bold mb-2">Recommendations</h2>
 			<p className="text-lg text-shadyBlack mb-6">
 				Handpicked Suggestions for Your Perfect Stay
@@ -25,6 +24,7 @@ function Recommendations() {
 
 			{/* Hotel Cards */}
 			<div className="flex justify-between gap-6">
+				{/* Itererar över arrayen recommendedHotels och renderar ett verticalhotelcard för varje hotell */}
 				{recommendedHotels.map((hotel) => (
 					<VerticalHotelCard
 						key={hotel.id}

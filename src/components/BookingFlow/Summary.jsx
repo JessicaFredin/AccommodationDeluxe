@@ -6,11 +6,18 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import dayjs from "dayjs";
 
 function Summary({ hotelId, roomIndex, transferData }) {
+	
+	// Hämtar hotelldata och eventuella fel från kontexten
 	const { hotels, error } = useHotelData();
-	const { searchParams } = useSearchParamsContext(); // Access global search parameters
+	
+	// Hämtar globala sökparametrar från kontexten
+	const { searchParams } = useSearchParamsContext();
+
+	// Dekomponerar start- och slutdatum från sökparametrarna
 	const { startDate, endDate } = searchParams;
 
-	// Handle error and loading states
+
+	// Hantera fel och laddning
 	if (error) {
 		return <p>Error loading hotel data: {error.message}</p>;
 	}
@@ -21,39 +28,38 @@ function Summary({ hotelId, roomIndex, transferData }) {
 	// Find the specific hotel by hotelId
 	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
 
-	// Handle case where the hotel is not found
+	// Hantera fel och laddning
 	if (!hotel) {
 		return <p>Hotel not found.</p>;
 	}
 
-	// Find the specific room by roomIndex
+	// Hitta hotellet med hotelId
 	const room = hotel.rooms ? hotel.rooms[roomIndex] : null;
 
+	// Hantera om hotellet inte hittas
 	if (!room) {
 		return <p>Room not found.</p>;
 	}
 
-	// Calculate total nights
+	// Beräkna totala nätter
 	const checkinDate = dayjs(startDate).format("DD MMMM YYYY");
 	const checkoutDate = dayjs(endDate).format("DD MMMM YYYY");
 	const totalNights = dayjs(endDate).diff(dayjs(startDate), "day");
 
-	console.log(startDate);
-
-	// Calculate hotel total price
+	// Beräkna hotellpriset
 	const hotelTotalPrice = room.pricePerNight * totalNights;
 
-	// Determine transfer price
+	// Bestämmer transferpris. Det rör priser för enkel och tur/retur
 	let transferPrice = 0;
 	if (transferData) {
 		if (transferData.returnTrip) {
-			transferPrice = 144; // Return trip
+			transferPrice = 144;
 		} else {
-			transferPrice = 78; // Single trip
+			transferPrice = 78;
 		}
 	}
 
-	// Calculate total price
+	// Beräkna totalpris
 	const totalPrice = hotelTotalPrice + transferPrice;
 
 	return (
@@ -63,16 +69,19 @@ function Summary({ hotelId, roomIndex, transferData }) {
 				<div className="text-lg">
 					<p className="flex space-x-3">
 						<span className="font-semibold w-50">Hotel:</span>
+						{/* Visar totala kostnaden för hotell*/}
 						<span> €{hotelTotalPrice}</span>
 					</p>
 					{transferData && (
 						<p className="flex space-x-3">
 							<span className="font-semibold w-50">Car:</span>
+							{/* Visar kostnaden för transfer */}
 							<span> €{transferPrice}</span>
 						</p>
 					)}
 					<p className="mt-2 text-xl flex space-x-3">
 						<span className="font-semibold">Total:</span>
+						{/* Visar totala kostnaden */}
 						<span> €{totalPrice}</span>
 					</p>
 				</div>

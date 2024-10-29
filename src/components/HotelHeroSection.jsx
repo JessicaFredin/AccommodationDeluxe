@@ -3,20 +3,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Hero section for a specific hotel
+// Hero sektion för specifikt hotel
 function HotelHeroSection({ imageUrl, hotelName }) {
 	return (
 		<div
 			className="hero relative bg-cover bg-center"
 			style={{
-				backgroundImage: `url(${imageUrl})`, // Dynamically use the image URL
+				backgroundImage: `url(${imageUrl})`, //Dynamisk användning av bakgrundsbild
 				height: "500px",
 			}}
 		>
-			{/* Overlay for opacity and hotel name */}
+			{/* Overlay för opacitetsfält och hotelnamn */}
 			<div className="absolute inset-0 bg-black bg-opacity-20 flex justify-center items-center">
 				<h1 className="text-white text-6xl font-semibold bg-primaryDarkBlue px-[100px] py-[15px]">
-					{hotelName} {/* Dynamically display the hotel name */}
+					{hotelName} {/* Rendering av hotelnamn, dynamiskts */}
 				</h1>
 			</div>
 		</div>

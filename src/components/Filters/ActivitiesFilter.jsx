@@ -1,7 +1,3 @@
-
-
-
-
 // ActivitiesFilter.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
@@ -10,21 +6,23 @@ import React, { useState } from "react";
 function ActivitiesFilter({ setFilters }) {
   const [selectedActivities, setSelectedActivities] = useState([]);
 
+  // Funktion för att lägga till eller ta bort en aktivitet från listan av aktiviteter
   const toggleActivity = (activity) => {
     const newActivities = selectedActivities.includes(activity)
       ? selectedActivities.filter((a) => a !== activity)
       : [...selectedActivities, activity];
-    setSelectedActivities(newActivities);
-    setFilters((prev) => ({ ...prev, activities: newActivities }));
+    setSelectedActivities(newActivities); // Uppdatera valda aktiviteter
+    setFilters((prev) => ({ ...prev, activities: newActivities })); // Skickar uppdaterade filter till föräldrakomponenten
   };
 
   return (
 		<div>
 			<div className="p-4 max-w-sm">
+				{/* Titel för aktivitetsfiltren */}
 				<div className="flex w-full items-center -mx-3 pb-4">
 					<h3 className="text-lg font-semibold">Activities</h3>
 				</div>
-
+				{/* Checkboxes för de olika aktiviteterna */}
 				<div className="space-y-3">
 					<label className="flex items-center">
 						<input
@@ -89,6 +87,7 @@ function ActivitiesFilter({ setFilters }) {
 					</label>
 				</div>
 			</div>
+			{/* Avgränsare längst ner i filtret */}
 			<div className="border-b border-grey -mx-4"></div>
 		</div>
   );

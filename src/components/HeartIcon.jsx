@@ -8,9 +8,9 @@ import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 function HeartIcon({ isFavorite, onClick }) {
 	return (
 		<FontAwesomeIcon
-			icon={isFavorite ? solidHeart : regularHeart}
-			className="text-accentPink cursor-pointer h-5 w-5"
-			onClick={onClick}
+			icon={isFavorite ? solidHeart : regularHeart} // Visar ifyllt hjärta om `isFavorite` är sant, annars ett tomt hjärta
+			className="text-accentPink cursor-pointer h-5 w-5" // Färg och storlek på ikon
+			onClick={onClick} // Onclick funktion som triggas när hjärtat klickas
 		/>
 	);
 }

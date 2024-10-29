@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 function OfferCard(props) {
 	//Stil för bilder i karusellen
 	const imageStyles = props.imageType.smallRight
-		? { width: "180px", height: "100%", objectFit: "cover" }
+		? { width: "180px", height: "100%", objectFit: "cover" } // Om bilden är på höger sida (smallRight)
 		: props.imageType.fullWidth
 		? {
-				backgroundImage: `url(${props.backgroundImage})`,
+				backgroundImage: `url(${props.backgroundImage})`, // Om bilden är i full bredd
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 		  }
@@ -30,11 +30,11 @@ function OfferCard(props) {
 					: {}
 			}
 		>
-			{/* Opacity for fullWidth cards */}
+			{/* Opacitet för overlay om bildtyp är fullBredd */}
 			{props.imageType.fullWidth && props.overlay && (
 				<div className="absolute inset-0 bg-black bg-opacity-50 rounded-[10px]"></div>
 			)}{" "}
-			{/* Card content */}
+			{/* Innehåll för kort*/}
 			<div
 				className={`flex flex-col flex-1 p-6 ${
 					props.overlay ? "z-10" : ""
@@ -44,12 +44,10 @@ function OfferCard(props) {
 				<h3 className="font-semibold text-lg mb-2">{props.title}</h3>
 				<p className="mb-4 text-sm">{props.description}</p>{" "}
 				<div className="mt-auto">
-					{/* Link to the hotel page */}
+					{/* Navigering till hotellsidan */}
 					<Link to={`/hotels/${props.hotelId}?offerId${props.id}`}>
 						<Button size="large" buttonText={props.ctaText} />
 					</Link>
-
-					{/* <Button size={"large"} buttonText={props.ctaText} /> */}
 					<span
 						className={`text-sm mx-3 ${
 							props.imageType.fullWidth && props.backgroundImage

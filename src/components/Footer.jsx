@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<footer className="bg-primaryDarkBlue p-8 text-white w-full mt-10">
 			<div className="container mx-auto flex justify-between w-[90%]">
-				{/* Explore Section */}
+				{/* Länkar explore */}
 				<div className="flex flex-col">
 					<h4 className="font-bold text-lg mb-4">Explore</h4>
 					<ul className="space-y-2 text-sm">
@@ -46,7 +46,7 @@ function Footer() {
 					</ul>
 				</div>
 
-				{/* Preferences Section */}
+				{/* Länkar - preferenser */}
 				<div className="flex flex-col">
 					<h4 className="font-bold text-lg mb-4">Preferences</h4>
 					<ul className="space-y-2 text-sm">
@@ -85,7 +85,7 @@ function Footer() {
 					</ul>
 				</div>
 
-				{/* About Section */}
+				{/* Länkar - About */}
 				<div className="flex flex-col">
 					<h4 className="font-bold text-lg mb-4">About</h4>
 					<ul className="space-y-2 text-sm">
@@ -108,7 +108,7 @@ function Footer() {
 					</ul>
 				</div>
 
-				{/* Logo Section */}
+				{/* Logo sektion */}
 				<div className="logo flex flex-col">
 					<Link
 						to="/"

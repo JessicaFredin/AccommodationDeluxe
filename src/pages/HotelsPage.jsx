@@ -1,129 +1,7 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-// // Hotels.jsx
-// // eslint-disable-next-line no-unused-vars
-// import React, { useState, useEffect } from "react";
-// import { useHotelData } from "../contexts/HotelDataContext";
-// import { useLocation, useNavigate } from "react-router-dom";
-// import { useSearchParamsContext } from "../contexts/SearchParamsContext"; // Importerar context hook
-// import SearchBar from "../components/SearchBar";
-// import HorizontalHotelCard from "../components/HorizontalHotelCard";
-// import Header from "../components/Header";
-// import FilterContainer from "../components/Filters/FilterContainer";
-// import dayjs from "dayjs";
-
-// // Sätter dagens datum och morgondagens datum som standardvärden
-// const today = dayjs().format("YYYY-MM-DD");
-// const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
-
-// function HotelsPage() {
-//   const { search } = useLocation(); // Hämtar sökparametrar från URL
-//   const { hotels, error } = useHotelData();
-//   const navigate = useNavigate();
-//   const { searchParams, setSearchParams } = useSearchParamsContext(); // Använder context för sökparametrar
-//   const [filteredHotels, setFilteredHotels] = useState([]); // Sätter state för filtrerade hotell
-
-//   // Parse URL-sökparametrar och uppdaterar sökparametrar i context
-//   useEffect(() => {
-//     const params = new URLSearchParams(search);
-//     const location = params.get("location") || "";
-//     const checkin = params.get("checkin") || today;
-//     const checkout = params.get("checkout") || tomorrow;
-//     const adults = parseInt(params.get("adults")) || 2;
-//     const children = parseInt(params.get("children")) || 0;
-//     const rooms = parseInt(params.get("rooms")) || 1;
-
-//    // Uppdaterar sökparametrar i context med värden från URL
-//     setSearchParams({
-//       location,
-//       startDate: checkin,
-//       endDate: checkout,
-//       adults,
-//       children,
-//       rooms,
-//     });
-
-//     // Filtrera hotellen baserat på sökparametrarna
-//     if (hotels && hotels.length > 0) {
-//       if (location) {
-//         const results = hotels.filter((hotel) => {
-//           const hotelLocation = `${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
-//           return hotelLocation.includes(location.toLowerCase());
-//         });
-//         setFilteredHotels(results);
-//       } else {
-//         setFilteredHotels(hotels);
-//       }
-//     }
-//   }, [search, hotels, setSearchParams]);
-
-//   // Hantera sökningen från sökfältet och uppdatera URL och context
-//   const handleSearch = ({ location, startDate, endDate, adults, children, rooms }) => {
-//     const params = new URLSearchParams({
-//       location,
-//       checkin: startDate,
-//       checkout: endDate,
-//       adults: adults.toString(),
-//       children: children.toString(),
-//       rooms: rooms.toString(),
-//     });
-
-//     // Uppdaterar URLen
-//     navigate(`/hotels?${params.toString()}`);
-//   };
-
-//   if (error) {
-//     return <p className="text-center text-accentPink">Error loading hotels: {error.message}</p>;
-//   }
-
-//   return (
-//     <div>
-//       {/* Header och Search Bar */}
-//       <div className="relative">
-//         <Header headingText="Hotels" size="medium" />
-//         <div className="absolute bottom-[-50px] w-full flex justify-center">
-//           <SearchBar
-//             onSearch={handleSearch}
-//             initialLocation={searchParams.location}
-//             initialStartDate={searchParams.startDate}
-//             initialEndDate={searchParams.endDate}
-//             initialAdults={searchParams.adults}
-//             initialChildren={searchParams.children}
-//             initialRooms={searchParams.rooms}
-//           />
-//         </div>
-//       </div>
-
-//       {/* Huvudinnehållet Layout */}
-//       <div className="flex justify-center pt-[100px]">
-//         {/* Filter Container till vänster */}
-//         <div className="mr-8">
-//           <FilterContainer />
-//         </div>
-
-//         {/* Höger sida hotelkort sektion */}
-//         <div className="flex flex-col gap-y-8">
-//           {filteredHotels && filteredHotels.length > 0 ? (
-//             filteredHotels.map((hotel) => (
-//               <HorizontalHotelCard
-//                 key={hotel.id}
-//                 hotel={hotel} // Skickar hoteldata till hotelkorten
-//               />
-//             ))
-//           ) : (
-//             <p className="text-center">No hotels found matching the criteria.</p>
-//           )}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default HotelsPage;
-
 // HotelsPage.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
-import { useHotelData } from "../contexts/HotelDataContext";
+import { useHotelData } from "../contexts/HotelDataContext"; 
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSearchParamsContext } from "../contexts/SearchParamsContext";
 import SearchBar from "../components/SearchBar";
@@ -131,17 +9,16 @@ import HorizontalHotelCard from "../components/HorizontalHotelCard";
 import Header from "../components/Header";
 import FilterContainer from "../components/Filters/FilterContainer";
 import dayjs from "dayjs";
-// import Sort from "../components/Sort"
 
-const today = dayjs().format("YYYY-MM-DD");
-const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
+const today = dayjs().format("YYYY-MM-DD"); //Dagens datum
+const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD"); //Morgondagens datum
 
 function HotelsPage() {
-	const { search } = useLocation();
-	const { hotels, offers, error } = useHotelData();
+	const { search } = useLocation(); // Hämta sökparametrar från URL
+	const { hotels, offers, error } = useHotelData(); // Hämta hotell- och erbjudandedata från hoteldata kontexten
 	const navigate = useNavigate();
 	const { searchParams, setSearchParams } = useSearchParamsContext();
-	const [filteredHotels, setFilteredHotels] = useState([]);
+	const [filteredHotels, setFilteredHotels] = useState([]); // State för att hålla filtrerade hotell
 	const [filters, setFilters] = useState({
 		rating: [],
 		price: [0, 500],
@@ -150,7 +27,7 @@ function HotelsPage() {
 		foodAndDrinks: [],
 	});
 
-	// Default values for initial search parameters (same as HomePage)
+	// Defaultvärden för sökparametrar om inga parametrar anges
 	const defaultSearchParams = {
 		location: "",
 		startDate: today,
@@ -173,6 +50,7 @@ function HotelsPage() {
 		const rooms =
 			parseInt(params.get("rooms")) || defaultSearchParams.rooms;
 
+		// Sätter sökparametrarna i kontexten
 		setSearchParams({
 			location,
 			startDate: checkin,
@@ -182,17 +60,16 @@ function HotelsPage() {
 			rooms,
 		});
 
-		// Apply filtering logic based on filters state
+		// Filtrerar hotellen baserat på valda filter
 		if (hotels && hotels.length > 0) {
 			let results = hotels;
 
-			// Filter by destinationId if provided
+			// Filtrerar på destinationId om det finns, annars används location
 			if (destinationId) {
 				results = results.filter(
 					(hotel) => hotel.destinationId === parseInt(destinationId)
 				);
 			} else if (location) {
-				// Fallback to location-based filtering if destinationId is not present
 				results = results.filter((hotel) => {
 					const hotelLocation =
 						`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
@@ -200,28 +77,28 @@ function HotelsPage() {
 				});
 			}
 
-			// Filter by price
+			// Filtrering på pris
 			results = results.filter(
 				(hotel) =>
 					hotel.pricePerNight >= filters.price[0] &&
 					hotel.pricePerNight <= filters.price[1]
 			);
 
-			// Filter by rating
+			// Filtrering på betyg
 			if (filters.rating.length) {
 				results = results.filter((hotel) =>
 					filters.rating.includes(Math.round(hotel.rating))
 				);
 			}
 
-			// Filter by hotel type
+			// Filtrering på hotelltyp
 			if (filters.typeOfHotel.length) {
 				results = results.filter((hotel) =>
 					filters.typeOfHotel.includes(hotel.typeOfHotel)
 				);
 			}
 
-			// Filter by activities
+			// Filtrering på aktiviteter
 			if (filters.activities.length) {
 				results = results.filter(
 					(hotel) =>
@@ -236,15 +113,12 @@ function HotelsPage() {
 						)
 				);
 			}
-
-			// Filter by
-
-			// Filter by food and drinks
+			// Filtrering på Mat/dryck alternativ
 			try {
 				if (filters.foodAndDrinks.length) {
 					results = results.filter((hotel) =>
 						filters.foodAndDrinks.every((food) => {
-							// Check if the food filter option exists and is set to true in the hotel object
+							// Kollar om foodfilter finns och satt till true i hotelobjektet
 							return (
 								hotel.foodFilter &&
 								hotel.foodFilter[food] === true
@@ -259,106 +133,7 @@ function HotelsPage() {
 			setFilteredHotels(results);
 		}
 	}, [search, setSearchParams, hotels, filters]);
-
-	// useEffect(() => {
-	// 	const params = new URLSearchParams(search);
-	// 	const destinationId = params.get("destinationId");
-	// 	const location = params.get("location") || defaultSearchParams.location;
-	// 	const checkin = params.get("checkin") || defaultSearchParams.startDate;
-	// 	const checkout = params.get("checkout") || defaultSearchParams.endDate;
-	// 	const adults =
-	// 		parseInt(params.get("adults")) || defaultSearchParams.adults;
-	// 	const children =
-	// 		parseInt(params.get("children")) || defaultSearchParams.children;
-	// 	const rooms =
-	// 		parseInt(params.get("rooms")) || defaultSearchParams.rooms;
-
-	// 	setSearchParams({
-	// 		location,
-	// 		startDate: checkin,
-	// 		endDate: checkout,
-	// 		adults,
-	// 		children,
-	// 		rooms,
-	// 	});
-
-	// 	// Apply filtering logic based on filters state
-	// 	if (hotels && hotels.length > 0) {
-	// 		let results = hotels;
-
-	// 		// New: Filter by destinationId from URL parameter (for Explore button functionality)
-	// 		if (destinationId) {
-	// 			results = results.filter(
-	// 				(hotel) => hotel.destinationId === parseInt(destinationId)
-	// 			);
-	// 		} else if (location) {
-	// 			// Fallback to location-based filtering if destinationId is not present
-	// 			results = results.filter((hotel) => {
-	// 				const hotelLocation =
-	// 					`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
-	// 				return hotelLocation.includes(location.toLowerCase());
-	// 			});
-	// 		}
-
-	// 		// Filter by location
-	// 		if (location) {
-	// 			results = results.filter((hotel) => {
-	// 				const hotelLocation =
-	// 					`${hotel.location.city}, ${hotel.location.country}`.toLowerCase();
-	// 				return hotelLocation.includes(location.toLowerCase());
-	// 			});
-
-	// 			// Filter by price
-	// 			results = results.filter(
-	// 				(hotel) =>
-	// 					hotel.pricePerNight >= filters.price[0] &&
-	// 					hotel.pricePerNight <= filters.price[1]
-	// 			);
-
-	// 			// Filter by rating
-	// 			if (filters.rating.length) {
-	// 				results = results.filter((hotel) =>
-	// 					filters.rating.includes(Math.round(hotel.rating))
-	// 				);
-	// 			}
-
-	// 			// Filter by hotel type
-	// 			if (filters.typeOfHotel.length) {
-	// 				results = results.filter((hotel) =>
-	// 					filters.typeOfHotel.includes(hotel.typeOfHotel)
-	// 				);
-	// 			}
-
-	// 			// Filter by activities
-	// 			if (filters.activities.length) {
-	// 				results = results.filter(
-	// 					(hotel) =>
-	// 						Array.isArray(hotel.activities?.categories) &&
-	// 						filters.activities.every((activity) =>
-	// 							hotel.activities.categories.some(
-	// 								(category) =>
-	// 									category.name &&
-	// 									category.name.toLowerCase().trim() ===
-	// 										activity.toLowerCase().trim() // Ensure category.name exists
-	// 							)
-	// 						)
-	// 				);
-	// 			}
-
-	// 			// Filter by food and drinks
-	// 			if (filters.foodAndDrinks.length) {
-	// 				results = results.filter((hotel) =>
-	// 					filters.foodAndDrinks.every((food) =>
-	// 						hotel.foodAndDrinks.includes(food)
-	// 					)
-	// 				);
-	// 			}
-
-	// 			setFilteredHotels(results);
-	// 		}
-	// 	}
-	// }, [search, setSearchParams, hotels, filters]);
-
+    // Funktion för att hantera sökning och navigera till sökresultat
 	const handleSearch = ({
 		location,
 		startDate,
@@ -377,7 +152,7 @@ function HotelsPage() {
 		});
 		navigate(`/hotels?${params.toString()}`);
 	};
-
+	// Returnerar felmeddelande om något fel uppstått under datahämtningen
 	if (error) {
 		return (
 			<p className="text-center text-accentPink">
@@ -390,7 +165,9 @@ function HotelsPage() {
 		<div>
 			<div className="relative">
 				<Header headingText="Hotels" size="medium" />
+				{/* Sökfältet för att söka efter hotell */}
 				<div className="absolute bottom-[-50px] w-full flex justify-center">
+				{/*Sätter initialvärden för SearchBar-komponentens parametrar, baserat på antingen searchParams eller defaultSearchParams*/}
 					<SearchBar
 						onSearch={handleSearch}
 						initialLocation={
@@ -417,34 +194,16 @@ function HotelsPage() {
 					/>
 				</div>
 			</div>
-
-			{/* <div>
-				<Sort />
-			</div> */}
-
-			{/* <div className="flex justify-center pt-[100px]">
-				<div className="mr-8">
-					<FilterContainer setFilters={setFilters} />
-				</div>
-				<div className="flex flex-col gap-y-8">
-					{filteredHotels && filteredHotels.length > 0 ? (
-						filteredHotels.map((hotel) => (
-							<HorizontalHotelCard key={hotel.id} hotel={hotel} />
-						))
-					) : (
-						<p>No hotels match your filters.</p>
-					)}
-				</div>
-			</div> */}
-
 			<div className="flex justify-center pt-[100px]">
 				<div className="mr-8">
 					<FilterContainer setFilters={setFilters} />
 				</div>
+				{/* Sektion för att rendera hotellkort baserat på sökning/ filter */}
 				<div className="flex flex-col gap-y-8">
 					{filteredHotels && filteredHotels.length > 0 ? (
+						// Om hotel finns renderas ett HorizontalHotelCard för varje hotell som hittas efter filtreringen
 						filteredHotels.map((hotel) => {
-							// Check if there’s a matching offer for the hotel
+							// Kontrollerar om det finns ett matchande offer i hotellet
 							const offer = offers.find(
 								(o) => o.hotelId === hotel.id
 							);
@@ -460,6 +219,7 @@ function HotelsPage() {
 							);
 						})
 					) : (
+						// Meddelande som visas om inga hotell matchar filtreringskriterierna
 						<p className="text-center">
 							No hotels found matching the criteria.
 						</p>

@@ -11,7 +11,7 @@ import HeartIcon from "./HeartIcon";
 import { useFavorites } from "../contexts/FavoritesContext";
 import { useSearchParamsContext } from "../contexts/SearchParamsContext";
 
-function HorizontalHotelCard({ hotel, showDiscountedPrice }) {
+function HorizontalHotelCard({ hotel }) {
 	const { favorites, toggleFavorites } = useFavorites();
 	const { searchParams } = useSearchParamsContext(); // Use search params context
 
@@ -112,7 +112,6 @@ function HorizontalHotelCard({ hotel, showDiscountedPrice }) {
 						</div>
 					</div>
 
-					{/* Divider */}
 					<div className="border-l border-darkGrey h-10 mx-4"></div>
 
 					{/* Pris per natt*/}
@@ -124,10 +123,10 @@ function HorizontalHotelCard({ hotel, showDiscountedPrice }) {
 						</div>
 						<p className="text-[10px] text-shadyBlack">
 							{nights} night{nights !== 1 ? "s" : ""}: €
-							{/* {hotel.pricePerNight * nights} */}
-							{(showDiscountedPrice
+							{hotel.pricePerNight * nights}
+							{/* {(showDiscountedPrice
 								? hotel.discountedPrice
-								: hotel.pricePerNight) * nights}
+								: hotel.pricePerNight) * nights} */}
 						</p>
 					</div>
 

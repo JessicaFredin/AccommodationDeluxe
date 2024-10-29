@@ -17,25 +17,24 @@ function HotelDetailPage() {
     return <p>Loading hotel data...</p>;
   }
 
-  //Hitta det specifika hotellet med hjälp av hotelId
+  //Hittar det specifika hotellet med hjälp av hotelId
   const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
 
   // Handle fall om hotellet inte hittas
   if (!hotel) {
     return <p>Hotel not found.</p>;
   }
-// Skapar en variabel som antingen tilldelas hotellets bilder 
-// (om hotellet har en 'images'-array) eller en tom array om 'images' saknas.
+// Skapar en variabel images som antingen innehåller hotellets bilder (om de finns) eller en tom array om inga bilder finns
   const images = hotel.images || []; 
 
   return (
     <div>
-      {/*(Header) */}
+      {/*Headersektion */}
       <HotelHeroSection imageUrl={images[0]} hotelName={hotel.name} />
       {/* Navigations meny */}
       <HotelNavBar />
       
-      {/* Render dynamic section content here */}
+      {/* Används för att möjliggöra "nested routes", det vill säga för att visa olika undersidor med samma övergripande layout. */}
       <Outlet />
 
      

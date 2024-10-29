@@ -64,6 +64,7 @@ function TermsAndConditionsPage() {
 					Terms and Conditions
 				</h1>
 			<div className="container w-[796px] mx-auto mb-12">
+        
 				{/* Paragraf under rubriken */}
 				<p className="text-[20px] mb-8">
 					These Terms & Conditions govern the use of our website and

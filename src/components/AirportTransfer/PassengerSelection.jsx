@@ -12,23 +12,22 @@ function PassengerSelection(props) {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedPassengerCount, setSelectedPassengerCount] = useState(1);
 
-	// Toggle the dropdown
+	// Växlar öppning/stängning av dropdown
 	const toggleDropdown = () => {
 		setIsOpen(!isOpen);
 	};
 
-	// Handle passenger count selection
+	// Hanterar valet av passagerarantal
 	const handleSelectPassenger = (count) => {
 		setSelectedPassengerCount(count);
-		setIsOpen(false); // Close the dropdown after selection
-		props.onSelectPassenger(count); 
+		setIsOpen(false); // Stänger dropdown efter val
+		props.onSelectPassenger(count); // Skickar valt antal passagerare uppåt
 	};
 
 	return (
 		<div className="relative">
 			{" "}
-			{/* Set container width */}
-			{/* Display the selected passenger count */}
+			{/* Visar antal passagerare och ikon för dropdown */}
 			<button
 				onClick={toggleDropdown}
 				className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer hover:bg-grey w-[180px] h-[45px]" // Adjusted width, padding, and height
@@ -42,11 +41,10 @@ function PassengerSelection(props) {
 					className="ml-2"
 				/>
 			</button>
-			{/* Dropdown content */}
+			{/* Innehåll för dropdown-menyn */}
 			{isOpen && (
 				<div className="absolute top-full mt-2 bg-white border rounded-lg shadow-lg z-10 w-[200px]">
 					{" "}
-					{/* Fixed width for dropdown */}
 					<ul className="text-center">
 						{[1, 2, 3, 4, 5].map((count) => (
 							<li
@@ -64,9 +62,9 @@ function PassengerSelection(props) {
 	);
 }
 
-// PropTypes for validation
+// Validerar att onSelectPassenger är en obligatorisk funktion
 PassengerSelection.propTypes = {
-	onSelectPassenger: PropTypes.func.isRequired, // Ensure that onSelectPassenger is a required function
+	onSelectPassenger: PropTypes.func.isRequired, 
 };
 
 export default PassengerSelection;

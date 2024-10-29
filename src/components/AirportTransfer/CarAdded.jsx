@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Car from "../../assets/images/Car.png"; // Använd den korrekta sökvägen till bilbilden
+import Car from "../../assets/images/Car.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faClock, faUserFriends, faTrashAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-
+// Visar information om en bokad flygplatstransfer
 function CarAdded({ transferData, onRemove }) {
   return (
     <div className="w-[780px] bg-lightBlue rounded-[10px] p-6 flex justify-between items-center shadow-lg">
-      {/* Left Section */}
+      {/* Vänstra delen - bild och bekfrätelseparagraf */}
       <div className="flex items-center">
         <img src={Car} alt="Car" className="w-[180px] h-auto mr-6 rounded-lg" />
         <div className="text-black text-[14px] font-semibold">
@@ -16,7 +16,7 @@ function CarAdded({ transferData, onRemove }) {
         </div>
       </div>
 
-      {/* Middle Section */}
+      {/* Mittsektionen - detaljer om enkel resa */}
       <div className="flex-grow ml-4 text-darkGrey p-[10px]">
         <h2 className="text-black text-[12px] font-bold mb-2">One way</h2>
         <ul className="space-y-2 text-[12px]">
@@ -42,7 +42,7 @@ function CarAdded({ transferData, onRemove }) {
           </li>
         </ul>
       </div>
-      {/* Middle Section */}
+      {/*Detaljer returresa*/}
       <div className="flex-grow ml-4 text-darkGrey p-[10px]">
         <h2 className="text-black text-[12px] font-bold mb-2">Return</h2>
         <ul className="space-y-2 text-[12px]">
@@ -69,7 +69,7 @@ function CarAdded({ transferData, onRemove }) {
         </ul>
       </div>
 
-      {/* Right Section */}
+      {/* Knapp för att ta bort tillagd bil */}
       <div className="flex items-center">
         <FontAwesomeIcon icon={faTrashAlt} className="text-black mr-2 cursor-pointer" onClick={onRemove} />
         <button onClick={onRemove} className="text-accentPink text-[14px] font-bold">Remove</button>

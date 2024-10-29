@@ -28,14 +28,10 @@ function CustomCalendarFlexible(props) {
 	const [selectedRangeOption, setSelectedRangeOption] = useState(null); // Track which range option is selected
 	const [activeTab, setActiveTab] = useState("Date");
 
-//  const [localStartDate, setLocalStartDate] = useState(
-// 		props.startDate ? dayjs(startDate) : null
-//  );
-//  const [localEndDate, setLocalEndDate] = useState(
-// 		props.endDate ? dayjs(endDate) : null
-//  );
 	const [selectedMonths, setSelectedMonths] = useState([]);
 	const [bookingType, setBookingType] = useState("");
+	const [customNights, setCustomNights] = useState(1); // Added for custom nights
+	const [startDay, setStartDay] = useState("Monday"); // Added for start day
 
 	// Function to handle month selection changes
 	const handleMonthSelection = (months) => {
@@ -49,17 +45,17 @@ function CustomCalendarFlexible(props) {
 
 	// Function to generate dynamic text
 	const getDynamicText = () => {
-		    if (!bookingType && selectedMonths.length === 0) {
-				return "Select days and months";
-			}
+		if (!bookingType && selectedMonths.length === 0) {
+			return "Select days and months";
+		}
 
-			if (bookingType && selectedMonths.length === 0) {
-				return "Select preferred month";
-			}
+		if (bookingType && selectedMonths.length === 0) {
+			return "Select preferred month";
+		}
 
-			if (!bookingType && selectedMonths.length > 0) {
-				return "Select preferred days";
-			}
+		if (!bookingType && selectedMonths.length > 0) {
+			return "Select preferred days";
+		}
 
 		const monthsText = selectedMonths
 			.map((month) => {
@@ -69,6 +65,12 @@ function CustomCalendarFlexible(props) {
 			})
 			.join(", ");
 
+		if (bookingType === "other") {
+			return `${customNights} night${
+				customNights > 1 ? "s" : ""
+			} in ${monthsText}`;
+		}
+
 		let nights = "1 night";
 		if (bookingType === "weekend") {
 			nights = "2 nights";
@@ -76,9 +78,10 @@ function CustomCalendarFlexible(props) {
 			nights = "7 nights";
 		} else if (bookingType === "month") {
 			nights = "30 nights";
-		} else if (bookingType === "other") {
-			nights = "custom duration";
 		}
+		// else if (bookingType === "other") {
+		// 	nights = `${customNights} night${customNights > 1 ? "s" : ""}`;
+		// }
 
 		return `A ${bookingType} in ${monthsText} (${nights})`;
 	};
@@ -93,9 +96,6 @@ function CustomCalendarFlexible(props) {
 			setStartDate(date);
 			setEndDate(null);
 		}
-		// console.log("--------------------------------------------");
-		// console.log(startDate);
-		// console.log(endDate);
 	};
 
 	// Function to toggle between Date and Flexible tabs
@@ -166,6 +166,16 @@ function CustomCalendarFlexible(props) {
 
 	// Weekday labels (Mon, Tue, etc.)
 	const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+	// Handle custom night input
+	const handleCustomNightsChange = (e) => {
+		setCustomNights(Number(e.target.value));
+	};
+
+	// Handle start day selection
+	const handleStartDayChange = (e) => {
+		setStartDay(e.target.value);
+	};
 
 	// Handle selection of a range button
 	const handleRangeOptionClick = (option) => {
@@ -389,6 +399,37 @@ function CustomCalendarFlexible(props) {
 							</div>
 						</div>
 					</div>
+
+					{/* Conditional Rendering for Custom Nights Selector */}
+					{bookingType === "other" && (
+						<div className="flex items-center my-4 space-x-4">
+							<label className="flex items-center border rounded-md px-2 py-1">
+								<input
+									type="number"
+									min="1"
+									value={customNights}
+									onChange={handleCustomNightsChange}
+									className="w-12 text-center outline-none appearance-none border-none bg-white"
+								/>
+								<span className="ml-1">
+									night{customNights > 1 ? "s" : ""}
+								</span>
+							</label>
+							<select
+								value={startDay}
+								onChange={handleStartDayChange}
+								className="border rounded-md px-2 py-1 outline-none bg-white"
+							>
+								<option>From Monday</option>
+								<option>From Tuesday</option>
+								<option>From Wednesday</option>
+								<option>From Thursday</option>
+								<option>From Friday</option>
+								<option>From Saturday</option>
+								<option>From Sunday</option>
+							</select>
+						</div>
+					)}
 
 					<h4 className="text-lg font-semibold">
 						When do you want to go?

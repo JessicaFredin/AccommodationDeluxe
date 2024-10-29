@@ -5,7 +5,11 @@ import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RoomCardsSection from "../components/RoomCardsSection";
 import useHotelDetails from "../hooks/useHotelDetails";
 
+
+//Komponent för att visa detaljerad information om mat och dryck
 function FoodAndDrinksPage() {
+
+	 // Anropar hook för att hämta hotelldetaljer och hanterar laddning och fel
 	  const { hotel, error, loading } = useHotelDetails();
 
 		// Hanterar laddning, fel och inte hittat tillstånd
@@ -19,7 +23,7 @@ function FoodAndDrinksPage() {
 			return <p>Hotel not found.</p>;
 	}
 	
-    //Hämtar värden från hotel.restaurant.infoBox
+    // Hämtar värden från hotel.restaurant.infoBox för att skapa informationsinnehåll
 	const infoBoxContent = {
 		title: hotel.restaurant.infoBox.title,
 		description: hotel.restaurant.infoBox.description,
@@ -30,6 +34,7 @@ function FoodAndDrinksPage() {
 
 	return (
 		<div>
+			{/* Rubrik och informationstext */}
 			<div className="w-[85%] mx-auto mt-8">
 				<div className="flex justify-between w-[85%] mx-auto mt-8">
 					<div className="w-[70%] pr-8">
@@ -39,25 +44,24 @@ function FoodAndDrinksPage() {
 						<p className="text-[16px] text-black mb-4">
 							{hotel.restaurant.introParagraph}
 						</p>
-						{/* <RestaurantInfo /> */}
 
 						<div className="w-[100%]">
 							<div className="flex space-x-4 mb-6">
-								{/* Sätter bredden till 50% för förtsa bilden*/}
+								{/* Bilder - den första bilden sätts till bredden 50% */}
 								<img
-									src={hotel.restaurant.images[0]} //Hämtar bilden
+									src={hotel.restaurant.images[0]} 
 									alt="Main Image"
 									className="w-1/2 h-[300px] rounded-lg shadow"
 								/>
-								{/* Ger resterande utrymme till de två andra bilderna */}
+								{/* Bilder - de andra två bilderna fyller resterande utrymmeGer */}
 								<div className="flex flex-col space-y-4 w-1/2">
 									<img
-										src={hotel.restaurant.images[1]} //Hämtar bilden
+										src={hotel.restaurant.images[1]} 
 										alt="Image 2"
 										className="w-full h-[145px] rounded-lg shadow"
 									/>
 									<img
-										src={hotel.restaurant.images[2]} //Hämtar bilden
+										src={hotel.restaurant.images[2]}
 										alt="Image 3"
 										className="w-full h-[145px] rounded-lg shadow"
 									/>
@@ -65,7 +69,7 @@ function FoodAndDrinksPage() {
 							</div>
 						</div>
 
-						{/* Only render sections (beaches or other sections) if there are any */}
+						{/* Endast rendera sektioner om det finns några. Kontrollera om sektioner finns och mappar över sektionerna */}
 						{hotel.restaurant.sections.length > 0 ? (
 							hotel.restaurant.sections.map((item, index) => (
 								<div key={index} className="mb-6">
@@ -78,17 +82,20 @@ function FoodAndDrinksPage() {
 								</div>
 							))
 						) : (
+							 // Meddelande om inga sektioner finns
 							<p>No restaurant info available at this hotel.</p>
-							// Optional fallback if no sections are found
+							
 						)}
 					</div>
 
+					{/* Rendera informationsrutan om hotellet. Passerar all information från infoBoxContent.*/}
 					<InfoBoxSpecificHotel
-						{...infoBoxContent} // Tar allt innehåll från infoBoxContent, inklusive namnen på dem, dvs, title, description, optionsTitle, extraInformation...
+						{...infoBoxContent} 
 					/>
 				</div>
 			</div>
 			<div>
+				{/* Sektion för rumskort */}
 				<RoomCardsSection />
 			</div>
 		</div>

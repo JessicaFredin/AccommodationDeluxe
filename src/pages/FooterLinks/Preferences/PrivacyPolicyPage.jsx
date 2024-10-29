@@ -49,6 +49,7 @@ function PrivacyPolicyPage() {
       ]
     }
   ];
+  
   //Returnerar Privacy policy, hämtar Header, sätter rubrik för den specifika vyn, definierar container-bredd och textstorlek
   return (
 		<div>
@@ -62,6 +63,7 @@ function PrivacyPolicyPage() {
 					website or use our services. By using Accommodation Deluxe,
 					you consent to the practices described in this policy.
 				</p>
+
         {/* Itererar igenom listan med objekt och renderar i relevanta element */}
 				{policySections.map((section, index) => (
 					<div key={index} className="mb-6">

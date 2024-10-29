@@ -153,7 +153,7 @@ function MonthSelector(props) {
 			{!isScrolledToEnd && (
 				<button
 					onClick={handleNextClick}
-					className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center shadow-md"
+					className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white border border-lightGrey rounded-full w-10 h-10 flex items-center justify-center shadow-md"
 				>
 					<FontAwesomeIcon icon={faChevronRight} />
 				</button>

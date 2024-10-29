@@ -7,8 +7,10 @@ import AboutUsTimeline from "../../../assets/images/AboutUsTimeline.png"
 function AboutUs() {
 	return (
 		<div>
-			<Header headingText="About Us" size="medium" />{" "}
 			{/*Sätter rubriken för header */}
+			<Header headingText="About Us" size="medium" />{" "}
+
+			{/* Huvudsektion för om oss-informationen */}
 			<section className="container mx-auto w-[796px] px-4 py-16">
 				<div className="bg-opacityLightBlue p-8">
 					<h1 className="text-[32px] font-bold mb-4">Our Journey</h1>
@@ -46,16 +48,14 @@ function AboutUs() {
 				</div>
 			</section>
 	
-			{/* Timeline image */}
+			{/* Tidslinjebild */}
 			<div className="flex justify-center">
 				<img
 					src={AboutUsTimeline}
 					alt="About Us Timeline"
-					className="w-[80%]" // 80% width for the image
+					className="w-[80%]"
 				/>
 			</div>
-			{/* Importerar komponenten för tidslinjen
-			<TimelineWithCards /> */}
 		</div>
 	);
 }

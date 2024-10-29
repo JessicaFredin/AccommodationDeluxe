@@ -5,13 +5,13 @@ import React, { useState } from "react";
 // eslint-disable-next-line react/prop-types
 function FoodAndDrinksFilter({ setFilters }) {
 	const [selectedOptions, setSelectedOptions] = useState([]);
-
+	// Funktion för att toggla ett alternativs urval
 	const toggleOption = (option) => {
 		const newOptions = selectedOptions.includes(option)
-			? selectedOptions.filter((o) => o !== option)
-			: [...selectedOptions, option];
-		setSelectedOptions(newOptions);
-		setFilters((prev) => ({ ...prev, foodAndDrinks: newOptions }));
+			? selectedOptions.filter((o) => o !== option) // Tar bort alternativet om det redan är valt
+			: [...selectedOptions, option]; // Lägger till alternativet om det inte redan är valt
+		setSelectedOptions(newOptions); // Uppdaterar de valda alternativen
+		setFilters((prev) => ({ ...prev, foodAndDrinks: newOptions })); // Uppdaterar huvudfiltren genom att skicka med de valda alternativen
 	};
 
 	return (
@@ -20,7 +20,7 @@ function FoodAndDrinksFilter({ setFilters }) {
 				<div className="flex w-full items-center -mx-3 pb-4">
 					<h3 className="text-lg font-semibold">Food & drinks</h3>
 				</div>
-
+				{/* Valbara alternativ */}
 				<div className="space-y-3">
 					<label className="flex items-center">
 						<input

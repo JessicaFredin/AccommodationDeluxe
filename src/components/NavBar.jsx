@@ -1,16 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons"; // Import Font Awesome heart icon
+import { faHeart } from "@fortawesome/free-solid-svg-icons"; 
 import logo from "../assets/images/logo/LogoHorizontal.png";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 
 function NavBar() {
 	return (
 		<nav className="bg-primaryDarkBlue p-4 flex justify-between items-center text-white w-full">
 			<div className="flex items-center space-x-8 pl-12">
 				{" "}
-				{/* Logo and Nav Links */}
+				{/* Logo och Nav Länkar */}
 				<div className="flex items-center space-x-2">
 					<Link to="/" className="hover:text-hoverColorLightPink">
 						<img
@@ -41,7 +41,6 @@ function NavBar() {
 					</Link>
 				</div>
 			</div>
-			{/* Heart Icon on the Right */}
 			<Link
 				to="/favorites"
 				className="text-accentPink hover:text-hoverColorLightPink"

@@ -10,7 +10,7 @@ import GuestDetailsForm from "../../components/BookingFlow/GuestDetailsForm";
 import Summary from "../../components/BookingFlow/Summary";
 
 function BookingPage() {
-	// Capture query parameters
+	// Hämtar och sparar sökparametrar från URL:en
 	const [searchParams] = useSearchParams();
 	const hotelId = searchParams.get("hotelId");
 	const roomIndex = searchParams.get("roomIndex");
@@ -19,7 +19,7 @@ function BookingPage() {
 	const adults = searchParams.get("adults");
 	const children = searchParams.get("children");
 
-	// Add state variables for airport transfer
+	// Skapar state-variabler för flygplatstransfer
 	const [airportTransferSelected, setAirportTransferSelected] =
 		useState(false);
 	const [transferData, setTransferData] = useState(null);
@@ -29,13 +29,19 @@ function BookingPage() {
 	return (
 		<div>
 			<div className="fixed top-0 z-50 w-full">
+
+				{/* Navigeringsmeny */}
 				<NavBar />
 			</div>
 			<div className="fixed top-[70px] w-full z-40">
+
+				{/* Visar "skrollnings-status" */}
 				<ScrollCheck />
 			</div>
 			<div className="flex flex-col items-center space-y-8 p-6 rounded-lg">
 				<div className="mt-[120px] w-[60%]">
+
+					{/* Används för att visa detaljerad information om det valda hotellet och rummet baserat på de angivna "hotelId" och "roomIndex".*/}
 					<SelectionOverview
 						hotelId={hotelId}
 						roomIndex={roomIndex}
@@ -43,6 +49,7 @@ function BookingPage() {
 				</div>
 
 				<div className="w-[60%]">
+					{/* Hanterar tilläggstjänsten för transfer.*/}
 					<AddOns
 						airportTransferSelected={airportTransferSelected}
 						setAirportTransferSelected={setAirportTransferSelected}
@@ -73,7 +80,8 @@ function BookingPage() {
 					/>
 				</div>
 
-				{/* Button to proceed to confirmation */}
+				
+				{/* Knapp för att gå vidare till bekräftelse */}
 				<div className="flex items-center justify-center">
 					<Link
 						to={`/confirmation?hotelId=${hotelId}&roomIndex=${roomIndex}&startDate=${startDate}&endDate=${endDate}&adults=${adults}&children=${children}`}

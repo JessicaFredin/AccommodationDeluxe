@@ -12,14 +12,22 @@ import { useHotelData } from "../../contexts/HotelDataContext";
 import { useSearchParamsContext } from "../../contexts/SearchParamsContext";
 import dayjs from "dayjs";
 
+//komponent visar en översikt över hotellvalet
 function SelectionOverview({ hotelId, roomIndex }) {
-	const { searchParams } = useSearchParamsContext(); // Access global search parameters
+
+	// Hämtar globala sökparametrar
+	const { searchParams } = useSearchParamsContext();
+
+	// Datum och personer
 	const { startDate, endDate, adults, children } = searchParams;
-	const { hotels, error } = useHotelData(); // Fetch hotel data from context
 
-	const [currentImageIndex, setCurrentImageIndex] = useState(0); // Image index state
+	// Hotellinfo och fel
+	const { hotels, error } = useHotelData();
 
-	// Handle error and loading states
+	// Aktuell bild
+	const [currentImageIndex, setCurrentImageIndex] = useState(0); 
+
+	// Hanterar fel och laddningstillstånd. Visar felmeddelande eller laddningsmeddelande
 	if (error) {
 		return <p>Error loading hotel data: {error.message}</p>;
 	}
@@ -27,34 +35,38 @@ function SelectionOverview({ hotelId, roomIndex }) {
 		return <p>Loading hotel data...</p>;
 	}
 
-	// Find the specific hotel by hotelId
+	// Hittar det specifika hotellet med hotelId
 	const hotel = hotels.find((hotel) => hotel.id === Number(hotelId));
 
-	// Handle case where the hotel is not found
+	// Hanterar fallet där hotellet inte hittas och visar meddelande
 	if (!hotel) {
 		return <p>Hotel not found.</p>;
 	}
 
-	// Find the specific room by roomIndex
+	// Hittar det specifika rummet med roomIndex
 	const room = hotel.rooms[roomIndex];
 
+	// Använd rumbilder om tillgängliga, annars fallback till imgUrl
 	const roomImages =
 		room.roomImages && room.roomImages.length > 0
 			? room.roomImages
-			: [room.imgUrl]; // Use roomImages if available, else fallback to imgUrl
-			
-
+			: [room.imgUrl]; 
+	
+			// Formaterar incheckningsdatum och utcheckningsdatum
 	const checkinDate = dayjs(startDate).format("DD MMMM YYYY");
 	const checkoutDate = dayjs(endDate).format("DD MMMM YYYY");
+
+	// Beräknar totala nätter
 	const totalNights = dayjs(endDate).diff(dayjs(startDate), "day");
 
-	// Function to handle image navigation
+	// Funktion för att hantera bildnavigering. Går till nästa bild eller tillbaka till första
 	const handleNextImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === roomImages.length - 1 ? 0 : prevIndex + 1
 		);
 	};
 
+	// Funktion för att hantera bildnavigering. Går till föregående bild eller till sista
 	const handlePrevImage = () => {
 		setCurrentImageIndex((prevIndex) =>
 			prevIndex === 0 ? roomImages.length - 1 : prevIndex - 1
@@ -66,7 +78,8 @@ function SelectionOverview({ hotelId, roomIndex }) {
 			<div className="p-6 space-y-4">
 				<h2 className="text-2xl font-bold">Check your selection</h2>
 				<div className="relative w-full flex items-center justify-between">
-					{/* Left Arrow */}
+					
+					{/* Vänsterpil för bildnavigering */}
 					<button
 						onClick={handlePrevImage}
 						className="absolute left-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 ml-2"
@@ -77,18 +90,17 @@ function SelectionOverview({ hotelId, roomIndex }) {
 						/>
 					</button>
 
-					{/* Image Container */}
+					{/* Bildbehållare, aktuell bild visas*/}
 					<div className="flex-grow relative flex justify-center max-h-[500px]">
 						<img
 							className="w-full h-auto object-cover"
-							src={roomImages[currentImageIndex]} // Display current image
+							src={roomImages[currentImageIndex]}
 							alt={room.roomType}
 						/>
 					</div>
 
-			
-
-					{/* Right Arrow */}
+		
+					{/* Högerpil för bildnavigering */}
 					<button
 						onClick={handleNextImage}
 						className="absolute right-0 z-10 flex items-center justify-center bg-black/50 rounded-full p-2 mr-2"
@@ -101,6 +113,7 @@ function SelectionOverview({ hotelId, roomIndex }) {
 				</div>
 
 				<div>
+					{/* Visar hotellets namn och rumstyp */}
 					<h3 className="text-xl font-semibold">
 						{hotel.name} - {room.roomType}
 					</h3>
@@ -110,6 +123,8 @@ function SelectionOverview({ hotelId, roomIndex }) {
 						icon={faMapMarkerAlt}
 						className="w-4 h-4 mr-1"
 					/>
+
+					{/* Visar hotellens plats */}
 					<p>
 						{hotel.location.city}, {hotel.location.country}
 					</p>
@@ -118,13 +133,18 @@ function SelectionOverview({ hotelId, roomIndex }) {
 					<div className="flex justify-between">
 						<div className="flex flex-col space-y-1">
 							<div className="flex space-x-3">
+
 								<p className="w-20">Check in: </p>
+
+								{/* Visar incheckningstid och datum */}
 								<span className="ml-3">
 									{hotel.checkInTime}, {checkinDate}
 								</span>
 							</div>
 							<div className="flex space-x-3">
 								<p className="w-20">Check out:</p>
+
+								 {/* Visar utcheckningstid och datum */}
 								<span className="ml-3">
 									{hotel.checkOutTime}, {checkoutDate}
 								</span>
@@ -135,14 +155,19 @@ function SelectionOverview({ hotelId, roomIndex }) {
 						<div className="flex items-center space-x-2">
 							<div className="border-l border-darkGrey h-[60px] mr-2"></div>
 							<div>
+								{/* Visar totala kostnaden */}
 								<span className="text-[26px] font-bold">
 									€{room.pricePerNight * totalNights}
 								</span>
-								<p className="text-[18px] text-gray-500">
+
+								{/* Visar antal vuxna och nätter */}
+								<p className="text-[18px] text-darkGrey">
 									{adults} {adults === 1 ? "Adult" : "Adults"} /{" "}
 									{totalNights} {totalNights === 1 ? "Night" : "Nights"}
 								</p>
-								<p className="text-[14px] text-gray-500">
+
+								{/* Visar antal barn */}
+								<p className="text-[14px] text-darkGrey">
 									{children} {children === 1 ? "Child" : "Children"}
 								</p>
 							</div>

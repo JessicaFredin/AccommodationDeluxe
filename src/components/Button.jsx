@@ -37,38 +37,3 @@ function Button({ size, buttonText, onClick, color, rounded = false, active = fa
 };
 
 export default Button;
-
-
-
-
-
-
-
-
-//     // Default button styles
-//     const baseStyle = `shadow-lg transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center whitespace-nowrap`;
-
-//     // Rounded or regular style
-//     const shapeStyle = rounded ? "border rounded-full px-[20px] py-[10px] h-[37px]" : "rounded-lg";
-
-//     // Color options for buttons
-//     const colors = {
-//         transparent: `bg-transparent text-black border-grey hover:bg-transparent hover:border-accentPink`,
-//         pink: `bg-accentPink text-white border-accentPink hover:bg-hoverColorLightPink`,
-//         active: `bg-hoverColorLightPink text-black border-accentPink`,
-//     };
-
-//     // Choose between active style or normal color
-//     const activeStyle = active ? colors.active : colors[color];
-
-//     return (
-//         <button
-//             className={`${baseStyle} ${sizeClasses[size]} ${shapeStyle} ${activeStyle}`}
-//             onClick={onClick}
-//         >
-//             {buttonText}
-//         </button>
-//     );
-// }
-
-// export default Button;

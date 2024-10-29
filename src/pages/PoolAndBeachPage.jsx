@@ -6,7 +6,7 @@ import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 
 function PoolAndBeachTheHotelPage() {
 	const { hotel, error, loading } = useHotelDetails();
-	// Hanterar laddning, fel och när hotellet inte hittas
+	// Hanterar laddning och fel om hotellet inte hittas
 	if (loading) {
 		return <p>Loading hotel data...</p>;
 	}
@@ -17,10 +17,10 @@ function PoolAndBeachTheHotelPage() {
 		return <p>Hotel not found.</p>;
 	}
 
-	const poolAndBeach = hotel.poolAndBeach || {};
-	const beaches = poolAndBeach.beaches || [];
+	const poolAndBeach = hotel.poolAndBeach || {};// Hämtar pool/strandinformation från specifika hotellet, med fallback till tomt objekt
+	const beaches = poolAndBeach.beaches || []; // Hämtar stränder som array, fallback till tom om inga stränder finns
 
-	// Definierar innehållet för infoBox, hämtat från hotel.poolAndBeach.infoBox
+	// Definierar innehållet för infoBox
 	const infoBoxContent = poolAndBeach.infoBox
 		? {
 				title: poolAndBeach.infoBox.title,
@@ -43,6 +43,7 @@ function PoolAndBeachTheHotelPage() {
 								{poolAndBeach.headingText}
 							</h2>
 						)}
+						{/* Renderar inledande paragraf om den finns */}
 						{poolAndBeach.introParagraph && (
 							<p className="text-[16px] text-black mb-4">
 								{poolAndBeach.introParagraph}
@@ -51,7 +52,7 @@ function PoolAndBeachTheHotelPage() {
 
 						<div className="w-[100%] rounded-lg">
 							<div className="flex space-x-4 mb-6">
-								{/* Bild1 tar upp 50% av utrymmet */}
+								{/* Huvudbild tar upp 50% av utrymmet */}
 								<img
 									src={poolAndBeach.images[0]}
 									alt="Main Image"
@@ -73,7 +74,7 @@ function PoolAndBeachTheHotelPage() {
 							</div>
 						</div>
 
-						{/* Only render beaches section if there are any beaches */}
+						{/* Renderar strandinformation om stränder finns, annars visa fallback-meddelande, annars visa fallback-meddelande */}
 						{beaches.length > 0 ? (
 							beaches.map((item, index) => (
 								<div key={index} className="mb-6">
@@ -86,11 +87,11 @@ function PoolAndBeachTheHotelPage() {
 								</div>
 							))
 						) : (
-							<p>No beaches available at this hotel.</p> // Optional fallback if no beaches are found
+							<p>No beaches available at this hotel.</p> // Fallbackmedelande om ingen data hittas
 						)}
 					</div>
 
-					{/* Render InfoBoxSpecificHotel only if infoBoxContent is available */}
+					{/* Höger kolumn för infoBox, renderas endast om infoBoxContent finns*/}
 					{infoBoxContent && (
 						<InfoBoxSpecificHotel {...infoBoxContent} />
 					)}

@@ -6,21 +6,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import dayjs from "dayjs";
 
-function DateSelection({ onChange }) { // Ta emot onChange som en prop
+//hanterar datumval och visar en minikalender
+function DateSelection({ onChange }) { // Tar emot onChange som en prop
 	const today = dayjs().format("YYYY-MM-DD");
-	const [selectedDate, setSelectedDate] = useState(today);
-	const [showCalendar, setShowCalendar] = useState(false);
+	const [selectedDate, setSelectedDate] = useState(today); // Håller valt datum
+	const [showCalendar, setShowCalendar] = useState(false); // Styr visningen av kalendern
 
+	// Funktioen körs om ett datum valts i kalendern
 	const handleDateClick = (date) => {
-		const formattedDate = date.format("YYYY-MM-DD");
-		setSelectedDate(formattedDate);
+		const formattedDate = date.format("YYYY-MM-DD"); // Formaterar datumet
+		setSelectedDate(formattedDate); //updaterar valt datum
 		setShowCalendar(false); // Stäng kalendern efter val
-		onChange(formattedDate); // Anropa onChange för att skicka valt datum uppåt
+		onChange(formattedDate); // Anropar onChange för att skicka valt datum uppåt
 	};
 
 	return (
 		<div className="relative inline-block">
-			{/* Date input and icon */}
+			{/* Datumfältsinput och kalenderikon */}
 			<div
 				className="flex items-center p-4 bg-white border rounded-lg cursor-pointer w-[150px] h-[45px]"
 				onClick={() => setShowCalendar(!showCalendar)} // Toggle calendar
@@ -29,7 +31,7 @@ function DateSelection({ onChange }) { // Ta emot onChange som en prop
 				<span>{selectedDate}</span>
 			</div>
 
-			{/* MiniCalendar - toggle visibility */}
+			{/* Visar mini-calender om showCalendar är true */}
 			{showCalendar && (
 				<div className="absolute mt-2 z-10">
 					<MiniCalendar
@@ -42,9 +44,9 @@ function DateSelection({ onChange }) { // Ta emot onChange som en prop
 		</div>
 	);
 }
-
+// Validerar att onChange-prop skickas in
 DateSelection.propTypes = {
-	onChange: PropTypes.func.isRequired, // Validera onChange-prop
+	onChange: PropTypes.func.isRequired,
 };
 
 export default DateSelection;

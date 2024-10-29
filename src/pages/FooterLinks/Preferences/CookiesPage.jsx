@@ -2,8 +2,7 @@
 import React from "react";
 import Header from "../../../components/Header";
 
-
-//Sparar cookiedata i en lista med object
+// Komponenten används för att visa information om  cookiepolicy, inklusive en lista med olika typer av cookies som används på webbplatsen och deras syften.
 function CookiesPage() {
   const cookieData = [
     {
@@ -29,7 +28,7 @@ function CookiesPage() {
   ];
 
   return (
-		//Returnerar huvudrubrik + en inledningspragraf samt definierar den returnerade containers bredd + textstorlek
+		//Returnerar huvudrubrik och en inledningspragraf 
 		<div>
 			<Header headingText="Cookies" size="medium" />
 			<h1 className="text-[32px] font-bold ml-[150px] mb-6 mt-12">
@@ -44,7 +43,7 @@ function CookiesPage() {
 					and offer tailored advertisements.
 				</p>
 
-				{/*Itererar igenom cookieDatas objekt och returnerar dem som h2 och tillhörande p*/}
+				{/* Itererar igenom cookieDatas objekt och returnerar dem som h2 och tillhörande p */}
 				{cookieData.map((cookie, index) => (
 					<div key={index} className="mb-6">
 						<h2 className="text-[24px] font-semibold mb-2">
@@ -53,7 +52,7 @@ function CookiesPage() {
 						<p>{cookie.description}</p>
 					</div>
 				))}
-
+				{/* Rubrik och informationstext*/}
 				<h2 className="text-[24px] font-semibold mt-6">
 					Managing Cookies:
 				</h2>

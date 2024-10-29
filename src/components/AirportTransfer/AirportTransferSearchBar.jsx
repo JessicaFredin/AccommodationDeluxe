@@ -8,8 +8,9 @@ import PassengerSelection from "./PassengerSelection";
 import Button from "../Button";
 import dayjs from "dayjs";
 
+// Komponent för att söka flygplatstransfer med enkel eller returresa
 function AirportTransferSearchBar({ onSearch }) {
-	const [isReturn, setIsReturn] = useState(false); // Return or one-way trip
+	const [isReturn, setIsReturn] = useState(false); // Return eller enkel resa
 	const [searchData, setSearchData] = useState({
 		fromLocation: "", // Start address
 		toLocation: "", // Destination address
@@ -26,19 +27,19 @@ function AirportTransferSearchBar({ onSearch }) {
 		passengers: 1,
 	});
 
-	// Handles the trip type selection
+	// Hanterar val av resans typ (enkel eller retur)
 	const handleTripTypeChange = (event) => {
 		setIsReturn(event.target.value === "return");
 	};
 
-	// Handles the search by sending the data to the parent
+	// Skickar sökdata till parent-komponent
 	const handleSearch = () => {
 		onSearch(searchData, isReturn ? returnData : null);
 	};
 
 	return (
 		<div className="p-6 bg-secondaryLightBlue border border-accentPink shadow-lg rounded-lg w-[1200px] mx-auto">
-			{/* Radio buttons for trip type */}
+			{/* Radioknappar för att välja enkel eller returresa */}
 			<div className="mb-4 flex space-x-4">
 				<label className="flex items-center">
 					<input
@@ -64,7 +65,7 @@ function AirportTransferSearchBar({ onSearch }) {
 				</label>
 			</div>
 
-			{/* Input fields for one way or return trip */}
+			{/* Inmatningsfält för enkel eller returresa */}
 			<div className="space-y-4">
 				<div className="flex justify-between items-center space-x-2">
 					<LocationInput
@@ -89,6 +90,7 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.toLocation}
 						size="airportTransferSearch"
 					/>
+					{/* Val för datum/tid */}
 					<DateSelection
 						onChange={(date) =>
 							setSearchData({ ...searchData, date })
@@ -103,6 +105,7 @@ function AirportTransferSearchBar({ onSearch }) {
 						value={searchData.time}
 						size="airportTransferSearch"
 					/>
+					{/* Val av antal passagerare */}
 					<PassengerSelection
 						onSelectPassenger={(passengers) =>
 							setSearchData({ ...searchData, passengers })
@@ -113,6 +116,7 @@ function AirportTransferSearchBar({ onSearch }) {
 					{isReturn ? (
 						<div className="w-[125px] h-[40px]"></div>
 					) : (
+						//sökknapp för enkelresa
 						<Button
 							size={"large"}
 							buttonText={"Search"}
@@ -120,7 +124,7 @@ function AirportTransferSearchBar({ onSearch }) {
 						/>
 					)}
 				</div>
-
+				{/* Fält för returresa, om valt */}
 				{isReturn && (
 					<div className="flex justify-between items-center space-x-2">
 						<LocationInput

@@ -10,7 +10,7 @@ function RoomsPage() {
 	
 		  const { hotel, error, loading } = useHotelDetails();
 
-			// Felhantering
+			// Felhantering om hoteldata ej hittas
 			if (loading) {
 				return <p>Loading hotel data...</p>;
 			}
@@ -21,7 +21,7 @@ function RoomsPage() {
 				return <p>Hotel not found.</p>;
 			}
 
-			 // Innehåll för infobox, hämtat från de specifika hotellet och dess rumstyper
+			 // Innehåll för infobox, hämtat från de specifika hotellet+rooms
 			const infoBoxContent = {
 				title: hotel.aboutTheRooms.infoBox.title,
 				additionalInformation: hotel.aboutTheRooms.infoBox.additionalInformation,
@@ -75,10 +75,10 @@ RoomsPage.propTypes = {
         roomType: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         imgUrl: PropTypes.string.isRequired,
-        sqm: PropTypes.string, // Assuming sqm (square meters) is a string
+        sqm: PropTypes.string, 
       })
     ),
-    amenities: PropTypes.arrayOf(PropTypes.string), // Assuming amenities is an array of strings
+    amenities: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 

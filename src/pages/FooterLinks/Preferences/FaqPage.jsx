@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom"; //
 import Header from "../../../components/Header";
-// FAQ Data för populära frågor i en lista med objekt
+
+
+// FAQ-data för populära och ytterligare frågor i en lista med objekt 
 const faqData = {
 	popular: [
 		{
@@ -103,8 +105,10 @@ const faqData = {
 	],
 };
 
-// Sätter state för att hålla reda på vilken fråga som är öppen
+// Komponenten används för att visa en lista med vanliga frågor och svar. Den delas upp i två sektioner: populära frågor och ytterligare frågor.
 function FaqPage() {
+
+// Sätter state för att hålla reda på vilken fråga som är öppen
 	const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
 
 	// Funktion för att hantera öppning och stängning av fråga/svar
@@ -114,6 +118,7 @@ function FaqPage() {
 
 	return (
 		<>
+		{/* Sektion med header och headerrubrik, huvudrubrik och informationstext */}
 			<Header headingText="FAQ" size="medium" />
 			<h1 className="text-[32px] font-bold ml-[150px] mb-6 mt-12">
 					Frequently Asked Questions
@@ -133,11 +138,11 @@ function FaqPage() {
 				Popular Questions
 			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-				{/*Itererar igenom FAQdata */}
+				{/*Itererar igenom populära frågor*/}
 				{faqData.popular.map((item, index) => (
 					<div
 						key={index}
-						// Hanterar öppning/ stängning av fråga/svar
+						// Hanterar öppning och stängning av fråga/svar
 						className="border border-grey rounded-md shadow-md"
 					>
 						<h3 className="bg-opacityLightBlue p-3 text-[20px] mb-3">
@@ -148,7 +153,7 @@ function FaqPage() {
 				))}
 			</div>
 
-			{/* Itererar igenom ytterligare frågor */}
+			{/* Itererar igenom "ytterligare" frågor */}
 			<div className="space-y-4 rounded-[10px]">
 				{faqData.additional.map((item, index) => (
 					<div
@@ -162,8 +167,8 @@ function FaqPage() {
 							</h4>
 							<span>
 								{" "}
-								{/* Visar minus- eller nedåtpil beroende på om frågan är öppen eller inte */}
-								{openQuestionIndex === index ? (
+									{/* Visar minus- eller nedåtpil beroende på om frågan är öppen eller inte */}
+									{openQuestionIndex === index ? (
 									<FontAwesomeIcon icon={faChevronUp} />
 								) : (
 									<FontAwesomeIcon icon={faChevronDown} />

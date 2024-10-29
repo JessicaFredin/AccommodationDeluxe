@@ -1,4 +1,3 @@
-// Contact.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +6,7 @@ import Button from "../../../components/Button";
 import ContactPostSubmit from "./ContactPostSubmitPage";
 import Header from "../../../components/Header";
 
-//Definierar state för formulär
+//Definierar state för formulär och initierar state för formulärdata
 function Contact() {
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -19,7 +18,9 @@ function Contact() {
 		agreed: false,
 	});
 
-	const [submitted, setSubmitted] = useState(false); //
+	// State för att hålla reda på om formuläret har skickats
+	const [submitted, setSubmitted] = useState(false);
+
 	//Funktion för att hantera när användaren lägger till data i formuläret
 	const handleChange = (e) => {
 		const { name, value, type, checked } = e.target;
@@ -28,18 +29,21 @@ function Contact() {
 			[name]: type === "checkbox" ? checked : value,
 		});
 	};
-	//Funktion för att hantera formulärets sändning
+
+	//Funktion för att hantera formulärets sändning och uppdaterar state till skickat
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setSubmitted(true); // Uppdaterar state till skickat
+		setSubmitted(true);
 	};
 
+	 // Laddar "contactPostSubmit" när formuläret skickats
 	if (submitted) {
-		return <ContactPostSubmit />; // Laddar contactpostsubmit när formuläret skickats
+		return <ContactPostSubmit />;
 	}
 
 	return (
 		<div>
+			{/* Huvudrubrik och informationstext */}
 			<Header headingText="Contact" size="medium" />
 			<h1 className="text-[32px] font-bold ml-[150px] mb-6 mt-12">
 				Have a question?
@@ -60,6 +64,7 @@ function Contact() {
 			>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 					<div>
+						{/* Fält för förnamn */}
 						<label
 							htmlFor="firstName"
 							className="block font-semibold mb-1"
@@ -78,6 +83,7 @@ function Contact() {
 						/>
 					</div>
 					<div>
+						{/* Fält för efternamn */}
 						<label
 							htmlFor="lastName"
 							className="block font-semibold mb-1"
@@ -98,6 +104,7 @@ function Contact() {
 				</div>
 
 				<div className="mb-6">
+					{/* Fält för epost */}
 					<label htmlFor="email" className="block font-semibold mb-1">
 						Email<span className="text-accentPink">*</span>
 					</label>
@@ -114,6 +121,7 @@ function Contact() {
 				</div>
 
 				<div className="mb-6">
+					{/* Fält för bokningsnummer */}
 					<label
 						htmlFor="bookingReference"
 						className="block font-semibold mb-1"
@@ -134,6 +142,7 @@ function Contact() {
 				</div>
 
 				<div className="mb-6">
+					{/* Fält för ämne */}
 					<label
 						htmlFor="subject"
 						className="block font-semibold mb-1"
@@ -153,6 +162,7 @@ function Contact() {
 				</div>
 
 				<div className="mb-6">
+					{/* Fält för meddelande */}
 					<label
 						htmlFor="message"
 						className="block font-semibold mb-1"
@@ -171,6 +181,7 @@ function Contact() {
 				</div>
 
 				<div className="mb-6 flex justify-between">
+					{/* Checkbox för att godkänna policy */}
 					<label className="flex">
 						<input
 							type="checkbox"
@@ -186,7 +197,7 @@ function Contact() {
 				</div>
 			</form>
 
-			{/* Kontaktinformation */}
+			{/* Sektion för kontaktinformation */}
 			<div className="text-center w-[680px] mx-auto my-8 mb-12">
 				<p>
 					If your inquiry is urgent, feel free to reach us by email or

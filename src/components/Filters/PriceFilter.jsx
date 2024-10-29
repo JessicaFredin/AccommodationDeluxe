@@ -5,18 +5,18 @@ import { Range } from "react-range";
 
 // eslint-disable-next-line react/prop-types
 const PriceFilter = ({ setFilters }) => {
-	const [values, setValues] = useState([0, 500]); // Initial range values
+	const [values, setValues] = useState([0, 500]); // Initiala värden för prisintervallet
 	const STEP = 1;
-	const MIN = 0;
-	const MAX = 500;
+	const MIN = 0;// Minimivärde för pris
+	const MAX = 500; // Maxvärde för pris
 
-	// Handle range change and update filters
+	// Uppdaterar värdena för prisintervallet och skickar dem till överordnad komponent
 	const handleRangeChange = (newValues) => {
 		setValues(newValues);
-		setFilters((prev) => ({ ...prev, price: newValues }));
+		setFilters((prev) => ({ ...prev, price: newValues })); // Sparar nya prisvärden i filtren
 	};
 
-	// Create the fake distribution bars for visualization
+	// Fejkat stapeldiagram för att visualisera prisdistributionen
 	const distributionBars = [
 		30, 40, 40, 40, 70, 100, 80, 30, 30, 70, 80, 80, 30, 30, 30, 50, 30, 50,
 		30, 70, 70, 50, 30, 30, 30, 50, 30, 30, 30, 20, 10, 20, 40,
@@ -28,10 +28,8 @@ const PriceFilter = ({ setFilters }) => {
 				<div className="flex w-full items-center -mx-3 pb-4 mb-8">
 					<h3 className="text-lg font-semibold">Price</h3>
 				</div>
-
-				{/* Wrapper for the price slider section */}
 				<div className="">
-					{/* Distribution Bars */}
+					{/* Prisfördelningsstaplar */}
 					<div className="flex items-end justify-between h-16 mb-6">
 						{distributionBars.map((height, index) => (
 							<div
@@ -44,7 +42,7 @@ const PriceFilter = ({ setFilters }) => {
 						))}
 					</div>
 
-					{/* Price Range Slider */}
+					{/* Prisintervall-slider */}
 					<Range
 						values={values}
 						step={STEP}
@@ -78,7 +76,7 @@ const PriceFilter = ({ setFilters }) => {
 						)}
 					/>
 
-					{/* Display Min/Max Values */}
+					{/* Visar valda minimum- och maxvärden */}
 					<div className="flex justify-between mt-4">
 						<div className="p-2 border border-accentPink rounded-md">
 							<p className="text-xs">Minimum</p>

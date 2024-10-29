@@ -8,16 +8,19 @@ import HorizontalHotelCard from "../components/HorizontalHotelCard";
 import Header from "../components/Header";
 
 function OffersPage() {
+	// Hämtar hotellsdata och sökparametrar från kontext
 	const { hotels } = useHotelData();
 	const { searchParams } = useSearchParamsContext();
+	// Definierar state för att lagra hotell som har rabatterade priser
 	const [discountedHotels, setDiscountedHotels] = useState([]);
 
 	useEffect(() => {
-		// Apply a discount filter or logic here to find hotels on offer
+		// Loopar genom hotellen för att skapa en lista av rabatterade hotell
 		const discounted = hotels.map((hotel) => ({
 			...hotel,
-			discountedPrice: Math.round(hotel.pricePerNight * 0.85), // Example 15% discount
+			discountedPrice: Math.round(hotel.pricePerNight * 0.85), // 15% rabatt
 		}));
+		// Uppdaterar state med rabatterade hotell
 		setDiscountedHotels(discounted);
 	}, [hotels]);
 
@@ -26,11 +29,12 @@ function OffersPage() {
 			<Header headingText="Special Offers" size="medium" />
 			<div className="flex justify-center pt-[50px]">
 				<div className="flex flex-col gap-y-8">
+					{/* Loopar genom rabatterade hotel, renderar hotellkort */}
 					{discountedHotels.map((hotel) => (
 						<HorizontalHotelCard
 							key={hotel.id}
 							hotel={hotel}
-							showDiscountedPrice={true} // Passing flag to show strikethrough price
+							showDiscountedPrice={true}  //Skicka en flagga för att visa både original och rabatterat pris
 							startDate={searchParams.startDate}
 							endDate={searchParams.endDate}
 							adults={searchParams.adults}

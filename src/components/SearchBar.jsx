@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 import GuestSelector from "./GuestSelector";
-import CustomCalendar from "./FlexibleSearch/CustomCalendarFlexible";
+import CustomCalendarFlexible from "./FlexibleSearch/CustomCalendarFlexible";
 import dayjs from "dayjs";
 import LocationInput from "./LocationInput";
 import { useNavigate } from "react-router-dom";
@@ -206,7 +206,7 @@ function SearchBar({
 				{/* Conditionally render the Calendar */}
 				{isCalendarOpen && (
 					<div className="absolute top-12 left-0 z-50">
-						<CustomCalendar
+						<CustomCalendarFlexible
 							startDate={startDate}
 							setStartDate={setStartDate}
 							endDate={endDate}
@@ -283,3 +283,8 @@ SearchBar.defaultProps = {
 	initialRooms: 1,
 	initialIsNextToEachOther: 0,
 };
+
+
+
+
+

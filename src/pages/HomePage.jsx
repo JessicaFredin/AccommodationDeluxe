@@ -7,9 +7,13 @@ import TrendingDestinations from "../components/TrendingDestinations";
 import SearchBar from "../components/SearchBar";
 import { useNavigate } from "react-router-dom";
 
+//Komponent för startsidan
 function HomePage() {
+
+	// Använder useNavigate för att omdirigera användaren till en ny URL
 	const navigate = useNavigate();
 
+	// Hanterar sökningen som skickas från SearchBar-komponenten
 	const handleSearch = ({
 		location,
 		startDate,
@@ -18,7 +22,7 @@ function HomePage() {
 		children,
 		rooms,
 	}) => {
-		//  Uppdatera URL med sökparametrarna
+		// Skapar en URL med sökparametrarna från användarens input
 		const params = new URLSearchParams({
 			location,
 			checkin: startDate,
@@ -27,6 +31,7 @@ function HomePage() {
 			children: children.toString(),
 			rooms: rooms.toString(),
 		});
+		// Navigerar användaren till sidan med hotellresultat med sökparametrarna i URL:en
 		navigate(`/hotels?${params.toString()}`);
 	};
 	return (
@@ -43,19 +48,23 @@ function HomePage() {
 					}
 				/>
 				<div className="absolute bottom-[-50px] w-full flex justify-center">
-					{/* Skickar handleSearch fuktionen till SearchBar */}
+					{/* Anropar SearchBar-komponenten och skickar funktionen handleSearch som en prop */}
 					<SearchBar onSearch={handleSearch} />
 				</div>
 			</div>
 
 			<div className="mt-16">
+				{/* Visar OfferSlider-komponenten (en karusell med erbjudanden) */}
+
 				<OfferSlider />
 			</div>
 			<div className="w-11/12 max-w-7xl mx-auto">
 				<div>
+					{/* Visar Recommendations-komponenten (rekommenderade hotell eller destinationer) */}
 					<Recommendations />
 				</div>
 				<div>
+					{/* Visar TrendingDestinations-komponenten (trendiga destinationer) */}
 					<TrendingDestinations />
 				</div>
 			</div>

@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// AboutTheHotel.jsx
 import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,15 +10,24 @@ import {
 import InfoBoxSpecificHotel from "../components/InfoBoxSpecificHotel";
 import RoomCardsSection from "../components/RoomCardsSection";
 import useHotelDetails from "../hooks/useHotelDetails";
+
+
+
+
+// Komponenten används för att vis detaljer om ett specifikt hotell, inklusive bilder, beskrivningar och information.
 function AboutTheHotelPage() {
 
+	// State-hook för att hantera om bildmodalen är öppen eller stängd och den är stängd från början
 	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	// State-hook för att hålla reda på indexet av den aktuella bilden som visas i modalen
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+	// Anropar en anpassad hook för att hämta hotellinformation
 	const { hotel, error, loading } = useHotelDetails();
 
 	
-    // Hanterar laddning, fel och inte hittat tillstånd
+	// Hanterar laddning, fel och tillstånd för om hotellet inte hittas.
 	if (loading) {
 		return <p>Loading hotel data...</p>;
 	}
@@ -30,7 +38,7 @@ function AboutTheHotelPage() {
 		return <p>Hotel not found.</p>;
 	}
 	
-   // Definierar informationsboxens innehåll 
+	// Definierar informationsboxens innehåll 
 	const infoBoxContent = {
 		title: hotel.infoBox.title,
 		additionalInformation: hotel.infoBox.additionalInformation,
@@ -38,9 +46,10 @@ function AboutTheHotelPage() {
 		extraInformation: hotel.infoBox.extraInformation,
 	};
 
-	// Sätter standardbild för modalen
+	// Sätter bilderna för hotellet
 	const images = hotel.images || [];
 
+	// Hanterar öppning av modal
 	const openModal = (index) => {
 		setCurrentImageIndex(index);
 		setIsModalOpen(true);
@@ -64,23 +73,30 @@ function AboutTheHotelPage() {
 			{isModalOpen && images.length > 0 && (
 				<div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center">
 					<div className="relative">
+						
+						{/* Visar den aktuella bilden i modalen */}
 						<img
 							src={images[currentImageIndex]}
 							alt="Popup"
 							className="w-[600px] h-[400px] object-cover rounded-lg"
 						/>
+						{/* Stängningsknapp för modalen */}
 						<button
 							onClick={closeModal}
 							className="absolute top-5 right-5 text-white text-xl"
 						>
 							<FontAwesomeIcon icon={faXmark} />
 						</button>
+
+						{/* Föregående bild-knapp */}
 						<button
 							onClick={handlePrevImage}
 							className="absolute top-1/2 left-2 text-white text-xl"
 						>
 							<FontAwesomeIcon icon={faChevronLeft} />
 						</button>
+
+						{/* Nästa bild-knapp */}
 						<button
 							onClick={handleNextImage}
 							className="absolute top-1/2 right-2 text-white text-xl"
@@ -91,7 +107,7 @@ function AboutTheHotelPage() {
 				</div>
 			)}
 
-			{/* Huvud Layout */}
+			{/* Huvudlayout */}
 			<div className="w-[85%] mx-auto mt-8">
 				{/* Beskrivningssektion */}
 				<div className="flex justify-between w-[85%] mx-auto mt-8">
@@ -110,6 +126,7 @@ function AboutTheHotelPage() {
 
 				{/* Bildgallerisektion */}
 				<div className="w-[85%] mx-auto flex mt-8">
+
 					{/* Huvudbilder */}
 					<div className="flex flex-col">
 						{images.length > 0 && (
@@ -155,7 +172,8 @@ function AboutTheHotelPage() {
 					</div>
 				</div>
 			</div>
-
+			
+			{/* Avsnitt för rumskort */}
 			<RoomCardsSection />
 		</div>
 	);
